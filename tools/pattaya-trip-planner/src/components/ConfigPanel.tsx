@@ -9,6 +9,7 @@ import {
   type TripConfig,
 } from '../types'
 import { CURRENCIES, getCurrency } from '../utils/currency'
+import { NumericInput } from './NumericInput'
 
 const ALL_INTERESTS = Object.keys(INTEREST_LABELS) as Interest[]
 
@@ -54,15 +55,13 @@ export function ConfigPanel({ config, onChange, onGenerate }: ConfigPanelProps) 
           </label>
           <label className="grid gap-1.5 text-sm text-slate-600">
             天數
-            <input
-              type="number"
+            <NumericInput
+              aria-label="天數"
               min={1}
               max={7}
               value={config.days}
-              onChange={(e) =>
-                onChange({ ...config, days: Math.min(7, Math.max(1, Number(e.target.value))) })
-              }
-              className="rounded-xl border border-slate-200 px-3 py-2.5 text-slate-900 outline-none ring-teal-400 focus:ring-2"
+              onChange={(days) => onChange({ ...config, days })}
+              className="field-touch rounded-xl border border-slate-200 px-3 py-2.5 text-slate-900 outline-none ring-teal-400 focus:ring-2"
             />
           </label>
         </div>
@@ -70,18 +69,13 @@ export function ConfigPanel({ config, onChange, onGenerate }: ConfigPanelProps) 
         <div className="grid grid-cols-2 gap-3">
           <label className="grid gap-1.5 text-sm text-slate-600">
             人數
-            <input
-              type="number"
+            <NumericInput
+              aria-label="人數"
               min={1}
               max={12}
               value={config.travelers}
-              onChange={(e) =>
-                onChange({
-                  ...config,
-                  travelers: Math.min(12, Math.max(1, Number(e.target.value))),
-                })
-              }
-              className="rounded-xl border border-slate-200 px-3 py-2.5 text-slate-900 outline-none ring-teal-400 focus:ring-2"
+              onChange={(travelers) => onChange({ ...config, travelers })}
+              className="field-touch rounded-xl border border-slate-200 px-3 py-2.5 text-slate-900 outline-none ring-teal-400 focus:ring-2"
             />
           </label>
           <label className="grid gap-1.5 text-sm text-slate-600">

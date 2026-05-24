@@ -166,6 +166,14 @@ body {
   font-size: var(--pt-text-sm);
 }
 
+/* iOS：≥16px 避免聚焦縮放；較大點擊區 */
+.blog-layout--setup .field-touch,
+.blog-panel-body .field-touch {
+  font-size: 1rem !important;
+  min-height: 2.75rem;
+  touch-action: manipulation;
+}
+
 /* —— Blog layout —— */
 .blog-layout {
   min-height: 100dvh;
