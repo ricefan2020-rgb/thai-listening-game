@@ -1,0 +1,1242 @@
+{
+  "asOf": "2026-05-24",
+  "source": "Reddit",
+  "subreddits": [
+    "stocks",
+    "wallstreetbets",
+    "investing"
+  ],
+  "note": "關鍵字粗分情緒 · 僅供研究 · 非投資建議",
+  "tickers": {
+    "GOOGL": {
+      "mood": "neutral",
+      "label": "中性",
+      "posts": 36,
+      "bullish": 4,
+      "bearish": 2,
+      "neutral": 30,
+      "netScore": 0.06
+    },
+    "NVDA": {
+      "mood": "neutral",
+      "label": "中性",
+      "posts": 32,
+      "bullish": 2,
+      "bearish": 6,
+      "neutral": 24,
+      "netScore": -0.12
+    },
+    "AMD": {
+      "mood": "bearish",
+      "label": "偏空",
+      "posts": 29,
+      "bullish": 2,
+      "bearish": 6,
+      "neutral": 21,
+      "netScore": -0.16
+    },
+    "ARM": {
+      "mood": "neutral",
+      "label": "中性",
+      "posts": 19,
+      "bullish": 2,
+      "bearish": 1,
+      "neutral": 16,
+      "netScore": 0.01
+    },
+    "ANET": {
+      "mood": "neutral",
+      "label": "中性",
+      "posts": 8,
+      "bullish": 1,
+      "bearish": 1,
+      "neutral": 6,
+      "netScore": -0.01
+    },
+    "VRT": {
+      "mood": "neutral",
+      "label": "中性",
+      "posts": 10,
+      "bullish": 1,
+      "bearish": 0,
+      "neutral": 9,
+      "netScore": 0.05
+    },
+    "SMCI": {
+      "mood": "neutral",
+      "label": "中性",
+      "posts": 7,
+      "bullish": 0,
+      "bearish": 0,
+      "neutral": 7,
+      "netScore": 0
+    },
+    "IREN": {
+      "mood": "neutral",
+      "label": "中性",
+      "posts": 20,
+      "bullish": 2,
+      "bearish": 1,
+      "neutral": 17,
+      "netScore": 0.05
+    },
+    "PLTR": {
+      "mood": "neutral",
+      "label": "中性",
+      "posts": 23,
+      "bullish": 1,
+      "bearish": 3,
+      "neutral": 19,
+      "netScore": -0.06
+    },
+    "CRCL": {
+      "mood": "neutral",
+      "label": "中性",
+      "posts": 11,
+      "bullish": 1,
+      "bearish": 0,
+      "neutral": 10,
+      "netScore": 0.07
+    },
+    "SNOW": {
+      "mood": "neutral",
+      "label": "中性",
+      "posts": 5,
+      "bullish": 0,
+      "bearish": 0,
+      "neutral": 5,
+      "netScore": 0
+    },
+    "SIVE": {
+      "mood": "bullish",
+      "label": "偏多",
+      "posts": 2,
+      "bullish": 2,
+      "bearish": 0,
+      "neutral": 0,
+      "netScore": 1
+    }
+  },
+  "items": [
+    {
+      "id": "1tlzs56",
+      "date": "2026-05-24",
+      "tickers": [
+        "AMD"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "Need Help on Rolling a Call",
+      "snippet": "I sold a covered call at the worst possible time, right before AMD started exploding. Ive held most of these shares for over a year at under",
+      "sentiment": "neutral",
+      "score": 86,
+      "comments": 132,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tlzs56/need_help_on_rolling_a_call/"
+    },
+    {
+      "id": "1tlyd5e",
+      "date": "2026-05-24",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "investing",
+      "title": "I feel like it’s very difficult to get a read on the AI trade… (chips, smh, intc, bubble)",
+      "snippet": "I’ve had massive returns on SMH and INTC over the last x amount of months. I’m currently watching a documentary on the dot com bubble. I see",
+      "sentiment": "neutral",
+      "score": 8,
+      "comments": 36,
+      "url": "https://www.reddit.com/r/investing/comments/1tlyd5e/i_feel_like_its_very_difficult_to_get_a_read_on/"
+    },
+    {
+      "id": "1tlqff5",
+      "date": "2026-05-23",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "23 years ago in college, I sold all my stock to buy my future wife a $1000 engagement ring...",
+      "snippet": null,
+      "sentiment": "neutral",
+      "score": 16307,
+      "comments": 1321,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tlqff5/23_years_ago_in_college_i_sold_all_my_stock_to/"
+    },
+    {
+      "id": "1tl73g9",
+      "date": "2026-05-23",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "Am I the only one confused about why NVIDIA crushed earnings and the stock still went red? And whats with the big jump in Dividend 👍",
+      "snippet": "NVIDIA just reported its Q1 2026 results (fiscal Q1 FY27, quarter ended April 26) and it's another all-time high across the board. Revenue c",
+      "sentiment": "neutral",
+      "score": 392,
+      "comments": 267,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tl73g9/am_i_the_only_one_confused_about_why_nvidia/"
+    },
+    {
+      "id": "1tlvp51",
+      "date": "2026-05-23",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "stocks",
+      "title": "Is the entire Ai Boom built on fake revenue?",
+      "snippet": "Latest corporate filings show that OpenAI and Anthropic alone make up over half of the entire $2 trillion future cloud backlog held by Micro",
+      "sentiment": "neutral",
+      "score": 364,
+      "comments": 222,
+      "url": "https://www.reddit.com/r/stocks/comments/1tlvp51/is_the_entire_ai_boom_built_on_fake_revenue/"
+    },
+    {
+      "id": "1tl8nrl",
+      "date": "2026-05-23",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "stocks",
+      "title": "From purely Apple to RKLB",
+      "snippet": "Ahead of a long weekend, I wanted to share some thoughts about my (as some will likely rate it) *unusual* approach to investing. Please keep",
+      "sentiment": "neutral",
+      "score": 203,
+      "comments": 78,
+      "url": "https://www.reddit.com/r/stocks/comments/1tl8nrl/from_purely_apple_to_rklb/"
+    },
+    {
+      "id": "1tll0b7",
+      "date": "2026-05-23",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "stocks",
+      "title": "$GOOGL AI Complex will beat OpenAI and $NVDA",
+      "snippet": "The cadence of AI progress right now is set by OpenAI and their releases of ChatGPT models. I believe this a temporary phenomena as hypersca",
+      "sentiment": "neutral",
+      "score": 162,
+      "comments": 157,
+      "url": "https://www.reddit.com/r/stocks/comments/1tll0b7/googl_ai_complex_will_beat_openai_and_nvda/"
+    },
+    {
+      "id": "1tlu87t",
+      "date": "2026-05-23",
+      "tickers": [
+        "AMD"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "$45k Puts on SMH and AMD",
+      "snippet": "Just bought fire insurance for a burning house.",
+      "sentiment": "neutral",
+      "score": 118,
+      "comments": 97,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tlu87t/45k_puts_on_smh_and_amd/"
+    },
+    {
+      "id": "1tl8aws",
+      "date": "2026-05-23",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "1600 to 16k using $NBIS 1DTE, bet on NVDA earnings lifting the sector",
+      "snippet": "Bought these NBIS calls on the NVDA earnings day Wednesday before close. NBIS was down considerably that day, around the 190s range. Bought ",
+      "sentiment": "neutral",
+      "score": 58,
+      "comments": 7,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tl8aws/1600_to_16k_using_nbis_1dte_bet_on_nvda_earnings/"
+    },
+    {
+      "id": "1tl6e7u",
+      "date": "2026-05-23",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "stocks",
+      "title": "NVDA and the demand cliff",
+      "snippet": "Incredible earnings, great guidance, expansion into the CPU side of ai to continue capturing a large chunk of the ai chip market. So what is",
+      "sentiment": "neutral",
+      "score": 53,
+      "comments": 68,
+      "url": "https://www.reddit.com/r/stocks/comments/1tl6e7u/nvda_and_the_demand_cliff/"
+    },
+    {
+      "id": "1tl4ivt",
+      "date": "2026-05-23",
+      "tickers": [
+        "AMD"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "I feel like I am stuck in the washing machine and step bro is behind me...",
+      "snippet": "https://preview.redd.it/gtz9zlpyys2h1.jpg?width=1163&amp;format=pjpg&amp;auto=webp&amp;s=7cc65b6b14c42c9ffec7658ee15b10173354d65f I learned ",
+      "sentiment": "bullish",
+      "score": 53,
+      "comments": 54,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tl4ivt/i_feel_like_i_am_stuck_in_the_washing_machine_and/"
+    },
+    {
+      "id": "1tl6ef5",
+      "date": "2026-05-23",
+      "tickers": [
+        "ARM"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "Two $FLY posts. Two times told I was regarded. Am I still regarded?",
+      "snippet": "**Act I:** posted my [$FLY DD](https://www.reddit.com/r/wallstreetbets/comments/1qeikdt/fly_me_to_the_moooon/). Told I was regarded...bought",
+      "sentiment": "bullish",
+      "score": 28,
+      "comments": 18,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tl6ef5/two_fly_posts_two_times_told_i_was_regarded_am_i/"
+    },
+    {
+      "id": "1tlizft",
+      "date": "2026-05-23",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "stocks",
+      "title": "Quantum stocks are moving, but I think the market is reacting faster than the fundamentals.",
+      "snippet": "Trump announced $2 billion in support for companies involved in quantum computing through the CHIPS and Science Act. In simple terms, the go",
+      "sentiment": "neutral",
+      "score": 19,
+      "comments": 44,
+      "url": "https://www.reddit.com/r/stocks/comments/1tlizft/quantum_stocks_are_moving_but_i_think_the_market/"
+    },
+    {
+      "id": "1tlesin",
+      "date": "2026-05-23",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "investing",
+      "title": "Are any of these worth investing in at this point?",
+      "snippet": "I've been researching a few high-growth/speculative tech stocks recently and wanted to get some opinions from people here who follow the sec",
+      "sentiment": "bullish",
+      "score": 13,
+      "comments": 27,
+      "url": "https://www.reddit.com/r/investing/comments/1tlesin/are_any_of_these_worth_investing_in_at_this_point/"
+    },
+    {
+      "id": "1tlbr85",
+      "date": "2026-05-23",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "stocks",
+      "title": "/r/Stocks Weekend Discussion Saturday - May 23, 2026",
+      "snippet": "This is the weekend edition of our stickied discussion thread. Discuss your trades / moves from last week and what you're planning on doing ",
+      "sentiment": "neutral",
+      "score": 4,
+      "comments": 94,
+      "url": "https://www.reddit.com/r/stocks/comments/1tlbr85/rstocks_weekend_discussion_saturday_may_23_2026/"
+    },
+    {
+      "id": "1tl3cu6",
+      "date": "2026-05-23",
+      "tickers": [
+        "AMD"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "Advanced Money Dispenser",
+      "snippet": "Was down around 5k. Cashed out 3.5k up. Still down 50k but let’s ChatGPT told me I’m gonna be fine. This is not AI advice",
+      "sentiment": "neutral",
+      "score": 4,
+      "comments": 7,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tl3cu6/advanced_money_dispenser/"
+    },
+    {
+      "id": "1tld41x",
+      "date": "2026-05-23",
+      "tickers": [
+        "IREN"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "Why isn't $GLXY ripping?",
+      "snippet": "I am very confused. I see $IREN blasting off because they are AI data centers, Canadian coming from previous Bitcoin farming... And yet $GLX",
+      "sentiment": "neutral",
+      "score": 4,
+      "comments": 19,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tld41x/why_isnt_glxy_ripping/"
+    },
+    {
+      "id": "1tltg47",
+      "date": "2026-05-23",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "stocks",
+      "title": "What stocks are you buying or dumping when China makes a move on Taiwan?",
+      "snippet": "Feels like the whole AI/semi trade has a hidden geopolitical time bomb attached to it. TSMC basically powers the modern tech world, so an in",
+      "sentiment": "bearish",
+      "score": 0,
+      "comments": 40,
+      "url": "https://www.reddit.com/r/stocks/comments/1tltg47/what_stocks_are_you_buying_or_dumping_when_china/"
+    },
+    {
+      "id": "1tlhfep",
+      "date": "2026-05-23",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "stocks",
+      "title": "Alright. I’m going to tell yall about a couple of areas that I think major expansion is coming very soon.",
+      "snippet": "First off - water. I’m not how sure everyone is paying attention, but rise of data centers is causing a number of water problems. And it’s n",
+      "sentiment": "neutral",
+      "score": 0,
+      "comments": 19,
+      "url": "https://www.reddit.com/r/stocks/comments/1tlhfep/alright_im_going_to_tell_yall_about_a_couple_of/"
+    },
+    {
+      "id": "1tl2lc9",
+      "date": "2026-05-23",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "stocks",
+      "title": "Portfolio sell off.",
+      "snippet": "I recently did a sell off in my IRA portfolio. I sold out of $MU. I got in at a pretty good price around $133. I also sold out of $VTI. I al",
+      "sentiment": "bearish",
+      "score": 0,
+      "comments": 20,
+      "url": "https://www.reddit.com/r/stocks/comments/1tl2lc9/portfolio_sell_off/"
+    },
+    {
+      "id": "1tls7c9",
+      "date": "2026-05-23",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "investing",
+      "title": "One Assumption is Clear. The Markets won’t end..",
+      "snippet": "Without a rip your face off rally that everyone goes OMG what is that. Just like in 2008/9 we are now under the same assumption (housing pri",
+      "sentiment": "neutral",
+      "score": 0,
+      "comments": 43,
+      "url": "https://www.reddit.com/r/investing/comments/1tls7c9/one_assumption_is_clear_the_markets_wont_end/"
+    },
+    {
+      "id": "1tlmp4x",
+      "date": "2026-05-23",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "investing",
+      "title": "73% of AI capex plays underperform",
+      "snippet": "Screened 40 large caps most tied to AI capital spending and 73% have trailed the S&amp;P YTD by a median of about 9 points. Power and coolin",
+      "sentiment": "neutral",
+      "score": 0,
+      "comments": 10,
+      "url": "https://www.reddit.com/r/investing/comments/1tlmp4x/73_of_ai_capex_plays_underperform/"
+    },
+    {
+      "id": "1tl3q7p",
+      "date": "2026-05-23",
+      "tickers": [
+        "AMD"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "Is this crazy",
+      "snippet": "Bought few months ago and still holding",
+      "sentiment": "neutral",
+      "score": 0,
+      "comments": 13,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tl3q7p/is_this_crazy/"
+    },
+    {
+      "id": "1tkcppr",
+      "date": "2026-05-22",
+      "tickers": [
+        "AMD"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "I am getting worried",
+      "snippet": "I am a total regard just bumbling about but kind of struck gold in the last year. I mostly hold stocks - AMZN, AMD, RKLB, ASTS. Everything i",
+      "sentiment": "bearish",
+      "score": 1097,
+      "comments": 535,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tkcppr/i_am_getting_worried/"
+    },
+    {
+      "id": "1tkuwux",
+      "date": "2026-05-22",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "stocks",
+      "title": "I may be the worst stock picker there is",
+      "snippet": "Well like the title says I may be the worst stock picker there is. Some of the stocks i have owned are: 1000 shares of Nebius sold at a 7k l",
+      "sentiment": "neutral",
+      "score": 419,
+      "comments": 524,
+      "url": "https://www.reddit.com/r/stocks/comments/1tkuwux/i_may_be_the_worst_stock_picker_there_is/"
+    },
+    {
+      "id": "1tkki9q",
+      "date": "2026-05-22",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "investing",
+      "title": "Jensen Huang says Nvidia has \"largely conceded\" China's AI chip market to Huawei, yet zero H200 chips have actually shipped",
+      "snippet": "I was watching the NVDA earnings call yesterday and Jensen Huang said something on CNBC after that I had to rewind twice. He straight up sai",
+      "sentiment": "neutral",
+      "score": 379,
+      "comments": 100,
+      "url": "https://www.reddit.com/r/investing/comments/1tkki9q/jensen_huang_says_nvidia_has_largely_conceded/"
+    },
+    {
+      "id": "1tky1vr",
+      "date": "2026-05-22",
+      "tickers": [
+        "IREN"
+      ],
+      "subreddit": "investing",
+      "title": "4 month update on Reddit's favourite stock picks",
+      "snippet": "I would link my OP but it was on another sub and I've been told I'm not allowed to link it here. This is also a repost as the last post was ",
+      "sentiment": "neutral",
+      "score": 217,
+      "comments": 53,
+      "url": "https://www.reddit.com/r/investing/comments/1tky1vr/4_month_update_on_reddits_favourite_stock_picks/"
+    },
+    {
+      "id": "1tkpxfk",
+      "date": "2026-05-22",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "Enough is enough fk u quantum/space regards making money - top is in",
+      "snippet": "Yes that other regard who called the top was right. Although he had a dumb reason with hookers n shit but he was right on the conclusion. As",
+      "sentiment": "bearish",
+      "score": 84,
+      "comments": 50,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tkpxfk/enough_is_enough_fk_u_quantumspace_regards_making/"
+    },
+    {
+      "id": "1tkdpsq",
+      "date": "2026-05-22",
+      "tickers": [
+        "ARM"
+      ],
+      "subreddit": "stocks",
+      "title": "Futu MooMoo investigate by the Chinese government, stock plunged by 30%+ per market",
+      "snippet": "just broke no English news yet so I translated this from a Chinese website China’s top securities watchdog has launched an official probe in",
+      "sentiment": "neutral",
+      "score": 73,
+      "comments": 53,
+      "url": "https://www.reddit.com/r/stocks/comments/1tkdpsq/futu_moomoo_investigate_by_the_chinese_government/"
+    },
+    {
+      "id": "1tkruuo",
+      "date": "2026-05-22",
+      "tickers": [
+        "SNOW"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "Weekly Earnings Thread 5/25 - 5/29",
+      "snippet": null,
+      "sentiment": "neutral",
+      "score": 45,
+      "comments": 140,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tkruuo/weekly_earnings_thread_525_529/"
+    },
+    {
+      "id": "1tkym8m",
+      "date": "2026-05-22",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "At this point i am not even trying to to save the 600 let it all ride 😭",
+      "snippet": null,
+      "sentiment": "neutral",
+      "score": 43,
+      "comments": 101,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tkym8m/at_this_point_i_am_not_even_trying_to_to_save_the/"
+    },
+    {
+      "id": "1tkj9l6",
+      "date": "2026-05-22",
+      "tickers": [
+        "AMD"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "Thank you Lisa!!",
+      "snippet": "Sold quickly! Gonna be a good Memorial weekend!!",
+      "sentiment": "neutral",
+      "score": 40,
+      "comments": 15,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tkj9l6/thank_you_lisa/"
+    },
+    {
+      "id": "1tk60wc",
+      "date": "2026-05-22",
+      "tickers": [
+        "AMD"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "AMD",
+      "snippet": "I want to see a big green dildo in the morning! So does my wife’s BF.",
+      "sentiment": "neutral",
+      "score": 40,
+      "comments": 15,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tk60wc/amd/"
+    },
+    {
+      "id": "1tkxgiy",
+      "date": "2026-05-22",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "investing",
+      "title": "Does anyone else hate looking at new stocks when you are already 95% fully invested?",
+      "snippet": "I invest in individual tickers, mostly microcaps or small caps, My selection is doing pretty good, but the one with most of my money is abou",
+      "sentiment": "bearish",
+      "score": 30,
+      "comments": 26,
+      "url": "https://www.reddit.com/r/investing/comments/1tkxgiy/does_anyone_else_hate_looking_at_new_stocks_when/"
+    },
+    {
+      "id": "1tkngi9",
+      "date": "2026-05-22",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "stocks",
+      "title": "Quantum computing catalyst drives capital into semiconductor infrastructure leaders",
+      "snippet": "The quantum computing sector is seeing renewed momentum after a Wall Street Journal report indicated that the Trump administration is prepar",
+      "sentiment": "neutral",
+      "score": 22,
+      "comments": 8,
+      "url": "https://www.reddit.com/r/stocks/comments/1tkngi9/quantum_computing_catalyst_drives_capital_into/"
+    },
+    {
+      "id": "1tkyokv",
+      "date": "2026-05-22",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "Am I cooked ?",
+      "snippet": "Been holding 2 of these through the recent run up , bought a few more for the space x ipo and of course it tanks right after…. Just seeing w",
+      "sentiment": "neutral",
+      "score": 18,
+      "comments": 61,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tkyokv/am_i_cooked/"
+    },
+    {
+      "id": "1tktj04",
+      "date": "2026-05-22",
+      "tickers": [
+        "AMD"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "Space and value regard",
+      "snippet": "Now I know the 1 year track looks deceptive but its just because the graph looked better I promise. I'm a college student that got a little ",
+      "sentiment": "bearish",
+      "score": 16,
+      "comments": 5,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tktj04/space_and_value_regard/"
+    },
+    {
+      "id": "1tkhztn",
+      "date": "2026-05-22",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "stocks",
+      "title": "Asymmetric bet on power generation",
+      "snippet": "The case for HYLN (Hyliion) They just got UL certified, made deals with the army and navy and NASA is interested. Also just met with Jensen ",
+      "sentiment": "neutral",
+      "score": 11,
+      "comments": 7,
+      "url": "https://www.reddit.com/r/stocks/comments/1tkhztn/asymmetric_bet_on_power_generation/"
+    },
+    {
+      "id": "1tkduer",
+      "date": "2026-05-22",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "stocks",
+      "title": "r/Stocks Daily Discussion &amp; Fundamentals Friday May 22, 2026",
+      "snippet": "This is the daily discussion, so anything stocks related is fine, but the theme for today is on fundamentals, but if fundamentals aren't you",
+      "sentiment": "bullish",
+      "score": 9,
+      "comments": 265,
+      "url": "https://www.reddit.com/r/stocks/comments/1tkduer/rstocks_daily_discussion_fundamentals_friday_may/"
+    },
+    {
+      "id": "1tkmmur",
+      "date": "2026-05-22",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "Next Semi Trade: $TTMI",
+      "snippet": "Going long on TTM Technologies ($TTMI) Nvidia put out their new Bill of Goods for the Blackwell and updated costs their next Vera Rubin GPU ",
+      "sentiment": "neutral",
+      "score": 6,
+      "comments": 18,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tkmmur/next_semi_trade_ttmi/"
+    },
+    {
+      "id": "1tk6b0w",
+      "date": "2026-05-22",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "stocks",
+      "title": "Rockstar games the next NVIDIA",
+      "snippet": "Rockstar Games could theoretically become the most valuable company in the world by transforming Grand Theft Auto VI (GTA 6) from a traditio",
+      "sentiment": "neutral",
+      "score": 0,
+      "comments": 22,
+      "url": "https://www.reddit.com/r/stocks/comments/1tk6b0w/rockstar_games_the_next_nvidia/"
+    },
+    {
+      "id": "1tk5xjn",
+      "date": "2026-05-22",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "stocks",
+      "title": "Are there any good opportunities right now in the market?",
+      "snippet": "Hey guys, So since the last year I have made some money through investing in some stocks such as AMD, Intel, NVIDIA and decided to recently ",
+      "sentiment": "bearish",
+      "score": 0,
+      "comments": 42,
+      "url": "https://www.reddit.com/r/stocks/comments/1tk5xjn/are_there_any_good_opportunities_right_now_in_the/"
+    },
+    {
+      "id": "1tkuzbj",
+      "date": "2026-05-22",
+      "tickers": [
+        "IREN"
+      ],
+      "subreddit": "stocks",
+      "title": "Which stock from this watchlist has the highest 10x potential for the mid-to-long term?",
+      "snippet": "I wanted to consult you about a list of stocks I have on my radar. I am looking for aggressive growth profiles and I would like to know whic",
+      "sentiment": "neutral",
+      "score": 0,
+      "comments": 30,
+      "url": "https://www.reddit.com/r/stocks/comments/1tkuzbj/which_stock_from_this_watchlist_has_the_highest/"
+    },
+    {
+      "id": "1tkjqco",
+      "date": "2026-05-22",
+      "tickers": [
+        "CRCL"
+      ],
+      "subreddit": "investing",
+      "title": "Generational Family Wealth Building During Population Decline",
+      "snippet": "I’ve been thinking a lot about how I can build true multi-generational wealth, not just “retire rich,” but create a long-term family fund th",
+      "sentiment": "bullish",
+      "score": 0,
+      "comments": 24,
+      "url": "https://www.reddit.com/r/investing/comments/1tkjqco/generational_family_wealth_building_during/"
+    },
+    {
+      "id": "1tk10gj",
+      "date": "2026-05-21",
+      "tickers": [
+        "CRCL"
+      ],
+      "subreddit": "stocks",
+      "title": "Adult content stocks",
+      "snippet": "Are there any stocks or etfs that specialise in adult content. I read in warren buffet book that investors should only invest in things they",
+      "sentiment": "neutral",
+      "score": 1764,
+      "comments": 362,
+      "url": "https://www.reddit.com/r/stocks/comments/1tk10gj/adult_content_stocks/"
+    },
+    {
+      "id": "1tjxa6g",
+      "date": "2026-05-21",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "Google's latest creation: Gemini 3.5 Flash.  Puts.",
+      "snippet": "[https://gemini.google.com/share/c2a187275e26](https://gemini.google.com/share/c2a187275e26) [archive link](http://archive.today/q6nzg) [htt",
+      "sentiment": "neutral",
+      "score": 1758,
+      "comments": 309,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tjxa6g/googles_latest_creation_gemini_35_flash_puts/"
+    },
+    {
+      "id": "1tj7483",
+      "date": "2026-05-21",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "Nvidia says it has ‘largely conceded’ China’s AI chip market to Huawei",
+      "snippet": null,
+      "sentiment": "neutral",
+      "score": 1409,
+      "comments": 120,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tj7483/nvidia_says_it_has_largely_conceded_chinas_ai/"
+    },
+    {
+      "id": "1tjtxax",
+      "date": "2026-05-21",
+      "tickers": [
+        "AMD"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "Gains after 5 years",
+      "snippet": "Took almost 5 years on dot to get back to my start lmao Life had me step away for a big break and came back just in time to get paid out by ",
+      "sentiment": "neutral",
+      "score": 727,
+      "comments": 71,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tjtxax/gains_after_5_years/"
+    },
+    {
+      "id": "1tjq4k2",
+      "date": "2026-05-21",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "100% winrate today scalping SPY and TSLA, made $14k and it’s my birthday too 😝",
+      "snippet": null,
+      "sentiment": "neutral",
+      "score": 672,
+      "comments": 82,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tjq4k2/100_winrate_today_scalping_spy_and_tsla_made_14k/"
+    },
+    {
+      "id": "1tjrb77",
+      "date": "2026-05-21",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "No More PDT Restriction",
+      "snippet": "Boys, the FINRA PDT rule is basically dead. That’s right. The ancient boomer “3 day trades and you’re banned unless you have $25k” garbage u",
+      "sentiment": "neutral",
+      "score": 226,
+      "comments": 72,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tjrb77/no_more_pdt_restriction/"
+    },
+    {
+      "id": "1tjqwuk",
+      "date": "2026-05-21",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "stocks",
+      "title": "People who were investing in individual stocks in the 90s 2000s, did you beat the market ?",
+      "snippet": "So since Covid this community and all over social media people have done incredibly well investing in individual stocks ( me included) and I",
+      "sentiment": "neutral",
+      "score": 143,
+      "comments": 124,
+      "url": "https://www.reddit.com/r/stocks/comments/1tjqwuk/people_who_were_investing_in_individual_stocks_in/"
+    },
+    {
+      "id": "1tjj593",
+      "date": "2026-05-21",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "Why is AppLovin Not Talked About More?",
+      "snippet": "If you’re a value investor you’re looking at SaaS shitcos, some of which are getting priced as if they will be obliterated by AI. If you loo",
+      "sentiment": "neutral",
+      "score": 95,
+      "comments": 83,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tjj593/why_is_applovin_not_talked_about_more/"
+    },
+    {
+      "id": "1tjcuzv",
+      "date": "2026-05-21",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "My positions my next big bet",
+      "snippet": "has been looking more and more like its bout to pop. Before I start do your own due diligence and this is not financial advice. Also showing",
+      "sentiment": "neutral",
+      "score": 29,
+      "comments": 32,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tjcuzv/my_positions_my_next_big_bet/"
+    },
+    {
+      "id": "1tjpte3",
+      "date": "2026-05-21",
+      "tickers": [
+        "ARM"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "The reason ARM is mooning 🚀🚀🚀",
+      "snippet": "I bought some puts a few days ago, why the 🦆 is my luck like this 🤦‍♂️ 🤦‍♂️ 🤦‍♂️",
+      "sentiment": "neutral",
+      "score": 28,
+      "comments": 29,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tjpte3/the_reason_arm_is_mooning/"
+    },
+    {
+      "id": "1tjwc6f",
+      "date": "2026-05-21",
+      "tickers": [
+        "AMD"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "AMD calls prrrrrr",
+      "snippet": "Sold the puts for a small loss early. Bought these and bam!!! Love you Lisa! ❤️",
+      "sentiment": "neutral",
+      "score": 22,
+      "comments": 20,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tjwc6f/amd_calls_prrrrrr/"
+    },
+    {
+      "id": "1tjf9lk",
+      "date": "2026-05-21",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "stocks",
+      "title": "r/Stocks Daily Discussion &amp; Options Trading Thursday - May 21, 2026",
+      "snippet": "This is the daily discussion, so anything stocks related is fine, but the theme for today is on stock options, but if options aren't your th",
+      "sentiment": "neutral",
+      "score": 14,
+      "comments": 295,
+      "url": "https://www.reddit.com/r/stocks/comments/1tjf9lk/rstocks_daily_discussion_options_trading_thursday/"
+    },
+    {
+      "id": "1tjsm6b",
+      "date": "2026-05-21",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "Got a bit more, 250k in $SKM",
+      "snippet": "Asked my Claude to summarise for me in case you might want to see a summary of my reasoning. Might be useful. I do my DD together with Claud",
+      "sentiment": "neutral",
+      "score": 9,
+      "comments": 12,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tjsm6b/got_a_bit_more_250k_in_skm/"
+    },
+    {
+      "id": "1tjtkq2",
+      "date": "2026-05-21",
+      "tickers": [
+        "AMD"
+      ],
+      "subreddit": "stocks",
+      "title": "New in this - need advise how to spread portfolio",
+      "snippet": "Hi, So I am just starting after I payed out my mortgage for my apartment. Now I have few months worth of expenses saved and on top of that s",
+      "sentiment": "bearish",
+      "score": 3,
+      "comments": 7,
+      "url": "https://www.reddit.com/r/stocks/comments/1tjtkq2/new_in_this_need_advise_how_to_spread_portfolio/"
+    },
+    {
+      "id": "1tj5tpg",
+      "date": "2026-05-21",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "investing",
+      "title": "Assuming you have $1 million, which of the following stocks do you think would maximize your returns over the next 10 years?",
+      "snippet": "Assuming you have $1 million, which of the following stocks do you think would maximize your returns over the next 10 years? Please list exa",
+      "sentiment": "neutral",
+      "score": 0,
+      "comments": 60,
+      "url": "https://www.reddit.com/r/investing/comments/1tj5tpg/assuming_you_have_1_million_which_of_the/"
+    },
+    {
+      "id": "1tjt506",
+      "date": "2026-05-21",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "Gerald from the corner of my eye agrees with me, Home Depot is the most important stock you're ignoring right now",
+      "snippet": "It is 3:47am. I have not slept since Tuesday. Not because I don't want to. Not because I'm not tired. I am extremely tired. My body is tired",
+      "sentiment": "bullish",
+      "score": 0,
+      "comments": 35,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tjt506/gerald_from_the_corner_of_my_eye_agrees_with_me/"
+    },
+    {
+      "id": "1tjpst9",
+      "date": "2026-05-21",
+      "tickers": [
+        "AMD"
+      ],
+      "subreddit": "investing",
+      "title": "What would you rather buy rn?",
+      "snippet": "NBIS, MU or AMD? I’m a new investor and I can’t decide which stock is the better choice rn, I want to hold long term and I don’t know which ",
+      "sentiment": "neutral",
+      "score": 0,
+      "comments": 70,
+      "url": "https://www.reddit.com/r/investing/comments/1tjpst9/what_would_you_rather_buy_rn/"
+    },
+    {
+      "id": "1tixrw9",
+      "date": "2026-05-20",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "stocks",
+      "title": "NVDA Quarterly Revenue $81.6 billion (up 85% YoY)",
+      "snippet": "**NVDA Quarterly Results** * Revenue = $81.6 billion (up 85% YoY) *Data Center Hyperscale $37.9 billion (up 115% YoY) + Data Center AI Cloud",
+      "sentiment": "neutral",
+      "score": 1752,
+      "comments": 349,
+      "url": "https://www.reddit.com/r/stocks/comments/1tixrw9/nvda_quarterly_revenue_816_billion_up_85_yoy/"
+    },
+    {
+      "id": "1tiopoz",
+      "date": "2026-05-20",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "All in on cancer $SLS",
+      "snippet": "SLS has been ripping recently because of their REGAL trial ending soon. They got a drug called GPS meant to treat a type of Leukemia. Their ",
+      "sentiment": "neutral",
+      "score": 368,
+      "comments": 347,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tiopoz/all_in_on_cancer_sls/"
+    },
+    {
+      "id": "1ti8rxt",
+      "date": "2026-05-20",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "stocks",
+      "title": "Is too much money in a HYSA a waste of capital?",
+      "snippet": "I have $72.5k in an Amex HYSA, $47.5k in stocks (GOOGL, AVGO, AMZN, NVDA, TCEHY), $7.5k in a Roth IRA (VOO, VXUS), and a few thousand in cry",
+      "sentiment": "neutral",
+      "score": 231,
+      "comments": 158,
+      "url": "https://www.reddit.com/r/stocks/comments/1ti8rxt/is_too_much_money_in_a_hysa_a_waste_of_capital/"
+    },
+    {
+      "id": "1tipry4",
+      "date": "2026-05-20",
+      "tickers": [
+        "IREN"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "$META DD - Why you should bet on the lizard king",
+      "snippet": "**Position:** 1900 shares Alright regards, gather round. While you apes are gambling on $BOT and buying $MU calls at ATHs, I've been quietly",
+      "sentiment": "bullish",
+      "score": 174,
+      "comments": 111,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tipry4/meta_dd_why_you_should_bet_on_the_lizard_king/"
+    },
+    {
+      "id": "1tiscbz",
+      "date": "2026-05-20",
+      "tickers": [
+        "SMCI"
+      ],
+      "subreddit": "stocks",
+      "title": "In anticipation of NVDA earnings report, I bought a lot of stock.",
+      "snippet": "Right now the whole world is waiting for NVDA earnings Some people are selling stocks based on old experiences thinking every NVDA earnings ",
+      "sentiment": "neutral",
+      "score": 100,
+      "comments": 157,
+      "url": "https://www.reddit.com/r/stocks/comments/1tiscbz/in_anticipation_of_nvda_earnings_report_i_bought/"
+    },
+    {
+      "id": "1ti8kfk",
+      "date": "2026-05-20",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "investing",
+      "title": "Google I/O was a product flex, but the stock barely moved. What is the market missing?",
+      "snippet": "$GOOGL I/O felt like $GOOGL saying Gemini is moving from chatbot to action layer across Search, YouTube, Workspace, Chrome, Android, shoppin",
+      "sentiment": "neutral",
+      "score": 76,
+      "comments": 96,
+      "url": "https://www.reddit.com/r/investing/comments/1ti8kfk/google_io_was_a_product_flex_but_the_stock_barely/"
+    },
+    {
+      "id": "1tj162a",
+      "date": "2026-05-20",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "Unlike that other guy I actually profited from my NVIDIA 5/22 $225c",
+      "snippet": "Theta and IV a bitch",
+      "sentiment": "neutral",
+      "score": 27,
+      "comments": 19,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tj162a/unlike_that_other_guy_i_actually_profited_from_my/"
+    },
+    {
+      "id": "1tj3hb9",
+      "date": "2026-05-20",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "Long DAMD (short AMD)",
+      "snippet": "As the subject says. Why you ask? Hoping for an NVDA sell off post ER and it will take AMD with it. Bought this 5 mins before market close. ",
+      "sentiment": "bearish",
+      "score": 24,
+      "comments": 44,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tj3hb9/long_damd_short_amd/"
+    },
+    {
+      "id": "1tidurj",
+      "date": "2026-05-20",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "stocks",
+      "title": "r/Stocks Daily Discussion Wednesday - May 20, 2026",
+      "snippet": "These daily discussions run from Monday to Friday including during our themed posts. Some helpful links: * [Finviz](https://finviz.com/quote",
+      "sentiment": "neutral",
+      "score": 22,
+      "comments": 335,
+      "url": "https://www.reddit.com/r/stocks/comments/1tidurj/rstocks_daily_discussion_wednesday_may_20_2026/"
+    },
+    {
+      "id": "1tianf3",
+      "date": "2026-05-20",
+      "tickers": [
+        "AMD"
+      ],
+      "subreddit": "stocks",
+      "title": "Samsung strike is bad for Nvidia and AMD",
+      "snippet": "Nvidia and AMD are entirely dependent on South Korean high-bandwidth memory (HBM) and enterprise DRAM to build their AI data centers and GPU",
+      "sentiment": "neutral",
+      "score": 11,
+      "comments": 29,
+      "url": "https://www.reddit.com/r/stocks/comments/1tianf3/samsung_strike_is_bad_for_nvidia_and_amd/"
+    },
+    {
+      "id": "1tie7zl",
+      "date": "2026-05-20",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "investing",
+      "title": "Feedback and Suggestions Please",
+      "snippet": "Hey all, I know that everyone is sick to the teeth of hearing about AI infrastructure picks etc. As a very small play I have created my own ",
+      "sentiment": "neutral",
+      "score": 6,
+      "comments": 2,
+      "url": "https://www.reddit.com/r/investing/comments/1tie7zl/feedback_and_suggestions_please/"
+    },
+    {
+      "id": "1tih506",
+      "date": "2026-05-20",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "stocks",
+      "title": "Feel free to share your thoughts and preferences",
+      "snippet": "Hey all, Mods removed my last post because they claimed I posted saying 'i had XXX amount of money what should I do with it'. Despite not me",
+      "sentiment": "neutral",
+      "score": 0,
+      "comments": 18,
+      "url": "https://www.reddit.com/r/stocks/comments/1tih506/feel_free_to_share_your_thoughts_and_preferences/"
+    },
+    {
+      "id": "1tijzdu",
+      "date": "2026-05-20",
+      "tickers": [
+        "NVDA"
+      ],
+      "subreddit": "investing",
+      "title": "NVIDIA earnings, more about AI demand expectations than the headline numbers",
+      "snippet": "NVDA is now trading more like a signal for AI spending and overall market risk appetite than just a single company reporting earnings. In pa",
+      "sentiment": "neutral",
+      "score": 0,
+      "comments": 5,
+      "url": "https://www.reddit.com/r/investing/comments/1tijzdu/nvidia_earnings_more_about_ai_demand_expectations/"
+    },
+    {
+      "id": "1tigrm2",
+      "date": "2026-05-20",
+      "tickers": [
+        "IREN"
+      ],
+      "subreddit": "investing",
+      "title": "Bitcoin miners are quietly becoming AI infrastructure plays",
+      "snippet": "Recent research on listed Bitcoin miners argues they are quietly morphing into AI infrastructure plays, not just leveraged bets on BTC anymo",
+      "sentiment": "neutral",
+      "score": 0,
+      "comments": 35,
+      "url": "https://www.reddit.com/r/investing/comments/1tigrm2/bitcoin_miners_are_quietly_becoming_ai/"
+    },
+    {
+      "id": "1ti09i0",
+      "date": "2026-05-19",
+      "tickers": [
+        "PLTR"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "The market will literally never go down again",
+      "snippet": "I don't know who needs to hear this, but the market will LITERALLY never go down again. Stonks go up is no longer a meme, it is a law, like ",
+      "sentiment": "neutral",
+      "score": 10473,
+      "comments": 1336,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1ti09i0/the_market_will_literally_never_go_down_again/"
+    },
+    {
+      "id": "1thqvqc",
+      "date": "2026-05-19",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "stocks",
+      "title": "Trump traded over $50 million in 'Magnificent 7' stocks last quarter, loading up on Apple and Google and selling Tesla",
+      "snippet": "President Trump made 94 different trades of “Magnificent Seven” stocks in the first quarter of 2026, a new ethics disclosure shows, executin",
+      "sentiment": "neutral",
+      "score": 671,
+      "comments": 112,
+      "url": "https://www.reddit.com/r/stocks/comments/1thqvqc/trump_traded_over_50_million_in_magnificent_7/"
+    },
+    {
+      "id": "1thgg77",
+      "date": "2026-05-19",
+      "tickers": [
+        "PLTR"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "Life hack: just use negative money to make positive money",
+      "snippet": "PLTR gains rolled into nuclear gains rolled into quantum gains now all in on Space and Sea",
+      "sentiment": "neutral",
+      "score": 237,
+      "comments": 59,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1thgg77/life_hack_just_use_negative_money_to_make/"
+    },
+    {
+      "id": "1thz291",
+      "date": "2026-05-19",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "investing",
+      "title": "Is Paypal dead or worth a look at $43.8? Acquisition, selling parts of it's business? There seems to be little downside risk at this range and a 7 PE",
+      "snippet": "Is there any smoke around Stripe, Apple or Google buying parts of this business. I don't have a lot of confidence in paypal growth, I still ",
+      "sentiment": "neutral",
+      "score": 216,
+      "comments": 163,
+      "url": "https://www.reddit.com/r/investing/comments/1thz291/is_paypal_dead_or_worth_a_look_at_438_acquisition/"
+    },
+    {
+      "id": "1thph4l",
+      "date": "2026-05-19",
+      "tickers": [
+        "GOOGL"
+      ],
+      "subreddit": "wallstreetbets",
+      "title": "$MRAM Bull Case - Future of Memory",
+      "snippet": "Kerrisdale just dropped a massive short report trying to scare everyone out of **Everspin Technologies ($MRAM)**, claiming it’s a \"fake AI m",
+      "sentiment": "bearish",
+      "score": 34,
+      "comments": 108,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1thph4l/mram_bull_case_future_of_memory/"
+    }
+  ]
+}

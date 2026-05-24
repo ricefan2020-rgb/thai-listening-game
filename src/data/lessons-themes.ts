@@ -1,0 +1,55 @@
+import type { LessonItem } from '../types'
+
+/** 水果、感覺、情緒專題詞庫 */
+export const LESSONS_THEMES: LessonItem[] = [
+  // 水果
+  { id: 'fr1', thai: 'กล้วย', meaning: '香蕉', category: 'fruit' },
+  { id: 'fr2', thai: 'ส้ม', meaning: '柳橙', category: 'fruit' },
+  { id: 'fr3', thai: 'ทุเรียน', meaning: '榴槤', category: 'fruit' },
+  { id: 'fr4', thai: 'มังคุด', meaning: '山竹', category: 'fruit' },
+  { id: 'fr5', thai: 'แตงโม', meaning: '西瓜', category: 'fruit' },
+  { id: 'fr6', thai: 'สับปะรด', meaning: '鳳梨', category: 'fruit' },
+  { id: 'fr7', thai: 'แอปเปิ้ล', meaning: '蘋果', category: 'fruit' },
+  { id: 'fr8', thai: 'องุ่น', meaning: '葡萄', category: 'fruit' },
+  { id: 'fr9', thai: 'สตรอว์เบอร์รี่', meaning: '草莓', category: 'fruit' },
+  { id: 'fr10', thai: 'ลำไย', meaning: '龍眼', category: 'fruit' },
+  { id: 'fr11', thai: 'ลิ้นจี่', meaning: '荔枝', category: 'fruit' },
+  { id: 'fr12', thai: 'ขนุน', meaning: '波羅蜜', category: 'fruit' },
+  { id: 'fr13', thai: 'ฝรั่ง', meaning: '芭樂', category: 'fruit' },
+  { id: 'fr14', thai: 'เงาะ', meaning: '紅毛丹', category: 'fruit' },
+  { id: 'fr15', thai: 'สละ', meaning: '蛇皮果', category: 'fruit' },
+
+  // 感覺（身體／感官）
+  { id: 'fl1', thai: 'ร้อน', meaning: '熱', category: 'feeling' },
+  { id: 'fl2', thai: 'เย็น', meaning: '冷', category: 'feeling' },
+  { id: 'fl3', thai: 'ง่วง', meaning: '想睡', category: 'feeling' },
+  { id: 'fl4', thai: 'หอม', meaning: '香', category: 'feeling' },
+  { id: 'fl5', thai: 'เหม็น', meaning: '臭', category: 'feeling' },
+  { id: 'fl6', thai: 'คัน', meaning: '癢', category: 'feeling' },
+  { id: 'fl7', thai: 'เจ็บ', meaning: '痛', category: 'feeling' },
+  { id: 'fl8', thai: 'สบาย', meaning: '舒服', category: 'feeling' },
+  { id: 'fl9', thai: 'แห้ง', meaning: '乾', category: 'feeling' },
+  { id: 'fl10', thai: 'เปียก', meaning: '濕', category: 'feeling' },
+  { id: 'fl11', thai: 'อึดอัด', meaning: '悶／不適', category: 'feeling' },
+  { id: 'fl12', thai: 'มึน', meaning: '暈', category: 'feeling' },
+  { id: 'fl13', thai: 'อ่อนเพลีย', meaning: '疲憊', category: 'feeling' },
+  { id: 'fl14', thai: 'นุ่ม', meaning: '軟', category: 'feeling' },
+  { id: 'fl15', thai: 'แข็ง', meaning: '硬', category: 'feeling' },
+
+  // 情緒
+  { id: 'em1', thai: 'ดีใจ', meaning: '開心', category: 'emotion' },
+  { id: 'em2', thai: 'เศร้า', meaning: '難過', category: 'emotion' },
+  { id: 'em3', thai: 'โกรธ', meaning: '生氣', category: 'emotion' },
+  { id: 'em4', thai: 'กลัว', meaning: '害怕', category: 'emotion' },
+  { id: 'em5', thai: 'รัก', meaning: '愛', category: 'emotion' },
+  { id: 'em6', thai: 'เกลียด', meaning: '討厭', category: 'emotion' },
+  { id: 'em7', thai: 'ประหลาดใจ', meaning: '驚訝', category: 'emotion' },
+  { id: 'em8', thai: 'อาย', meaning: '害羞', category: 'emotion' },
+  { id: 'em9', thai: 'กังวล', meaning: '擔心', category: 'emotion' },
+  { id: 'em10', thai: 'ภูมิใจ', meaning: '驕傲', category: 'emotion' },
+  { id: 'em11', thai: 'เสียใจ', meaning: '後悔／難過', category: 'emotion' },
+  { id: 'em12', thai: 'ตื่นเต้น', meaning: '興奮', category: 'emotion' },
+  { id: 'em13', thai: 'เบื่อ', meaning: '無聊', category: 'emotion' },
+  { id: 'em14', thai: 'อารมณ์', meaning: '情緒', category: 'emotion' },
+  { id: 'em15', thai: 'ความสุข', meaning: '快樂／幸福', category: 'emotion' },
+]

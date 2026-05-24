@@ -1,0 +1,34 @@
+{
+  "note": "外部 RSS 來源 · Google News 搜尋各 ticker",
+  "feeds": [
+    {
+      "id": "google-news",
+      "name": "Google News",
+      "template": "https://news.google.com/rss/search?q={query}&hl=en-US&gl=US&ceid=US:en"
+    }
+  ],
+  "tickers": {
+    "GOOGL": { "query": "GOOGL OR Alphabet stock" },
+    "NVDA": { "query": "NVDA OR NVIDIA stock" },
+    "AMD": { "query": "AMD stock" },
+    "ARM": { "query": "ARM stock OR Arm Holdings" },
+    "ANET": { "query": "ANET OR Arista stock" },
+    "VRT": { "query": "VRT OR Vertiv stock" },
+    "SMCI": { "query": "SMCI OR Super Micro stock" },
+    "IREN": { "query": "IREN OR Iris Energy stock" },
+    "PLTR": { "query": "PLTR OR Palantir stock" },
+    "CRCL": { "query": "CRCL OR Circle stablecoin stock" },
+    "SNOW": { "query": "SNOW OR Snowflake stock" },
+    "SIVE": { "query": "SIVEF OR Sivers Semiconductors" }
+  },
+  "macroFeeds": [
+    {
+      "name": "Google News · AI stocks",
+      "query": "AI stocks OR Nvidia OR hyperscaler capex"
+    },
+    {
+      "name": "Google News · Fed rates",
+      "query": "Federal Reserve interest rates OR treasury yield"
+    }
+  ]
+}

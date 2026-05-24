@@ -1,0 +1,222 @@
+{
+  "asOf": "2026-05-24",
+  "timezone": "America/New_York",
+  "note": "宏觀公布日為慣例時段 · 財報窗口為估計 · 以官方/IR 為準",
+  "items": [
+    {
+      "date": "2026-05-25",
+      "kind": "holiday",
+      "title": "Memorial Day",
+      "detail": "NYSE / Nasdaq 全日休市",
+      "impact": "high"
+    },
+    {
+      "date": "2026-06-05",
+      "time": "08:30",
+      "kind": "macro",
+      "title": "非農就業 NFP",
+      "detail": "就業報告 · 利率路徑敏感",
+      "impact": "high",
+      "tickers": ["GOOGL", "NVDA", "CRCL", "PLTR"]
+    },
+    {
+      "date": "2026-06-10",
+      "time": "08:30",
+      "kind": "macro",
+      "title": "CPI 通脹",
+      "detail": "消費者物價 · 估值/利率預期",
+      "impact": "high",
+      "tickers": ["GOOGL", "NVDA", "SNOW", "PLTR"]
+    },
+    {
+      "date": "2026-06-11",
+      "time": "08:30",
+      "kind": "macro",
+      "title": "PPI 生產者物價",
+      "detail": "上游通脹 · 毛利預期",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-06-16",
+      "kind": "macro",
+      "title": "FOMC 首日",
+      "detail": "利率決議 + 點陣圖 · 記者會翌日",
+      "impact": "high",
+      "tickers": ["GOOGL", "NVDA", "CRCL", "IREN", "VRT"]
+    },
+    {
+      "date": "2026-06-17",
+      "time": "14:30",
+      "kind": "macro",
+      "title": "FOMC 記者會",
+      "detail": "Powell 講話 · 波動常放大",
+      "impact": "high"
+    },
+    {
+      "date": "2026-06-19",
+      "kind": "holiday",
+      "title": "Juneteenth",
+      "detail": "NYSE 全日休市",
+      "impact": "high"
+    },
+    {
+      "date": "2026-06-26",
+      "time": "08:30",
+      "kind": "macro",
+      "title": "PCE 通脹（Fed 偏好）",
+      "detail": "核心 PCE · 降息預期錨",
+      "impact": "high",
+      "tickers": ["GOOGL", "CRCL", "SNOW"]
+    },
+    {
+      "date": "2026-07-02",
+      "kind": "early",
+      "title": "提早收市",
+      "detail": "美東 13:00 收盤（獨立日前）",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-07-03",
+      "kind": "holiday",
+      "title": "Independence Day（補假）",
+      "detail": "NYSE 全日休市",
+      "impact": "high"
+    },
+    {
+      "date": "2026-07-15",
+      "time": "08:30",
+      "kind": "macro",
+      "title": "CPI",
+      "detail": "7 月通脹數據",
+      "impact": "high"
+    },
+    {
+      "date": "2026-07-28",
+      "kind": "macro",
+      "title": "FOMC 首日",
+      "detail": "7 月利率決議",
+      "impact": "high"
+    },
+    {
+      "date": "2026-07-29",
+      "time": "14:30",
+      "kind": "macro",
+      "title": "FOMC 記者會",
+      "detail": "",
+      "impact": "high"
+    },
+    {
+      "date": "2026-07-23",
+      "kind": "earnings",
+      "title": "GOOGL Q2 財報",
+      "detail": "關注 Cloud%、積壓、Capex 指引",
+      "impact": "high",
+      "tickers": ["GOOGL"]
+    },
+    {
+      "date": "2026-07-29",
+      "kind": "earnings",
+      "title": "AMD Q2 財報",
+      "detail": "MI 營收、毛利率、指引",
+      "impact": "high",
+      "tickers": ["AMD"]
+    },
+    {
+      "date": "2026-07-30",
+      "kind": "earnings",
+      "title": "META Q2（對標 GOOGL）",
+      "detail": "廣告 + AI Capex · 非持倉但影響情緒",
+      "impact": "medium",
+      "tickers": ["GOOGL"]
+    },
+    {
+      "date": "2026-08-05",
+      "kind": "earnings",
+      "title": "PLTR Q2 財報",
+      "detail": "商業增速、NDR、Rule of 40",
+      "impact": "high",
+      "tickers": ["PLTR"]
+    },
+    {
+      "date": "2026-08-06",
+      "kind": "earnings",
+      "title": "ARM Q1 FY27",
+      "detail": "Royalty、AI 設計贏單",
+      "impact": "high",
+      "tickers": ["ARM"]
+    },
+    {
+      "date": "2026-08-20",
+      "kind": "earnings",
+      "title": "SNOW Q2 財報",
+      "detail": "NDR、Cortex、消費增速",
+      "impact": "high",
+      "tickers": ["SNOW"]
+    },
+    {
+      "date": "2026-08-27",
+      "kind": "earnings",
+      "title": "NVDA Q2 FY27",
+      "detail": "DC 營收、毛利率、Q3 指引",
+      "impact": "high",
+      "tickers": ["NVDA"]
+    },
+    {
+      "date": "2026-08-28",
+      "kind": "earnings",
+      "title": "CRCL Q2 財報",
+      "detail": "USDC 流通、儲備收益、Arc 進度",
+      "impact": "high",
+      "tickers": ["CRCL"]
+    },
+    {
+      "date": "2026-09-07",
+      "kind": "holiday",
+      "title": "Labor Day",
+      "detail": "NYSE 全日休市",
+      "impact": "high"
+    },
+    {
+      "date": "2026-11-26",
+      "kind": "holiday",
+      "title": "Thanksgiving",
+      "detail": "NYSE 全日休市",
+      "impact": "high"
+    },
+    {
+      "date": "2026-11-27",
+      "kind": "early",
+      "title": "感恩後提早收市",
+      "detail": "美東 13:00 收盤",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-12-24",
+      "kind": "early",
+      "title": "聖誕前夕提早收市",
+      "detail": "美東 13:00 收盤",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-12-25",
+      "kind": "holiday",
+      "title": "Christmas",
+      "detail": "NYSE 全日休市",
+      "impact": "high"
+    }
+  ],
+  "earningsFocus": [
+    { "ticker": "GOOGL", "period": "Q2", "window": "約 7/23", "focus": "Cloud·Capex·Search" },
+    { "ticker": "NVDA", "period": "Q2 FY27", "window": "約 8/27", "focus": "DC·指引·毛利" },
+    { "ticker": "AMD", "period": "Q2", "window": "約 7/29", "focus": "MI·margin" },
+    { "ticker": "CRCL", "period": "Q2", "window": "約 8/28", "focus": "USDC·SOFR·Arc" },
+    { "ticker": "PLTR", "period": "Q2", "window": "約 8/05", "focus": "商業·NDR" },
+    { "ticker": "SNOW", "period": "Q2", "window": "約 8/20", "focus": "NDR·Cortex" },
+    { "ticker": "ARM", "period": "Q1", "window": "約 8/06", "focus": "Royalty" },
+    { "ticker": "ANET", "period": "Q2", "window": "約 8 月", "focus": "訂單 vs Capex" },
+    { "ticker": "VRT", "period": "Q2", "window": "約 8 月", "focus": "積壓訂單" },
+    { "ticker": "IREN", "period": "Q4/FY", "window": "約 8 月", "focus": "ARR·GPU" },
+    { "ticker": "SMCI", "period": "FY Q4", "window": "約 8 月", "focus": "毛利·指引" },
+    { "ticker": "SIVE", "period": "Q2", "window": "約 8 月", "focus": "光電·Pipeline" }
+  ]
+}

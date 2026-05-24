@@ -1,0 +1,82 @@
+@import 'tailwindcss';
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    'PingFang TC',
+    'Microsoft JhengHei',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.thai-text {
+  font-family: 'Noto Sans Thai', 'Thonburi', system-ui, sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* 泰文發音著色：輔音 / 母音 / 聲調 */
+.thai-part-consonant {
+  color: #2563eb;
+}
+
+.thai-part-vowel {
+  color: #ea580c;
+}
+
+.thai-part-tone {
+  color: #7c3aed;
+  font-weight: 700;
+}
+
+.thai-part-other {
+  color: #334155;
+}
+
+/* K 歌字幕：未唱 / 正在唱 / 已唱 */
+.karaoke-line {
+  line-height: 1.6;
+}
+
+.karaoke-unit {
+  display: inline-block;
+  transition:
+    transform 0.12s ease,
+    opacity 0.15s ease,
+    filter 0.15s ease;
+}
+
+.karaoke-dim {
+  opacity: 0.28 !important;
+  filter: grayscale(0.4);
+}
+
+.karaoke-unit-pending .karaoke-dim {
+  opacity: 0.28 !important;
+}
+
+.karaoke-unit-active {
+  transform: scale(1.12);
+  filter: drop-shadow(0 0 10px rgba(251, 191, 36, 0.75));
+}
+
+.karaoke-unit-active .thai-part-consonant,
+.karaoke-unit-active .thai-part-vowel,
+.karaoke-unit-active .thai-part-tone,
+.karaoke-unit-active .thai-part-other {
+  opacity: 1 !important;
+  filter: none;
+  color: #fef08a !important;
+}
+
+.karaoke-unit-sung .thai-part-consonant,
+.karaoke-unit-sung .thai-part-vowel,
+.karaoke-unit-sung .thai-part-tone,
+.karaoke-unit-sung .thai-part-other {
+  opacity: 1 !important;
+  filter: none;
+}

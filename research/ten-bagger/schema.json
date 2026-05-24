@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ten-bagger-scenario-us",
+  "title": "TenBaggerScenarioUS",
+  "description": "美股為主之 10 倍股情形收集結構",
+  "type": "object",
+  "required": ["ticker", "name", "market", "status", "oneLiner", "drivers", "scenarios"],
+  "properties": {
+    "ticker": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9.]{0,9}$",
+      "description": "美股代碼，大寫，如 AAPL、BRK.B"
+    },
+    "name": { "type": "string" },
+    "market": {
+      "type": "string",
+      "const": "US",
+      "description": "本庫預設僅收 US；其他市場請另建檔並註明"
+    },
+    "exchange": { "enum": ["NASDAQ", "NYSE", "AMEX", "OTC", "OTHER"] },
+    "listingType": { "enum": ["common", "ADR"], "default": "common" },
+    "currency": { "type": "string", "const": "USD" },
+    "cik": { "type": "string", "description": "SEC CIK，可含前導零" },
+    "fiscalYearEndMonth": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 12,
+      "description": "財年結束月份，1=1月"
+    },
+    "status": { "enum": ["watch", "research", "ready", "hold", "pass"] },
+    "gicsSector": { "type": "string" },
+    "marketCapTier": {
+      "enum": ["nano", "micro", "small", "mid", "large"]
+    },
+    "addedAt": { "type": "string", "format": "date" },
+    "reviewBy": { "type": "string", "format": "date" },
+    "oneLiner": { "type": "string", "maxLength": 280 },
+    "drivers": {
+      "type": "array",
+      "items": {
+        "enum": ["tam", "volume", "margin", "multiple", "capital", "turnaround", "platform"]
+      },
+      "minItems": 1
+    },
+    "confidence": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "horizonYears": { "type": "number", "minimum": 1, "maximum": 15 },
+    "benchmark": {
+      "type": "string",
+      "description": "機會成本對標，如 QQQ、IWM、XLK",
+      "examples": ["QQQ", "IWM"]
+    },
+    "correlationToPortfolio": { "enum": ["high", "medium", "low"] },
+    "currentPriceUsd": { "type": "number" },
+    "marketCapUsd": { "type": "number" },
+    "sharesDiluted": { "type": "number" },
+    "sbcPctRevenue": { "type": "number", "description": "Stock-based comp / revenue" },
+    "shortPctFloat": { "type": "number" },
+    "insiderPct": { "type": "number" },
+    "scenarios": {
+      "type": "object",
+      "required": ["bull", "base", "bear"],
+      "properties": {
+        "bull": { "$ref": "#/$defs/scenarioLeg" },
+        "base": { "$ref": "#/$defs/scenarioLeg" },
+        "bear": { "$ref": "#/$defs/scenarioLeg" }
+      }
+    },
+    "killConditions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "catalysts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": { "type": "string" },
+          "event": { "type": "string" },
+          "type": {
+            "enum": ["earnings", "guidance", "investor_day", "fda", "index", "lockup", "macro", "other"]
+          },
+          "impact": { "enum": ["high", "medium", "low"] }
+        }
+      }
+    },
+    "metrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "current": { "type": "string" },
+          "bullTarget": { "type": "string" },
+          "source": { "type": "string", "examples": ["10-Q", "earnings call", "investor deck"] }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" }
+    },
+    "notes": { "type": "string" }
+  },
+  "$defs": {
+    "scenarioLeg": {
+      "type": "object",
+      "required": ["probability", "narrative", "priceTargetMultiple"],
+      "properties": {
+        "probability": { "type": "number", "minimum": 0, "maximum": 1 },
+        "narrative": { "type": "string" },
+        "priceTargetMultiple": { "type": "number" },
+        "targetMarketCapUsd": { "type": "number" },
+        "keyAssumptions": { "type": "array", "items": { "type": "string" } },
+        "year": { "type": "integer" }
+      }
+    }
+  }
+}
