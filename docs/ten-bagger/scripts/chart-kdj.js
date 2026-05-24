@@ -208,14 +208,27 @@ export function createChartController(opts) {
     });
   });
 
-  let resizeObs;
-  if (typeof ResizeObserver !== 'undefined') {
-    resizeObs = new ResizeObserver(() => {
-      candleChart.applyOptions({ width: candleEl.clientWidth, height: candleEl.clientHeight });
-      kdjChart.applyOptions({ width: kdjEl.clientWidth, height: kdjEl.clientHeight });
-    });
-    resizeObs.observe(candleEl.parentElement);
+  function resizeCharts() {
+    const cw = candleEl.clientWidth;
+    const ch = candleEl.clientHeight;
+    const kw = kdjEl.clientWidth;
+    const kh = kdjEl.clientHeight;
+    if (cw > 0 && ch > 0) candleChart.applyOptions({ width: cw, height: ch });
+    if (kw > 0 && kh > 0) kdjChart.applyOptions({ width: kw, height: kh });
   }
+
+  let resizeObs;
+  const resizeTarget = candleEl.closest('.chart-section') || candleEl.parentElement;
+  if (typeof ResizeObserver !== 'undefined' && resizeTarget) {
+    resizeObs = new ResizeObserver(() => resizeCharts());
+    resizeObs.observe(resizeTarget);
+  }
+  const onOrientation = () => {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(resizeCharts);
+    });
+  };
+  window.addEventListener('orientationchange', onOrientation);
 
   const cache = new Map();
 
@@ -249,6 +262,7 @@ export function createChartController(opts) {
 
       candleChart.timeScale().fitContent();
       kdjChart.timeScale().fitContent();
+      requestAnimationFrame(resizeCharts);
       candleChart.timeScale().subscribeVisibleLogicalRangeChange((range) => {
         if (range) kdjChart.timeScale().setVisibleLogicalRange(range);
       });
@@ -267,6 +281,7 @@ export function createChartController(opts) {
 
   function destroy() {
     resizeObs?.disconnect();
+    window.removeEventListener('orientationchange', onOrientation);
     candleChart.remove();
     kdjChart.remove();
   }
