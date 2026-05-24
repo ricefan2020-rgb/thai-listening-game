@@ -1,0 +1,191 @@
+{
+  "asOf": "2026-05-24",
+  "note": "核心數字來自公司檔/季報披露 · 非即時估值",
+  "tickers": {
+    "GOOGL": {
+      "name": "Alphabet",
+      "cap": "Mega",
+      "tenX": "錨 2–3x",
+      "conf": 3,
+      "rateSens": "低～中",
+      "kpis": [
+        { "k": "Q1 總營收", "v": "$109.9B", "yoy": "+22%" },
+        { "k": "Cloud", "v": "$20.0B", "yoy": "+63%" },
+        { "k": "Cloud 積壓", "v": "~$462B", "hint": "qoq 近翻倍" },
+        { "k": "營業利潤率", "v": "36.1%", "yoy": "+30% 利潤" },
+        { "k": "2026 Capex 指引", "v": "$180–190B", "hint": "2027 再增" },
+        { "k": "Search 廣告", "v": "~$60.4B", "yoy": "+19%" }
+      ],
+      "scenarios": { "bull": "2.5–3x", "base": "1.5–2x", "bear": "0.6–0.7x" },
+      "flags": ["$5k首選", "回調中"]
+    },
+    "NVDA": {
+      "name": "NVIDIA",
+      "cap": "L",
+      "tenX": "10x 低",
+      "conf": 2,
+      "rateSens": "中",
+      "kpis": [
+        { "k": "Q1 FY27 營收", "v": "$81.6B", "yoy": "+85%" },
+        { "k": "Data Center", "v": "$75.2B", "yoy": "+92%" },
+        { "k": "Q2 指引", "v": "$91B", "hint": "±2%；不含中國 DC" },
+        { "k": "毛利率指引", "v": "~75%", "hint": "GAAP/non-GAAP" },
+        { "k": "回購授權", "v": "+$80B", "hint": "季息 $0.25" },
+        { "k": "股東回饋 Q1", "v": "~$20B", "hint": "回購+股息" }
+      ],
+      "scenarios": { "bull": "2–3x", "base": "1.3–1.8x", "bear": "0.5–0.6x" },
+      "flags": ["財報後回撤"]
+    },
+    "AMD": {
+      "name": "AMD",
+      "cap": "L",
+      "tenX": "10x 中",
+      "conf": 3,
+      "rateSens": "中",
+      "kpis": [
+        { "k": "定位", "v": "MI + EPYC", "hint": "AI GPU #2" },
+        { "k": "催化", "v": "MI 放量", "hint": "DC 營收增速" },
+        { "k": "對標", "v": "NVDA 份額", "hint": "寡占下取利基" },
+        { "k": "風險", "v": "毛利/指引", "hint": "週期+競爭" }
+      ],
+      "scenarios": { "bull": "8–10x", "base": "2–3x", "bear": "0.4–0.5x" },
+      "flags": ["偏強"]
+    },
+    "ARM": {
+      "name": "ARM",
+      "cap": "L",
+      "tenX": "10x 中",
+      "conf": 3,
+      "rateSens": "中",
+      "kpis": [
+        { "k": "模式", "v": "版稅 + 設計贏單", "hint": "非晶圓廠" },
+        { "k": "AI", "v": "Neoverse / 邊緣", "hint": "資料中心 IP" },
+        { "k": "催化", "v": "Royalty 率", "hint": "季報" }
+      ],
+      "scenarios": { "bull": "6–8x", "base": "2x", "bear": "0.5x" },
+      "flags": ["偏強"]
+    },
+    "ANET": {
+      "name": "Arista",
+      "cap": "L",
+      "tenX": "10x 中",
+      "conf": 3,
+      "rateSens": "中",
+      "kpis": [
+        { "k": "主線", "v": "AI 以太網", "hint": "Capex 鏈" },
+        { "k": "技術面", "v": "近月弱", "hint": "~-11% / 1月" },
+        { "k": "催化", "v": "訂單 vs 雲 Capex", "hint": "季報" }
+      ],
+      "scenarios": { "bull": "5–7x", "base": "2x", "bear": "0.5x" },
+      "flags": ["回落"]
+    },
+    "VRT": {
+      "name": "Vertiv",
+      "cap": "M",
+      "tenX": "10x 中高",
+      "conf": 3,
+      "rateSens": "中",
+      "kpis": [
+        { "k": "主線", "v": "電力/冷卻", "hint": "AI DC 物理層" },
+        { "k": "技術面", "v": "短期急跌", "hint": "5日 ~-12%" },
+        { "k": "催化", "v": "訂單積壓", "hint": "季報" }
+      ],
+      "scenarios": { "bull": "8–10x", "base": "2–3x", "bear": "0.4x" },
+      "flags": ["回落"]
+    },
+    "SMCI": {
+      "name": "Super Micro",
+      "cap": "M",
+      "tenX": "高波動",
+      "conf": 2,
+      "rateSens": "高",
+      "kpis": [
+        { "k": "主線", "v": "AI 伺服器", "hint": "週期股" },
+        { "k": "風險", "v": "治理/毛利", "hint": "內控歷史" },
+        { "k": "波動", "v": "極高", "hint": "非穩健核心倉" }
+      ],
+      "scenarios": { "bull": "5–10x", "base": "1–2x", "bear": "0.2–0.3x" },
+      "flags": ["高風險"]
+    },
+    "IREN": {
+      "name": "IREN",
+      "cap": "M",
+      "tenX": "10x 中高",
+      "conf": 2,
+      "rateSens": "高",
+      "kpis": [
+        { "k": "轉型", "v": "礦 → AI Cloud", "hint": "GPU 託管" },
+        { "k": "合約", "v": "NVDA ~$3.4B", "hint": "ARR 敘事" },
+        { "k": "財務", "v": "可轉債/虧損", "hint": "稀釋風險" },
+        { "k": "營收", "v": "~$145M", "hint": "過渡期" }
+      ],
+      "scenarios": { "bull": "8–10x", "base": "2–3x", "bear": "0.2–0.3x" },
+      "flags": ["彩票型"]
+    },
+    "PLTR": {
+      "name": "Palantir",
+      "cap": "L",
+      "tenX": "10x 中高",
+      "conf": 3,
+      "rateSens": "中～高",
+      "kpis": [
+        { "k": "產品", "v": "AIP + Ontology", "hint": "政府+商業" },
+        { "k": "關鍵", "v": "商業增速/NDR", "hint": "Rule of 40" },
+        { "k": "技術面", "v": "自高點 ~-15%", "hint": "估值爭議" },
+        { "k": "$5k", "v": "次選", "hint": "成長/波動" }
+      ],
+      "scenarios": { "bull": "8–10x", "base": "3–4x", "bear": "0.4x" },
+      "flags": ["回落"]
+    },
+    "CRCL": {
+      "name": "Circle",
+      "cap": "L",
+      "tenX": "10x 中",
+      "conf": 3,
+      "rateSens": "高",
+      "kpis": [
+        { "k": "Q1 收入+儲備", "v": "$694M", "yoy": "+20%" },
+        { "k": "Adj. EBITDA", "v": "$151M", "yoy": "+24%", "hint": "margin 53%" },
+        { "k": "USDC 流通", "v": "$77.0B", "yoy": "+28%", "hint": "環比持平 · 見穩定幣分頁即時" },
+        { "k": "USDT 流通", "v": "~$189B", "hint": "DeFiLlama · 份額領先" },
+        { "k": "USDC 份額", "v": "~29%", "hint": "佔 USDC+USDT" },
+        { "k": "鏈上交易量", "v": "$21.5T", "yoy": "+263%" },
+        { "k": "淨利", "v": "$55M", "yoy": "-15%" },
+        { "k": "Arc 預售", "v": "$222M", "hint": "FDV $3B" },
+        { "k": "儲備收益率", "v": "3.5%", "hint": "跟 SOFR -66bps" }
+      ],
+      "scenarios": { "bull": "4–6x", "base": "1.5–2.5x", "bear": "0.4–0.6x" },
+      "flags": ["穩定幣+AI Agent"]
+    },
+    "SNOW": {
+      "name": "Snowflake",
+      "cap": "M+",
+      "tenX": "10x 中",
+      "conf": 2,
+      "rateSens": "中～高",
+      "kpis": [
+        { "k": "主線", "v": "數據雲", "hint": "Cortex AI" },
+        { "k": "關鍵", "v": "NDR 修復", "hint": "消費增速" },
+        { "k": "估值", "v": "高 PS", "hint": "成長股" }
+      ],
+      "scenarios": { "bull": "6–8x", "base": "2x", "bear": "0.4x" },
+      "flags": ["偏強"]
+    },
+    "SIVE": {
+      "name": "Sivers",
+      "cap": "S",
+      "tenX": "10x 中高",
+      "conf": 2,
+      "rateSens": "高",
+      "kpis": [
+        { "k": "FY25 營收", "v": "SEK 306.6M", "yoy": "+25%" },
+        { "k": "淨利", "v": "SEK -222.6M", "hint": "仍虧損" },
+        { "k": "Pipeline", "v": "$453M", "hint": "非收入" },
+        { "k": "光電 Q4", "v": "Adj. EBITDA+", "hint": "拐點信號" },
+        { "k": "催化", "v": "CPO/Nasdaq", "hint": "POET 合作" }
+      ],
+      "scenarios": { "bull": "8–10x", "base": "2–3x", "bear": "0.3–0.5x" },
+      "flags": ["護城河弱", "勿全倉"]
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "asOf": "2026-05-24",
+  "note": "研究筆記摘要 · 請以公司 IR/SEC 原文為準",
+  "items": [
+    {
+      "date": "2026-05-20",
+      "tickers": ["NVDA"],
+      "headline": "Q1 FY27 營收創高 $81.6B（+85% YoY）",
+      "detail": "Data Center $75.2B（+92%）；Q2 指引 $91B±2%；另增 $80B 回購、季息升至 $0.25",
+      "sentiment": "mixed",
+      "impact": "high",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2027/default.aspx"
+    },
+    {
+      "date": "2026-05-20",
+      "tickers": ["GOOGL"],
+      "headline": "Google I/O：25 年來最大 Search 改版（Gemini 3.5 Flash）",
+      "detail": "AI Mode 月活約 10 億；推 Information Agents；Gemini 月活約 9 億",
+      "sentiment": "positive",
+      "impact": "high",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/"
+    },
+    {
+      "date": "2026-05-20",
+      "tickers": ["GOOGL"],
+      "headline": "高盛重申 Buy，目標價 $450",
+      "detail": "指 I/O、Cloud、Gemini 整合進展；市場亦關注 Capex 與估值",
+      "sentiment": "positive",
+      "impact": "medium",
+      "url": "https://uk.investing.com/news/stock-market-news/goldman-sachs-reiterates-alphabet-stock-rating-on-ai-progress-93CH-4691905"
+    },
+    {
+      "date": "2026-05-11",
+      "tickers": ["CRCL"],
+      "headline": "Q1 收入+儲備 $694M（+20%）；USDC 流通 $77B",
+      "detail": "Adj. EBITDA $151M（+24%）；鏈上量 $21.5T（+263%）；淨利 $55M（-15%）",
+      "sentiment": "mixed",
+      "impact": "high",
+      "url": "https://www.circle.com/pressroom/circle-reports-first-quarter-2026-results"
+    },
+    {
+      "date": "2026-05-11",
+      "tickers": ["CRCL"],
+      "headline": "Arc 代幣預售籌 $222M（FDV $3B）",
+      "detail": "a16z 領投；BlackRock、Apollo、ICE 等參與；首日股價曾漲約 16%",
+      "sentiment": "positive",
+      "impact": "high",
+      "url": "https://www.cnbc.com/2026/05/11/circle-closes-222-million-from-blackrock-apollo-for-arc-blockchain.html"
+    },
+    {
+      "date": "2026-05-11",
+      "tickers": ["CRCL"],
+      "headline": "H.C. Wainwright 升級至 Buy，目標 $150",
+      "detail": "看好 Arc/ARC 價值；催化：CLARITY 立法、Arc mainnet（或 Q3）",
+      "sentiment": "positive",
+      "impact": "medium",
+      "url": "https://ca.investing.com/news/stock-market-news/hc-wainwright-upgrades-circle-internet-stock-rating-to-buy-on-arc-blockchain-93CH-4644962"
+    },
+    {
+      "date": "2026-05-11",
+      "tickers": ["CRCL"],
+      "headline": "財報後股價波動：收入略低共識、EPS 小勝",
+      "detail": "媒體稱收入約 $694M vs 預期 ~$722M；Arc 消息後盤中曾大幅拉升",
+      "sentiment": "mixed",
+      "impact": "medium",
+      "url": "https://www.cnbc.com/2026/05/11/circle-closes-222-million-from-blackrock-apollo-for-arc-blockchain.html"
+    },
+    {
+      "date": "2026-05-11",
+      "tickers": ["CRCL"],
+      "headline": "推出 Circle Agent Stack（AI 代理錢包/微支付）",
+      "detail": "主打 x402 代理支付；USDC 結算占 x402 流量絕大多數（公司稱法）",
+      "sentiment": "positive",
+      "impact": "medium",
+      "url": "https://www.circle.com/pressroom/circle-reports-first-quarter-2026-results"
+    },
+    {
+      "date": "2026-05-20",
+      "tickers": ["GOOGL"],
+      "headline": "密蘇里州 $150 億基建投資（含新數據中心）",
+      "detail": "呼應 AI/Capex 擴張主題；與雲+自研 TPU 長期產能相關",
+      "sentiment": "neutral",
+      "impact": "medium",
+      "url": "https://uk.investing.com/news/stock-market-news/goldman-sachs-reiterates-alphabet-stock-rating-on-ai-progress-93CH-4691905"
+    },
+    {
+      "date": "2026-05-20",
+      "tickers": ["NVDA"],
+      "headline": "財報後股價偏弱：業績超預期但預期已極高",
+      "detail": "市場解讀為「好還不夠好」；指引未含中國 DC 收入",
+      "sentiment": "mixed",
+      "impact": "medium",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2027/default.aspx"
+    }
+  ]
+}

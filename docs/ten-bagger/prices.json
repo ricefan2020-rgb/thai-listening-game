@@ -1,0 +1,72 @@
+{
+  "asOf": "2026-05-22",
+  "source": "Yahoo Finance",
+  "note": "SIVE 列 SIVEF (OTC USD)；瑞典掛牌見 SIVE.ST",
+  "quotes": {
+    "NVDA": {
+      "price": 215.33,
+      "chgPct": -1.9,
+      "currency": "USD"
+    },
+    "AMD": {
+      "price": 467.51,
+      "chgPct": 3.99,
+      "currency": "USD"
+    },
+    "ARM": {
+      "price": 306.51,
+      "chgPct": 2.78,
+      "currency": "USD"
+    },
+    "ANET": {
+      "price": 154.03,
+      "chgPct": 3.66,
+      "currency": "USD"
+    },
+    "VRT": {
+      "price": 327.46,
+      "chgPct": 1.26,
+      "currency": "USD"
+    },
+    "SMCI": {
+      "price": 35.58,
+      "chgPct": 6.34,
+      "currency": "USD"
+    },
+    "PLTR": {
+      "price": 136.88,
+      "chgPct": -0.39,
+      "currency": "USD"
+    },
+    "SNOW": {
+      "price": 172.2,
+      "chgPct": 4.02,
+      "currency": "USD"
+    },
+    "SIVE": {
+      "price": 7.42,
+      "chgPct": 17.78,
+      "currency": "USD",
+      "also": {
+        "price": 72.9,
+        "chgPct": 23.45,
+        "currency": "SEK"
+      }
+    },
+    "GOOGL": {
+      "price": 382.97,
+      "chgPct": -1.21,
+      "currency": "USD"
+    },
+    "IREN": {
+      "price": 56.83,
+      "chgPct": -2.12,
+      "currency": "USD"
+    },
+    "CRCL": {
+      "price": 113.12,
+      "chgPct": -1.53,
+      "currency": "USD"
+    }
+  }
+}

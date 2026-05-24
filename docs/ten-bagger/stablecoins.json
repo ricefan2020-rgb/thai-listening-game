@@ -1,0 +1,92 @@
+{
+  "asOf": "2026-05-24",
+  "sources": [
+    "Circle API (USDC)",
+    "DeFiLlama (USDT/USDC/DAI)"
+  ],
+  "note": "流通量為鏈上+託管口徑 · 與季報披露可能有日差 · 非投資建議",
+  "coins": {
+    "USDC": {
+      "issuer": "Circle (CRCL)",
+      "circulatingUsd": 76419966614.79991,
+      "circulatingFmt": "$76.4B",
+      "source": "circle",
+      "change7dPct": -0.8,
+      "change30dPct": -2.2,
+      "change90dPct": 2.6,
+      "vsQ1FilingPct": -0.8,
+      "q1FilingFmt": "$77B",
+      "topChains": [
+        {
+          "chain": "ETH",
+          "amountFmt": "$52.7B",
+          "sharePct": 68.9
+        },
+        {
+          "chain": "SOL",
+          "amountFmt": "$7.2B",
+          "sharePct": 9.5
+        },
+        {
+          "chain": "ARB",
+          "amountFmt": "$6.2B",
+          "sharePct": 8.1
+        },
+        {
+          "chain": "BASE",
+          "amountFmt": "$4.2B",
+          "sharePct": 5.5
+        },
+        {
+          "chain": "HYPEREVM",
+          "amountFmt": "$2.4B",
+          "sharePct": 3.2
+        },
+        {
+          "chain": "POLY",
+          "amountFmt": "$627M",
+          "sharePct": 0.8
+        },
+        {
+          "chain": "AVAX",
+          "amountFmt": "$427M",
+          "sharePct": 0.6
+        },
+        {
+          "chain": "SUI",
+          "amountFmt": "$399M",
+          "sharePct": 0.5
+        }
+      ]
+    },
+    "USDT": {
+      "issuer": "Tether",
+      "circulatingUsd": 189453843533.47754,
+      "circulatingFmt": "$189.5B",
+      "source": "defillama",
+      "change7dPct": -0.2,
+      "change30dPct": -0.1,
+      "change90dPct": 3.2
+    },
+    "DAI": {
+      "issuer": "MakerDAO",
+      "circulatingUsd": 4595067499.082678,
+      "circulatingFmt": "$4.6B",
+      "source": "defillama"
+    }
+  },
+  "market": {
+    "usdcPlusUsdtUsd": 265873810148.27747,
+    "usdcSharePct": 28.7,
+    "usdtSharePct": 71.3,
+    "usdcShareLabel": "USDC 佔 USDC+USDT 28.7%",
+    "leader": "USDT",
+    "gapFmt": "$113.0B"
+  },
+  "crcl": {
+    "ticker": "CRCL",
+    "usdcCirculatingFmt": "$76.4B",
+    "usdcShareOfDuopoly": 28.7,
+    "revenueDriver": "儲備利息 ∝ USDC 流通 × SOFR"
+  }
+}

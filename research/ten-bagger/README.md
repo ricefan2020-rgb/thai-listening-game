@@ -10,11 +10,28 @@
 
 **當前主題：AI** — 一屏總覽請開 **[index.html](./index.html)**（含 **最新現價**，見 [prices.json](./prices.json)）。更新報價：`node research/ten-bagger/scripts/update-prices.mjs`
 
+### 📱 手機使用（電腦關機也能看）
+
+**雲端版（推薦）**：[DEPLOY.md](./DEPLOY.md)
+
+```
+https://ricefan2020-rgb.github.io/thai-listening-game/ten-bagger/index.html
+```
+
+推送 `docs/` 後由 GitHub Pages 托管 · 手機「加入主畫面」即可。
+
+**同 Wi‑Fi 本機版**（Mac 需開機）：
+```bash
+node scripts/serve-mobile.mjs
+```
+
 **$5,000 單一標的**：[5k-entry-checklist.md](./5k-entry-checklist.md)（GOOGL 回調進場 · 分批 / 否決條件）
 
 **最新新聞**：[news.md](./news.md) · [news.json](./news.json)（精選 · 手動維護）
 
 **綜合報導（外部+翻譯）**：[news-digest.md](./news-digest.md) · [news-digest.json](./news-digest.json)（Google News RSS → 繁中翻譯 → 各股/市場摘要 · `node scripts/update-news-feed.mjs` · 見 [.env.example](./.env.example)）
+
+**自動翻譯**：觀察板側欄勾選「自動翻譯」即時英→繁中；Reddit 預翻譯：`node scripts/translate-sentiment.mjs`（或 `update-sentiment.mjs` 內建）
 
 **Reddit 討論**：[sentiment.md](./sentiment.md) · [sentiment.json](./sentiment.json)（r/stocks · r/wallstreetbets · r/investing · 觀察板「討論」分頁 + 頂部 Reddit 訊號列 · `node scripts/update-sentiment.mjs`，約 1 分鐘）
 
