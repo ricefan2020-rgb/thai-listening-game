@@ -366,6 +366,9 @@ const SYLLABLE_ROMAN: Record<string, string> = {
   กัน: 'kan',
   ด้วยกัน: 'duâi-kan',
   ไปกินข้าวด้วยกัน: 'pai-kin-khâo-duâi-kan',
+  ภาษาไทย: 'phasa-thai',
+  อังกฤษ: 'ang-krìt',
+  ภาษาไทยและอังกฤษ: 'phasa-thai-lae-ang-krìt',
   วันหยุด: 'wan-yút',
   ยาว: 'yaao',
   วันหยุดยาว: 'wan-yút-yaao',
@@ -847,12 +850,18 @@ function splitChuangPrefix(trimmed: string): string[] | null {
 }
 
 /** 先用詞庫最長匹配，再退回 K 歌音節切分（供拼音與句中點詞共用） */
+function phraseOverrideUnits(text: string): string[] | null {
+  const trimmed = text.trim()
+  const compact = trimmed.replace(/\s+/g, '')
+  const manual = PHRASE_SEGMENT_OVERRIDES[trimmed] ?? PHRASE_SEGMENT_OVERRIDES[compact]
+  if (manual && manual.length >= 2) return manual.map((s) => s.thai)
+  return null
+}
+
 function tokenizePhraseUnitsCoreInner(text: string): string[] {
   const trimmed = text.trim()
-  const manual = PHRASE_SEGMENT_OVERRIDES[trimmed]
-  if (manual && manual.length >= 2) {
-    return manual.map((s) => s.thai)
-  }
+  const fromOverride = phraseOverrideUnits(trimmed)
+  if (fromOverride) return fromOverride
 
   const yindiParts = splitYindiThidaiPhrase(trimmed)
   if (yindiParts) return yindiParts

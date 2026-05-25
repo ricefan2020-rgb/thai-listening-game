@@ -104,6 +104,10 @@
         color: var(--accent-strong);
       }
 
+      [hidden] {
+        display: none !important;
+      }
+
       .tab-panel {
         animation: fade-in 0.2s ease;
       }
@@ -509,22 +513,6 @@
         margin-bottom: 1rem;
       }
 
-      .chart-theory-note {
-        margin: 0 0 0.75rem;
-        line-height: 1.55;
-        font-size: 0.9rem;
-      }
-
-      .proof-block p {
-        margin: 0.5rem 0;
-        color: var(--muted);
-        line-height: 1.6;
-      }
-
-      .proof-block p strong {
-        color: var(--text);
-      }
-
       .chart-frame {
         width: 100%;
         border: 1px solid var(--line);
@@ -645,7 +633,29 @@
         line-height: 1.6;
       }
     </style>
-    <script type="module" crossorigin src="/thai-listening-game/game/assets/zeta-Dkj61mir.js"></script>
+    <script>
+      ;(function () {
+        var VALID = ['evaluate', 'exp', 'euler', 'factor', 'zeros', 'special', 'charts', 'eigen', 'diff']
+        var params = new URLSearchParams(location.search)
+        var raw = params.get('tab')
+        if (!raw) {
+          try {
+            raw = sessionStorage.getItem('zeta-active-tab')
+          } catch (e) {
+            raw = null
+          }
+        }
+        if (raw === 'cf') {
+          raw = 'exp'
+        }
+        var tab = raw && VALID.indexOf(raw) >= 0 ? raw : 'evaluate'
+        try {
+          sessionStorage.setItem('zeta-active-tab', tab)
+        } catch (e) {}
+        document.documentElement.dataset.activeTab = tab
+      })()
+    </script>
+    <script type="module" crossorigin src="/thai-listening-game/game/assets/zeta-BDti1SuQ.js"></script>
     <link rel="modulepreload" crossorigin href="/thai-listening-game/game/assets/modulepreload-polyfill-Dezn_h7o.js">
   </head>
   <body>
@@ -659,10 +669,10 @@
         </p>
         <nav class="quick-nav" aria-label="快速分析入口">
           <button type="button" data-goto-tab="factor">項分解 n=∏p^{v_p}</button>
-          <button type="button" data-goto-tab="euler">Euler 乘积验证</button>
           <button type="button" data-goto-tab="exp">e^X 形式</button>
+          <button type="button" data-goto-tab="euler">Euler 乘积验证</button>
           <button type="button" data-goto-tab="diff">向量 / 点积 / 频率</button>
-          <button type="button" data-goto-tab="charts">图表（零點放大·相位）</button>
+          <button type="button" data-goto-tab="charts">图表（螺旋·|ζ|面积）</button>
           <button type="button" data-goto-tab="eigen">矩阵特征值</button>
         </nav>
       </header>
@@ -671,7 +681,7 @@
         <div id="tab-list" class="tabs" role="tablist" aria-label="ζ 函數工具"></div>
         <p class="tabs-hint">标签较多时可左右滑动，含「Euler 乘积」「項分解」。</p>
 
-        <section data-tab-panel="evaluate" class="tab-panel">
+        <section data-tab-panel="evaluate" class="tab-panel" hidden>
           <form id="evaluate-form">
             <div class="field-row">
               <label>
@@ -693,6 +703,43 @@
             <button class="primary" type="submit">計算</button>
           </form>
           <div id="evaluate-output"></div>
+        </section>
+
+        <section data-tab-panel="exp" class="tab-panel" hidden>
+          <div class="vector-layout">
+            <aside class="vector-sidebar panel-inset">
+              <form id="exp-form" class="compact-form">
+                <div class="field-row">
+                  <label>
+                    實部 Re(s)
+                    <input id="exp-real-part" class="scalar-input" type="text" inputmode="decimal" autocomplete="off" value="2" />
+                  </label>
+                  <label>
+                    虛部 Im(s)
+                    <input id="exp-imag-part" class="scalar-input" type="text" inputmode="decimal" autocomplete="off" value="0" />
+                  </label>
+                </div>
+                <label>
+                  展示前 n 項 n^{−s}=e^X
+                  <input id="exp-term-count" type="number" min="3" max="12" value="6" />
+                </label>
+                <label>
+                  Euler 截斷素數個數
+                  <input id="exp-prime-count" type="number" min="2" max="12" value="4" />
+                </label>
+                <div class="presets">
+                  <button type="button" data-exp-preset data-re="2" data-im="0">ζ(2)</button>
+                  <button type="button" data-exp-preset data-re="0.5" data-im="5">σ=½, t=5</button>
+                </div>
+                <button class="primary" type="submit">展開 e^X</button>
+              </form>
+            </aside>
+            <div class="vector-results">
+              <div id="exp-output" class="output-stack">
+                <p class="output-empty">輸入 s 後按「展開 e^X」。</p>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section data-tab-panel="euler" class="tab-panel" hidden>
@@ -719,20 +766,8 @@
                   <button type="button" data-euler-preset data-re="2" data-im="0">ζ(2)</button>
                   <button type="button" data-euler-preset data-re="3" data-im="0">ζ(3)</button>
                 </div>
-                <label class="checkbox-row">
-                  <input id="euler-pm-pair" type="checkbox" checked />
-                  ±t 對照（同時算 σ+it 與 σ−it）
-                </label>
-                <label class="checkbox-row">
-                  <input id="euler-show-cancel" type="checkbox" checked />
-                  顯示抵消（和/差/積、共軛因子配對）
-                </label>
-                <label class="checkbox-row">
-                  <input id="euler-show-proof" type="checkbox" />
-                  顯示選讀證明（預設關；看圖表與誤差即可）
-                </label>
                 <p class="note">
-                  重點看誤差曲線與 |Im(和)|、|Re(差)| 是否趨近 0，不必先讀長證明。
+                  固定 t，看 ∏_{p≤P} p^{−s} 與真正的局部 Euler ∏(1−p^{−s})^{−1} 如何隨 P 逼近 ζ。
                 </p>
                 <button class="primary" type="submit">計算局部 Euler 逼近</button>
               </form>
@@ -740,47 +775,6 @@
             <div class="vector-results">
               <div id="euler-output" class="output-stack">
                 <p class="output-empty">按「驗證乘積」查看截斷 Euler 乘積與 1 的誤差。</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section data-tab-panel="exp" class="tab-panel" hidden>
-          <div class="vector-layout">
-            <aside class="vector-sidebar panel-inset">
-              <form id="exp-form" class="compact-form">
-                <div class="field-row">
-                  <label>
-                    實部 Re(s)
-                    <input id="exp-real-part" class="scalar-input" type="text" inputmode="decimal" autocomplete="off" value="0.5" />
-                  </label>
-                  <label>
-                    虛部 Im(s)
-                    <input id="exp-imag-part" class="scalar-input" type="text" inputmode="decimal" autocomplete="off" value="5" />
-                  </label>
-                </div>
-                <label>
-                  展示前 n 項 n^{−s}=e^X（最多 12）
-                  <input id="exp-term-count" type="number" min="3" max="12" value="6" />
-                </label>
-                <label>
-                  Euler ln ζ 截斷素數個數（最多 12）
-                  <input id="exp-prime-count" type="number" min="2" max="12" value="4" />
-                </label>
-                <div class="presets">
-                  <button type="button" data-exp-preset data-re="2" data-im="0">ζ(2)</button>
-                  <button type="button" data-exp-preset data-re="0.5" data-im="14.134725">第一零點</button>
-                  <button type="button" data-exp-preset data-re="0.5" data-im="5">σ=½, t=5</button>
-                </div>
-                <p class="note">
-                  ζ=e^X、每項 e^{−s ln n}、臨界線 ζ=e^{−iθ}Z；只顯示指數形式，不含連分數。
-                </p>
-                <button class="primary" type="submit">展開 e^X</button>
-              </form>
-            </aside>
-            <div class="vector-results">
-              <div id="exp-output" class="output-stack">
-                <p class="output-empty">輸入 s 後按「展開 e^X」。</p>
               </div>
             </div>
           </div>
@@ -854,7 +848,6 @@
                 <option value="spiral">臨界線螺旋圖</option>
                 <option value="phase">相位角 / 旋轉視圖</option>
                 <option value="phase-sweep">固定 σ，相位–t</option>
-                <option value="zero-zoom">零點處放大</option>
                 <option value="frequency">相位 → 頻率</option>
                 <option value="critical">Hardy Z(t) 臨界線</option>
                 <option value="real">實軸 ζ(s)</option>
@@ -876,20 +869,6 @@
                 <input id="integral-samples" type="number" min="100" max="4000" step="50" value="800" />
               </label>
             </div>
-            <div id="zero-zoom-controls" class="chart-controls" hidden>
-              <label>
-                零點編號 #
-                <input id="zero-zoom-index" type="number" min="1" max="20" value="1" />
-              </label>
-              <label>
-                半寬 ±Δt
-                <input id="zero-zoom-half-width" type="number" min="0.1" max="8" step="0.1" value="1.2" />
-              </label>
-              <label>
-                Re(s) σ
-                <input id="zero-zoom-sigma" class="scalar-input" type="text" inputmode="decimal" autocomplete="off" value="0.5" />
-              </label>
-            </div>
             <div id="spiral-controls" class="chart-controls">
               <label id="spiral-sigma-wrap" hidden>
                 固定 Re(s) σ
@@ -897,19 +876,7 @@
               </label>
               <label id="spiral-t-min-wrap" hidden>
                 t 下限
-                <input id="spiral-t-min" type="number" min="-200" max="200" step="0.1" value="0.5" />
-              </label>
-              <label id="spiral-pm-pair-wrap" hidden>
-                <span class="checkbox-row" style="margin:0">
-                  <input id="spiral-pm-pair" type="checkbox" checked />
-                  ±t（σ+it 與 σ−it 雙相位）
-                </span>
-              </label>
-              <label id="spiral-show-cancel-wrap" hidden>
-                <span class="checkbox-row" style="margin:0">
-                  <input id="spiral-show-cancel" type="checkbox" checked />
-                  相位抵消視圖（φ₊+φ₋≈0）
-                </span>
+                <input id="spiral-t-min" type="number" min="0" max="200" step="0.1" value="0.5" />
               </label>
               <label>
                 t 上限
@@ -920,15 +887,9 @@
                 <input id="spiral-zero-count" type="number" min="1" max="20" value="10" />
               </label>
             </div>
-            <button class="primary" id="chart-refresh" type="button">更新圖表</button>
             <button class="primary" id="download-png" type="button">下載 PNG</button>
           </div>
-          <p id="chart-mode-hint" class="note chart-mode-hint" hidden></p>
           <div id="integral-result" class="kpi-grid" hidden></div>
-          <p id="chart-theory-note" class="note chart-theory-note" hidden>
-            看圖提示：金線 ω 在 |ζ|→0 處尖峰 = 相位無定義，不是新頻率。相鄰零點間距約 Δt ≈ 2π/ln(t/2π)。
-            勾「相位抵消」時，綠線 φ₊+φ₋ 應貼近 0。
-          </p>
           <div class="chart-frame">
             <canvas id="plot-canvas" width="960" height="520"></canvas>
           </div>
@@ -1020,5 +981,37 @@
       </p>
     </div>
 
+    <script>
+      ;(function () {
+        var VALID = ['evaluate', 'exp', 'euler', 'factor', 'zeros', 'special', 'charts', 'eigen', 'diff']
+        var params = new URLSearchParams(location.search)
+        var raw = params.get('tab')
+        if (!raw) {
+          try {
+            raw = sessionStorage.getItem('zeta-active-tab')
+          } catch (e) {
+            raw = null
+          }
+        }
+        if (raw === 'cf') {
+          raw = 'exp'
+        }
+        var tab = raw && VALID.indexOf(raw) >= 0 ? raw : 'evaluate'
+        try {
+          sessionStorage.setItem('zeta-active-tab', tab)
+        } catch (e) {}
+        document.documentElement.dataset.activeTab = tab
+        document.querySelectorAll('[data-tab-panel]').forEach(function (el) {
+          var active = el.getAttribute('data-tab-panel') === tab
+          el.hidden = !active
+          el.style.display = active ? '' : 'none'
+        })
+        if (params.get('tab') !== tab) {
+          var url = new URL(location.href)
+          url.searchParams.set('tab', tab)
+          history.replaceState(null, '', url)
+        }
+      })()
+    </script>
   </body>
 </html>

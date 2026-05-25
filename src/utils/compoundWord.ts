@@ -39,6 +39,8 @@ const MORPHEME_LEXICON: { thai: string; meaning: string }[] = [
   { thai: 'กัน', meaning: '互相／一起（助詞）' },
   { thai: 'ด้วยกัน', meaning: '一起' },
   { thai: 'กิน', meaning: '吃' },
+  { thai: 'อังกฤษ', meaning: '英文' },
+  { thai: 'ภาษาไทย', meaning: '泰文' },
   { thai: 'รถ', meaning: '車' },
   { thai: 'ไฟฟ้า', meaning: '電／電力' },
   { thai: 'รถไฟฟ้า', meaning: '空鐵／地鐵' },
@@ -281,6 +283,11 @@ const PART_MEANING_IN_PHRASE: Record<string, Record<string, string>> = {
     กิน: '吃',
     ข้าว: '飯／用餐',
     ด้วยกัน: '一起',
+  },
+  ภาษาไทยและอังกฤษ: {
+    ภาษาไทย: '泰文',
+    และ: '和',
+    อังกฤษ: '英文',
   },
   กุ้งมังกร: {
     กุ้ง: '蝦',

@@ -69,7 +69,7 @@ export default function App() {
   const [questions, setQuestions] = useState<QuizQuestion[]>([])
   const [roundResult, setRoundResult] = useState<RoundResult | null>(null)
 
-  const { progress, addWrong, removeWrong, recordAnswer } = useProgress()
+  const { progress, addWrong, removeWrong, recordAnswer, undoAnswer } = useProgress()
   const { speechRate, setSpeechRate } = useSpeechRate()
   const { speak, stop, speaking, hasThaiVoice, karaoke, resetKaraoke } = useSpeech(speechRate)
 
@@ -224,6 +224,37 @@ export default function App() {
       }
     },
     [mode, studyLevel, isPhoneticsQuiz, pointsPerCorrect, recordAnswer, removeWrong, addWrong],
+  )
+
+  const handleUndoAnswer = useCallback(
+    (wasCorrect: boolean, question: QuizQuestion) => {
+      undoAnswer(wasCorrect, wasCorrect ? pointsPerCorrect : 0)
+      if (wasCorrect) {
+        if (mode === 'review') {
+          addWrong({
+            id: question.item.id,
+            thai: question.item.thai,
+            meaning: question.item.meaning,
+            level: isPhoneticsQuiz
+              ? question.item.id.startsWith('t')
+                ? 'tone'
+                : 'vowel'
+              : studyLevel,
+          })
+        }
+      } else {
+        removeWrong(question.item.id)
+      }
+    },
+    [
+      mode,
+      studyLevel,
+      isPhoneticsQuiz,
+      pointsPerCorrect,
+      undoAnswer,
+      addWrong,
+      removeWrong,
+    ],
   )
 
   const handleComplete = useCallback(
@@ -398,6 +429,7 @@ export default function App() {
           onSpeak={speak}
           onResetKaraoke={resetKaraoke}
           onAnswer={handleAnswer}
+          onUndoAnswer={handleUndoAnswer}
           onComplete={handleComplete}
           onQuit={() => {
             stop()

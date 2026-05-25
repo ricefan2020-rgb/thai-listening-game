@@ -117,6 +117,16 @@ export const PHRASE_SEGMENT_OVERRIDES: Record<
     { thai: 'ข้าว', meaning: '飯／用餐' },
     { thai: 'ด้วยกัน', meaning: '一起' },
   ],
+  ภาษาไทยและอังกฤษ: [
+    { thai: 'ภาษาไทย', meaning: '泰文' },
+    { thai: 'และ', meaning: '和' },
+    { thai: 'อังกฤษ', meaning: '英文' },
+  ],
+  'ภาษาไทย และ อังกฤษ': [
+    { thai: 'ภาษาไทย', meaning: '泰文' },
+    { thai: 'และ', meaning: '和' },
+    { thai: 'อังกฤษ', meaning: '英文' },
+  ],
   หลังเลิกงาน: [
     { thai: 'หลัง', meaning: '在……之後' },
     { thai: 'เลิกงาน', meaning: '下班' },

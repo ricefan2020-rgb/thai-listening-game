@@ -67,6 +67,15 @@ export function useProgress() {
     })
   }, [])
 
+  /** 撤回一題的計分（回上一題後改答案時使用） */
+  const undoAnswer = useCallback((wasCorrect: boolean, points: number) => {
+    setProgress((prev) => {
+      const score = wasCorrect ? Math.max(0, prev.score - points) : prev.score
+      const streak = wasCorrect ? Math.max(0, prev.streak - 1) : prev.streak
+      return { ...prev, score, streak }
+    })
+  }, [])
+
   const addRoundScore = useCallback((roundScore: number) => {
     setProgress((prev) => {
       const score = prev.score + roundScore
@@ -80,6 +89,7 @@ export function useProgress() {
     addWrong,
     removeWrong,
     recordAnswer,
+    undoAnswer,
     addRoundScore,
   }
 }

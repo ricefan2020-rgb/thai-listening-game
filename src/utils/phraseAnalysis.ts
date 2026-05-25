@@ -72,13 +72,19 @@ function finalize(
   }
 }
 
+function phraseSegmentOverride(thai: string) {
+  const trimmed = thai.trim()
+  const compact = trimmed.replace(/\s+/g, '')
+  return PHRASE_SEGMENT_OVERRIDES[trimmed] ?? PHRASE_SEGMENT_OVERRIDES[compact]
+}
+
 export function buildPhraseAnalysis(
   phraseId: string,
   thai: string,
   translationZh: string,
 ): PhraseAnalysis {
   const trimmed = thai.trim()
-  const override = PHRASE_SEGMENT_OVERRIDES[trimmed]
+  const override = phraseSegmentOverride(trimmed)
 
   if (override && override.length >= 2) {
     return finalize(phraseId, trimmed, translationZh, override)

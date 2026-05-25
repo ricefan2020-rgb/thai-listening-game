@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import type { KaraokeState } from '../hooks/useSpeech'
 import { SpeechSpeedControl } from './SpeechSpeedControl'
 import type { ThaiLookupKind } from '../utils/thaiLookup'
@@ -25,6 +25,7 @@ interface QuizProps {
   onSpeak: (text: string) => void
   onResetKaraoke: () => void
   onAnswer: (correct: boolean, question: QuizQuestion) => void
+  onUndoAnswer?: (wasCorrect: boolean, question: QuizQuestion) => void
   onComplete: (result: {
     correct: number
     roundScore: number
@@ -48,9 +49,12 @@ export function Quiz({
   onSpeak,
   onResetKaraoke,
   onAnswer,
+  onUndoAnswer,
   onComplete,
   onQuit,
 }: QuizProps) {
+  type AnswerRecord = { selected: number; feedback: 'correct' | 'wrong' }
+
   const [index, setIndex] = useState(0)
   const [selected, setSelected] = useState<number | null>(null)
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null)
@@ -58,14 +62,48 @@ export function Quiz({
   const [roundScore, setRoundScore] = useState(0)
   const [newWrongCount, setNewWrongCount] = useState(0)
   const [showLearnExtra, setShowLearnExtra] = useState(false)
+  const [answers, setAnswers] = useState<(AnswerRecord | null)[]>(() =>
+    Array.from({ length: questions.length }, () => null),
+  )
 
   const question = questions[index]
   const total = questions.length
+
+  const recomputeRoundStats = useCallback(
+    (records: (AnswerRecord | null)[]) => {
+      let correct = 0
+      let score = 0
+      let wrong = 0
+      for (const rec of records) {
+        if (!rec) continue
+        if (rec.feedback === 'correct') {
+          correct += 1
+          score += pointsPerCorrect
+        } else {
+          wrong += 1
+        }
+      }
+      setRoundCorrect(correct)
+      setRoundScore(score)
+      setNewWrongCount(wrong)
+    },
+    [pointsPerCorrect],
+  )
+
+  const restoreQuestionUi = useCallback((i: number, records: (AnswerRecord | null)[]) => {
+    const rec = records[i]
+    setSelected(rec?.selected ?? null)
+    setFeedback(rec?.feedback ?? null)
+  }, [])
 
   useEffect(() => {
     onResetKaraoke()
     setShowLearnExtra(false)
   }, [index, question?.item.id, onResetKaraoke])
+
+  useEffect(() => {
+    restoreQuestionUi(index, answers)
+  }, [index, answers, restoreQuestionUi])
 
   useEffect(() => {
     if (!question || !autoPlay) return
@@ -110,28 +148,58 @@ export function Quiz({
     if (selected !== null) return
 
     const correct = optionIndex === question.correctIndex
-    setSelected(optionIndex)
-    setFeedback(correct ? 'correct' : 'wrong')
-    onAnswer(correct, question)
-
-    if (correct) {
-      setRoundCorrect((c) => c + 1)
-      setRoundScore((s) => s + pointsPerCorrect)
-    } else {
-      setNewWrongCount((n) => n + 1)
+    const prev = answers[index]
+    if (prev && onUndoAnswer) {
+      onUndoAnswer(prev.feedback === 'correct', question)
     }
+
+    const record: AnswerRecord = {
+      selected: optionIndex,
+      feedback: correct ? 'correct' : 'wrong',
+    }
+    const nextAnswers = [...answers]
+    nextAnswers[index] = record
+    setAnswers(nextAnswers)
+    recomputeRoundStats(nextAnswers)
+
+    setSelected(optionIndex)
+    setFeedback(record.feedback)
+    onAnswer(correct, question)
+  }
+
+  const resetCurrentAnswer = () => {
+    const prev = answers[index]
+    if (!prev) return
+    if (onUndoAnswer) {
+      onUndoAnswer(prev.feedback === 'correct', question)
+    }
+    const nextAnswers = [...answers]
+    nextAnswers[index] = null
+    setAnswers(nextAnswers)
+    recomputeRoundStats(nextAnswers)
+    setSelected(null)
+    setFeedback(null)
+    setShowLearnExtra(false)
+  }
+
+  const goPrev = () => {
+    if (index <= 0) return
+    setIndex((i) => i - 1)
   }
 
   const goNext = () => {
+    const answered = answers[index] !== null
+    if (!answered) return
+
     if (index + 1 >= total) {
       onComplete({ correct: roundCorrect, roundScore, newWrongCount })
       return
     }
     setIndex((i) => i + 1)
-    setSelected(null)
-    setFeedback(null)
-    setShowLearnExtra(false)
   }
+
+  const canGoPrev = index > 0
+  const canGoNext = answers[index] !== null
 
   const getOptionClass = (i: number) => {
     const base = `flex min-h-[3.25rem] items-center justify-center rounded-xl px-2 py-2.5 text-center font-medium shadow-sm ring-1 transition active:scale-[0.98] ${optionSize}`
@@ -160,13 +228,24 @@ export function Quiz({
           >
             ← 返回
           </button>
-          <div className="min-w-0 text-right">
-            {topicLabel && (
-              <p className="truncate text-xs font-medium text-amber-600">{topicLabel}</p>
+          <div className="flex min-w-0 items-center gap-2">
+            {canGoPrev && (
+              <button
+                type="button"
+                onClick={goPrev}
+                className="shrink-0 rounded-lg bg-sky-100 px-2.5 py-1 text-xs font-semibold text-sky-800 ring-1 ring-sky-200 hover:bg-sky-200 sm:text-sm"
+              >
+                ← 上一題
+              </button>
             )}
-            <span className="text-sm font-medium text-slate-600">
-              {index + 1} / {total}
-            </span>
+            <div className="min-w-0 text-right">
+              {topicLabel && (
+                <p className="truncate text-xs font-medium text-amber-600">{topicLabel}</p>
+              )}
+              <span className="text-sm font-medium text-slate-600">
+                {index + 1} / {total}
+              </span>
+            </div>
           </div>
         </div>
         <div className="h-1.5 overflow-hidden rounded-full bg-slate-200">
@@ -229,6 +308,19 @@ export function Quiz({
         </p>
       </section>
 
+      {/* 題間導覽：第 2 題起隨時可回上一題 */}
+      {canGoPrev && !feedback && (
+        <div className="mt-2 shrink-0">
+          <button
+            type="button"
+            onClick={goPrev}
+            className="flex w-full items-center justify-center gap-1.5 rounded-xl bg-sky-50 py-2.5 text-sm font-semibold text-sky-800 ring-1 ring-sky-200 hover:bg-sky-100 active:scale-[0.98]"
+          >
+            ← 上一題
+          </button>
+        </div>
+      )}
+
       {/* 四選一：2×2 固定於畫面中下方，無需捲動 */}
       <section className="mt-3 grid min-h-0 flex-1 grid-cols-2 grid-rows-2 gap-2 content-stretch">
         {question.options.map((option, i) => (
@@ -249,19 +341,38 @@ export function Quiz({
         <footer className="mt-2 shrink-0 space-y-2 border-t border-slate-200 pt-2">
           <div className="flex items-center justify-between gap-2">
             <p
-              className={`text-sm font-semibold ${feedback === 'correct' ? 'text-emerald-600' : 'text-red-600'}`}
+              className={`min-w-0 text-sm font-semibold ${feedback === 'correct' ? 'text-emerald-600' : 'text-red-600'}`}
             >
               {feedback === 'correct' ? '答對了！' : '答錯了'}
               <span className="ml-2 font-normal text-slate-600">{question.item.meaning}</span>
             </p>
-            <button
-              type="button"
-              onClick={goNext}
-              className="shrink-0 rounded-lg bg-slate-900 px-4 py-2 text-sm font-semibold text-white hover:bg-slate-800"
-            >
-              {index + 1 >= total ? '結果' : '下一題'}
-            </button>
+            <div className="flex w-full shrink-0 items-center gap-2 sm:w-auto">
+              {canGoPrev && (
+                <button
+                  type="button"
+                  onClick={goPrev}
+                  className="min-w-[5.5rem] flex-1 rounded-lg bg-sky-100 px-3 py-2.5 text-sm font-semibold text-sky-800 ring-1 ring-sky-200 hover:bg-sky-200 sm:flex-none"
+                >
+                  ← 上一題
+                </button>
+              )}
+              <button
+                type="button"
+                onClick={goNext}
+                disabled={!canGoNext}
+                className="min-w-[5.5rem] flex-1 rounded-lg bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white hover:bg-slate-800 disabled:opacity-50 sm:flex-none"
+              >
+                {index + 1 >= total ? '結果' : '下一題 →'}
+              </button>
+            </div>
           </div>
+          <button
+            type="button"
+            onClick={resetCurrentAnswer}
+            className="text-xs text-slate-500 hover:text-slate-800"
+          >
+            重新作答
+          </button>
 
           {wordExtras && (
             <>
