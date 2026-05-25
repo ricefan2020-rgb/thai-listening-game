@@ -1,4 +1,5 @@
 import { estimateFlightCost, getFlightOriginLabel } from '../../data/flights'
+import { getTopFood } from '../../data/foods'
 import { getTopHotel, nightsForStay } from '../../data/hotels'
 import { calculateTripBudget } from '../../utils/budget'
 import { formatMoneyDual, formatRangeWithCnyHkd } from '../../utils/currency'
@@ -17,6 +18,7 @@ export function BlogIntro({ plan }: BlogIntroProps) {
   const activitiesTotal = estimateTripCost(plan)
   const budgetSummary = calculateTripBudget(plan)
   const topHotel = getTopHotel(config)
+  const topFood = getTopFood(config)
   const nights = nightsForStay(config.days)
   const flight = estimateFlightCost(config)
   const flightOriginLabel = getFlightOriginLabel(config.flightOrigin ?? 'taiwan')
@@ -54,21 +56,35 @@ export function BlogIntro({ plan }: BlogIntroProps) {
         </strong>
         。以下各章節可展開細讀，也能在文末匯出成 Markdown 文章備份。
       </p>
-      {topHotel && (
-        <blockquote className="blog-pullquote">
-          <p className="m-0 font-medium text-stone-800">住宿首推</p>
-          <p className="mt-1 font-medium text-stone-900">{topHotel.nameZh}</p>
-          <p className="mt-1 text-stone-600">{topHotel.pros}</p>
-          <p className="mt-2 text-stone-600">
-            {nights} 晚約{' '}
-            {formatRangeWithCnyHkd(
-              topHotel.pricePerNightThb.min * nights,
-              topHotel.pricePerNightThb.max * nights,
-              currency,
-              exchangeRate,
-            )}
-          </p>
-        </blockquote>
+      {(topHotel || topFood) && (
+        <div className="blog-intro-highlights">
+          {topHotel && (
+            <blockquote className="blog-pullquote">
+              <p className="m-0 font-medium text-stone-800">住宿首推</p>
+              <p className="mt-1 font-medium text-stone-900">{topHotel.nameZh}</p>
+              <p className="mt-1 text-stone-600">{topHotel.pros}</p>
+              <p className="mt-2 text-stone-600">
+                {nights} 晚約{' '}
+                {formatRangeWithCnyHkd(
+                  topHotel.pricePerNightThb.min * nights,
+                  topHotel.pricePerNightThb.max * nights,
+                  currency,
+                  exchangeRate,
+                )}
+              </p>
+            </blockquote>
+          )}
+          {topFood && (
+            <blockquote className="blog-pullquote blog-pullquote--food">
+              <p className="m-0 font-medium text-stone-800">美食首推</p>
+              <p className="mt-1 font-medium text-stone-900">{topFood.nameZh}</p>
+              <p className="mt-1 text-stone-600">{topFood.pros}</p>
+              {topFood.mustTry.length > 0 && (
+                <p className="mt-2 text-stone-600">必點：{topFood.mustTry.join('、')}</p>
+              )}
+            </blockquote>
+          )}
+        </div>
       )}
     </div>
   )

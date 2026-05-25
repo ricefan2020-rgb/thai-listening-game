@@ -1,3 +1,4 @@
+import { FOOD_CATEGORY_LABELS, getRecommendedFoods } from '../data/foods'
 import { HOTEL_AREA_LABELS, getRecommendedHotels, nightsForStay } from '../data/hotels'
 import { PLACES, getPlaceById } from '../data/places'
 import type {
@@ -252,6 +253,22 @@ export function exportPlanMarkdown(plan: TripPlan): string {
       `- ${nights} 晚約：${formatRangeDual(hotel.pricePerNightThb.min * nights, hotel.pricePerNightThb.max * nights, config.currency, config.exchangeRate)}`,
       `- ${hotel.pros}`,
       `- 提示：${hotel.tip}`,
+      '',
+    )
+  }
+
+  const foods = getRecommendedFoods(config, 6)
+  lines.push('', '## 美食推介', '')
+  lines.push(`- 區域：${HOTEL_AREA_LABELS[config.hotelArea]}`, '')
+  for (const food of foods) {
+    lines.push(
+      `### ${food.nameZh}`,
+      `- 泰文：${food.nameTh}`,
+      `- 類型：${FOOD_CATEGORY_LABELS[food.category]}`,
+      `- 每人：${formatRangeDual(food.pricePerPersonThb.min, food.pricePerPersonThb.max, config.currency, config.exchangeRate)}`,
+      `- 必點：${food.mustTry.join('、')}`,
+      `- ${food.pros}`,
+      `- 提示：${food.tip}`,
       '',
     )
   }

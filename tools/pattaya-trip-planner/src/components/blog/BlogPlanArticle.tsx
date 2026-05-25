@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { AdultNightlifeGuide } from '../AdultNightlifeGuide'
 import { BudgetPanel } from '../BudgetPanel'
 import { DayTimeline } from '../DayTimeline'
+import { FoodRecommendations } from '../FoodRecommendations'
 import { HotelRecommendations } from '../HotelRecommendations'
 import { MapPanel } from '../MapPanel'
 import { ReadingRecommendations } from '../ReadingRecommendations'
@@ -34,6 +35,7 @@ const SECTION_LEADS: Record<string, string> = {
   itinerary: '切換分頁查看各日；編輯模式可增刪景點',
   transport: '曼谷來回與市區移動費用',
   hotels: '依區域與預算排序的飯店建議',
+  food: '餐廳、夜市與必點料理，依住宿區域與預算推薦',
   map: '以住宿為中心串連行程景點',
   nightlife: '安全與消費提醒',
   reading: '相關攻略與學泰文資源',
@@ -47,6 +49,7 @@ function buildSections(plan: TripPlan, readOnly: boolean): TocItem[] {
     { id: 'itinerary', label: '行程' },
     { id: 'transport', label: '交通' },
     { id: 'hotels', label: '住宿' },
+    { id: 'food', label: '美食' },
     { id: 'map', label: '地圖' },
   ]
   if (plan.config.interests.includes('adultNightlife')) {
@@ -171,6 +174,8 @@ export function BlogPlanArticle({
               readOnly={readOnly}
             />
           )}
+
+          {activeSection === 'food' && <FoodRecommendations plan={plan} />}
 
           {activeSection === 'map' && <MapPanel plan={plan} />}
 
