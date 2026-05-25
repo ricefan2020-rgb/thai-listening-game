@@ -1,0 +1,3 @@
+# 富途 OpenD 期權（update-options-opend.py）
+# pip install -r requirements-opend.txt
+futu-api

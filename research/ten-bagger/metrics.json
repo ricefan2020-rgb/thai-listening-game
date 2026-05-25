@@ -186,6 +186,22 @@
       ],
       "scenarios": { "bull": "8–10x", "base": "2–3x", "bear": "0.3–0.5x" },
       "flags": ["護城河弱", "勿全倉"]
+    },
+    "POET": {
+      "name": "POET Technologies",
+      "cap": "S",
+      "tenX": "10x 中高",
+      "conf": 2,
+      "rateSens": "高",
+      "kpis": [
+        { "k": "定位", "v": "CPO 光引擎", "hint": "AI DC 光互連" },
+        { "k": "合作", "v": "Sivers", "hint": "與 SIVE 同鏈" },
+        { "k": "財務", "v": "早期虧損", "hint": "看量產/毛利" },
+        { "k": "社群", "v": "ST/富途熱", "hint": "情緒≠基本面" },
+        { "k": "催化", "v": "大客戶·量產", "hint": "設計贏單" }
+      ],
+      "scenarios": { "bull": "8–10x", "base": "2–4x", "bear": "0.3–0.5x" },
+      "flags": ["與 SIVE 合計控倉", "高波動"]
     }
   }
 }

@@ -1,0 +1,859 @@
+{
+  "asOf": "2026-05-25",
+  "source": "Futu OpenD (127.0.0.1:11111)",
+  "opend": {
+    "host": "127.0.0.1",
+    "port": 11111,
+    "errors": {
+      "SIVE": "SIVE: 無法取得現價 snapshot"
+    }
+  },
+  "note": "P/C·Max Pain·IV 為規則摘要 · 預設 OpenD · 非投資建議",
+  "marketExpiries": [
+    {
+      "date": "2026-06-17",
+      "kind": "vix",
+      "title": "VIX 期權到期（近似）",
+      "detail": "通常早於 07-17 月選 · 波動率產品",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-06-19",
+      "kind": "opex",
+      "title": "四重到期（月選）",
+      "detail": "SPX/NDX/Russell/單股月選同日結算 · 波動常放大",
+      "impact": "high",
+      "opexType": "quad"
+    },
+    {
+      "date": "2026-07-17",
+      "kind": "opex",
+      "title": "美股月選到期",
+      "detail": "多數美股月選合約到期 · 第三個週五",
+      "impact": "high",
+      "opexType": "monthly"
+    },
+    {
+      "date": "2026-07-22",
+      "kind": "vix",
+      "title": "VIX 期權到期（近似）",
+      "detail": "通常早於 08-21 月選 · 波動率產品",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-08-19",
+      "kind": "vix",
+      "title": "VIX 期權到期（近似）",
+      "detail": "通常早於 09-18 月選 · 波動率產品",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-08-21",
+      "kind": "opex",
+      "title": "美股月選到期",
+      "detail": "多數美股月選合約到期 · 第三個週五",
+      "impact": "high",
+      "opexType": "monthly"
+    },
+    {
+      "date": "2026-09-16",
+      "kind": "vix",
+      "title": "VIX 期權到期（近似）",
+      "detail": "通常早於 10-16 月選 · 波動率產品",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-09-18",
+      "kind": "opex",
+      "title": "四重到期（月選）",
+      "detail": "SPX/NDX/Russell/單股月選同日結算 · 波動常放大",
+      "impact": "high",
+      "opexType": "quad"
+    },
+    {
+      "date": "2026-10-16",
+      "kind": "opex",
+      "title": "美股月選到期",
+      "detail": "多數美股月選合約到期 · 第三個週五",
+      "impact": "high",
+      "opexType": "monthly"
+    },
+    {
+      "date": "2026-10-21",
+      "kind": "vix",
+      "title": "VIX 期權到期（近似）",
+      "detail": "通常早於 11-20 月選 · 波動率產品",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-11-18",
+      "kind": "vix",
+      "title": "VIX 期權到期（近似）",
+      "detail": "通常早於 12-18 月選 · 波動率產品",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-11-20",
+      "kind": "opex",
+      "title": "美股月選到期",
+      "detail": "多數美股月選合約到期 · 第三個週五",
+      "impact": "high",
+      "opexType": "monthly"
+    },
+    {
+      "date": "2026-12-16",
+      "kind": "vix",
+      "title": "VIX 期權到期（近似）",
+      "detail": "通常早於 01-15 月選 · 波動率產品",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-12-18",
+      "kind": "opex",
+      "title": "四重到期（月選）",
+      "detail": "SPX/NDX/Russell/單股月選同日結算 · 波動常放大",
+      "impact": "high",
+      "opexType": "quad"
+    },
+    {
+      "date": "2027-01-15",
+      "kind": "opex",
+      "title": "美股月選到期",
+      "detail": "多數美股月選合約到期 · 第三個週五",
+      "impact": "high",
+      "opexType": "monthly"
+    },
+    {
+      "date": "2027-01-20",
+      "kind": "vix",
+      "title": "VIX 期權到期（近似）",
+      "detail": "通常早於 02-19 月選 · 波動率產品",
+      "impact": "medium"
+    },
+    {
+      "date": "2027-02-17",
+      "kind": "vix",
+      "title": "VIX 期權到期（近似）",
+      "detail": "通常早於 03-19 月選 · 波動率產品",
+      "impact": "medium"
+    },
+    {
+      "date": "2027-02-19",
+      "kind": "opex",
+      "title": "美股月選到期",
+      "detail": "多數美股月選合約到期 · 第三個週五",
+      "impact": "high",
+      "opexType": "monthly"
+    },
+    {
+      "date": "2027-03-17",
+      "kind": "vix",
+      "title": "VIX 期權到期（近似）",
+      "detail": "通常早於 04-16 月選 · 波動率產品",
+      "impact": "medium"
+    },
+    {
+      "date": "2027-03-19",
+      "kind": "opex",
+      "title": "四重到期（月選）",
+      "detail": "SPX/NDX/Russell/單股月選同日結算 · 波動常放大",
+      "impact": "high",
+      "opexType": "quad"
+    },
+    {
+      "date": "2027-04-16",
+      "kind": "opex",
+      "title": "美股月選到期",
+      "detail": "多數美股月選合約到期 · 第三個週五",
+      "impact": "high",
+      "opexType": "monthly"
+    }
+  ],
+  "tickers": {
+    "GOOGL": {
+      "futuCode": "US.GOOGL",
+      "yahooSymbol": "GOOGL",
+      "dataVia": "opend",
+      "available": true,
+      "spot": 382.97,
+      "expiry": "2026-05-26",
+      "dte": 1,
+      "pcRatioOi": null,
+      "pcRatioVol": null,
+      "maxPain": null,
+      "maxPainVsSpotPct": null,
+      "ivCallAtm": null,
+      "ivPutAtm": null,
+      "ivSkew": null,
+      "callOi": 0,
+      "putOi": 0,
+      "topCalls": [],
+      "topPuts": [],
+      "outlook": "neutral",
+      "outlookLabel": "中性",
+      "outlookNote": "",
+      "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
+      "expiries": [
+        {
+          "date": "2026-05-26",
+          "dte": 1,
+          "oi": 0
+        },
+        {
+          "date": "2026-05-27",
+          "dte": 2,
+          "oi": 0
+        },
+        {
+          "date": "2026-05-29",
+          "dte": 4,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-01",
+          "dte": 7,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-03",
+          "dte": 9,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-05",
+          "dte": 11,
+          "oi": 0
+        }
+      ]
+    },
+    "NVDA": {
+      "futuCode": "US.NVDA",
+      "yahooSymbol": "NVDA",
+      "dataVia": "opend",
+      "available": true,
+      "spot": 215.33,
+      "expiry": "2026-05-26",
+      "dte": 1,
+      "pcRatioOi": null,
+      "pcRatioVol": null,
+      "maxPain": null,
+      "maxPainVsSpotPct": null,
+      "ivCallAtm": null,
+      "ivPutAtm": null,
+      "ivSkew": null,
+      "callOi": 0,
+      "putOi": 0,
+      "topCalls": [],
+      "topPuts": [],
+      "outlook": "neutral",
+      "outlookLabel": "中性",
+      "outlookNote": "",
+      "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
+      "expiries": [
+        {
+          "date": "2026-05-26",
+          "dte": 1,
+          "oi": 0
+        },
+        {
+          "date": "2026-05-27",
+          "dte": 2,
+          "oi": 0
+        },
+        {
+          "date": "2026-05-29",
+          "dte": 4,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-01",
+          "dte": 7,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-03",
+          "dte": 9,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-05",
+          "dte": 11,
+          "oi": 0
+        }
+      ]
+    },
+    "AMD": {
+      "futuCode": "US.AMD",
+      "yahooSymbol": "AMD",
+      "dataVia": "opend",
+      "available": true,
+      "spot": 467.51,
+      "expiry": "2026-05-29",
+      "dte": 4,
+      "pcRatioOi": null,
+      "pcRatioVol": null,
+      "maxPain": null,
+      "maxPainVsSpotPct": null,
+      "ivCallAtm": null,
+      "ivPutAtm": null,
+      "ivSkew": null,
+      "callOi": 0,
+      "putOi": 0,
+      "topCalls": [],
+      "topPuts": [],
+      "outlook": "neutral",
+      "outlookLabel": "中性",
+      "outlookNote": "",
+      "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
+      "expiries": [
+        {
+          "date": "2026-05-29",
+          "dte": 4,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-05",
+          "dte": 11,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-12",
+          "dte": 18,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-18",
+          "dte": 24,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-26",
+          "dte": 32,
+          "oi": 0
+        },
+        {
+          "date": "2026-07-02",
+          "dte": 38,
+          "oi": 0
+        }
+      ]
+    },
+    "ARM": {
+      "futuCode": "US.ARM",
+      "yahooSymbol": "ARM",
+      "dataVia": "opend",
+      "available": true,
+      "spot": 306.51,
+      "expiry": "2026-05-29",
+      "dte": 4,
+      "pcRatioOi": null,
+      "pcRatioVol": null,
+      "maxPain": null,
+      "maxPainVsSpotPct": null,
+      "ivCallAtm": null,
+      "ivPutAtm": null,
+      "ivSkew": null,
+      "callOi": 0,
+      "putOi": 0,
+      "topCalls": [],
+      "topPuts": [],
+      "outlook": "neutral",
+      "outlookLabel": "中性",
+      "outlookNote": "",
+      "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
+      "expiries": [
+        {
+          "date": "2026-05-29",
+          "dte": 4,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-05",
+          "dte": 11,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-12",
+          "dte": 18,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-18",
+          "dte": 24,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-26",
+          "dte": 32,
+          "oi": 0
+        },
+        {
+          "date": "2026-07-02",
+          "dte": 38,
+          "oi": 0
+        }
+      ]
+    },
+    "ANET": {
+      "futuCode": "US.ANET",
+      "yahooSymbol": "ANET",
+      "dataVia": "opend",
+      "available": true,
+      "spot": 154.03,
+      "expiry": "2026-05-29",
+      "dte": 4,
+      "pcRatioOi": null,
+      "pcRatioVol": null,
+      "maxPain": null,
+      "maxPainVsSpotPct": null,
+      "ivCallAtm": null,
+      "ivPutAtm": null,
+      "ivSkew": null,
+      "callOi": 0,
+      "putOi": 0,
+      "topCalls": [],
+      "topPuts": [],
+      "outlook": "neutral",
+      "outlookLabel": "中性",
+      "outlookNote": "",
+      "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
+      "expiries": [
+        {
+          "date": "2026-05-29",
+          "dte": 4,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-05",
+          "dte": 11,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-12",
+          "dte": 18,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-18",
+          "dte": 24,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-26",
+          "dte": 32,
+          "oi": 0
+        },
+        {
+          "date": "2026-07-02",
+          "dte": 38,
+          "oi": 0
+        }
+      ]
+    },
+    "VRT": {
+      "futuCode": "US.VRT",
+      "yahooSymbol": "VRT",
+      "dataVia": "opend",
+      "available": true,
+      "spot": 327.46,
+      "expiry": "2026-05-29",
+      "dte": 4,
+      "pcRatioOi": null,
+      "pcRatioVol": null,
+      "maxPain": null,
+      "maxPainVsSpotPct": null,
+      "ivCallAtm": null,
+      "ivPutAtm": null,
+      "ivSkew": null,
+      "callOi": 0,
+      "putOi": 0,
+      "topCalls": [],
+      "topPuts": [],
+      "outlook": "neutral",
+      "outlookLabel": "中性",
+      "outlookNote": "",
+      "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
+      "expiries": [
+        {
+          "date": "2026-05-29",
+          "dte": 4,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-05",
+          "dte": 11,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-12",
+          "dte": 18,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-18",
+          "dte": 24,
+          "oi": 0
+        },
+        {
+          "date": "2026-06-26",
+          "dte": 32,
+          "oi": 0
+        },
+        {
+          "date": "2026-07-02",
+          "dte": 38,
+          "oi": 0
+        }
+      ]
+    },
+    "SMCI": {
+      "futuCode": "US.SMCI",
+      "yahooSymbol": "SMCI",
+      "dataVia": "yahoo",
+      "available": true,
+      "spot": 35.58,
+      "expiry": "2026-05-29",
+      "dte": 4,
+      "pcRatioOi": 0.81,
+      "pcRatioVol": 0.11,
+      "maxPain": 31,
+      "maxPainVsSpotPct": -12.9,
+      "ivCallAtm": 0.871,
+      "ivPutAtm": 0.838,
+      "ivSkew": -0.033,
+      "callOi": 48359,
+      "putOi": 39097,
+      "topCalls": [
+        {
+          "strike": 31,
+          "oi": 6529
+        },
+        {
+          "strike": 40,
+          "oi": 6402
+        },
+        {
+          "strike": 35,
+          "oi": 4461
+        }
+      ],
+      "topPuts": [
+        {
+          "strike": 20,
+          "oi": 11550
+        },
+        {
+          "strike": 29,
+          "oi": 2435
+        },
+        {
+          "strike": 22,
+          "oi": 2086
+        }
+      ],
+      "outlook": "neutral",
+      "outlookLabel": "中性",
+      "outlookNote": "P/C(OI) 0.81 中性 · Max Pain $31 低於現價 -12.9% · Call IV 相對高（偏進攻）",
+      "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
+      "expiries": [
+        {
+          "date": "2026-05-29",
+          "dte": 4,
+          "oi": 87456
+        }
+      ]
+    },
+    "IREN": {
+      "futuCode": "US.IREN",
+      "yahooSymbol": "IREN",
+      "dataVia": "yahoo",
+      "available": true,
+      "spot": 56.83,
+      "expiry": "2026-05-29",
+      "dte": 4,
+      "pcRatioOi": 2.35,
+      "pcRatioVol": 2.91,
+      "maxPain": 52,
+      "maxPainVsSpotPct": -8.5,
+      "ivCallAtm": 1.069,
+      "ivPutAtm": 1.062,
+      "ivSkew": -0.008,
+      "callOi": 56566,
+      "putOi": 133061,
+      "topCalls": [
+        {
+          "strike": 59,
+          "oi": 9980
+        },
+        {
+          "strike": 60,
+          "oi": 7407
+        },
+        {
+          "strike": 70,
+          "oi": 4030
+        }
+      ],
+      "topPuts": [
+        {
+          "strike": 39,
+          "oi": 41210
+        },
+        {
+          "strike": 45,
+          "oi": 27331
+        },
+        {
+          "strike": 51,
+          "oi": 8301
+        }
+      ],
+      "outlook": "bearish",
+      "outlookLabel": "籌碼偏空",
+      "outlookNote": "P/C(OI) 2.35 偏高·Put 避險多 · Max Pain $52 低於現價 -8.5%",
+      "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
+      "expiries": [
+        {
+          "date": "2026-05-29",
+          "dte": 4,
+          "oi": 189627
+        }
+      ]
+    },
+    "PLTR": {
+      "futuCode": "US.PLTR",
+      "yahooSymbol": "PLTR",
+      "dataVia": "yahoo",
+      "available": true,
+      "spot": 136.88,
+      "expiry": "2026-05-29",
+      "dte": 4,
+      "pcRatioOi": 0.48,
+      "pcRatioVol": 0.59,
+      "maxPain": 135,
+      "maxPainVsSpotPct": -1.4,
+      "ivCallAtm": 0.486,
+      "ivPutAtm": 0.476,
+      "ivSkew": -0.011,
+      "callOi": 89234,
+      "putOi": 43240,
+      "topCalls": [
+        {
+          "strike": 140,
+          "oi": 11344
+        },
+        {
+          "strike": 145,
+          "oi": 9252
+        },
+        {
+          "strike": 141,
+          "oi": 7530
+        }
+      ],
+      "topPuts": [
+        {
+          "strike": 130,
+          "oi": 6465
+        },
+        {
+          "strike": 125,
+          "oi": 5105
+        },
+        {
+          "strike": 135,
+          "oi": 3809
+        }
+      ],
+      "outlook": "lean_bull",
+      "outlookLabel": "略偏多",
+      "outlookNote": "P/C(OI) 0.48 偏低·Call 籌碼多 · Max Pain $135 近現價",
+      "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
+      "expiries": [
+        {
+          "date": "2026-05-29",
+          "dte": 4,
+          "oi": 132474
+        }
+      ]
+    },
+    "CRCL": {
+      "futuCode": "US.CRCL",
+      "yahooSymbol": "CRCL",
+      "dataVia": "yahoo",
+      "available": true,
+      "spot": 113.12,
+      "expiry": "2026-05-29",
+      "dte": 4,
+      "pcRatioOi": 0.73,
+      "pcRatioVol": 0.39,
+      "maxPain": 112,
+      "maxPainVsSpotPct": -1,
+      "ivCallAtm": 0.941,
+      "ivPutAtm": 0.921,
+      "ivSkew": -0.02,
+      "callOi": 38112,
+      "putOi": 27667,
+      "topCalls": [
+        {
+          "strike": 132,
+          "oi": 7720
+        },
+        {
+          "strike": 130,
+          "oi": 4286
+        },
+        {
+          "strike": 120,
+          "oi": 3033
+        }
+      ],
+      "topPuts": [
+        {
+          "strike": 70,
+          "oi": 11867
+        },
+        {
+          "strike": 110,
+          "oi": 1417
+        },
+        {
+          "strike": 100,
+          "oi": 1211
+        }
+      ],
+      "outlook": "lean_bull",
+      "outlookLabel": "略偏多",
+      "outlookNote": "P/C(OI) 0.73 偏低·Call 籌碼多 · Max Pain $112 近現價",
+      "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
+      "expiries": [
+        {
+          "date": "2026-05-29",
+          "dte": 4,
+          "oi": 65779
+        }
+      ]
+    },
+    "SNOW": {
+      "futuCode": "US.SNOW",
+      "yahooSymbol": "SNOW",
+      "dataVia": "yahoo",
+      "available": true,
+      "spot": 172.2,
+      "expiry": "2026-05-29",
+      "dte": 4,
+      "pcRatioOi": 0.41,
+      "pcRatioVol": 0.47,
+      "maxPain": 150,
+      "maxPainVsSpotPct": -12.9,
+      "ivCallAtm": 1.456,
+      "ivPutAtm": 1.452,
+      "ivSkew": -0.003,
+      "callOi": 27557,
+      "putOi": 11350,
+      "topCalls": [
+        {
+          "strike": 200,
+          "oi": 6334
+        },
+        {
+          "strike": 185,
+          "oi": 5412
+        },
+        {
+          "strike": 155,
+          "oi": 1976
+        }
+      ],
+      "topPuts": [
+        {
+          "strike": 135,
+          "oi": 1435
+        },
+        {
+          "strike": 125,
+          "oi": 1204
+        },
+        {
+          "strike": 160,
+          "oi": 865
+        }
+      ],
+      "outlook": "lean_bull",
+      "outlookLabel": "略偏多",
+      "outlookNote": "P/C(OI) 0.41 偏低·Call 籌碼多 · Max Pain $150 低於現價 -12.9%",
+      "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
+      "expiries": [
+        {
+          "date": "2026-05-29",
+          "dte": 4,
+          "oi": 38907
+        }
+      ]
+    },
+    "SIVE": {
+      "futuCode": "US.SIVEF",
+      "yahooSymbol": "SIVEF",
+      "dataVia": "yahoo",
+      "available": false,
+      "expiries": []
+    },
+    "POET": {
+      "futuCode": "US.POET",
+      "yahooSymbol": "POET",
+      "dataVia": "yahoo",
+      "available": true,
+      "spot": 14.59,
+      "expiry": "2026-05-29",
+      "dte": 4,
+      "pcRatioOi": 1.01,
+      "pcRatioVol": 1.09,
+      "maxPain": 13,
+      "maxPainVsSpotPct": -10.9,
+      "ivCallAtm": 1.672,
+      "ivPutAtm": 1.652,
+      "ivSkew": -0.02,
+      "callOi": 43787,
+      "putOi": 44141,
+      "topCalls": [
+        {
+          "strike": 15,
+          "oi": 4423
+        },
+        {
+          "strike": 17,
+          "oi": 3609
+        },
+        {
+          "strike": 16,
+          "oi": 3506
+        }
+      ],
+      "topPuts": [
+        {
+          "strike": 11,
+          "oi": 6359
+        },
+        {
+          "strike": 10,
+          "oi": 5841
+        },
+        {
+          "strike": 15,
+          "oi": 4144
+        }
+      ],
+      "outlook": "lean_bear",
+      "outlookLabel": "略偏空",
+      "outlookNote": "P/C(OI) 1.01 中性 · Max Pain $13 低於現價 -10.9%",
+      "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
+      "expiries": [
+        {
+          "date": "2026-05-29",
+          "dte": 4,
+          "oi": 87928
+        }
+      ]
+    }
+  }
+}

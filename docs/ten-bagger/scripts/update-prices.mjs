@@ -6,24 +6,12 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
+import { WATCH_TICKERS, yahooSymbol } from './lib/tickers.mjs';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const root = join(__dir, '..');
 
-const MAP = [
-  ['NVDA', 'NVDA'],
-  ['AMD', 'AMD'],
-  ['ARM', 'ARM'],
-  ['ANET', 'ANET'],
-  ['VRT', 'VRT'],
-  ['SMCI', 'SMCI'],
-  ['PLTR', 'PLTR'],
-  ['SNOW', 'SNOW'],
-  ['SIVE', 'SIVEF'],
-  ['GOOGL', 'GOOGL'],
-  ['IREN', 'IREN'],
-  ['CRCL', 'CRCL'],
-];
+const MAP = WATCH_TICKERS.map((t) => [t, yahooSymbol(t)]);
 
 async function quote(symbol) {
   const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?interval=1d&range=5d`;

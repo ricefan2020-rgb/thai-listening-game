@@ -39,6 +39,15 @@ function escapeHtml(s) {
     .replace(/"/g, '&quot;');
 }
 
+function channelLabel(p) {
+  if (p.source === 'stocktwits' || p.channel === 'stocktwits') {
+    const tag = p.stSentiment ? `ST·${p.stSentiment}` : 'ST';
+    return tag;
+  }
+  if (p.subreddit) return `r/${p.subreddit}`;
+  return 'Reddit';
+}
+
 function itemHtml(p) {
   const tickers = (p.tickers || []).join(',');
   const href = p.url ? `href="${escapeHtml(p.url)}" target="_blank" rel="noopener"` : '';
@@ -46,7 +55,7 @@ function itemHtml(p) {
   const { zh: head, en: headEn } = displayHeadline(p);
   const { zh: snip, en: snipEn } = displaySnippet(p);
   const meta = [
-    p.subreddit ? `r/${p.subreddit}` : '',
+    channelLabel(p),
     p.score != null ? `↑${p.score}` : '',
     p.comments ? `💬${p.comments}` : '',
     p.translated ? '譯' : '',
@@ -69,6 +78,14 @@ function itemHtml(p) {
   </li>`;
 }
 
+function tickerTitle(s) {
+  const parts = [`${s.posts} 則`];
+  if (s.reddit?.posts) parts.push(`R ${s.reddit.posts}`);
+  if (s.stocktwits?.posts) parts.push(`ST ${s.stocktwits.posts}`);
+  parts.push(`多${s.bullish} 空${s.bearish}`);
+  return parts.join(' · ');
+}
+
 export function renderSentimentSummary(host, tickers, activeTicker) {
   if (!host || !tickers) return;
   const keys = Object.keys(tickers).sort();
@@ -77,7 +94,7 @@ export function renderSentimentSummary(host, tickers, activeTicker) {
       const s = tickers[t];
       const active = t === activeTicker ? ' active' : '';
       const cls = MOOD_CLASS[s.mood] || 'neutral';
-      return `<button type="button" class="sent-chip${active}" data-sent-ticker="${t}" title="${s.posts} 帖 · 多${s.bullish} 空${s.bearish}">
+      return `<button type="button" class="sent-chip${active}" data-sent-ticker="${t}" title="${tickerTitle(s)}">
         <span class="sent-dot ${cls}"></span>
         <b>${t}</b>
         <span class="sent-label">${s.label}</span>
@@ -86,24 +103,44 @@ export function renderSentimentSummary(host, tickers, activeTicker) {
     .join('');
 }
 
-export function renderSentimentList(host, items, filterTicker, asOf, data) {
+export function filterBySource(items, sourceMode) {
+  if (!sourceMode || sourceMode === 'all') return items || [];
+  if (sourceMode === 'reddit') {
+    return (items || []).filter((i) => i.source !== 'stocktwits');
+  }
+  if (sourceMode === 'stocktwits') {
+    return (items || []).filter((i) => i.source === 'stocktwits');
+  }
+  return items || [];
+}
+
+export function renderSentimentList(host, items, filterTicker, asOf, data, sourceMode = 'all') {
   if (!host) return;
   const asOfEl = document.getElementById('sent-as-of');
   const modeEl = document.getElementById('sent-translate-mode');
-  if (asOfEl) asOfEl.textContent = asOf || '—';
+  const srcBits = (data?.sources || ['Reddit']).join('+');
+  if (asOfEl) {
+    const st = data?.stocktwitsAsOf ? ` · ST ${data.stocktwitsAsOf}` : '';
+    asOfEl.textContent = `${asOf || '—'}${st}`;
+  }
   if (modeEl) {
+    const live = data?.stocktwitsLive ? ' · ST即時' : '';
     modeEl.textContent = data?.translateMode
-      ? `自動翻譯·${data.translateMode}`
+      ? `${srcBits}·${data.translateMode}${live}`
       : isAutoTranslateOn()
-        ? '自動翻譯·開'
-        : '';
+        ? `${srcBits}·翻譯開${live}`
+        : srcBits + live;
   }
 
-  let list = items || [];
+  let list = filterBySource(items, sourceMode);
   if (filterTicker) list = list.filter((i) => (i.tickers || []).includes(filterTicker));
 
   if (!list.length) {
-    host.innerHTML = `<li><span class="news-detail">無討論帖 · 請執行 update-sentiment.mjs</span></li>`;
+    const hint =
+      sourceMode === 'stocktwits'
+        ? '無 ST 帖 · 設 STOCKTWITS_ACCESS_TOKEN 後跑 update-stocktwits.mjs，或點「載入 ST」'
+        : '無討論帖 · update-sentiment.mjs / update-stocktwits.mjs';
+    host.innerHTML = `<li><span class="news-detail">${hint}</span></li>`;
     return list;
   }
 
@@ -143,7 +180,9 @@ export function applySentimentBadges(tickers) {
     }
     el.textContent = s.label;
     el.className = `badge sent ${s.mood}`;
-    el.title = `Reddit ${s.posts} 帖 · 偏多 ${s.bullish} · 偏空 ${s.bearish}`;
+    const r = s.reddit?.posts ? `R${s.reddit.posts}` : '';
+    const st = s.stocktwits?.posts ? `ST${s.stocktwits.posts}` : '';
+    el.title = `討論 ${s.posts} · ${r} ${st} · 偏多 ${s.bullish} · 偏空 ${s.bearish}`;
   });
 }
 
@@ -161,12 +200,14 @@ export function renderSentimentHeader(tickers) {
   el.title = `Reddit · ${posts} 帖 · 偏多 ${bull} · 偏空 ${bear}`;
 }
 
-export function renderRedditStrip(data) {
-  const strip = document.getElementById('reddit-strip');
-  const chips = document.getElementById('reddit-chips');
+function renderDiscussStrip(stripId, chipsId, data, source, chipClass) {
+  const strip = document.getElementById(stripId);
+  const chips = document.getElementById(chipsId);
   if (!strip || !chips) return;
 
   const items = (data?.items || []).filter((p) => {
+    if (source === 'reddit' && p.source === 'stocktwits') return false;
+    if (source === 'stocktwits' && p.source !== 'stocktwits') return false;
     const d = new Date(`${p.date}T12:00:00`);
     const days = (Date.now() - d) / 86400000;
     return days <= 14;
@@ -184,7 +225,15 @@ export function renderRedditStrip(data) {
       const t = (p.tickers || [])[0] || '?';
       const mood = p.sentiment === 'bullish' ? '↑' : p.sentiment === 'bearish' ? '↓' : '·';
       const label = p.titleZh || p.title || '';
-      return `<a class="reddit-chip" href="${p.url}" target="_blank" rel="noopener" title="${escapeHtml(label)}">${t} ${mood}${p.score}</a>`;
+      return `<a class="${chipClass}" href="${p.url}" target="_blank" rel="noopener" title="${escapeHtml(label)}">${t} ${mood}${p.score}</a>`;
     })
     .join('');
+}
+
+export function renderRedditStrip(data) {
+  renderDiscussStrip('reddit-strip', 'reddit-chips', data, 'reddit', 'reddit-chip');
+}
+
+export function renderStocktwitsStrip(data) {
+  renderDiscussStrip('stocktwits-strip', 'stocktwits-chips', data, 'stocktwits', 'st-chip');
 }

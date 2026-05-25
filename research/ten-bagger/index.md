@@ -3,7 +3,7 @@
 > **一屏檢視**：瀏覽器打開 **[index.html](./index.html)**  
 > 報價截至：**2026-05-23** · `node scripts/update-prices.mjs`
 
-[產業鏈](./ai-stack.md) · [美股備忘](./us-market-guide.md) · [**最新新聞**](./news.md) · [**重要數據日**](./calendar.md) · [**討論情緒**](./sentiment.md) · [**數字分析**](./metrics.json) · [**$5k 進場檢查表**](./5k-entry-checklist.md)
+[產業鏈](./ai-stack.md) · [美股備忘](./us-market-guide.md) · [**最新新聞**](./news.md) · [**重要數據日**](./calendar.md) · [**期權籌碼**](./options.md) · [**討論情緒**](./sentiment.md) · [**數字分析**](./metrics.json) · [**$5k 進場檢查表**](./5k-entry-checklist.md)
 
 ## 總覽
 
@@ -20,6 +20,7 @@
 | PLTR | $136.88 | -0.4% | 企業AI | L | 中高 | 3 | AIP+商業 | [→](./companies/PLTR.md) |
 | SNOW | $172.20 | +4.0% | 數據雲 | M+ | 中 | 2 | NDR+Cortex | [→](./companies/SNOW.md) |
 | SIVE | $7.42† | +17.8% | InP | S | 中高 | 2 | CPO·**加息敏感高** | [→](./companies/SIVE.md) |
+| **POET** | **$14.59** | **-1.6%** | 光互連 | S | **中高** | **2** | **CPO 光引擎·與 SIVE 同鏈** | [→](./companies/POET.md) |
 | **CRCL** | **$113.12** | -1.5% | 穩定幣+AI | L | 中 | 3 | USDC $77B·SOFR敏感 | [→](./companies/CRCL.md) |
 
 † SIVEF；SIVE.ST ≈ 72.9 SEK · **CRCL** 代碼非 CIRLC

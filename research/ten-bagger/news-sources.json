@@ -19,7 +19,8 @@
     "PLTR": { "query": "PLTR OR Palantir stock" },
     "CRCL": { "query": "CRCL OR Circle stablecoin stock" },
     "SNOW": { "query": "SNOW OR Snowflake stock" },
-    "SIVE": { "query": "SIVEF OR Sivers Semiconductors" }
+    "SIVE": { "query": "SIVEF OR Sivers Semiconductors" },
+    "POET": { "query": "POET OR \"POET Technologies\" stock" }
   },
   "macroFeeds": [
     {

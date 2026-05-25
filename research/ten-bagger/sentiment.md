@@ -1,5 +1,7 @@
 # Reddit 討論情緒
 
+> 股市**熱門關鍵字**：[reddit-keywords.md](./reddit-keywords.md) · `node scripts/update-reddit-keywords.mjs`
+
 > 自動更新：**2026-05-24** · 來源：r/stocks · r/wallstreetbets · r/investing · [sentiment.json](./sentiment.json)
 
 **非投資建議** · 關鍵字粗分偏多/偏空/中性

@@ -41,6 +41,29 @@ try {
 }
 
 try {
+  embed('<!-- OPTIONS_START -->', '<!-- OPTIONS_END -->', 'options-data', 'options.json');
+} catch {
+  console.warn('Skip options.json (run update-options.mjs first)');
+}
+
+try {
+  embed(
+    '<!-- REDDIT_KW_START -->',
+    '<!-- REDDIT_KW_END -->',
+    'reddit-keywords-data',
+    'reddit-keywords.json',
+  );
+} catch {
+  console.warn('Skip reddit-keywords.json (run update-reddit-keywords.mjs first)');
+}
+
+try {
+  embed('<!-- STOCKTWITS_START -->', '<!-- STOCKTWITS_END -->', 'stocktwits-data', 'stocktwits.json');
+} catch {
+  console.warn('Skip stocktwits.json (run update-stocktwits.mjs first)');
+}
+
+try {
   embed(
     '<!-- STABLECOINS_START -->',
     '<!-- STABLECOINS_END -->',

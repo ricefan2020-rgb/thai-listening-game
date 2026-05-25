@@ -3,6 +3,11 @@
   "source": "Yahoo Finance",
   "note": "SIVE 列 SIVEF (OTC USD)；瑞典掛牌見 SIVE.ST",
   "quotes": {
+    "GOOGL": {
+      "price": 382.97,
+      "chgPct": -1.21,
+      "currency": "USD"
+    },
     "NVDA": {
       "price": 215.33,
       "chgPct": -1.9,
@@ -33,9 +38,19 @@
       "chgPct": 6.34,
       "currency": "USD"
     },
+    "IREN": {
+      "price": 56.83,
+      "chgPct": -2.12,
+      "currency": "USD"
+    },
     "PLTR": {
       "price": 136.88,
       "chgPct": -0.39,
+      "currency": "USD"
+    },
+    "CRCL": {
+      "price": 113.12,
+      "chgPct": -1.53,
       "currency": "USD"
     },
     "SNOW": {
@@ -53,19 +68,9 @@
         "currency": "SEK"
       }
     },
-    "GOOGL": {
-      "price": 382.97,
-      "chgPct": -1.21,
-      "currency": "USD"
-    },
-    "IREN": {
-      "price": 56.83,
-      "chgPct": -2.12,
-      "currency": "USD"
-    },
-    "CRCL": {
-      "price": 113.12,
-      "chgPct": -1.53,
+    "POET": {
+      "price": 14.59,
+      "chgPct": -1.55,
       "currency": "USD"
     }
   }

@@ -7,6 +7,8 @@ const KIND_LABEL = {
   early: '早收',
   macro: '宏觀',
   earnings: '財報',
+  opex: '期權結算',
+  vix: 'VIX到期',
 };
 
 const KIND_CLASS = {
@@ -14,6 +16,8 @@ const KIND_CLASS = {
   early: 'cal-early',
   macro: 'cal-macro',
   earnings: 'cal-earn',
+  opex: 'cal-opex',
+  vix: 'cal-vix',
 };
 
 export async function loadCalendar() {

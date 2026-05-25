@@ -7,26 +7,14 @@ import { readFileSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 import { translateToZh } from './lib/translate.mjs';
+import { REDDIT_QUERY } from './lib/tickers.mjs';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const root = join(__dir, '..');
 
 const UA = 'ten-bagger-sentiment/1.0 (personal research; read-only)';
 
-const TICKER_QUERY = {
-  GOOGL: 'GOOGL OR Alphabet',
-  NVDA: 'NVDA OR NVIDIA',
-  AMD: 'AMD',
-  ARM: 'ARM OR "Arm Holdings"',
-  ANET: 'ANET OR Arista',
-  VRT: 'VRT OR Vertiv',
-  SMCI: 'SMCI OR Supermicro',
-  IREN: 'IREN OR "Iris Energy"',
-  PLTR: 'PLTR OR Palantir',
-  CRCL: 'CRCL OR Circle',
-  SNOW: 'SNOW OR Snowflake',
-  SIVE: 'SIVEF OR SIVE OR "Sivere"',
-};
+const TICKER_QUERY = REDDIT_QUERY;
 
 const SUBREDDITS = ['stocks', 'wallstreetbets', 'investing'];
 

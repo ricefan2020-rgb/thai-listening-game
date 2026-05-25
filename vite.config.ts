@@ -10,7 +10,7 @@ export default defineConfig({
       input: {
         main: 'index.html',
         zeta: 'tools/zeta-calculator/index.html',
-        pattaya: 'tools/pattaya-trip-planner/index.html',
+        thailand: 'tools/thailand-trip-planner/index.html',
       },
     },
   },

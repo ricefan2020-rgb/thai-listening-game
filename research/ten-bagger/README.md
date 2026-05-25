@@ -33,7 +33,9 @@ node scripts/serve-mobile.mjs
 
 **自動翻譯**：觀察板側欄勾選「自動翻譯」即時英→繁中；Reddit 預翻譯：`node scripts/translate-sentiment.mjs`（或 `update-sentiment.mjs` 內建）
 
-**Reddit 討論**：[sentiment.md](./sentiment.md) · [sentiment.json](./sentiment.json)（r/stocks · r/wallstreetbets · r/investing · 觀察板「討論」分頁 + 頂部 Reddit 訊號列 · `node scripts/update-sentiment.mjs`，約 1 分鐘）
+**期權籌碼 + 結算日**：[options.md](./options.md) · `node scripts/update-options.mjs`（**富途 OpenD** 優先 · `pip install -r requirements-opend.txt` · 需啟動 FutuOpenD）
+
+**Reddit + Stocktwits 討論**：[sentiment.md](./sentiment.md) · [stocktwits.md](./stocktwits.md) · [sentiment.json](./sentiment.json)（Reddit：r/stocks · r/wallstreetbets · r/investing · `node scripts/update-sentiment.mjs` · Stocktwits：`node scripts/update-stocktwits.mjs` · 需 [開發者 token](https://stocktwits.com/developers) 或觀察板「載入 ST」即時 JSONP）
 
 **USDC / USDT 流通量**：[stablecoins.md](./stablecoins.md) · [stablecoins.json](./stablecoins.json)（Circle + DeFiLlama · 側欄「穩定幣」· CRCL 卡片份額 · `node scripts/update-stablecoins.mjs`）
 

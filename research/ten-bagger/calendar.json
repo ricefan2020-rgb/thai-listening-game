@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-24",
+  "asOf": "2026-05-25",
   "timezone": "America/New_York",
   "note": "宏觀公布日為慣例時段 · 財報窗口為估計 · 以官方/IR 為準",
   "items": [
@@ -11,13 +11,978 @@
       "impact": "high"
     },
     {
+      "date": "2026-05-26",
+      "kind": "opex",
+      "title": "GOOGL 期權到期",
+      "detail": "DTE 1 · 略偏多 · P/C 0.66",
+      "impact": "medium",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "kind": "opex",
+      "title": "NVDA 期權到期",
+      "detail": "DTE 1 · 籌碼偏多 · P/C 0.41",
+      "impact": "medium",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "kind": "opex",
+      "title": "GOOGL 期權到期",
+      "detail": "DTE 1 · 略偏多 · P/C 0.66 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "kind": "opex",
+      "title": "NVDA 期權到期",
+      "detail": "DTE 1 · 籌碼偏多 · P/C 0.41 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "kind": "opex",
+      "title": "GOOGL 期權到期",
+      "detail": "DTE 1 · 略偏多 · P/C 0.66 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "kind": "opex",
+      "title": "NVDA 期權到期",
+      "detail": "DTE 1 · 籌碼偏多 · P/C 0.41 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "kind": "opex",
+      "title": "GOOGL 期權到期",
+      "detail": "DTE 1 · 略偏多 · P/C 0.66 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "kind": "opex",
+      "title": "NVDA 期權到期",
+      "detail": "DTE 1 · 籌碼偏多 · P/C 0.41 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "kind": "opex",
+      "title": "GOOGL 期權到期",
+      "detail": "DTE 1 · 略偏多 · P/C 0.66 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "kind": "opex",
+      "title": "NVDA 期權到期",
+      "detail": "DTE 1 · 籌碼偏多 · P/C 0.41 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "kind": "opex",
+      "title": "GOOGL 期權到期",
+      "detail": "DTE 1 · 略偏多 · P/C 0.66 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "kind": "opex",
+      "title": "NVDA 期權到期",
+      "detail": "DTE 1 · 籌碼偏多 · P/C 0.41 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "kind": "opex",
+      "title": "GOOGL 期權到期",
+      "detail": "DTE 1 · 略偏多 · P/C 0.66 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "kind": "opex",
+      "title": "NVDA 期權到期",
+      "detail": "DTE 1 · 籌碼偏多 · P/C 0.41 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "kind": "opex",
+      "title": "GOOGL 期權到期",
+      "detail": "DTE 1 · 中性 · P/C — · OpenD",
+      "impact": "medium",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "kind": "opex",
+      "title": "NVDA 期權到期",
+      "detail": "DTE 1 · 中性 · P/C — · OpenD",
+      "impact": "medium",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "AMD 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 1.08",
+      "impact": "medium",
+      "tickers": [
+        "AMD"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "ARM 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 0.83",
+      "impact": "medium",
+      "tickers": [
+        "ARM"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "ANET 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.73",
+      "impact": "medium",
+      "tickers": [
+        "ANET"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "VRT 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 2.59",
+      "impact": "medium",
+      "tickers": [
+        "VRT"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "SMCI 期權到期",
+      "detail": "DTE 4 · 中性 · P/C 0.81",
+      "impact": "medium",
+      "tickers": [
+        "SMCI"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "IREN 期權到期",
+      "detail": "DTE 4 · 籌碼偏空 · P/C 2.35",
+      "impact": "medium",
+      "tickers": [
+        "IREN"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "PLTR 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.48",
+      "impact": "medium",
+      "tickers": [
+        "PLTR"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "CRCL 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.73",
+      "impact": "medium",
+      "tickers": [
+        "CRCL"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "SNOW 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.41",
+      "impact": "medium",
+      "tickers": [
+        "SNOW"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "POET 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 1.01",
+      "impact": "medium",
+      "tickers": [
+        "POET"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "AMD 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 1.08 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "AMD"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "ARM 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 0.83 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "ARM"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "ANET 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.73 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "ANET"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "VRT 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 2.59 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "VRT"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "SMCI 期權到期",
+      "detail": "DTE 4 · 中性 · P/C 0.81 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "SMCI"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "IREN 期權到期",
+      "detail": "DTE 4 · 籌碼偏空 · P/C 2.35 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "IREN"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "PLTR 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.48 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "PLTR"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "CRCL 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.73 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "CRCL"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "SNOW 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.41 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "SNOW"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "POET 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 1.01 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "POET"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "AMD 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 1.08 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "AMD"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "ARM 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 0.83 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "ARM"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "ANET 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.73 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "ANET"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "VRT 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 2.59 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "VRT"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "SMCI 期權到期",
+      "detail": "DTE 4 · 中性 · P/C 0.81 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "SMCI"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "IREN 期權到期",
+      "detail": "DTE 4 · 籌碼偏空 · P/C 2.35 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "IREN"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "PLTR 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.48 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "PLTR"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "CRCL 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.73 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "CRCL"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "SNOW 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.41 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "SNOW"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "POET 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 1.01 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "POET"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "AMD 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 1.08 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "AMD"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "ARM 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 0.83 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "ARM"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "ANET 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.73 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "ANET"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "VRT 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 2.59 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "VRT"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "SMCI 期權到期",
+      "detail": "DTE 4 · 中性 · P/C 0.81 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "SMCI"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "IREN 期權到期",
+      "detail": "DTE 4 · 籌碼偏空 · P/C 2.35 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "IREN"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "PLTR 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.48 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "PLTR"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "CRCL 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.73 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "CRCL"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "SNOW 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.41 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "SNOW"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "POET 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 1.01 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "POET"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "AMD 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 1.08 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "AMD"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "ARM 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 0.83 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "ARM"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "ANET 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.73 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "ANET"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "VRT 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 2.59 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "VRT"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "SMCI 期權到期",
+      "detail": "DTE 4 · 中性 · P/C 0.81 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "SMCI"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "IREN 期權到期",
+      "detail": "DTE 4 · 籌碼偏空 · P/C 2.35 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "IREN"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "PLTR 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.48 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "PLTR"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "CRCL 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.73 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "CRCL"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "SNOW 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.41 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "SNOW"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "POET 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 1.01 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "POET"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "AMD 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 1.08 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "AMD"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "ARM 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 0.83 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "ARM"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "ANET 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.73 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "ANET"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "VRT 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 2.59 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "VRT"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "SMCI 期權到期",
+      "detail": "DTE 4 · 中性 · P/C 0.81 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "SMCI"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "IREN 期權到期",
+      "detail": "DTE 4 · 籌碼偏空 · P/C 2.35 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "IREN"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "PLTR 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.48 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "PLTR"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "CRCL 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.73 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "CRCL"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "SNOW 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.41 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "SNOW"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "POET 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 1.01 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "POET"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "AMD 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 1.08 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "AMD"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "ARM 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 0.83 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "ARM"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "ANET 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.73 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "ANET"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "VRT 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 2.59 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "VRT"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "SMCI 期權到期",
+      "detail": "DTE 4 · 中性 · P/C 0.81 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "SMCI"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "IREN 期權到期",
+      "detail": "DTE 4 · 籌碼偏空 · P/C 2.35 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "IREN"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "PLTR 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.48 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "PLTR"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "CRCL 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.73 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "CRCL"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "SNOW 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.41 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "SNOW"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "POET 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 1.01 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "POET"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "AMD 期權到期",
+      "detail": "DTE 4 · 中性 · P/C — · OpenD",
+      "impact": "medium",
+      "tickers": [
+        "AMD"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "ARM 期權到期",
+      "detail": "DTE 4 · 中性 · P/C — · OpenD",
+      "impact": "medium",
+      "tickers": [
+        "ARM"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "ANET 期權到期",
+      "detail": "DTE 4 · 中性 · P/C — · OpenD",
+      "impact": "medium",
+      "tickers": [
+        "ANET"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "VRT 期權到期",
+      "detail": "DTE 4 · 中性 · P/C — · OpenD",
+      "impact": "medium",
+      "tickers": [
+        "VRT"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "SMCI 期權到期",
+      "detail": "DTE 4 · 中性 · P/C 0.81 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "SMCI"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "IREN 期權到期",
+      "detail": "DTE 4 · 籌碼偏空 · P/C 2.35 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "IREN"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "PLTR 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.48 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "PLTR"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "CRCL 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.73 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "CRCL"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "SNOW 期權到期",
+      "detail": "DTE 4 · 略偏多 · P/C 0.41 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "SNOW"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "POET 期權到期",
+      "detail": "DTE 4 · 略偏空 · P/C 1.01 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "POET"
+      ]
+    },
+    {
       "date": "2026-06-05",
       "time": "08:30",
       "kind": "macro",
       "title": "非農就業 NFP",
       "detail": "就業報告 · 利率路徑敏感",
       "impact": "high",
-      "tickers": ["GOOGL", "NVDA", "CRCL", "PLTR"]
+      "tickers": [
+        "GOOGL",
+        "NVDA",
+        "CRCL",
+        "PLTR"
+      ]
     },
     {
       "date": "2026-06-10",
@@ -26,7 +991,12 @@
       "title": "CPI 通脹",
       "detail": "消費者物價 · 估值/利率預期",
       "impact": "high",
-      "tickers": ["GOOGL", "NVDA", "SNOW", "PLTR"]
+      "tickers": [
+        "GOOGL",
+        "NVDA",
+        "SNOW",
+        "PLTR"
+      ]
     },
     {
       "date": "2026-06-11",
@@ -42,7 +1012,13 @@
       "title": "FOMC 首日",
       "detail": "利率決議 + 點陣圖 · 記者會翌日",
       "impact": "high",
-      "tickers": ["GOOGL", "NVDA", "CRCL", "IREN", "VRT"]
+      "tickers": [
+        "GOOGL",
+        "NVDA",
+        "CRCL",
+        "IREN",
+        "VRT"
+      ]
     },
     {
       "date": "2026-06-17",
@@ -53,11 +1029,26 @@
       "impact": "high"
     },
     {
+      "date": "2026-06-17",
+      "kind": "vix",
+      "title": "VIX 期權到期（近似）",
+      "detail": "通常早於 07-17 月選 · 波動率產品",
+      "impact": "medium"
+    },
+    {
       "date": "2026-06-19",
       "kind": "holiday",
       "title": "Juneteenth",
       "detail": "NYSE 全日休市",
       "impact": "high"
+    },
+    {
+      "date": "2026-06-19",
+      "kind": "opex",
+      "title": "四重到期（月選）",
+      "detail": "SPX/NDX/Russell/單股月選同日結算 · 波動常放大",
+      "impact": "high",
+      "opexType": "quad"
     },
     {
       "date": "2026-06-26",
@@ -66,7 +1057,11 @@
       "title": "PCE 通脹（Fed 偏好）",
       "detail": "核心 PCE · 降息預期錨",
       "impact": "high",
-      "tickers": ["GOOGL", "CRCL", "SNOW"]
+      "tickers": [
+        "GOOGL",
+        "CRCL",
+        "SNOW"
+      ]
     },
     {
       "date": "2026-07-02",
@@ -91,6 +1086,31 @@
       "impact": "high"
     },
     {
+      "date": "2026-07-17",
+      "kind": "opex",
+      "title": "美股月選到期",
+      "detail": "多數美股月選合約到期 · 第三個週五",
+      "impact": "high",
+      "opexType": "monthly"
+    },
+    {
+      "date": "2026-07-22",
+      "kind": "vix",
+      "title": "VIX 期權到期（近似）",
+      "detail": "通常早於 08-21 月選 · 波動率產品",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-07-23",
+      "kind": "earnings",
+      "title": "GOOGL Q2 財報",
+      "detail": "關注 Cloud%、積壓、Capex 指引",
+      "impact": "high",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
       "date": "2026-07-28",
       "kind": "macro",
       "title": "FOMC 首日",
@@ -106,20 +1126,14 @@
       "impact": "high"
     },
     {
-      "date": "2026-07-23",
-      "kind": "earnings",
-      "title": "GOOGL Q2 財報",
-      "detail": "關注 Cloud%、積壓、Capex 指引",
-      "impact": "high",
-      "tickers": ["GOOGL"]
-    },
-    {
       "date": "2026-07-29",
       "kind": "earnings",
       "title": "AMD Q2 財報",
       "detail": "MI 營收、毛利率、指引",
       "impact": "high",
-      "tickers": ["AMD"]
+      "tickers": [
+        "AMD"
+      ]
     },
     {
       "date": "2026-07-30",
@@ -127,7 +1141,9 @@
       "title": "META Q2（對標 GOOGL）",
       "detail": "廣告 + AI Capex · 非持倉但影響情緒",
       "impact": "medium",
-      "tickers": ["GOOGL"]
+      "tickers": [
+        "GOOGL"
+      ]
     },
     {
       "date": "2026-08-05",
@@ -135,7 +1151,9 @@
       "title": "PLTR Q2 財報",
       "detail": "商業增速、NDR、Rule of 40",
       "impact": "high",
-      "tickers": ["PLTR"]
+      "tickers": [
+        "PLTR"
+      ]
     },
     {
       "date": "2026-08-06",
@@ -143,7 +1161,16 @@
       "title": "ARM Q1 FY27",
       "detail": "Royalty、AI 設計贏單",
       "impact": "high",
-      "tickers": ["ARM"]
+      "tickers": [
+        "ARM"
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "kind": "vix",
+      "title": "VIX 期權到期（近似）",
+      "detail": "通常早於 09-18 月選 · 波動率產品",
+      "impact": "medium"
     },
     {
       "date": "2026-08-20",
@@ -151,7 +1178,17 @@
       "title": "SNOW Q2 財報",
       "detail": "NDR、Cortex、消費增速",
       "impact": "high",
-      "tickers": ["SNOW"]
+      "tickers": [
+        "SNOW"
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "kind": "opex",
+      "title": "美股月選到期",
+      "detail": "多數美股月選合約到期 · 第三個週五",
+      "impact": "high",
+      "opexType": "monthly"
     },
     {
       "date": "2026-08-27",
@@ -159,7 +1196,9 @@
       "title": "NVDA Q2 FY27",
       "detail": "DC 營收、毛利率、Q3 指引",
       "impact": "high",
-      "tickers": ["NVDA"]
+      "tickers": [
+        "NVDA"
+      ]
     },
     {
       "date": "2026-08-28",
@@ -167,7 +1206,9 @@
       "title": "CRCL Q2 財報",
       "detail": "USDC 流通、儲備收益、Arc 進度",
       "impact": "high",
-      "tickers": ["CRCL"]
+      "tickers": [
+        "CRCL"
+      ]
     },
     {
       "date": "2026-09-07",
@@ -175,6 +1216,51 @@
       "title": "Labor Day",
       "detail": "NYSE 全日休市",
       "impact": "high"
+    },
+    {
+      "date": "2026-09-16",
+      "kind": "vix",
+      "title": "VIX 期權到期（近似）",
+      "detail": "通常早於 10-16 月選 · 波動率產品",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-09-18",
+      "kind": "opex",
+      "title": "四重到期（月選）",
+      "detail": "SPX/NDX/Russell/單股月選同日結算 · 波動常放大",
+      "impact": "high",
+      "opexType": "quad"
+    },
+    {
+      "date": "2026-10-16",
+      "kind": "opex",
+      "title": "美股月選到期",
+      "detail": "多數美股月選合約到期 · 第三個週五",
+      "impact": "high",
+      "opexType": "monthly"
+    },
+    {
+      "date": "2026-10-21",
+      "kind": "vix",
+      "title": "VIX 期權到期（近似）",
+      "detail": "通常早於 11-20 月選 · 波動率產品",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-11-18",
+      "kind": "vix",
+      "title": "VIX 期權到期（近似）",
+      "detail": "通常早於 12-18 月選 · 波動率產品",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-11-20",
+      "kind": "opex",
+      "title": "美股月選到期",
+      "detail": "多數美股月選合約到期 · 第三個週五",
+      "impact": "high",
+      "opexType": "monthly"
     },
     {
       "date": "2026-11-26",
@@ -191,6 +1277,21 @@
       "impact": "medium"
     },
     {
+      "date": "2026-12-16",
+      "kind": "vix",
+      "title": "VIX 期權到期（近似）",
+      "detail": "通常早於 01-15 月選 · 波動率產品",
+      "impact": "medium"
+    },
+    {
+      "date": "2026-12-18",
+      "kind": "opex",
+      "title": "四重到期（月選）",
+      "detail": "SPX/NDX/Russell/單股月選同日結算 · 波動常放大",
+      "impact": "high",
+      "opexType": "quad"
+    },
+    {
       "date": "2026-12-24",
       "kind": "early",
       "title": "聖誕前夕提早收市",
@@ -203,20 +1304,134 @@
       "title": "Christmas",
       "detail": "NYSE 全日休市",
       "impact": "high"
+    },
+    {
+      "date": "2027-01-15",
+      "kind": "opex",
+      "title": "美股月選到期",
+      "detail": "多數美股月選合約到期 · 第三個週五",
+      "impact": "high",
+      "opexType": "monthly"
+    },
+    {
+      "date": "2027-01-20",
+      "kind": "vix",
+      "title": "VIX 期權到期（近似）",
+      "detail": "通常早於 02-19 月選 · 波動率產品",
+      "impact": "medium"
+    },
+    {
+      "date": "2027-02-17",
+      "kind": "vix",
+      "title": "VIX 期權到期（近似）",
+      "detail": "通常早於 03-19 月選 · 波動率產品",
+      "impact": "medium"
+    },
+    {
+      "date": "2027-02-19",
+      "kind": "opex",
+      "title": "美股月選到期",
+      "detail": "多數美股月選合約到期 · 第三個週五",
+      "impact": "high",
+      "opexType": "monthly"
+    },
+    {
+      "date": "2027-03-17",
+      "kind": "vix",
+      "title": "VIX 期權到期（近似）",
+      "detail": "通常早於 04-16 月選 · 波動率產品",
+      "impact": "medium"
+    },
+    {
+      "date": "2027-03-19",
+      "kind": "opex",
+      "title": "四重到期（月選）",
+      "detail": "SPX/NDX/Russell/單股月選同日結算 · 波動常放大",
+      "impact": "high",
+      "opexType": "quad"
+    },
+    {
+      "date": "2027-04-16",
+      "kind": "opex",
+      "title": "美股月選到期",
+      "detail": "多數美股月選合約到期 · 第三個週五",
+      "impact": "high",
+      "opexType": "monthly"
     }
   ],
   "earningsFocus": [
-    { "ticker": "GOOGL", "period": "Q2", "window": "約 7/23", "focus": "Cloud·Capex·Search" },
-    { "ticker": "NVDA", "period": "Q2 FY27", "window": "約 8/27", "focus": "DC·指引·毛利" },
-    { "ticker": "AMD", "period": "Q2", "window": "約 7/29", "focus": "MI·margin" },
-    { "ticker": "CRCL", "period": "Q2", "window": "約 8/28", "focus": "USDC·SOFR·Arc" },
-    { "ticker": "PLTR", "period": "Q2", "window": "約 8/05", "focus": "商業·NDR" },
-    { "ticker": "SNOW", "period": "Q2", "window": "約 8/20", "focus": "NDR·Cortex" },
-    { "ticker": "ARM", "period": "Q1", "window": "約 8/06", "focus": "Royalty" },
-    { "ticker": "ANET", "period": "Q2", "window": "約 8 月", "focus": "訂單 vs Capex" },
-    { "ticker": "VRT", "period": "Q2", "window": "約 8 月", "focus": "積壓訂單" },
-    { "ticker": "IREN", "period": "Q4/FY", "window": "約 8 月", "focus": "ARR·GPU" },
-    { "ticker": "SMCI", "period": "FY Q4", "window": "約 8 月", "focus": "毛利·指引" },
-    { "ticker": "SIVE", "period": "Q2", "window": "約 8 月", "focus": "光電·Pipeline" }
-  ]
+    {
+      "ticker": "GOOGL",
+      "period": "Q2",
+      "window": "約 7/23",
+      "focus": "Cloud·Capex·Search"
+    },
+    {
+      "ticker": "NVDA",
+      "period": "Q2 FY27",
+      "window": "約 8/27",
+      "focus": "DC·指引·毛利"
+    },
+    {
+      "ticker": "AMD",
+      "period": "Q2",
+      "window": "約 7/29",
+      "focus": "MI·margin"
+    },
+    {
+      "ticker": "CRCL",
+      "period": "Q2",
+      "window": "約 8/28",
+      "focus": "USDC·SOFR·Arc"
+    },
+    {
+      "ticker": "PLTR",
+      "period": "Q2",
+      "window": "約 8/05",
+      "focus": "商業·NDR"
+    },
+    {
+      "ticker": "SNOW",
+      "period": "Q2",
+      "window": "約 8/20",
+      "focus": "NDR·Cortex"
+    },
+    {
+      "ticker": "ARM",
+      "period": "Q1",
+      "window": "約 8/06",
+      "focus": "Royalty"
+    },
+    {
+      "ticker": "ANET",
+      "period": "Q2",
+      "window": "約 8 月",
+      "focus": "訂單 vs Capex"
+    },
+    {
+      "ticker": "VRT",
+      "period": "Q2",
+      "window": "約 8 月",
+      "focus": "積壓訂單"
+    },
+    {
+      "ticker": "IREN",
+      "period": "Q4/FY",
+      "window": "約 8 月",
+      "focus": "ARR·GPU"
+    },
+    {
+      "ticker": "SMCI",
+      "period": "FY Q4",
+      "window": "約 8 月",
+      "focus": "毛利·指引"
+    },
+    {
+      "ticker": "SIVE",
+      "period": "Q2",
+      "window": "約 8 月",
+      "focus": "光電·Pipeline"
+    }
+  ],
+  "optionsNote": "含 update-options.mjs（OpenD 優先）產生的月選/VIX/各股到期"
 }

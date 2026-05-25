@@ -1,6 +1,6 @@
 # 重要數據日子
 
-> 更新見 [calendar.json](./calendar.json) · 觀察板側欄 **「數據日」** 分頁 · **非投資建議**
+> 更新見 [calendar.json](./calendar.json) · 觀察板側欄 **「數據日」** / **「期權」** · 期權結算由 `update-options.mjs` 併入 · **非投資建議**
 
 ## 包含什麼
 

@@ -39,7 +39,9 @@ https://ricefan2020-rgb.github.io/thai-listening-game/ten-bagger/index.html
 cd research/ten-bagger
 node scripts/update-prices.mjs
 node scripts/update-ohlc.mjs
-node scripts/update-sentiment.mjs   # 可選
+node scripts/update-sentiment.mjs   # Reddit
+node scripts/update-stocktwits.mjs # Stocktwits（需 STOCKTWITS_ACCESS_TOKEN）
+node scripts/update-options.mjs    # 期權（預設本機 OpenD · 見 options.md）
 node scripts/update-news-feed.mjs # 可選
 node scripts/embed-data.mjs
 node scripts/prepare-pages.mjs
@@ -62,5 +64,8 @@ git push
 |------|--------|
 | 看報價、K 線、已嵌入資料 | ✅ |
 | Reddit / 新聞翻譯（瀏覽器即時） | ✅（需網路） |
-| 在 Mac 跑腳本抓最新 Reddit | ❌ 要在電腦跑完再 push |
+| 在 Mac 跑腳本抓最新資料 | ❌ 要在電腦跑完再 push |
+| Stocktwits 無 token | 觀察板點 **載入 ST**（瀏覽器 JSONP） |
 | 公司檔 `.md` | ✅ 可點開閱讀 |
+
+**Stocktwits token（自動更新）**：GitHub → Settings → Secrets → `STOCKTWITS_ACCESS_TOKEN`（[開發者後台](https://stocktwits.com/developers) 申請）。

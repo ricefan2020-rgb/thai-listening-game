@@ -20,7 +20,7 @@
                                       │
     ┌───────────────┬─────────────────┼─────────────────┬───────────────┐
     │  網路         │  機櫃/電力/冷卻  │  伺服器組裝      │  連接/光模組   │
-    │  ANET  VRT    │  IREN·SMCI      │  SIVE  COHR?    │  (光模組)     │
+    │  ANET  VRT    │  IREN·SMCI      │  POET·SIVE      │  COHR? LITE?  │
     └───────┬───────┴────────┬────────┴────────┬────────┴───────┬───────┘
             │                │                 │                │
             └────────────────┼─────────────────┼────────────────┘
@@ -46,6 +46,7 @@
 | PLTR | 企業 AI OS | 中–高 | [PLTR.md](./companies/PLTR.md) |
 | SNOW | 數據雲 | 中（需 NDR 修復） | [SNOW.md](./companies/SNOW.md) |
 | SIVE | InP 激光（非美股 SLIVER） | 中高（小盤） | [SIVE.md](./companies/SIVE.md) |
+| POET | CPO 光引擎 / 光互連 | 中高（小盤·情緒熱） | [POET.md](./companies/POET.md) |
 | GOOGL | 雲+全棧 AI | 低（mega，錨2-3x） | [GOOGL.md](./companies/GOOGL.md) |
 | IREN | AI Cloud+電力 | 中高（轉型） | [IREN.md](./companies/IREN.md) |
 

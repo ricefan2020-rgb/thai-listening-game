@@ -1,0 +1,722 @@
+{
+  "asOf": "2026-05-25",
+  "source": "Reddit",
+  "sorts": [
+    "hot",
+    "top/day"
+  ],
+  "subreddits": [
+    "wallstreetbets",
+    "stocks",
+    "investing",
+    "StockMarket",
+    "options"
+  ],
+  "postsScanned": 200,
+  "note": "標題加權熱詞 · $代號與常見片語 · 非投資建議",
+  "keywords": [
+    {
+      "term": "spacex",
+      "type": "theme",
+      "score": 38.13,
+      "posts": 15,
+      "subs": [
+        "StockMarket",
+        "investing",
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "stock",
+      "type": "theme",
+      "score": 36.39,
+      "posts": 13,
+      "subs": [
+        "investing",
+        "options",
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "ipo",
+      "type": "phrase",
+      "score": 34.8,
+      "posts": 13,
+      "subs": [
+        "StockMarket",
+        "investing",
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "stocks",
+      "type": "theme",
+      "score": 33.02,
+      "posts": 16,
+      "subs": [
+        "StockMarket",
+        "investing",
+        "options",
+        "stocks"
+      ]
+    },
+    {
+      "term": "market",
+      "type": "theme",
+      "score": 29.43,
+      "posts": 14,
+      "subs": [
+        "StockMarket",
+        "investing",
+        "options",
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "iran",
+      "type": "theme",
+      "score": 19.8,
+      "posts": 6,
+      "subs": [
+        "StockMarket",
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "nvidia",
+      "type": "theme",
+      "score": 18.87,
+      "posts": 9,
+      "subs": [
+        "StockMarket",
+        "investing",
+        "options",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "buy",
+      "type": "theme",
+      "score": 18.54,
+      "posts": 6,
+      "subs": [
+        "investing",
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "NVDA",
+      "type": "ticker",
+      "score": 16.16,
+      "posts": 6,
+      "subs": [
+        "options",
+        "stocks"
+      ]
+    },
+    {
+      "term": "options",
+      "type": "theme",
+      "score": 15.23,
+      "posts": 11,
+      "subs": [
+        "investing",
+        "options"
+      ]
+    },
+    {
+      "term": "shares",
+      "type": "theme",
+      "score": 15.18,
+      "posts": 6,
+      "subs": [
+        "StockMarket",
+        "investing",
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "meta",
+      "type": "theme",
+      "score": 14.77,
+      "posts": 5,
+      "subs": [
+        "StockMarket",
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "earnings",
+      "type": "theme",
+      "score": 14.22,
+      "posts": 7,
+      "subs": [
+        "StockMarket",
+        "options",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "quantum",
+      "type": "theme",
+      "score": 13.95,
+      "posts": 6,
+      "subs": [
+        "StockMarket",
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "one",
+      "type": "theme",
+      "score": 12.99,
+      "posts": 6,
+      "subs": [
+        "investing",
+        "options",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "nvda",
+      "type": "theme",
+      "score": 12.67,
+      "posts": 7,
+      "subs": [
+        "options",
+        "stocks"
+      ]
+    },
+    {
+      "term": "new",
+      "type": "theme",
+      "score": 12.64,
+      "posts": 6,
+      "subs": [
+        "StockMarket",
+        "investing",
+        "options",
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "trading",
+      "type": "theme",
+      "score": 12.49,
+      "posts": 8,
+      "subs": [
+        "StockMarket",
+        "investing",
+        "options",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "revenue",
+      "type": "theme",
+      "score": 12.24,
+      "posts": 5,
+      "subs": [
+        "StockMarket",
+        "stocks"
+      ]
+    },
+    {
+      "term": "china",
+      "type": "theme",
+      "score": 12.16,
+      "posts": 5,
+      "subs": [
+        "StockMarket",
+        "investing"
+      ]
+    },
+    {
+      "term": "people",
+      "type": "theme",
+      "score": 11.74,
+      "posts": 4,
+      "subs": [
+        "StockMarket",
+        "investing",
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "war",
+      "type": "theme",
+      "score": 11.72,
+      "posts": 4,
+      "subs": [
+        "StockMarket",
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "bought",
+      "type": "theme",
+      "score": 11,
+      "posts": 5,
+      "subs": [
+        "investing",
+        "options",
+        "stocks"
+      ]
+    },
+    {
+      "term": "facebook groups",
+      "type": "phrase",
+      "score": 10.76,
+      "posts": 3,
+      "subs": [
+        "StockMarket",
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "day",
+      "type": "theme",
+      "score": 10.48,
+      "posts": 6,
+      "subs": [
+        "StockMarket",
+        "options",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "AMD",
+      "type": "ticker",
+      "score": 10.29,
+      "posts": 3,
+      "subs": [
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "iran war",
+      "type": "phrase",
+      "score": 9.54,
+      "posts": 3,
+      "subs": [
+        "StockMarket",
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "sell",
+      "type": "theme",
+      "score": 9.26,
+      "posts": 3,
+      "subs": [
+        "StockMarket",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "calls",
+      "type": "theme",
+      "score": 9.2,
+      "posts": 4,
+      "subs": [
+        "options",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "facebook",
+      "type": "theme",
+      "score": 8.97,
+      "posts": 3,
+      "subs": [
+        "StockMarket",
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "groups",
+      "type": "theme",
+      "score": 8.97,
+      "posts": 3,
+      "subs": [
+        "StockMarket",
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "puts",
+      "type": "theme",
+      "score": 8.9,
+      "posts": 4,
+      "subs": [
+        "options",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "forum",
+      "type": "theme",
+      "score": 8.84,
+      "posts": 3,
+      "subs": [
+        "StockMarket",
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "buying",
+      "type": "theme",
+      "score": 8.64,
+      "posts": 5,
+      "subs": [
+        "StockMarket",
+        "investing",
+        "options"
+      ]
+    },
+    {
+      "term": "elon musk",
+      "type": "phrase",
+      "score": 8.63,
+      "posts": 3,
+      "subs": [
+        "StockMarket",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "quantum computing",
+      "type": "phrase",
+      "score": 8.42,
+      "posts": 3,
+      "subs": [
+        "StockMarket",
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "quantum stocks",
+      "type": "phrase",
+      "score": 8.32,
+      "posts": 3,
+      "subs": [
+        "StockMarket",
+        "stocks"
+      ]
+    },
+    {
+      "term": "mid",
+      "type": "theme",
+      "score": 8.23,
+      "posts": 1,
+      "subs": [
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "space",
+      "type": "theme",
+      "score": 8.13,
+      "posts": 3,
+      "subs": [
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "amp",
+      "type": "theme",
+      "score": 8.12,
+      "posts": 3,
+      "subs": [
+        "StockMarket",
+        "investing",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "record",
+      "type": "theme",
+      "score": 8.11,
+      "posts": 3,
+      "subs": [
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "fed",
+      "type": "theme",
+      "score": 7.88,
+      "posts": 3,
+      "subs": [
+        "StockMarket",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "billion",
+      "type": "theme",
+      "score": 7.83,
+      "posts": 1,
+      "subs": [
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "spacex insiders",
+      "type": "phrase",
+      "score": 7.7,
+      "posts": 2,
+      "subs": [
+        "StockMarket",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "insiders sell",
+      "type": "phrase",
+      "score": 7.7,
+      "posts": 2,
+      "subs": [
+        "StockMarket",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "sell shares",
+      "type": "phrase",
+      "score": 7.7,
+      "posts": 2,
+      "subs": [
+        "StockMarket",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "shares earlier",
+      "type": "phrase",
+      "score": 7.7,
+      "posts": 2,
+      "subs": [
+        "StockMarket",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "earlier usual",
+      "type": "phrase",
+      "score": 7.7,
+      "posts": 2,
+      "subs": [
+        "StockMarket",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "half",
+      "type": "theme",
+      "score": 7.5,
+      "posts": 1,
+      "subs": [
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "tomorrow",
+      "type": "theme",
+      "score": 7.49,
+      "posts": 2,
+      "subs": [
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "amd",
+      "type": "theme",
+      "score": 7.35,
+      "posts": 3,
+      "subs": [
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "weekend",
+      "type": "theme",
+      "score": 7.24,
+      "posts": 3,
+      "subs": [
+        "options",
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "elon",
+      "type": "theme",
+      "score": 7.19,
+      "posts": 3,
+      "subs": [
+        "StockMarket",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "musk",
+      "type": "theme",
+      "score": 7.19,
+      "posts": 3,
+      "subs": [
+        "StockMarket",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "fake",
+      "type": "theme",
+      "score": 7.14,
+      "posts": 2,
+      "subs": [
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "computing",
+      "type": "theme",
+      "score": 7.02,
+      "posts": 3,
+      "subs": [
+        "StockMarket",
+        "stocks",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "cash",
+      "type": "theme",
+      "score": 6.9,
+      "posts": 3,
+      "subs": [
+        "StockMarket",
+        "options",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "meta launches",
+      "type": "phrase",
+      "score": 6.9,
+      "posts": 2,
+      "subs": [
+        "StockMarket",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "launches forum",
+      "type": "phrase",
+      "score": 6.9,
+      "posts": 2,
+      "subs": [
+        "StockMarket",
+        "wallstreetbets"
+      ]
+    },
+    {
+      "term": "forum facebook",
+      "type": "phrase",
+      "score": 6.9,
+      "posts": 2,
+      "subs": [
+        "StockMarket",
+        "wallstreetbets"
+      ]
+    }
+  ],
+  "topPosts": [
+    {
+      "title": "23 years ago in college, I sold all my stock to buy my future wife a $1000 engagement ring...",
+      "subreddit": "wallstreetbets",
+      "score": 19627,
+      "comments": 1563,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tlqff5/23_years_ago_in_college_i_sold_all_my_stock_to/",
+      "date": "2026-05-23"
+    },
+    {
+      "title": "What Are Your Moves Tomorrow, May 25, 2026",
+      "subreddit": "wallstreetbets",
+      "score": 159,
+      "comments": 2662,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tmmgrh/what_are_your_moves_tomorrow_may_25_2026/",
+      "date": "2026-05-24"
+    },
+    {
+      "title": "$1.2 million gain in 2 years, shares only. Need 3 more",
+      "subreddit": "wallstreetbets",
+      "score": 2960,
+      "comments": 636,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tldvnu/12_million_gain_in_2_years_shares_only_need_3_more/",
+      "date": "2026-05-23"
+    },
+    {
+      "title": "For all those people who said my calls were fake and that it was never $0.06 here you go",
+      "subreddit": "wallstreetbets",
+      "score": 3601,
+      "comments": 278,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tl4god/for_all_those_people_who_said_my_calls_were_fake/",
+      "date": "2026-05-23"
+    },
+    {
+      "title": "On the trading floor at the London Exchange",
+      "subreddit": "wallstreetbets",
+      "score": 3554,
+      "comments": 232,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tmc8n8/on_the_trading_floor_at_the_london_exchange/",
+      "date": "2026-05-24"
+    },
+    {
+      "title": "Mid-40s guy here. If you've booked your mid-6-to-7 digit AI gains by now &amp; you haven't had this much $ before, do me these three favors.",
+      "subreddit": "wallstreetbets",
+      "score": 3080,
+      "comments": 461,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tmjt3p/mid40s_guy_here_if_youve_booked_your_mid6to7/",
+      "date": "2026-05-24"
+    },
+    {
+      "title": "SpaceX insiders will get to sell shares earlier than usual after the IPO",
+      "subreddit": "wallstreetbets",
+      "score": 2593,
+      "comments": 412,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tlfsg9/spacex_insiders_will_get_to_sell_shares_earlier/",
+      "date": "2026-05-23"
+    },
+    {
+      "title": "Elon Musk's estimated wealth soared by $45 billion to a record $722 billion on Thursday after the release of SpaceX's IPO prospectus.",
+      "subreddit": "wallstreetbets",
+      "score": 1813,
+      "comments": 481,
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1tmjrfw/elon_musks_estimated_wealth_soared_by_45_billion/",
+      "date": "2026-05-24"
+    }
+  ]
+}

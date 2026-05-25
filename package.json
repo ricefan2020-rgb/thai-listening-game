@@ -13,9 +13,14 @@
     "expand-db-3": "node scripts/expand-database-3.mjs",
     "gen-phrase-roman": "node scripts/gen-phrase-roman.mjs",
     "prepare-game-pages": "node scripts/prepare-game-pages.mjs",
+    "ten-bagger:opend-install": "bash research/ten-bagger/scripts/install-opend.sh",
+    "ten-bagger:opend-start": "bash research/ten-bagger/scripts/start-opend.sh",
+    "ten-bagger:options": "node research/ten-bagger/scripts/update-options.mjs",
+    "ten-bagger:pages": "node research/ten-bagger/scripts/prepare-pages.mjs",
     "zeta": "node tools/zeta-calculator/cli.mjs",
     "zeta:dev": "vite --open /tools/zeta-calculator/",
-    "pattaya:dev": "vite --open /tools/pattaya-trip-planner/",
+    "thailand:dev": "vite --open /tools/thailand-trip-planner/",
+    "pattaya:dev": "npm run thailand:dev",
     "zeta:images": "npx tsx tools/zeta-calculator/src/generate-images.ts"
   },
   "dependencies": {

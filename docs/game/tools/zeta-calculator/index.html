@@ -655,7 +655,7 @@
         document.documentElement.dataset.activeTab = tab
       })()
     </script>
-    <script type="module" crossorigin src="/thai-listening-game/game/assets/zeta-BDti1SuQ.js"></script>
+    <script type="module" crossorigin src="/thai-listening-game/game/assets/zeta-DRlz1Foj.js"></script>
     <link rel="modulepreload" crossorigin href="/thai-listening-game/game/assets/modulepreload-polyfill-Dezn_h7o.js">
   </head>
   <body>
@@ -669,7 +669,7 @@
         </p>
         <nav class="quick-nav" aria-label="快速分析入口">
           <button type="button" data-goto-tab="factor">項分解 n=∏p^{v_p}</button>
-          <button type="button" data-goto-tab="exp">e^X 形式</button>
+          <button type="button" data-goto-tab="exp">ln · e^X · ±ζ</button>
           <button type="button" data-goto-tab="euler">Euler 乘积验证</button>
           <button type="button" data-goto-tab="diff">向量 / 点积 / 频率</button>
           <button type="button" data-goto-tab="charts">图表（螺旋·|ζ|面积）</button>
@@ -720,7 +720,7 @@
                   </label>
                 </div>
                 <label>
-                  展示前 n 項 n^{−s}=e^X
+                  展示前 n 項 ln(n^{−s})
                   <input id="exp-term-count" type="number" min="3" max="12" value="6" />
                 </label>
                 <label>
@@ -731,12 +731,12 @@
                   <button type="button" data-exp-preset data-re="2" data-im="0">ζ(2)</button>
                   <button type="button" data-exp-preset data-re="0.5" data-im="5">σ=½, t=5</button>
                 </div>
-                <button class="primary" type="submit">展開 e^X</button>
+                <button class="primary" type="submit">展開 ln</button>
               </form>
             </aside>
             <div class="vector-results">
               <div id="exp-output" class="output-stack">
-                <p class="output-empty">輸入 s 後按「展開 e^X」。</p>
+                <p class="output-empty">輸入 s 後按「展開 ln」。</p>
               </div>
             </div>
           </div>
