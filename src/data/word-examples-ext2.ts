@@ -199,8 +199,11 @@ export const WORD_EXAMPLES_EXT2: Record<string, WordExample[]> = {
     { exampleTh: '「เตารีด」 เป็นคำที่สำคัญ', exampleZh: '「熨斗」是很重要的詞。' },
   ],
   'h45': [
-    { exampleTh: 'วันนี้ฉันใช้คำว่า「ราวตากผ้า」', exampleZh: '今天我用了「曬衣桿」這個詞。' },
-    { exampleTh: '「ราวตากผ้า」 เป็นคำที่สำคัญ', exampleZh: '「曬衣桿」是很重要的詞。' },
+    { exampleTh: 'แขวนผ้าบนราวตากผ้า', exampleZh: '把衣服掛在曬衣桿上。' },
+    { exampleTh: 'ราวตากผ้าอยู่ระเบียง', exampleZh: '曬衣桿在陽台。' },
+    { exampleTh: 'ตากผ้าแดดบนราว', exampleZh: '在架子上曬衣服。' },
+    { exampleTh: 'ซื้อราวตากผ้าใหม่', exampleZh: '買新的曬衣桿。' },
+    { exampleTh: 'ราวตากผ้าพับเก็บได้', exampleZh: '曬衣桿可以摺疊收納。' },
   ],
   'h46': [
     { exampleTh: 'วันนี้ฉันใช้คำว่า「ถังซักผ้า」', exampleZh: '今天我用了「洗衣盆」這個詞。' },

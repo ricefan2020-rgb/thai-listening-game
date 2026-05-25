@@ -2,6 +2,7 @@ import type { LessonCategory, LessonItem, PracticeTopic } from '../types'
 import { LESSONS_EXT } from './lessons-ext'
 import { LESSONS_EXT2 } from './lessons-ext2'
 import { LESSONS_EXT3 } from './lessons-ext3'
+import { LESSONS_EXT4 } from './lessons-ext4'
 import { LESSONS_VOCAB_PATCH } from './lessons-vocab-patch'
 import { LESSONS_TONE_PAIRS } from './lessons-tone-pairs'
 import { LESSONS_THEMES } from './lessons-themes'
@@ -285,6 +286,7 @@ export const LESSONS: LessonItem[] = [
   ...LESSONS_EXT,
   ...LESSONS_EXT2,
   ...LESSONS_EXT3,
+  ...LESSONS_EXT4,
   ...LESSONS_VOCAB_PATCH,
   ...LESSONS_TONE_PAIRS,
   ...LESSONS_THEMES,
@@ -315,7 +317,10 @@ export const LESSON_CATEGORIES: LessonCategory[] = [
 ]
 
 export function getLessonById(id: string): LessonItem | undefined {
-  return LESSONS.find((l) => l.id === id)
+  for (let i = LESSONS.length - 1; i >= 0; i--) {
+    if (LESSONS[i]!.id === id) return LESSONS[i]
+  }
+  return undefined
 }
 
 export function getLessonsByCategory(category: LessonCategory): LessonItem[] {

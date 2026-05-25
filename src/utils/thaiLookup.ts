@@ -86,6 +86,9 @@ const EXTRA_WORD_LEXEMES: Lexeme[] = [
   { thai: 'เมนู', kind: 'word', id: '_menu' },
   { thai: 'อะไร', kind: 'word', id: '_arai' },
   { thai: 'ตำ', kind: 'word', id: '_tam' },
+  { thai: 'ด้วย', kind: 'word', id: 'vp60' },
+  { thai: 'กัน', kind: 'word', id: 'vp61' },
+  { thai: 'ด้วยกัน', kind: 'word', id: 'vp62' },
 ]
 
 function buildWordLexicon(): Lexeme[] {
@@ -156,6 +159,7 @@ function buildFromUserVocab(thai: string): ThaiLookupResult | null {
 function buildFromLesson(lesson: LessonItem): ThaiLookupResult {
   const sameThai = LESSONS.filter((l) => l.thai === lesson.thai)
   const compound = decomposeThaiCompound(lesson.thai) ?? undefined
+  const phraseAnalysis = buildPhraseAnalysis(lesson.id, lesson.thai, lesson.meaning)
   return {
     query: lesson.thai,
     kind: 'word',
@@ -168,6 +172,8 @@ function buildFromLesson(lesson: LessonItem): ThaiLookupResult {
     examples: getWordExamples(lesson),
     pitfalls: getWordPitfalls(lesson.id),
     compound,
+    phraseAnalysis:
+      phraseAnalysis.segments.length >= 2 ? phraseAnalysis : undefined,
   }
 }
 

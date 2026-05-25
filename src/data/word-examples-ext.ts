@@ -27,8 +27,8 @@ export const WORD_EXAMPLES_EXT: Record<string, WordExample[]> = {
     { exampleTh: '「รอสักครู่」 เป็นคำที่ใช้บ่อย', exampleZh: '「請稍等」是常用詞。' },
   ],
   'g27': [
-    { exampleTh: 'วันนี้ผมใช้คำว่า「ตกลง」', exampleZh: '今天我用了「好的／成交」這個詞。' },
-    { exampleTh: '「ตกลง」 เป็นคำที่ใช้บ่อย', exampleZh: '「好的／成交」是常用詞。' },
+    { exampleTh: 'ตกลงครับ ไม่มีปัญหา', exampleZh: '好的，沒問題。' },
+    { exampleTh: 'พรุ่งนี้หกโมงเจอกัน ตกลงไหม', exampleZh: '明天六點見，可以嗎？' },
   ],
   'g28': [
     { exampleTh: 'วันนี้ผมใช้คำว่า「ไม่เป็นไรนะ」', exampleZh: '今天我用了「真的沒關係」這個詞。' },

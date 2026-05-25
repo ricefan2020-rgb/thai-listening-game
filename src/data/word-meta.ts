@@ -7,7 +7,7 @@ export const WORD_PITFALL_KIND_LABELS = {
   tonePair: '同字異聲調',
 } as const
 
-import { WORD_EXAMPLES } from './word-examples'
+import { resolveWordExamples } from '../utils/wordExampleResolver'
 
 /** 易混詞對照與同音提示 */
 export const WORD_PITFALLS: Record<string, WordPitfall[]> = {
@@ -480,7 +480,7 @@ export const WORD_PITFALLS: Record<string, WordPitfall[]> = {
 }
 
 export function getWordExamples(lesson: LessonItem): WordExample[] {
-  return WORD_EXAMPLES[lesson.id] ?? []
+  return resolveWordExamples(lesson)
 }
 
 /** @deprecated 使用 getWordExamples */

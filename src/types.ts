@@ -40,6 +40,8 @@ export interface LessonItem {
 export interface WordQuizExtras {
   examples: WordExample[]
   pitfalls: WordPitfall[]
+  /** 可拆詞時顯示分詞分析（如 ช่วงเช้า） */
+  phraseAnalysis?: PhraseAnalysis
 }
 
 export type SegmentRole =

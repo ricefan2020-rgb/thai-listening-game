@@ -12,6 +12,7 @@
     "expand-db-2": "node scripts/expand-database-2.mjs",
     "expand-db-3": "node scripts/expand-database-3.mjs",
     "gen-phrase-roman": "node scripts/gen-phrase-roman.mjs",
+    "prepare-game-pages": "node scripts/prepare-game-pages.mjs",
     "zeta": "node tools/zeta-calculator/cli.mjs",
     "zeta:dev": "vite --open /tools/zeta-calculator/",
     "pattaya:dev": "vite --open /tools/pattaya-trip-planner/",

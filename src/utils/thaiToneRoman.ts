@@ -59,6 +59,15 @@ const SYLLABLE_ROMAN: Record<string, string> = {
   ทะเล: 'thale',
   น้ำ: 'nam',
   กิน: 'kin',
+  เดิน: 'dern',
+  ขึ้น: 'khûen',
+  จำ: 'jam',
+  ลืม: 'luem',
+  จดจำ: 'chotjam',
+  ลง: 'long',
+  ห่อ: 'hò',
+  ทัน: 'than',
+  ทันที: 'thanthi',
   ข้าว: 'khâo',
   ไป: 'pà',
   มา: 'ma',
@@ -118,6 +127,21 @@ const SYLLABLE_ROMAN: Record<string, string> = {
   นักท่องเที่ยว: 'nak-thong-thiao',
   ท่องเที่ยว: 'thong-thiao',
   นัก: 'nak',
+  เลิกงาน: 'loek-ngan',
+  เลิก: 'loek',
+  หลัง: 'lang',
+  รดน้ำดำหัว: 'rot-nam-dam-hua',
+  ผู้ใหญ่: 'phu-yai',
+  ขอพร: 'khopphon',
+  สวนสัตว์: 'suan-sat',
+  สวน: 'suan',
+  เตือน: 'tuean',
+  ประชาชน: 'prachachon',
+  สอน: 'son',
+  ช้าๆ: 'chaa-chaa',
+  ยืนยัน: 'yuenyan',
+  ชำระเงิน: 'chamra-ngoen',
+  การชำระเงิน: 'kan-chamra-ngoen',
   รายได้: 'raiad',
   เชียงใหม่: 'chiangmai',
   ภูเก็ต: 'phuket',
@@ -130,7 +154,7 @@ const SYLLABLE_ROMAN: Record<string, string> = {
   ออกกำลังกาย: 'okamlangngai',
   สวนสาธารณะ: 'suansatharana',
   ตื่น: 'tuen',
-  เช้า: 'chao',
+  เช้า: 'cháo',
   โทร: 'thro',
   ดู: 'du',
   หนัง: 'nang',
@@ -174,8 +198,6 @@ const SYLLABLE_ROMAN: Record<string, string> = {
   วงจรปิด: 'wongchonphit',
   ปิด: 'phit',
   ถ่ายรูป: 'thairup',
-  ลืม: 'luem',
-  จำ: 'jam',
   แพ้: 'phae',
   ถั่ว: 'thua',
   ยา: 'ya',
@@ -205,7 +227,7 @@ const SYLLABLE_ROMAN: Record<string, string> = {
   ประเทศ: 'prathet',
   ไหว้: 'wâi',
   ควร: 'khuen',
-  ด้วย: 'duai',
+  ด้วย: 'duâi',
   ความ: 'khwam',
   เคารพ: 'khao-rop',
   ความสุภาพ: 'khwam-sùphaph',
@@ -261,7 +283,6 @@ const SYLLABLE_ROMAN: Record<string, string> = {
   เป็นมิตร: 'penmit',
   คนเยอะ: 'khonyoe',
   ประสบการณ์: 'prasopkan',
-  จดจำ: 'chotjam',
   สถาปัตยกรรม: 'sà-thà-pàt-yá-kam',
   สวยงาม: 'sǔay-ngam',
   คึกคัก: 'khuekkhak',
@@ -307,7 +328,44 @@ const SYLLABLE_ROMAN: Record<string, string> = {
   เทศกาล: 'thét-sà-kan',
   ลอยกระทง: 'loi-krà-thong',
   ตรงเวลา: 'trong-wela',
-  ช่วง: 'chuang',
+  ช่วง: 'chûang',
+  ช่วงเช้า: 'chûang-cháo',
+  ราว: 'rao',
+  ตาก: 'tàak',
+  ผ้า: 'phâa',
+  ตากผ้า: 'tàak-phâa',
+  ราวตากผ้า: 'rao-tàak-phâa',
+  อ่าง: 'àang',
+  ล้าง: 'láang',
+  ล้างหน้า: 'láang-nâa',
+  อ่างล้างหน้า: 'àang-láang-nâa',
+  รถ: 'rót',
+  ไฟฟ้า: 'fai-fáa',
+  รถไฟฟ้า: 'rót-fai-fáa',
+  ถัง: 'thǎng',
+  ซัก: 'sák',
+  ถังซักผ้า: 'thǎng-sák-phâa',
+  หอย: 'hǒi',
+  นางรม: 'nang-rom',
+  หอยนางรม: 'hǒi-nang-rom',
+  ปลา: 'plaa',
+  หมึก: 'muek',
+  ยักษ์: 'yák',
+  ปลาหมึกยักษ์: 'plaa-muek-yák',
+  ไหล: 'lǎi',
+  ปลาไหล: 'plaa-lǎi',
+  ปู: 'puu',
+  ปูม้า: 'puu-máa',
+  กุ้ง: 'kung',
+  มังกร: 'mangkon',
+  กุ้งมังกร: 'kung-mangkon',
+  สิงโต: 'singto',
+  สิงโตทะเล: 'singto-thale',
+  กัด: 'gàt',
+  ปลากัด: 'plaa-gàt',
+  กัน: 'kan',
+  ด้วยกัน: 'duâi-kan',
+  ไปกินข้าวด้วยกัน: 'pai-kin-khâo-duâi-kan',
   วันหยุด: 'wan-yút',
   ยาว: 'yaao',
   วันหยุดยาว: 'wan-yút-yaao',
@@ -592,6 +650,122 @@ function mergeLueFragments(units: string[]): string[] {
       out[out.length - 1] = 'เพิ่มขึ้น'
       continue
     }
+    if (u === 'งาน' && out.length > 0 && out[out.length - 1] === 'เลิก') {
+      out[out.length - 1] = 'เลิกงาน'
+      continue
+    }
+    if (
+      (u === 'ญ่' || u === 'ญ' || u.startsWith('ญ')) &&
+      out.length > 0 &&
+      out[out.length - 1] === 'ผู้ให'
+    ) {
+      out[out.length - 1] = 'ผู้ใหญ่'
+      continue
+    }
+    if (u === 'สัตว์' && out.length > 0 && out[out.length - 1] === 'สวน') {
+      out[out.length - 1] = 'สวนสัตว์'
+      continue
+    }
+    if (u === 'น' && out.length > 0 && out[out.length - 1] === 'เตือ') {
+      out[out.length - 1] = 'เตือน'
+      continue
+    }
+    if (u === 'ระชาช' && out.length > 0 && out[out.length - 1] === 'ป') {
+      out[out.length - 1] = 'ประชาช'
+      continue
+    }
+    if (u === 'น' && out.length > 0 && out[out.length - 1] === 'ประชาช') {
+      out[out.length - 1] = 'ประชาชน'
+      continue
+    }
+    if (u === 'ๆ' && out.length > 0) {
+      out[out.length - 1] = out[out.length - 1] + 'ๆ'
+      continue
+    }
+    if (u === 'เงิน' && out.length > 0 && out[out.length - 1] === 'ชำระ') {
+      out[out.length - 1] = 'ชำระเงิน'
+      continue
+    }
+    if (u === 'ที' && out.length > 0 && out[out.length - 1] === 'ทัน') {
+      out[out.length - 1] = 'ทันที'
+      continue
+    }
+    if (u === 'ผ้า' && out.length > 0 && out[out.length - 1] === 'ตาก') {
+      out[out.length - 1] = 'ตากผ้า'
+      continue
+    }
+    if (u === 'ตาก' && out.length > 0 && out[out.length - 1] === 'ราว') {
+      out.push('ตาก')
+      continue
+    }
+    if (u === 'ซัก' && out.length > 0 && out[out.length - 1] === 'ถัง') {
+      out.push('ซัก')
+      continue
+    }
+    if (u === 'ผ้า' && out.length >= 2 && out[0] === 'ถัง' && out[1] === 'ซัก') {
+      out.push('ผ้า')
+      continue
+    }
+    if (u === 'หมึก' && out.length > 0 && out[out.length - 1] === 'ปลา') {
+      out.push('หมึก')
+      continue
+    }
+    if (u === 'ยักษ์' && out.length >= 2 && out[0] === 'ปลา' && out[1] === 'หมึก') {
+      out.push('ยักษ์')
+      continue
+    }
+    if (u === 'ไหล' && out.length > 0 && out[out.length - 1] === 'ปลา') {
+      out.push('ไหล')
+      continue
+    }
+    if (u === 'ม้า' && out.length > 0 && out[out.length - 1] === 'ปู') {
+      out.push('ม้า')
+      continue
+    }
+    if (u === 'มังกร' && out.length > 0 && out[out.length - 1] === 'กุ้ง') {
+      out.push('มังกร')
+      continue
+    }
+    if (u === 'นาง' && out.length > 0 && out[out.length - 1] === 'หอย') {
+      out.push('นาง')
+      continue
+    }
+    if (u === 'รม' && out.length >= 2 && out[0] === 'หอย' && out[1] === 'นาง') {
+      out[out.length - 1] = 'นางรม'
+      continue
+    }
+    if (u === 'ทะเล' && out.length > 0 && out[out.length - 1] === 'สิงโต') {
+      out.push('ทะเล')
+      continue
+    }
+    if (u === 'กัด' && out.length > 0 && out[out.length - 1] === 'ปลา') {
+      out.push('กัด')
+      continue
+    }
+    if (u === 'กัน' && out.length > 0 && out[out.length - 1] === 'ด้วย') {
+      out[out.length - 1] = 'ด้วยกัน'
+      continue
+    }
+    if (u === 'น้า' && out.length > 0 && out[out.length - 1] === 'ห') {
+      out[out.length - 1] = 'หน้า'
+      continue
+    }
+    if (u === 'ล้าง' && out.length > 0 && out[out.length - 1] === 'อ่าง') {
+      out.push('ล้าง')
+      continue
+    }
+    if (u === 'หน้า' && out.length > 0 && out[out.length - 1] === 'ล้าง') {
+      out.push('หน้า')
+      continue
+    }
+    if (u === 'ฟ้า' && out.length > 0 && out[out.length - 1] === 'รถไฟ') {
+      out[out.length - 1] = 'รถไฟฟ้า'
+      continue
+    }
+    if (u === 'ฟ้า' && out.length > 0 && out[out.length - 1] === 'ไฟ') {
+      out[out.length - 1] = 'ไฟฟ้า'
+      continue
+    }
     out.push(u)
   }
   return out
@@ -599,6 +773,60 @@ function mergeLueFragments(units: string[]): string[] {
 
 const CHUANG_PREFIX = 'ช่วง'
 const NAK_THONG_THIAO = 'นักท่องเที่ยว'
+const HLANG_LOEK_NGAN = 'หลังเลิกงาน'
+const ROD_NAM_DAM_HUA = 'รดน้ำดำหัว'
+const PAI_PREFIX = 'ไป'
+const TUEAN_PREFIX = 'เตือน'
+const YUENYAN_PREFIX = 'ยืนยัน'
+
+/** 「ยืนยัน…」確認 + 名詞化片語 */
+function splitYuenyanPrefix(trimmed: string): string[] | null {
+  if (!trimmed.startsWith(YUENYAN_PREFIX) || trimmed.length <= YUENYAN_PREFIX.length) {
+    return null
+  }
+  const tail = trimmed.slice(YUENYAN_PREFIX.length)
+  if (!tail) return [YUENYAN_PREFIX]
+  const tailUnits = tokenizePhraseUnitsCoreInner(tail)
+  return [YUENYAN_PREFIX, ...tailUnits]
+}
+
+/** 「เตือน…」提醒 + 對象 */
+function splitTueanPrefix(trimmed: string): string[] | null {
+  if (!trimmed.startsWith(TUEAN_PREFIX) || trimmed.length <= TUEAN_PREFIX.length) {
+    return null
+  }
+  const tail = trimmed.slice(TUEAN_PREFIX.length)
+  if (!tail) return [TUEAN_PREFIX]
+  const tailUnits = tokenizePhraseUnitsCoreInner(tail)
+  return [TUEAN_PREFIX, ...tailUnits]
+}
+
+/** 「ไป…」動詞 + 目的地（避免 สวน+สัตว์ 拆散） */
+function splitPaiPrefix(trimmed: string): string[] | null {
+  if (!trimmed.startsWith(PAI_PREFIX) || trimmed.length <= PAI_PREFIX.length) return null
+  const tail = trimmed.slice(PAI_PREFIX.length)
+  if (!tail) return [PAI_PREFIX]
+  const tailUnits = tokenizePhraseUnitsCoreInner(tail)
+  return [PAI_PREFIX, ...tailUnits]
+}
+
+/** 「รดน้ำดำหัว…」整段動作 + 對象 */
+function splitRodNamDamHuaPrefix(trimmed: string): string[] | null {
+  if (!trimmed.startsWith(ROD_NAM_DAM_HUA) || trimmed.length <= ROD_NAM_DAM_HUA.length) {
+    return null
+  }
+  const tail = trimmed.slice(ROD_NAM_DAM_HUA.length)
+  const tailUnits = tokenizePhraseUnitsCoreInner(tail)
+  return [ROD_NAM_DAM_HUA, ...tailUnits]
+}
+
+/** 「หลังเลิกงาน」固定兩段，避免 หลัง／เลิก／งาน 拆散 */
+function splitHlangLoekNgan(trimmed: string): string[] | null {
+  if (!trimmed.startsWith(HLANG_LOEK_NGAN)) return null
+  const tail = trimmed.slice(HLANG_LOEK_NGAN.length)
+  if (!tail) return ['หลัง', 'เลิกงาน']
+  return ['หลัง', 'เลิกงาน', ...tokenizePhraseUnitsCoreInner(tail)]
+}
 
 /** 「นักท่องเที่ยว…」整詞優先，避免 ท่อง／ง／เที่ยว 被拆散 */
 function splitNakThongthiaoPrefix(trimmed: string): string[] | null {
@@ -663,6 +891,16 @@ function tokenizePhraseUnitsCoreInner(text: string): string[] {
 
 function tokenizePhraseUnitsCore(text: string): string[] {
   const trimmed = text.trim()
+  const yuenyan = splitYuenyanPrefix(trimmed)
+  if (yuenyan) return yuenyan
+  const tuean = splitTueanPrefix(trimmed)
+  if (tuean) return tuean
+  const pai = splitPaiPrefix(trimmed)
+  if (pai) return pai
+  const rodNam = splitRodNamDamHuaPrefix(trimmed)
+  if (rodNam) return rodNam
+  const hlang = splitHlangLoekNgan(trimmed)
+  if (hlang) return hlang
   const nak = splitNakThongthiaoPrefix(trimmed)
   if (nak) return nak
   const chuang = splitChuangPrefix(trimmed)
@@ -713,7 +951,7 @@ export function getThaiRomanToneInfo(text: string): ThaiRomanToneInfo {
   const trimmed = text.trim()
   if (!trimmed) return { roman: '', tonesZh: '' }
 
-  const phraseRoman = PHRASE_TONE_ROMAN[trimmed]
+  const phraseRoman = PHRASE_TONE_ROMAN[trimmed] ?? THAI_ROMAN[trimmed]
   if (phraseRoman?.includes('-')) {
     const toneLabels = phraseRoman.split('-').map(toneZhFromRomanSegment)
     return {

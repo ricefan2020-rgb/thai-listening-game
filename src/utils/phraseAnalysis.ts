@@ -47,7 +47,7 @@ function collectExamples(phraseId: string, thai: string): WordExample[] {
     seen.add(ex.exampleTh)
     merged.push(ex)
   }
-  return merged.slice(0, 3)
+  return merged.slice(0, 5)
 }
 
 function finalize(

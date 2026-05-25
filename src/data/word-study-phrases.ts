@@ -1,0 +1,22 @@
+/** 單字測驗時用常見搭配展示分詞（整詞僅一字時） */
+export const WORD_STUDY_PHRASES: Record<string, { thai: string; meaningZh: string }> = {
+  o56: { thai: 'ฝึกภาษาไทย', meaningZh: '練泰文' },
+  o57: { thai: 'เรียนภาษาไทย', meaningZh: '學泰文' },
+  o58: { thai: 'สอนภาษาไทย', meaningZh: '教泰文' },
+  o59: { thai: 'ทดสอบภาษา', meaningZh: '測驗語言' },
+  o60: { thai: 'สอบภาษาไทย', meaningZh: '考泰文' },
+  o61: { thai: 'ผ่านการสอบ', meaningZh: '通過考試' },
+  o62: { thai: 'สอบตกแล้ว', meaningZh: '考不及格了' },
+  o63: { thai: 'ซ้อนบทเรียน', meaningZh: '複習課程' },
+  o64: { thai: 'แปลเป็นภาษาไทย', meaningZh: '翻譯成泰文' },
+  o65: { thai: 'อธิบายคำศัพท์', meaningZh: '解釋詞彙' },
+  f56: { thai: 'คำศัพท์ใหม่', meaningZh: '新單字' },
+  t46: { thai: 'รถไฟฟ้า', meaningZh: '空鐵／地鐵' },
+  h18: { thai: 'อ่างล้างหน้า', meaningZh: '洗手台' },
+  h45: { thai: 'ราวตากผ้า', meaningZh: '曬衣桿' },
+  h46: { thai: 'ถังซักผ้า', meaningZh: '洗衣盆' },
+  a60: { thai: 'หอยนางรม', meaningZh: '牡蠣' },
+  a59: { thai: 'กุ้งมังกร', meaningZh: '龍蝦' },
+  a58: { thai: 'ปูม้า', meaningZh: '花蟹' },
+  a56: { thai: 'ปลาหมึกยักษ์', meaningZh: '大章魚' },
+}

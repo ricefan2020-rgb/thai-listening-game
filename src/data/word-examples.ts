@@ -7,6 +7,8 @@ import { WORD_EXAMPLES_TONE_PAIRS } from './word-examples-tone-pairs'
 import { WORD_EXAMPLES_THEMES } from './word-examples-themes'
 import { WORD_EXAMPLES_THEMES_EXT } from './word-examples-themes-ext'
 import { WORD_EXAMPLES_TIME_HOLIDAY } from './word-examples-time-holiday'
+import { WORD_EXAMPLES_EXT4 } from './word-examples-ext4'
+import { WORD_EXAMPLES_CURATED } from './word-examples-curated'
 
 /** 每詞 2 則例句 */
 export const WORD_EXAMPLES: Record<string, WordExample[]> = {
@@ -979,4 +981,6 @@ export const WORD_EXAMPLES: Record<string, WordExample[]> = {
   ...WORD_EXAMPLES_THEMES,
   ...WORD_EXAMPLES_THEMES_EXT,
   ...WORD_EXAMPLES_TIME_HOLIDAY,
+  ...WORD_EXAMPLES_EXT4,
+  ...WORD_EXAMPLES_CURATED,
 }

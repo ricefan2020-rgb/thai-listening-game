@@ -5,6 +5,7 @@ import {
 } from '../data/lessons'
 import { getPitfallLessons, getTonePairLessons } from '../data/lessons'
 import { getWordExamples, getWordPitfalls } from '../data/word-meta'
+import { WORD_STUDY_PHRASES } from '../data/word-study-phrases'
 import type { LessonItem, WordQuizExtras } from '../types'
 import {
   ARTICLES_PER_ROUND,
@@ -91,9 +92,22 @@ export function buildWordQuestion(lesson: LessonItem, pool: LessonItem[]): QuizQ
   }
 
   const options = shuffle([lesson.meaning, ...distractors.slice(0, 3)])
+  const studyPhrase = WORD_STUDY_PHRASES[lesson.id]
+  const phraseForSeg = studyPhrase
+    ? buildPhraseAnalysis(lesson.id, studyPhrase.thai, studyPhrase.meaningZh)
+    : buildPhraseAnalysis(lesson.id, lesson.thai, lesson.meaning)
+  const phraseFromWord = buildPhraseAnalysis(lesson.id, lesson.thai, lesson.meaning)
+  const phraseAnalysis =
+    phraseForSeg.segments.length >= 2
+      ? phraseForSeg
+      : phraseFromWord.segments.length >= 2
+        ? phraseFromWord
+        : phraseForSeg
   const wordExtras: WordQuizExtras = {
     examples: getWordExamples(lesson),
     pitfalls: getWordPitfalls(lesson.id),
+    phraseAnalysis:
+      phraseAnalysis.segments.length >= 2 ? phraseAnalysis : undefined,
   }
 
   return {

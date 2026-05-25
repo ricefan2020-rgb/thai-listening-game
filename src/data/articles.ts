@@ -5,6 +5,7 @@ import { ARTICLES_EXT3 } from './articles-ext3'
 import { ARTICLES_NEWS } from './articles-news'
 import { ARTICLES_NEWS_EXT } from './articles-news-ext'
 import { ARTICLES_HOLIDAY } from './articles-holiday'
+import { ARTICLES_EXT4 } from './articles-ext4'
 
 export const ARTICLE_CATEGORY_LABELS: Record<ArticleCategory, string> = {
   travel: '旅遊見聞',
@@ -185,6 +186,7 @@ export const ARTICLES: Article[] = [
   ...ARTICLES_NEWS,
   ...ARTICLES_NEWS_EXT,
   ...ARTICLES_HOLIDAY,
+  ...ARTICLES_EXT4,
 ]
 
 export const ARTICLE_COUNT = ARTICLES.length

@@ -49,6 +49,7 @@ const COMPOUND_PATTERN_GROUPS: Record<
       { thai: 'เติมก่อนวันที่มีผล', meaningZh: '生效前先加油' },
       { thai: 'ช่วงวันหยุดยาว', meaningZh: '連假時段' },
       { thai: 'เพิ่มขึ้นอย่างต่อเนื่อง', meaningZh: '持續增加' },
+      { thai: 'หลังเลิกงาน', meaningZh: '下班後' },
     ],
   },
   'metric-rate': {
@@ -76,6 +77,47 @@ const COMPOUND_PATTERN_GROUPS: Record<
       { thai: 'เรียนภาษาไทย', meaningZh: '學泰文' },
     ],
   },
+  'kan-nominalization': {
+    patternZh: '動詞 ＋ การ ＋ 名詞（名詞化）',
+    phrases: [
+      { thai: 'ยืนยันการชำระเงิน', meaningZh: '確認付款' },
+      { thai: 'การทักทาย', meaningZh: '問候' },
+      { thai: 'การสื่อสาร', meaningZh: '溝通' },
+    ],
+  },
+  'adverb-chaa-repeat': {
+    patternZh: '動詞／形容 ＋ ช้าๆ（慢慢地、放慢）',
+    phrases: [
+      { thai: 'สอนช้าๆ', meaningZh: '教得慢' },
+      { thai: 'พูดช้าๆ', meaningZh: '慢慢說' },
+      { thai: 'ช้าๆ หน่อยได้ไหม', meaningZh: '可以慢一點嗎' },
+    ],
+  },
+  'warn-public': {
+    patternZh: 'เตือน（提醒）＋ 對象／民眾',
+    phrases: [
+      { thai: 'เตือนประชาชน', meaningZh: '提醒民眾' },
+      { thai: 'แจ้งประชาชน', meaningZh: '通知民眾' },
+      { thai: 'บริการประชาชนออนไลน์', meaningZh: '線上公共服務' },
+    ],
+  },
+  'pai-destination': {
+    patternZh: 'ไป（去）＋ 地點／活動',
+    phrases: [
+      { thai: 'ไปสวนสัตว์', meaningZh: '去動物園' },
+      { thai: 'ไปตลาดนัด', meaningZh: '去夜市' },
+      { thai: 'ไปโรงพยาบาล', meaningZh: '去醫院' },
+      { thai: 'ไปดูหนัง', meaningZh: '去看電影' },
+    ],
+  },
+  'holiday-ritual': {
+    patternZh: '節日儀式動作 ＋ 對象／目的',
+    phrases: [
+      { thai: 'รดน้ำดำหัวผู้ใหญ่', meaningZh: '向長輩潑水祝福' },
+      { thai: 'รดน้ำดำหัวขอพร', meaningZh: '潑水祈福' },
+      { thai: 'ปล่อยกระทงลงแม่น้ำ', meaningZh: '放水燈入河' },
+    ],
+  },
 }
 
 /** 短文題泰文 → 句型組 id */
@@ -101,6 +143,7 @@ export const PHRASE_COMPOUND_PATTERN: Record<string, string> = {
   เติมก่อนวันที่มีผล: 'time-sequence',
   ช่วงวันหยุดยาว: 'time-sequence',
   เพิ่มขึ้นอย่างต่อเนื่อง: 'time-sequence',
+  หลังเลิกงาน: 'time-sequence',
   อัตราเข้าพักสูง: 'metric-rate',
   ราคาน้ำมันปรับขึ้น: 'metric-rate',
   นักท่องเที่ยวเพิ่มขึ้น: 'metric-rate',
@@ -110,6 +153,18 @@ export const PHRASE_COMPOUND_PATTERN: Record<string, string> = {
   ยิ้มเมื่อทักทาย: 'respect-greeting',
   อยากเรียนภาษาไทยต่อไป: 'study-language',
   ฝึกภาษาไทย: 'study-language',
+  รดน้ำดำหัวผู้ใหญ่: 'holiday-ritual',
+  รดน้ำดำหัวขอพร: 'holiday-ritual',
+  ไปสวนสัตว์: 'pai-destination',
+  ไปตลาดนัด: 'pai-destination',
+  ไปโรงพยาบาล: 'pai-destination',
+  ไปดูหนัง: 'pai-destination',
+  เตือนประชาชน: 'warn-public',
+  บริการประชาชนออนไลน์: 'warn-public',
+  สอนช้าๆ: 'adverb-chaa-repeat',
+  พูดช้าๆ: 'adverb-chaa-repeat',
+  ยืนยันการชำระเงิน: 'kan-nominalization',
+  ชำระเงิน: 'kan-nominalization',
 }
 
 /** 無 override 時的手動分詞（僅用於相似例展示） */

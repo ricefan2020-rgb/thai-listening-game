@@ -241,17 +241,9 @@ const NEW_ARTICLES = [
   },
 ]
 
-function genExamples(thai, meaning) {
-  return [
-    {
-      exampleTh: `วันนี้ผมใช้คำว่า「${thai}」`,
-      exampleZh: `今天我用了「${meaning}」這個詞。`,
-    },
-    {
-      exampleTh: `「${thai}」 เป็นคำที่ใช้บ่อย`,
-      exampleZh: `「${meaning}」是常用詞。`,
-    },
-  ]
+/** 擴充詞不再寫入套版例句；執行期由 wordExampleResolver 從句子／短文擷取 */
+function genExamples() {
+  return []
 }
 
 function formatLessonLine(l) {
@@ -333,22 +325,13 @@ ${NEW_ARTICLES.map(formatArticle).join('\n')}
 `,
 )
 
-// word-examples-ext.ts
-const exampleLines = NEW_LESSONS.map((l) => {
-  const ex = genExamples(l.thai, l.meaning)
-  return `  '${l.id}': [
-    { exampleTh: '${ex[0].exampleTh.replace(/'/g, "\\'")}', exampleZh: '${ex[0].exampleZh.replace(/'/g, "\\'")}' },
-    { exampleTh: '${ex[1].exampleTh.replace(/'/g, "\\'")}', exampleZh: '${ex[1].exampleZh.replace(/'/g, "\\'")}' },
-  ],`
-})
-
+// word-examples-ext.ts — 例句改由 wordExampleResolver 從語料庫動態產生，避免套版句
 writeFileSync(
   join(dataDir, 'word-examples-ext.ts'),
   `import type { WordExample } from '../types'
 
-/** 擴充例句（${NEW_LESSONS.length} 詞 × 2） */
+/** 擴充例句（手動校訂；其餘詞由 wordExampleResolver 從句子／短文擷取） */
 export const WORD_EXAMPLES_EXT: Record<string, WordExample[]> = {
-${exampleLines.join('\n')}
 }
 `,
 )

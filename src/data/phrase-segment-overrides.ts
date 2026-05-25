@@ -29,6 +29,55 @@ export const PHRASE_SEGMENT_OVERRIDES: Record<
     { thai: 'ไป', meaning: '去' },
     { thai: 'ตลาดนัด', meaning: '夜市' },
   ],
+  ไปสวนสัตว์: [
+    { thai: 'ไป', meaning: '去' },
+    { thai: 'สวนสัตว์', meaning: '動物園' },
+  ],
+  เตือนประชาชน: [
+    { thai: 'เตือน', meaning: '提醒／警告' },
+    { thai: 'ประชาชน', meaning: '民眾' },
+  ],
+  สอนช้าๆ: [
+    { thai: 'สอน', meaning: '教' },
+    { thai: 'ช้าๆ', meaning: '慢慢地' },
+  ],
+  หายใจไม่ทัน: [
+    { thai: 'หายใจ', meaning: '呼吸' },
+    { thai: 'ไม่', meaning: '不' },
+    { thai: 'ทัน', meaning: '來得及（與ไม่連用＝來不及）' },
+  ],
+  ขับรถไปเชียงใหม่: [
+    { thai: 'ขับรถ', meaning: '開車' },
+    { thai: 'ไป', meaning: '去' },
+    { thai: 'เชียงใหม่', meaning: '清邁' },
+  ],
+  ยืนยันการชำระเงิน: [
+    { thai: 'ยืนยัน', meaning: '確認' },
+    { thai: 'การ', meaning: '……之行／事（名詞化）' },
+    { thai: 'ชำระเงิน', meaning: '付款' },
+  ],
+  ชำระเงิน: [{ thai: 'ชำระเงิน', meaning: '付款' }],
+  ตรวจสอบรายการ: [
+    { thai: 'ตรวจสอบ', meaning: '查核' },
+    { thai: 'รายการ', meaning: '項目／明細' },
+  ],
+  พูดช้าๆ: [
+    { thai: 'พูด', meaning: '說' },
+    { thai: 'ช้าๆ', meaning: '慢慢地' },
+  ],
+  บริการประชาชนออนไลน์: [
+    { thai: 'บริการ', meaning: '服務' },
+    { thai: 'ประชาชน', meaning: '民眾' },
+    { thai: 'ออนไลน์', meaning: '線上' },
+  ],
+  ไปโรงพยาบาล: [
+    { thai: 'ไป', meaning: '去' },
+    { thai: 'โรงพยาบาล', meaning: '醫院' },
+  ],
+  ไปดูหนัง: [
+    { thai: 'ไป', meaning: '去' },
+    { thai: 'ดูหนัง', meaning: '看電影' },
+  ],
   รสชาติอร่อยมาก: [
     { thai: 'รสชาติ', meaning: '味道' },
     { thai: 'อร่อย', meaning: '好吃' },
@@ -61,6 +110,24 @@ export const PHRASE_SEGMENT_OVERRIDES: Record<
     { thai: 'กิน', meaning: '吃' },
     { thai: 'อาหารเย็น', meaning: '晚餐' },
     { thai: 'ด้วยกัน', meaning: '一起' },
+  ],
+  ไปกินข้าวด้วยกัน: [
+    { thai: 'ไป', meaning: '去' },
+    { thai: 'กิน', meaning: '吃' },
+    { thai: 'ข้าว', meaning: '飯／用餐' },
+    { thai: 'ด้วยกัน', meaning: '一起' },
+  ],
+  หลังเลิกงาน: [
+    { thai: 'หลัง', meaning: '在……之後' },
+    { thai: 'เลิกงาน', meaning: '下班' },
+  ],
+  รดน้ำดำหัวผู้ใหญ่: [
+    { thai: 'รดน้ำดำหัว', meaning: '潑水祝福（澆頭）' },
+    { thai: 'ผู้ใหญ่', meaning: '長輩' },
+  ],
+  รดน้ำดำหัวขอพร: [
+    { thai: 'รดน้ำดำหัว', meaning: '潑水祝福（澆頭）' },
+    { thai: 'ขอพร', meaning: '祈求祝福' },
   ],
   อาหารเช้ามีหลากหลายมาก: [
     { thai: 'อาหารเช้า', meaning: '早餐' },
@@ -211,6 +278,76 @@ export const PHRASE_SEGMENT_OVERRIDES: Record<
     { thai: 'วันหยุด', meaning: '假日' },
     { thai: 'ยาว', meaning: '長' },
   ],
+  ช่วงเช้า: [
+    { thai: 'ช่วง', meaning: '時段' },
+    { thai: 'เช้า', meaning: '早晨／上午' },
+  ],
+  ช่วงกลางคืน: [
+    { thai: 'ช่วง', meaning: '時段' },
+    { thai: 'กลางคืน', meaning: '夜間' },
+  ],
+  ตอนเช้า: [
+    { thai: 'ตอน', meaning: '時候' },
+    { thai: 'เช้า', meaning: '早晨' },
+  ],
+  ราวตากผ้า: [
+    { thai: 'ราว', meaning: '桿／架' },
+    { thai: 'ตาก', meaning: '曬（乾）' },
+    { thai: 'ผ้า', meaning: '布／衣服' },
+  ],
+  อ่างล้างหน้า: [
+    { thai: 'อ่าง', meaning: '盆／槽' },
+    { thai: 'ล้าง', meaning: '洗' },
+    { thai: 'หน้า', meaning: '臉' },
+  ],
+  ถังซักผ้า: [
+    { thai: 'ถัง', meaning: '桶／盆' },
+    { thai: 'ซัก', meaning: '洗' },
+    { thai: 'ผ้า', meaning: '布／衣服' },
+  ],
+  ซักผ้า: [
+    { thai: 'ซัก', meaning: '洗' },
+    { thai: 'ผ้า', meaning: '衣服' },
+  ],
+  รถไฟฟ้า: [
+    { thai: 'รถ', meaning: '車' },
+    { thai: 'ไฟฟ้า', meaning: '電／電力' },
+  ],
+  ฝึกภาษาไทย: [
+    { thai: 'ฝึก', meaning: '練習' },
+    { thai: 'ภาษา', meaning: '語言' },
+    { thai: 'ไทย', meaning: '泰' },
+  ],
+  ฝึกฟัง: [
+    { thai: 'ฝึก', meaning: '練習' },
+    { thai: 'ฟัง', meaning: '聽' },
+  ],
+  ฝึกพูด: [
+    { thai: 'ฝึก', meaning: '練習' },
+    { thai: 'พูด', meaning: '說' },
+  ],
+  ซ้อนบทเรียน: [
+    { thai: 'ซ้อน', meaning: '複習' },
+    { thai: 'บทเรียน', meaning: '課程' },
+  ],
+  นั่งรถไฟฟ้า: [
+    { thai: 'นั่ง', meaning: '坐／搭乘' },
+    { thai: 'รถไฟฟ้า', meaning: '空鐵／地鐵' },
+  ],
+  'นั่งรถไฟฟ้า BTS': [
+    { thai: 'นั่ง', meaning: '搭乘' },
+    { thai: 'รถไฟฟ้า', meaning: '空鐵' },
+    { thai: 'BTS', meaning: 'BTS（空鐵）' },
+  ],
+  วันขึ้นปีใหม่: [
+    { thai: 'วัน', meaning: '日' },
+    { thai: 'ขึ้น', meaning: '跨入／開始' },
+    { thai: 'ปีใหม่', meaning: '新年' },
+  ],
+  ตากผ้า: [
+    { thai: 'ตาก', meaning: '曬（乾）' },
+    { thai: 'ผ้า', meaning: '衣服' },
+  ],
   เมืองท่องเที่ยวหลัก: [
     { thai: 'เมือง', meaning: '城市' },
     { thai: 'ท่องเที่ยว', meaning: '觀光' },
@@ -228,5 +365,35 @@ export const PHRASE_SEGMENT_OVERRIDES: Record<
   กระตุ้นเศรษฐกิจ: [
     { thai: 'กระตุ้น', meaning: '帶動／刺激' },
     { thai: 'เศรษฐกิจ', meaning: '經濟' },
+  ],
+  // lessons-ext3 海鮮／動物複合詞
+  ปลาหมึกยักษ์: [
+    { thai: 'ปลา', meaning: '魚' },
+    { thai: 'หมึก', meaning: '墨魚／章魚' },
+    { thai: 'ยักษ์', meaning: '巨大' },
+  ],
+  ปลาไหล: [
+    { thai: 'ปลา', meaning: '魚' },
+    { thai: 'ไหล', meaning: '鰻（蛇形魚）' },
+  ],
+  ปูม้า: [
+    { thai: 'ปู', meaning: '蟹' },
+    { thai: 'ม้า', meaning: '馬（此處為花蟹俗稱用字）' },
+  ],
+  กุ้งมังกร: [
+    { thai: 'กุ้ง', meaning: '蝦' },
+    { thai: 'มังกร', meaning: '龍' },
+  ],
+  หอยนางรม: [
+    { thai: 'หอย', meaning: '貝／螺' },
+    { thai: 'นางรม', meaning: '牡蠣（字面：海女／珍珠貝）' },
+  ],
+  สิงโตทะเล: [
+    { thai: 'สิงโต', meaning: '獅子' },
+    { thai: 'ทะเล', meaning: '海' },
+  ],
+  ปลากัด: [
+    { thai: 'ปลา', meaning: '魚' },
+    { thai: 'กัด', meaning: '咬（好鬥）' },
   ],
 }

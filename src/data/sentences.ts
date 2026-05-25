@@ -4,6 +4,7 @@ import { SENTENCES_EXT2 } from './sentences-ext2'
 import { SENTENCES_EXT3 } from './sentences-ext3'
 import { SENTENCES_EXT4 } from './sentences-ext4'
 import { SENTENCES_EXT5 } from './sentences-ext5'
+import { SENTENCES_EXT6 } from './sentences-ext6'
 
 export const SENTENCE_CATEGORY_LABELS: Record<SentenceCategory, string> = {
   greeting: '問候交際',
@@ -503,6 +504,7 @@ export const SENTENCES: SentenceItem[] = [
   ...SENTENCES_EXT3,
   ...SENTENCES_EXT4,
   ...SENTENCES_EXT5,
+  ...SENTENCES_EXT6,
 ]
 
 export const SENTENCE_COUNT = SENTENCES.length

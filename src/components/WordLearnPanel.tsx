@@ -1,6 +1,7 @@
-import type { WordExample, WordPitfall } from '../types'
+import type { PhraseAnalysis, WordExample, WordPitfall } from '../types'
 import { WORD_PITFALL_KIND_LABELS } from '../data/word-meta'
 import { InteractiveThaiText } from './InteractiveThaiText'
+import { PhraseSegmentPanel } from './PhraseSegmentPanel'
 
 const KIND_STYLES: Record<WordPitfall['kind'], string> = {
   homophone: 'bg-violet-100 text-violet-800 ring-violet-200',
@@ -12,6 +13,7 @@ const KIND_STYLES: Record<WordPitfall['kind'], string> = {
 interface WordLearnPanelProps {
   examples: WordExample[]
   pitfalls: WordPitfall[]
+  phraseAnalysis?: PhraseAnalysis
   speaking: boolean
   onSpeak?: (text: string) => void
 }
@@ -19,11 +21,22 @@ interface WordLearnPanelProps {
 export function WordLearnPanel({
   examples,
   pitfalls,
+  phraseAnalysis,
   speaking,
   onSpeak,
 }: WordLearnPanelProps) {
   return (
     <div className="space-y-3 text-left">
+      {phraseAnalysis && phraseAnalysis.segments.length >= 2 && (
+        <div className="rounded-xl bg-violet-50/80 px-3 py-2 ring-1 ring-violet-200">
+          <PhraseSegmentPanel
+            analysis={phraseAnalysis}
+            speaking={speaking}
+            onSpeak={onSpeak}
+            compact
+          />
+        </div>
+      )}
       {examples.length > 0 && (
         <div className="rounded-xl bg-sky-50 px-4 py-3 ring-1 ring-sky-200">
           <p className="text-xs font-semibold text-sky-700">

@@ -1,0 +1,1024 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riemann ζ 函數計算器</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0f1117;
+        --panel: #171a22;
+        --panel-soft: #1f2430;
+        --text: #f4f1ea;
+        --muted: #a7b0c0;
+        --accent: #d4a574;
+        --accent-strong: #f0c995;
+        --line: #2d3444;
+        --error: #ff8f8f;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0 !important;
+        min-height: 100vh !important;
+        font-family: 'Space Grotesk', sans-serif !important;
+        color: var(--text) !important;
+        background:
+          radial-gradient(circle at top, rgba(212, 165, 116, 0.12), transparent 35%),
+          linear-gradient(180deg, #12151d 0%, var(--bg) 100%) !important;
+      }
+
+      .shell {
+        width: min(1120px, calc(100% - 1.5rem));
+        margin: 0 auto;
+        padding: 2rem 0 2.5rem;
+      }
+
+      .hero {
+        margin-bottom: 1.5rem;
+      }
+
+      .eyebrow {
+        color: var(--accent);
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        margin: 0 0 0.5rem;
+      }
+
+      h1 {
+        margin: 0 0 0.75rem !important;
+        font-size: clamp(2rem, 5vw, 3rem) !important;
+        line-height: 1.05 !important;
+      }
+
+      .subtitle {
+        margin: 0;
+        color: var(--muted);
+        max-width: 46rem;
+        line-height: 1.6;
+      }
+
+      .panel {
+        background: rgba(23, 26, 34, 0.92);
+        border: 1px solid var(--line);
+        border-radius: 1.25rem;
+        padding: 1.25rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .tabs {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+        margin-bottom: 1.25rem;
+        overflow-x: auto;
+        padding-bottom: 0.35rem;
+        scrollbar-width: thin;
+      }
+
+      .tabs button {
+        border: 1px solid var(--line);
+        background: var(--panel-soft);
+        color: var(--text);
+        border-radius: 999px;
+        padding: 0.6rem 0.95rem;
+        cursor: pointer;
+        font: inherit;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+
+      .tabs button.tab-active {
+        border-color: var(--accent);
+        background: rgba(212, 165, 116, 0.16);
+        color: var(--accent-strong);
+      }
+
+      .tab-panel {
+        animation: fade-in 0.2s ease;
+      }
+
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+          transform: translateY(4px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+
+      .panel-inset {
+        background: var(--panel-soft);
+        border: 1px solid var(--line);
+        border-radius: 1rem;
+        padding: 1rem;
+      }
+
+      .vector-layout {
+        display: grid;
+        gap: 1.25rem;
+        align-items: start;
+      }
+
+      @media (min-width: 900px) {
+        .vector-layout {
+          grid-template-columns: minmax(260px, 300px) 1fr;
+        }
+
+        .vector-sidebar {
+          position: sticky;
+          top: 1rem;
+        }
+      }
+
+      .compact-form {
+        gap: 0.85rem;
+      }
+
+      .compact-form .note {
+        margin: 0;
+        font-size: 0.88rem;
+        line-height: 1.55;
+      }
+
+      .output-stack {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .output-empty {
+        margin: 0;
+        padding: 2rem 1.25rem;
+        text-align: center;
+        color: var(--muted);
+        border: 1px dashed var(--line);
+        border-radius: 1rem;
+        background: rgba(13, 16, 22, 0.6);
+      }
+
+      .analysis-card {
+        border: 1px solid var(--line);
+        border-radius: 1rem;
+        padding: 1rem 1.1rem 1.15rem;
+        background: rgba(13, 16, 22, 0.55);
+      }
+
+      .analysis-card-header {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 0.85rem;
+        align-items: start;
+        margin-bottom: 1rem;
+      }
+
+      .analysis-tag {
+        width: 2.25rem;
+        height: 2.25rem;
+        border-radius: 0.65rem;
+        display: grid;
+        place-items: center;
+        font: 700 1.1rem 'IBM Plex Mono', monospace;
+        color: var(--accent-strong);
+        background: rgba(212, 165, 116, 0.18);
+        border: 1px solid rgba(212, 165, 116, 0.35);
+      }
+
+      .analysis-card-title {
+        margin: 0 0 0.35rem !important;
+        font-size: 1.15rem !important;
+      }
+
+      .analysis-lead {
+        margin: 0 !important;
+      }
+
+      .kpi-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 0.65rem;
+        margin-bottom: 0.85rem;
+      }
+
+      .kpi-card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 0.75rem;
+        padding: 0.65rem 0.75rem;
+        display: grid;
+        gap: 0.25rem;
+      }
+
+      .kpi-card .label {
+        color: var(--muted);
+        font-size: 0.8rem;
+      }
+
+      .kpi-card strong {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 0.92rem;
+        word-break: break-word;
+      }
+
+      .pattern-callout {
+        margin: 0 0 1rem;
+        padding: 0.75rem 0.9rem;
+        border-radius: 0.75rem;
+        border-left: 3px solid var(--accent);
+        background: rgba(212, 165, 116, 0.1);
+        color: var(--text);
+        font-size: 0.92rem;
+        line-height: 1.55;
+      }
+
+      .analysis-sections {
+        display: grid;
+        gap: 0.5rem;
+      }
+
+      .analysis-section {
+        border: 1px solid var(--line);
+        border-radius: 0.75rem;
+        background: var(--panel);
+        overflow: hidden;
+      }
+
+      .analysis-section summary {
+        cursor: pointer;
+        padding: 0.7rem 0.9rem;
+        font-weight: 600;
+        font-size: 0.92rem;
+        color: var(--accent-strong);
+        list-style: none;
+      }
+
+      .analysis-section summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .analysis-section summary::before {
+        content: '▸ ';
+        color: var(--accent);
+      }
+
+      .analysis-section[open] summary::before {
+        content: '▾ ';
+      }
+
+      .analysis-section-body {
+        padding: 0 0.9rem 0.85rem;
+        border-top: 1px solid var(--line);
+      }
+
+      .analysis-section-body .step-card:first-child {
+        border-top: none;
+      }
+
+      .code-block,
+      .dot-pre {
+        margin: 0;
+        padding: 0.75rem 0.85rem;
+        border-radius: 0.65rem;
+        background: #0a0c10;
+        border: 1px solid var(--line);
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 0.82rem;
+        line-height: 1.55;
+        overflow-x: auto;
+        white-space: pre;
+        color: #c8d0dc;
+      }
+
+      .footnote {
+        margin: 0.85rem 0 0 !important;
+        font-size: 0.86rem !important;
+      }
+
+      .evaluate-output {
+        display: grid;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .tabs-hint {
+        margin: -0.5rem 0 1rem;
+        font-size: 0.82rem;
+        color: var(--muted);
+      }
+
+      .quick-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+
+      .quick-nav button {
+        border: 1px solid var(--line);
+        background: rgba(212, 165, 116, 0.1);
+        color: var(--accent-strong);
+        border-radius: 999px;
+        padding: 0.45rem 0.85rem;
+        cursor: pointer;
+        font: inherit;
+        font-size: 0.88rem;
+      }
+
+      .quick-nav button:hover {
+        border-color: var(--accent);
+        background: rgba(212, 165, 116, 0.2);
+      }
+
+      form {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .field-row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+      }
+
+      label {
+        display: grid;
+        gap: 0.45rem;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      input[type='text'].scalar-input,
+      input.scalar-input {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 0.85rem;
+        background: #0d1016;
+        color: var(--text);
+        padding: 0.85rem 1rem;
+        font: 600 1rem 'IBM Plex Mono', monospace;
+        -webkit-user-select: text;
+        user-select: text;
+        pointer-events: auto;
+      }
+
+      input {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 0.85rem;
+        background: #0d1016;
+        color: var(--text);
+        padding: 0.85rem 1rem;
+        font: 600 1rem 'IBM Plex Mono', monospace;
+      }
+
+      select {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 0.85rem;
+        background: #0d1016;
+        color: var(--text);
+        padding: 0.85rem 1rem;
+        font: inherit;
+      }
+
+      button.primary {
+        justify-self: start;
+        border: none;
+        border-radius: 0.85rem;
+        background: linear-gradient(135deg, var(--accent), #b67d49);
+        color: #1a1208;
+        padding: 0.85rem 1.2rem;
+        font: 600 1rem inherit;
+        cursor: pointer;
+      }
+
+      .presets {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .presets button {
+        border: 1px solid var(--line);
+        background: transparent;
+        color: var(--muted);
+        border-radius: 999px;
+        padding: 0.45rem 0.8rem;
+        cursor: pointer;
+        font: inherit;
+      }
+
+      .result-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 0.85rem;
+        margin-top: 1rem;
+      }
+
+      .result-card {
+        background: var(--panel-soft);
+        border: 1px solid var(--line);
+        border-radius: 1rem;
+        padding: 1rem;
+        display: grid;
+        gap: 0.35rem;
+      }
+
+      .result-card .label,
+      .note {
+        color: var(--muted);
+      }
+
+      .result-card strong {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 1rem;
+        word-break: break-word;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+        margin-top: 1rem;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 0.92rem;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid var(--line);
+        padding: 0.75rem 0.5rem;
+        text-align: left;
+      }
+
+      th {
+        color: var(--muted);
+        font-weight: 600;
+      }
+
+      .error {
+        color: var(--error);
+      }
+
+      .formula {
+        margin-top: 1.5rem;
+        padding: 1rem 1.1rem;
+        border-left: 3px solid var(--accent);
+        background: rgba(212, 165, 116, 0.08);
+        color: var(--muted);
+        line-height: 1.7;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 0.92rem;
+      }
+
+      .chart-panel {
+        padding: 1rem;
+      }
+
+      .chart-controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        align-items: end;
+        margin-bottom: 1rem;
+      }
+
+      .chart-panel .chart-controls {
+        margin-bottom: 0.85rem;
+      }
+
+      .chart-controls label {
+        min-width: 220px;
+      }
+
+      #integral-result {
+        margin-bottom: 1rem;
+      }
+
+      .chart-theory-note {
+        margin: 0 0 0.75rem;
+        line-height: 1.55;
+        font-size: 0.9rem;
+      }
+
+      .proof-block p {
+        margin: 0.5rem 0;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .proof-block p strong {
+        color: var(--text);
+      }
+
+      .chart-frame {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 1rem;
+        overflow: hidden;
+        background: #0d1016;
+      }
+
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+      }
+
+      .data-table th,
+      .data-table td {
+        border: 1px solid var(--line);
+        padding: 0.55rem 0.65rem;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      .data-table th {
+        color: var(--muted);
+        font-weight: 600;
+      }
+
+      .note-list {
+        margin: 0;
+        padding-left: 1.2rem;
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      .checkbox-row {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 0.5rem 0 0.75rem;
+        color: var(--muted);
+        font-size: 0.92rem;
+        cursor: pointer;
+      }
+
+      .checkbox-row input {
+        width: 1rem;
+        height: 1rem;
+        accent-color: var(--accent);
+      }
+
+      #plot-canvas {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .steps-panel {
+        margin-top: 0;
+        border: 1px solid var(--line);
+        border-radius: 1rem;
+        padding: 1rem 1.1rem;
+        background: rgba(13, 16, 22, 0.55);
+      }
+
+      .steps-panel h2 {
+        margin: 0 0 1rem !important;
+        font-size: 1.2rem !important;
+      }
+
+      .diff-subtitle {
+        margin: 1rem 0 0.5rem !important;
+        font-size: 0.95rem !important;
+        color: var(--accent-strong);
+      }
+
+      .dot-pre {
+        margin: 0 0 0.75rem;
+      }
+
+      .step-card {
+        display: grid;
+        grid-template-columns: 42px 1fr;
+        gap: 0.85rem;
+        padding: 1rem 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .step-index {
+        width: 42px;
+        height: 42px;
+        border-radius: 999px;
+        display: grid;
+        place-items: center;
+        background: rgba(212, 165, 116, 0.16);
+        color: var(--accent-strong);
+        font-weight: 700;
+      }
+
+      .step-body h3 {
+        margin: 0 0 0.35rem !important;
+        font-size: 1rem !important;
+      }
+
+      .step-formula {
+        margin: 0 0 0.5rem;
+        color: var(--accent-strong);
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 0.92rem;
+      }
+
+      .step-body pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-break: break-word;
+        color: var(--muted);
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 0.88rem;
+        line-height: 1.6;
+      }
+    </style>
+    <script type="module" crossorigin src="/thai-listening-game/game/assets/zeta-Dkj61mir.js"></script>
+    <link rel="modulepreload" crossorigin href="/thai-listening-game/game/assets/modulepreload-polyfill-Dezn_h7o.js">
+  </head>
+  <body>
+    <div class="shell">
+      <header class="hero">
+        <p class="eyebrow">Riemann Zeta Function</p>
+        <h1>ζ 函數計算器</h1>
+        <p class="subtitle">
+          計算 Riemann ζ 函數在複數平面上的值，搜尋臨界線上的非平凡零點，並驗證常見特殊值。
+          支援 Dirichlet 級數、η 級數與函數方程解析延拓。
+        </p>
+        <nav class="quick-nav" aria-label="快速分析入口">
+          <button type="button" data-goto-tab="factor">項分解 n=∏p^{v_p}</button>
+          <button type="button" data-goto-tab="euler">Euler 乘积验证</button>
+          <button type="button" data-goto-tab="exp">e^X 形式</button>
+          <button type="button" data-goto-tab="diff">向量 / 点积 / 频率</button>
+          <button type="button" data-goto-tab="charts">图表（零點放大·相位）</button>
+          <button type="button" data-goto-tab="eigen">矩阵特征值</button>
+        </nav>
+      </header>
+
+      <main class="panel">
+        <div id="tab-list" class="tabs" role="tablist" aria-label="ζ 函數工具"></div>
+        <p class="tabs-hint">标签较多时可左右滑动，含「Euler 乘积」「項分解」。</p>
+
+        <section data-tab-panel="evaluate" class="tab-panel">
+          <form id="evaluate-form">
+            <div class="field-row">
+              <label>
+                實部 Re(s)
+                <input id="real-part" class="scalar-input" type="text" inputmode="decimal" autocomplete="off" value="2" placeholder="0.5 用英文句号 ." lang="en" />
+              </label>
+              <label>
+                虛部 Im(s)
+                <input id="imag-part" class="scalar-input" type="text" inputmode="decimal" autocomplete="off" value="0" placeholder="例：0、14.134" />
+              </label>
+            </div>
+            <div class="presets">
+              <button type="button" data-preset data-re="2" data-im="0">ζ(2)</button>
+              <button type="button" data-preset data-re="0.5" data-im="14.134725">第一零點附近</button>
+              <button type="button" data-preset data-re="-1" data-im="0">ζ(-1)</button>
+              <button type="button" data-preset data-re="0.5" data-im="0">ζ(1/2)</button>
+              <button type="button" data-preset data-re="3" data-im="4">ζ(3+4i)</button>
+            </div>
+            <button class="primary" type="submit">計算</button>
+          </form>
+          <div id="evaluate-output"></div>
+        </section>
+
+        <section data-tab-panel="euler" class="tab-panel" hidden>
+          <div class="vector-layout euler-layout">
+            <aside class="vector-sidebar panel-inset">
+              <form id="euler-form" class="compact-form">
+                <div class="field-row">
+                  <label>
+                    實部 Re(s)
+                    <input id="euler-real-part" class="scalar-input" type="text" inputmode="decimal" autocomplete="off" value="2" />
+                  </label>
+                  <label>
+                    虛部 t = Im(s)
+                    <input id="euler-imag-part" class="scalar-input" type="text" inputmode="decimal" autocomplete="off" value="5" />
+                  </label>
+                </div>
+                <label>
+                  前 P 個素數（最多 500）
+                  <input id="euler-prime-count" type="number" min="5" max="500" value="40" />
+                </label>
+                <div class="presets">
+                  <button type="button" data-euler-preset data-re="0.5" data-im="5">σ=½, t=5</button>
+                  <button type="button" data-euler-preset data-re="0.5" data-im="14.134725">第一零點 t≈14.13</button>
+                  <button type="button" data-euler-preset data-re="2" data-im="0">ζ(2)</button>
+                  <button type="button" data-euler-preset data-re="3" data-im="0">ζ(3)</button>
+                </div>
+                <label class="checkbox-row">
+                  <input id="euler-pm-pair" type="checkbox" checked />
+                  ±t 對照（同時算 σ+it 與 σ−it）
+                </label>
+                <label class="checkbox-row">
+                  <input id="euler-show-cancel" type="checkbox" checked />
+                  顯示抵消（和/差/積、共軛因子配對）
+                </label>
+                <label class="checkbox-row">
+                  <input id="euler-show-proof" type="checkbox" />
+                  顯示選讀證明（預設關；看圖表與誤差即可）
+                </label>
+                <p class="note">
+                  重點看誤差曲線與 |Im(和)|、|Re(差)| 是否趨近 0，不必先讀長證明。
+                </p>
+                <button class="primary" type="submit">計算局部 Euler 逼近</button>
+              </form>
+            </aside>
+            <div class="vector-results">
+              <div id="euler-output" class="output-stack">
+                <p class="output-empty">按「驗證乘積」查看截斷 Euler 乘積與 1 的誤差。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section data-tab-panel="exp" class="tab-panel" hidden>
+          <div class="vector-layout">
+            <aside class="vector-sidebar panel-inset">
+              <form id="exp-form" class="compact-form">
+                <div class="field-row">
+                  <label>
+                    實部 Re(s)
+                    <input id="exp-real-part" class="scalar-input" type="text" inputmode="decimal" autocomplete="off" value="0.5" />
+                  </label>
+                  <label>
+                    虛部 Im(s)
+                    <input id="exp-imag-part" class="scalar-input" type="text" inputmode="decimal" autocomplete="off" value="5" />
+                  </label>
+                </div>
+                <label>
+                  展示前 n 項 n^{−s}=e^X（最多 12）
+                  <input id="exp-term-count" type="number" min="3" max="12" value="6" />
+                </label>
+                <label>
+                  Euler ln ζ 截斷素數個數（最多 12）
+                  <input id="exp-prime-count" type="number" min="2" max="12" value="4" />
+                </label>
+                <div class="presets">
+                  <button type="button" data-exp-preset data-re="2" data-im="0">ζ(2)</button>
+                  <button type="button" data-exp-preset data-re="0.5" data-im="14.134725">第一零點</button>
+                  <button type="button" data-exp-preset data-re="0.5" data-im="5">σ=½, t=5</button>
+                </div>
+                <p class="note">
+                  ζ=e^X、每項 e^{−s ln n}、臨界線 ζ=e^{−iθ}Z；只顯示指數形式，不含連分數。
+                </p>
+                <button class="primary" type="submit">展開 e^X</button>
+              </form>
+            </aside>
+            <div class="vector-results">
+              <div id="exp-output" class="output-stack">
+                <p class="output-empty">輸入 s 後按「展開 e^X」。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section data-tab-panel="factor" class="tab-panel" hidden>
+          <div class="vector-layout">
+            <aside class="vector-sidebar panel-inset">
+              <form id="factor-form" class="compact-form">
+                <div class="field-row">
+                  <label>
+                    實部 Re(s)
+                    <input id="factor-real-part" class="scalar-input" type="text" inputmode="decimal" autocomplete="off" value="2" />
+                  </label>
+                  <label>
+                    虛部 Im(s)
+                    <input id="factor-imag-part" class="scalar-input" type="text" inputmode="decimal" autocomplete="off" value="0" />
+                  </label>
+                </div>
+                <label>
+                  項數 N（最多 80）
+                  <input id="factor-term-count" type="number" min="3" max="80" value="24" />
+                </label>
+                <label>
+                  級數類型
+                  <select id="factor-series">
+                    <option value="eta">η 項 (−1)^{n−1} n^{−s}</option>
+                    <option value="zeta">ζ 項 n^{−s}</option>
+                  </select>
+                </label>
+                <div class="presets">
+                  <button type="button" data-factor-preset data-re="2" data-im="0">s=2</button>
+                  <button type="button" data-factor-preset data-re="0.5" data-im="14.134725">臨界線</button>
+                  <button type="button" data-factor-preset data-re="3" data-im="4">s=3+4i</button>
+                </div>
+                <p class="note">
+                  展示 n = ∏ p^{v_p(n)} 与 n^{−s} = ∏ p^{−v_p(n)·s}；与 Euler 乘积页互补。
+                </p>
+                <button class="primary" type="submit">生成分解表</button>
+              </form>
+            </aside>
+            <div class="vector-results">
+              <div id="factor-output" class="output-stack">
+                <p class="output-empty">按「生成分解表」查看每项的素数局部因子。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section data-tab-panel="zeros" hidden>
+          <form id="zeros-form">
+            <label>
+              要找的非平凡零點數量（最多 20）
+              <input id="zero-count" type="number" min="1" max="20" value="10" />
+            </label>
+            <button class="primary" type="submit">搜尋零點</button>
+          </form>
+          <div id="zeros-output"></div>
+        </section>
+
+        <section data-tab-panel="special" hidden>
+          <div id="special-output"></div>
+        </section>
+
+        <section data-tab-panel="charts" class="tab-panel" hidden>
+          <div class="panel-inset chart-panel">
+          <div class="chart-controls">
+            <label>
+              圖表類型
+              <select id="plot-type">
+                <option value="spiral">臨界線螺旋圖</option>
+                <option value="phase">相位角 / 旋轉視圖</option>
+                <option value="phase-sweep">固定 σ，相位–t</option>
+                <option value="zero-zoom">零點處放大</option>
+                <option value="frequency">相位 → 頻率</option>
+                <option value="critical">Hardy Z(t) 臨界線</option>
+                <option value="real">實軸 ζ(s)</option>
+                <option value="magnitude">log10 |ζ(1/2+it)|</option>
+                <option value="magnitude-area">|ζ| 面積積分</option>
+              </select>
+            </label>
+            <div id="integral-controls" class="chart-controls" hidden>
+              <label>
+                t 下限
+                <input id="integral-t-min" type="number" min="0" max="200" step="0.1" value="0.5" />
+              </label>
+              <label>
+                t 上限
+                <input id="integral-t-max" type="number" min="1" max="200" step="0.1" value="50" />
+              </label>
+              <label>
+                採樣點數
+                <input id="integral-samples" type="number" min="100" max="4000" step="50" value="800" />
+              </label>
+            </div>
+            <div id="zero-zoom-controls" class="chart-controls" hidden>
+              <label>
+                零點編號 #
+                <input id="zero-zoom-index" type="number" min="1" max="20" value="1" />
+              </label>
+              <label>
+                半寬 ±Δt
+                <input id="zero-zoom-half-width" type="number" min="0.1" max="8" step="0.1" value="1.2" />
+              </label>
+              <label>
+                Re(s) σ
+                <input id="zero-zoom-sigma" class="scalar-input" type="text" inputmode="decimal" autocomplete="off" value="0.5" />
+              </label>
+            </div>
+            <div id="spiral-controls" class="chart-controls">
+              <label id="spiral-sigma-wrap" hidden>
+                固定 Re(s) σ
+                <input id="spiral-sigma" class="scalar-input" type="text" inputmode="decimal" autocomplete="off" value="0.5" />
+              </label>
+              <label id="spiral-t-min-wrap" hidden>
+                t 下限
+                <input id="spiral-t-min" type="number" min="-200" max="200" step="0.1" value="0.5" />
+              </label>
+              <label id="spiral-pm-pair-wrap" hidden>
+                <span class="checkbox-row" style="margin:0">
+                  <input id="spiral-pm-pair" type="checkbox" checked />
+                  ±t（σ+it 與 σ−it 雙相位）
+                </span>
+              </label>
+              <label id="spiral-show-cancel-wrap" hidden>
+                <span class="checkbox-row" style="margin:0">
+                  <input id="spiral-show-cancel" type="checkbox" checked />
+                  相位抵消視圖（φ₊+φ₋≈0）
+                </span>
+              </label>
+              <label>
+                t 上限
+                <input id="spiral-t-max" type="number" min="10" max="80" value="50" />
+              </label>
+              <label>
+                標記零點數
+                <input id="spiral-zero-count" type="number" min="1" max="20" value="10" />
+              </label>
+            </div>
+            <button class="primary" id="chart-refresh" type="button">更新圖表</button>
+            <button class="primary" id="download-png" type="button">下載 PNG</button>
+          </div>
+          <p id="chart-mode-hint" class="note chart-mode-hint" hidden></p>
+          <div id="integral-result" class="kpi-grid" hidden></div>
+          <p id="chart-theory-note" class="note chart-theory-note" hidden>
+            看圖提示：金線 ω 在 |ζ|→0 處尖峰 = 相位無定義，不是新頻率。相鄰零點間距約 Δt ≈ 2π/ln(t/2π)。
+            勾「相位抵消」時，綠線 φ₊+φ₋ 應貼近 0。
+          </p>
+          <div class="chart-frame">
+            <canvas id="plot-canvas" width="960" height="520"></canvas>
+          </div>
+          </div>
+        </section>
+
+        <section data-tab-panel="eigen" class="tab-panel" hidden>
+          <form id="eigen-form" class="compact-form">
+            <div class="field-row">
+              <label>
+                實部 Re(s)
+                <input id="eigen-real-part" class="scalar-input" type="text" inputmode="decimal" autocomplete="off" value="0.5" />
+              </label>
+              <label>
+                t 下限
+                <input id="eigen-t-min" type="number" min="0" max="200" step="0.1" value="1" />
+              </label>
+              <label>
+                t 上限
+                <input id="eigen-t-max" type="number" min="0.1" max="200" step="0.1" value="10" />
+              </label>
+              <label>
+                維度 N
+                <input id="eigen-size" type="number" min="3" max="12" step="1" value="10" />
+              </label>
+            </div>
+            <label class="checkbox-row">
+              <input id="eigen-simplified" type="checkbox" checked />
+              簡化：只對比 A（項）與 P（素數切片）
+            </label>
+            <button class="primary" type="submit" id="eigen-submit">計算 A 與 P 特徵值</button>
+          </form>
+          <div id="eigen-output"></div>
+        </section>
+
+        <section data-tab-panel="diff" class="tab-panel" hidden>
+          <div class="vector-layout">
+            <aside class="vector-sidebar panel-inset">
+              <form id="diff-form" class="compact-form">
+                <div class="field-row">
+                  <label>
+                    實部 Re(s)
+                    <input id="diff-real-part" class="scalar-input" type="text" inputmode="decimal" autocomplete="off" value="2" />
+                  </label>
+                  <label>
+                    虛部 Im(s)
+                    <input id="diff-imag-part" class="scalar-input" type="text" inputmode="decimal" autocomplete="off" value="0" />
+                  </label>
+                </div>
+                <div class="field-row">
+                  <label>
+                    項數 N
+                    <input id="diff-term-count" type="number" min="12" max="120" value="48" />
+                  </label>
+                  <label>
+                    最大差分階
+                    <input id="diff-max-depth" type="number" min="2" max="10" value="6" />
+                  </label>
+                </div>
+                <label>
+                  分析方式
+                  <select id="diff-mode">
+                    <option value="all">全部（差分 + 点积 + 频率）</option>
+                    <option value="freq-dot">仅频率点积</option>
+                    <option value="diff">仅差分</option>
+                    <option value="dot">仅点积</option>
+                  </select>
+                </label>
+                <div class="presets">
+                  <button type="button" data-diff-preset data-re="2" data-im="0">ζ(2)</button>
+                  <button type="button" data-diff-preset data-re="0.5" data-im="14.134725">零點附近</button>
+                  <button type="button" data-diff-preset data-re="0.5" data-im="0">ζ(1/2)</button>
+                </div>
+                <p class="note">左側設定 s 與模式；結果在右側，細節區塊可摺疊。</p>
+                <button class="primary" type="submit">開始分析</button>
+              </form>
+            </aside>
+            <div class="vector-results">
+              <div id="diff-output" class="output-stack">
+                <p class="output-empty">設定參數後按「開始分析」，結果會顯示於此。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <p class="formula">
+        ζ(s) = Σ n⁻ˢ (Re(s)&gt;1) · ζ(s)=η(s)/(1−2¹⁻ˢ) (Re(s)&gt;0) · ζ(s)=χ(s)ζ(1−s) · 非平凡零點在 Re(s)=1/2
+      </p>
+    </div>
+
+  </body>
+</html>

@@ -149,4 +149,57 @@ export const WORD_EXAMPLES_VOCAB_PATCH: Record<string, WordExample[]> = {
     { exampleTh: 'ไปท่องเที่ยวภูเก็ต', exampleZh: '去普吉島觀光。' },
     { exampleTh: 'การท่องเที่ยวเพิ่มขึ้น', exampleZh: '觀光（業）成長。' },
   ],
+  vp47: [
+    { exampleTh: 'หลังเลิกงานไปออกกำลังกาย', exampleZh: '下班後去運動。' },
+    { exampleTh: 'เลิกงานกี่โมง', exampleZh: '幾點下班？' },
+    { exampleTh: 'หลังเลิกงานพบเพื่อน', exampleZh: '下班後見朋友。' },
+  ],
+  vp48: [
+    { exampleTh: 'งานราบรื่น', exampleZh: '工作順利。' },
+    { exampleTh: 'ทำงานมาหกเดือนแล้ว', exampleZh: '工作六個月了。' },
+  ],
+  vp49: [
+    { exampleTh: 'เมื่อเจอผู้ใหญ่ควรไหว้', exampleZh: '見到長輩應合十。' },
+    { exampleTh: 'รดน้ำดำหัวผู้ใหญ่', exampleZh: '向長輩潑水祝福。' },
+    { exampleTh: 'ประเพณีไหว้ผู้ใหญ่', exampleZh: '向長輩合十的習俗。' },
+  ],
+  vp50: [
+    { exampleTh: 'วันหยุดไปสวนสัตว์', exampleZh: '假期去動物園。' },
+    { exampleTh: 'เด็กๆ ชอบสวนสัตว์', exampleZh: '孩子喜歡動物園。' },
+    { exampleTh: 'ที่สวนสัตว์มีช้าง', exampleZh: '動物園裡有大象。' },
+  ],
+  vp51: [
+    { exampleTh: 'เตือนประชาชนให้ระวัง', exampleZh: '提醒民眾注意。' },
+    { exampleTh: 'อย่าลืมเตือนเพื่อน', exampleZh: '別忘了提醒朋友。' },
+  ],
+  vp52: [
+    { exampleTh: 'บริการประชาชนออนไลน์', exampleZh: '線上公共服務。' },
+    { exampleTh: 'เตือนประชาชนให้ระวัง', exampleZh: '提醒民眾注意。' },
+  ],
+  vp53: [
+    { exampleTh: 'ครูสอนช้าๆ', exampleZh: '老師教得慢。' },
+    { exampleTh: 'สอนภาษาไทย', exampleZh: '教泰文。' },
+  ],
+  vp54: [
+    { exampleTh: 'พูดช้าๆ หน่อย', exampleZh: '請說慢一點。' },
+    { exampleTh: 'ช้าๆ หน่อยได้ไหม', exampleZh: '可以慢一點嗎？' },
+  ],
+  vp55: [
+    { exampleTh: 'ยืนยันการชำระเงินแล้ว', exampleZh: '已確認付款。' },
+    { exampleTh: 'กรุณายืนยันอีกครั้ง', exampleZh: '請再確認一次。' },
+  ],
+  vp56: [
+    { exampleTh: 'ชำระเงินผ่านแอป', exampleZh: '用 App 付款。' },
+    { exampleTh: 'ชำระเงินสด', exampleZh: '付現金。' },
+  ],
+  vp57: [
+    { exampleTh: 'ตอนเย็นไปเดินเล่น', exampleZh: '傍晚去散步。' },
+    { exampleTh: 'มีคนเดินและวิ่งจำนวนมาก', exampleZh: '有很多人在走路和跑步。' },
+    { exampleTh: 'เดินช้าๆ หน่อย', exampleZh: '請走慢一點。' },
+  ],
+  vp58: [
+    { exampleTh: 'หายใจไม่ทัน', exampleZh: '喘不過氣。' },
+    { exampleTh: 'วิ่งเร็วหายใจไม่ทัน', exampleZh: '跑太快喘不過氣。' },
+    { exampleTh: 'ทันเวลาไหม', exampleZh: '來得及嗎？' },
+  ],
 }

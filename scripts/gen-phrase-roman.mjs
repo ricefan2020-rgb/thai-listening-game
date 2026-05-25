@@ -169,7 +169,7 @@ const SYLLABLE_ROMAN = {
   แรก: 'raek',
   มา: 'ma',
   ถึง: 'thueng',
-  เดิน: 'doen',
+  เดิน: 'dern',
   ขี่: 'khi',
   จักรยาน: 'chakkrayan',
   รอบ: 'rop',

@@ -6,6 +6,8 @@ import { InteractiveThaiText } from './InteractiveThaiText'
 import { SentenceAnalysisPanel } from './SentenceAnalysisPanel'
 import { PhraseSegmentPanel } from './PhraseSegmentPanel'
 import { WordLearnPanel } from './WordLearnPanel'
+import { getLessonById } from '../data/lessons'
+import { getWordExamples } from '../data/word-meta'
 import type { QuizQuestion } from '../types'
 
 interface QuizProps {
@@ -79,7 +81,12 @@ export function Quiz({
   const isSentence = variant === 'sentence'
   const isArticle = variant === 'article'
   const isPhonetics = variant === 'phonetics'
+  const wordLesson = isWord ? getLessonById(question.item.id) : undefined
   const wordExtras = isWord ? question.wordExtras : undefined
+  const wordExamples =
+    wordLesson && wordExtras
+      ? getWordExamples(wordLesson)
+      : (wordExtras?.examples ?? [])
   const sentenceExtras = isSentence ? question.sentenceExtras : undefined
   const articleExtras = isArticle ? question.articleExtras : undefined
   const lookupKind: ThaiLookupKind = isPhonetics
@@ -218,7 +225,7 @@ export function Quiz({
               ? '聽短語，選中文意思 · 點短語可看分詞分析與例句 · 答題後可展開'
               : isSentence
                 ? '聽句子，選中文翻譯 · 可點句中單字 · 答題後可看句子分析'
-                : '聽泰文選意思 · 點單字查例句'}
+                : '聽泰文選意思 · 點單字查例句 · 答題後可看分詞與例句'}
         </p>
       </section>
 
@@ -268,8 +275,9 @@ export function Quiz({
               {showLearnExtra && (
                 <div className="max-h-[28vh] overflow-y-auto rounded-xl bg-slate-50 p-2 ring-1 ring-slate-200">
                   <WordLearnPanel
-                    examples={wordExtras.examples}
+                    examples={wordExamples}
                     pitfalls={wordExtras.pitfalls}
+                    phraseAnalysis={wordExtras.phraseAnalysis}
                     speaking={speaking}
                     onSpeak={onSpeak}
                   />

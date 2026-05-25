@@ -73,6 +73,9 @@ export const WORD_EXAMPLES_TIME_HOLIDAY: Record<string, WordExample[]> = {
   tm18: [
     { exampleTh: 'ช่วงเช้าตอนห้าโมง', exampleZh: '早上五點左右。' },
     { exampleTh: 'ช่วงเช้าอากาศเย็น', exampleZh: '上午天氣涼。' },
+    { exampleTh: 'ช่วงเช้าผมตื่นเช้า', exampleZh: '上午時段我早起。' },
+    { exampleTh: 'ช่วงเช้าคนเยอะมาก', exampleZh: '上午人很多。' },
+    { exampleTh: 'ช่วงเช้ากินข้าวต้ม', exampleZh: '上午吃粥。' },
   ],
   tm19: [
     { exampleTh: 'ตอนเย็นไปเดินเล่น', exampleZh: '傍晚去散步。' },
