@@ -3,13 +3,20 @@ import { getHotelAreaLabel } from '../data/regions'
 import { BUDGET_LABELS } from '../types'
 import type { TripPlan } from '../types'
 import { formatRangeWithCnyHkd } from '../utils/currency'
+import { findLinkedPlaceId } from '../utils/placeMatch'
 import { RecommendationCard } from './RecommendationCard'
 
 interface FoodRecommendationsProps {
   plan: TripPlan
+  scheduledPlaceIds?: Set<string>
+  onAddToItinerary?: (placeId: string) => void
 }
 
-export function FoodRecommendations({ plan }: FoodRecommendationsProps) {
+export function FoodRecommendations({
+  plan,
+  scheduledPlaceIds,
+  onAddToItinerary,
+}: FoodRecommendationsProps) {
   const { config } = plan
   const { currency, exchangeRate } = config
   const foods = getRecommendedFoods(config, 8)
@@ -33,6 +40,7 @@ export function FoodRecommendations({ plan }: FoodRecommendationsProps) {
           const meta = [categoryLabel, areaLabel, food.openHours]
             .filter(Boolean)
             .join(' · ')
+          const linkedPlaceId = findLinkedPlaceId(config.regionId, food.nameZh)
 
           return (
             <RecommendationCard
@@ -54,6 +62,9 @@ export function FoodRecommendations({ plan }: FoodRecommendationsProps) {
               pros={food.pros}
               tip={food.tip}
               mapQuery={food.mapQuery}
+              linkedPlaceId={linkedPlaceId}
+              scheduled={linkedPlaceId ? scheduledPlaceIds?.has(linkedPlaceId) : false}
+              onAddToItinerary={onAddToItinerary}
             />
           )
         })}

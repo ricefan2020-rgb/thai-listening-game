@@ -8,11 +8,17 @@ import { getRegionMeta } from '../../data/regions'
 import type { TripPlan } from '../../types'
 import { BUDGET_LABELS, REGION_LABELS } from '../../types'
 
-interface BlogIntroProps {
-  plan: TripPlan
+export interface PlanNavigateOptions {
+  guideTab?: string
+  day?: number
 }
 
-export function BlogIntro({ plan }: BlogIntroProps) {
+interface BlogIntroProps {
+  plan: TripPlan
+  onNavigate?: (section: string, options?: PlanNavigateOptions) => void
+}
+
+export function BlogIntro({ plan, onNavigate }: BlogIntroProps) {
   const { config } = plan
   const { currency, exchangeRate } = config
   const activityCount = plan.days.reduce((n, d) => n + d.items.length, 0)
@@ -62,6 +68,30 @@ export function BlogIntro({ plan }: BlogIntroProps) {
         </strong>
         。以下各章節可展開細讀，也能在文末匯出成 Markdown 文章備份。
       </p>
+      {onNavigate && (
+        <div className="blog-intro-actions">
+          <button type="button" className="blog-intro-chip" onClick={() => onNavigate('budget')}>
+            試算預算
+          </button>
+          <button
+            type="button"
+            className="blog-intro-chip"
+            onClick={() => onNavigate('itinerary', { day: 0 })}
+          >
+            編輯行程
+          </button>
+          <button
+            type="button"
+            className="blog-intro-chip"
+            onClick={() => onNavigate('guides', { guideTab: 'food' })}
+          >
+            美食推介
+          </button>
+          <button type="button" className="blog-intro-chip" onClick={() => onNavigate('map')}>
+            查看地圖
+          </button>
+        </div>
+      )}
       {(topHotel || topFood) && (
         <div className="blog-intro-highlights">
           {topHotel && (

@@ -7,18 +7,23 @@ import {
 import { BUDGET_LABELS } from '../types'
 import type { TripConfig, TripPlan } from '../types'
 import { formatRangeWithCnyHkd } from '../utils/currency'
+import { findLinkedPlaceId } from '../utils/placeMatch'
 import { RecommendationCard } from './RecommendationCard'
 
 interface HotelRecommendationsProps {
   plan: TripPlan
   onConfigChange?: (config: TripConfig) => void
   readOnly?: boolean
+  scheduledPlaceIds?: Set<string>
+  onAddToItinerary?: (placeId: string) => void
 }
 
 export function HotelRecommendations({
   plan,
   onConfigChange,
   readOnly = false,
+  scheduledPlaceIds,
+  onAddToItinerary,
 }: HotelRecommendationsProps) {
   const { config } = plan
   const { currency, exchangeRate } = config
@@ -61,6 +66,7 @@ export function HotelRecommendations({
 
       <ul className="rec-list">
         {hotels.map((hotel, index) => {
+          const linkedPlaceId = findLinkedPlaceId(config.regionId, hotel.nameZh)
           return (
             <RecommendationCard
               key={hotel.id}
@@ -78,6 +84,9 @@ export function HotelRecommendations({
               )}
               tags={hotel.highlights}
               pros={hotel.pros}
+              linkedPlaceId={linkedPlaceId}
+              scheduled={linkedPlaceId ? scheduledPlaceIds?.has(linkedPlaceId) : false}
+              onAddToItinerary={onAddToItinerary}
               tip={
                 hotel.cons
                   ? `注意：${hotel.cons} · ${hotel.tip}`

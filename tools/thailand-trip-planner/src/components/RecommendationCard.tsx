@@ -13,6 +13,11 @@ interface RecommendationCardProps {
   tip: string
   mapQuery: string
   accent?: 'violet' | 'amber'
+  /** 已在行程中的景點 */
+  scheduled?: boolean
+  /** 可對應到景點庫時顯示「加入行程」 */
+  linkedPlaceId?: string
+  onAddToItinerary?: (placeId: string) => void
 }
 
 export function RecommendationCard({
@@ -28,12 +33,16 @@ export function RecommendationCard({
   tip,
   mapQuery,
   accent = 'violet',
+  scheduled = false,
+  linkedPlaceId,
+  onAddToItinerary,
 }: RecommendationCardProps) {
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapQuery)}`
+  const canAdd = linkedPlaceId && onAddToItinerary && !scheduled
 
   return (
     <li
-      className={`rec-card ${featured ? `rec-card--featured rec-card--${accent}` : ''}`}
+      className={`rec-card ${featured ? `rec-card--featured rec-card--${accent}` : ''} ${scheduled ? 'rec-card--scheduled' : ''}`}
     >
       <div className="rec-card-head">
         <div className="rec-card-title-block">
@@ -66,9 +75,21 @@ export function RecommendationCard({
       <p className="rec-card-pros">{pros}</p>
       <p className="rec-card-tip">{tip}</p>
 
-      <a href={mapsUrl} target="_blank" rel="noreferrer" className="rec-card-map">
-        地圖
-      </a>
+      <div className="rec-card-actions">
+        {scheduled && <span className="rec-card-badge-scheduled">已在行程</span>}
+        {canAdd && (
+          <button
+            type="button"
+            className="rec-card-add"
+            onClick={() => onAddToItinerary(linkedPlaceId)}
+          >
+            加入行程
+          </button>
+        )}
+        <a href={mapsUrl} target="_blank" rel="noreferrer" className="rec-card-map">
+          地圖
+        </a>
+      </div>
     </li>
   )
 }

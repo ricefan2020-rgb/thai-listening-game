@@ -655,7 +655,7 @@
         document.documentElement.dataset.activeTab = tab
       })()
     </script>
-    <script type="module" crossorigin src="/thai-listening-game/game/assets/zeta-DRlz1Foj.js"></script>
+    <script type="module" crossorigin src="/thai-listening-game/game/assets/zeta-BCsChMRv.js"></script>
     <link rel="modulepreload" crossorigin href="/thai-listening-game/game/assets/modulepreload-polyfill-Dezn_h7o.js">
   </head>
   <body>
@@ -760,6 +760,10 @@
                   前 P 個素數（最多 500）
                   <input id="euler-prime-count" type="number" min="5" max="500" value="40" />
                 </label>
+                <label class="checkbox-row">
+                  <input id="euler-pm-pair" type="checkbox" checked />
+                  ±t 對：ζ(σ+it) 與 ζ(σ−it) 相抵
+                </label>
                 <div class="presets">
                   <button type="button" data-euler-preset data-re="0.5" data-im="5">σ=½, t=5</button>
                   <button type="button" data-euler-preset data-re="0.5" data-im="14.134725">第一零點 t≈14.13</button>
@@ -810,8 +814,24 @@
                   <button type="button" data-factor-preset data-re="0.5" data-im="14.134725">臨界線</button>
                   <button type="button" data-factor-preset data-re="3" data-im="4">s=3+4i</button>
                 </div>
+                <fieldset class="field-group" style="margin-top:0.75rem">
+                  <legend class="note" style="padding:0 0.25rem">P 進（規範係數 0…P−1）</legend>
+                  <label>
+                    合成數 n（留空＝自動選大素因子合成數）
+                    <input id="factor-padic-n" type="number" min="2" step="1" placeholder="自動" />
+                  </label>
+                  <label>
+                    基素數 P（留空＝n 的最大素因子）
+                    <input id="factor-padic-p" type="number" min="2" step="1" placeholder="自動" />
+                  </label>
+                  <div class="presets">
+                    <button type="button" data-padic-preset data-n="210" data-p="">210=2·3·5·7</button>
+                    <button type="button" data-padic-preset data-n="2310" data-p="11">2310，P=11</button>
+                    <button type="button" data-padic-preset data-n="60042" data-p="10007">2·3·P，P=10007</button>
+                  </div>
+                </fieldset>
                 <p class="note">
-                  展示 n = ∏ p^{v_p(n)} 与 n^{−s} = ∏ p^{−v_p(n)·s}；与 Euler 乘积页互补。
+                  展示 n = ∏ p^{v_p(n)} 与 n^{−s} = ∏ p^{−v_p(n)·s}；与 Euler 乘积页互补。下方可另看 P 進展開。
                 </p>
                 <button class="primary" type="submit">生成分解表</button>
               </form>

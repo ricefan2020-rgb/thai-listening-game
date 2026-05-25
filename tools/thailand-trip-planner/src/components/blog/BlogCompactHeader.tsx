@@ -6,9 +6,15 @@ interface BlogCompactHeaderProps {
   title: string
   config: TripConfig
   authorLine?: string
+  onTitleChange?: (title: string) => void
 }
 
-export function BlogCompactHeader({ title, config, authorLine }: BlogCompactHeaderProps) {
+export function BlogCompactHeader({
+  title,
+  config,
+  authorLine,
+  onTitleChange,
+}: BlogCompactHeaderProps) {
   const interestLabels = config.interests.map((i) => INTEREST_LABELS[i])
   const interestText =
     interestLabels.length <= 2
@@ -18,7 +24,20 @@ export function BlogCompactHeader({ title, config, authorLine }: BlogCompactHead
   return (
     <header className="blog-compact-header">
       <p className="blog-compact-eyebrow">Thailand Travel Journal</p>
-      <h1 className="blog-compact-title">{title}</h1>
+      {onTitleChange ? (
+        <label className="blog-compact-title-edit">
+          <span className="sr-only">行程標題</span>
+          <input
+            type="text"
+            className="blog-compact-title-input"
+            value={title}
+            maxLength={48}
+            onChange={(e) => onTitleChange(e.target.value)}
+          />
+        </label>
+      ) : (
+        <h1 className="blog-compact-title">{title}</h1>
+      )}
       {authorLine && <p className="blog-compact-author">{authorLine}</p>}
 
       <dl className="blog-stats blog-stats--5">

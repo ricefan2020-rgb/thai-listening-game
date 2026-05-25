@@ -2,7 +2,13 @@ import { useCallback, useEffect, useState } from 'react'
 import { BlogPlanArticle } from './components/blog/BlogPlanArticle'
 import { BlogDiscoverFeed } from './components/blog/BlogDiscoverFeed'
 import { BlogSetup } from './components/blog/BlogSetup'
-import type { TimeSlot, TravelNote, TripConfig, TripPlan } from './types'
+import type {
+  ScheduledItem,
+  TimeSlot,
+  TravelNote,
+  TripConfig,
+  TripPlan,
+} from './types'
 import {
   DEFAULT_CONFIG,
   exportPlanMarkdown,
@@ -126,6 +132,29 @@ export function App() {
     persist({ ...plan, days })
   }
 
+  const handleUpdateItem = (
+    dayIndex: number,
+    itemId: string,
+    patch: Partial<ScheduledItem>,
+  ) => {
+    if (!plan) return
+    const days = plan.days.map((d, i) =>
+      i === dayIndex
+        ? {
+            ...d,
+            items: d.items.map((it) =>
+              it.id === itemId ? { ...it, ...patch } : it,
+            ),
+          }
+        : d,
+    )
+    persist({ ...plan, days })
+  }
+
+  const handleTitleChange = (title: string) => {
+    handleConfigChange({ ...config, title: title.trim() || config.title })
+  }
+
   const markdown = plan ? exportPlanMarkdown(plan) : ''
 
   const handleCopy = async () => {
@@ -141,7 +170,7 @@ export function App() {
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
     a.href = url
-    a.download = `${plan.config.title.replace(/\s+/g, '-')}-pattaya.md`
+    a.download = `${plan.config.title.replace(/\s+/g, '-')}-thailand.md`
     a.click()
     URL.revokeObjectURL(url)
   }
@@ -248,8 +277,10 @@ export function App() {
         <BlogPlanArticle
           plan={plan}
           onConfigChange={handleConfigChange}
+          onTitleChange={handleTitleChange}
           onRemoveItem={handleRemoveItem}
           onAddItem={handleAddItem}
+          onUpdateItem={handleUpdateItem}
           onCopyMarkdown={handleCopy}
           onExport={handleExport}
           markdownCopied={copied}

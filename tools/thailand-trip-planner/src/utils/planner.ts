@@ -253,6 +253,7 @@ export function exportPlanMarkdown(plan: TripPlan): string {
         `- 預估：${formatMoneyDual(place.costThb[config.budget] * config.travelers, config.currency, config.exchangeRate)}（${config.travelers} 人）`,
         `- 交通：${place.transportHint}`,
         `- 提示：${place.tip}`,
+        ...(item.note?.trim() ? [`- 備註：${item.note.trim()}`] : []),
         '',
       )
     }

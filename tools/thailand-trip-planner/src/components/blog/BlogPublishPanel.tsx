@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { buildPackingList } from '../../utils/planner'
 import {
   isSupabaseConfigured,
@@ -33,6 +33,33 @@ export function BlogPublishPanel({
   const [published, setPublished] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const packing = buildPackingList(plan.config.interests)
+  const packingKey = `thailand-packing-${plan.updatedAt}`
+  const [packed, setPacked] = useState<Set<string>>(() => new Set())
+
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(packingKey)
+      if (raw) setPacked(new Set(JSON.parse(raw) as string[]))
+      else setPacked(new Set())
+    } catch {
+      setPacked(new Set())
+    }
+  }, [packingKey])
+
+  const togglePacked = (item: string) => {
+    setPacked((prev) => {
+      const next = new Set(prev)
+      if (next.has(item)) next.delete(item)
+      else next.add(item)
+      try {
+        localStorage.setItem(packingKey, JSON.stringify([...next]))
+      } catch {
+        /* ignore */
+      }
+      return next
+    })
+  }
+
   const cloudEnabled = isSupabaseConfigured()
 
   const handlePublish = async () => {
@@ -88,7 +115,7 @@ export function BlogPublishPanel({
         title: plan.config.title,
         text:
           caption.trim() ||
-          `${authorName.trim() || '旅人'} 的芭提雅 ${plan.config.days} 天行程`,
+          `${authorName.trim() || '旅人'} 的泰國 ${plan.config.days} 天行程`,
         url: shareUrl,
       })
     } catch {
@@ -187,12 +214,30 @@ export function BlogPublishPanel({
 
       <div className="blog-packing">
         <p className="pt-subtitle">行李清單</p>
-        <ul className="mt-3 columns-1 gap-x-8 sm:columns-2">
-          {packing.map((item) => (
-            <li key={item} className="mb-1.5 break-inside-avoid text-sm text-stone-700">
-              {item}
-            </li>
-          ))}
+        <p className="mt-1 text-xs text-stone-500">
+          勾選會記在本機，出發前可逐項打勾。
+          {packed.size > 0 && (
+            <span className="ml-1 font-medium text-teal-800">
+              已完成 {packed.size}/{packing.length}
+            </span>
+          )}
+        </p>
+        <ul className="packing-list mt-3 columns-1 gap-x-8 sm:columns-2">
+          {packing.map((item) => {
+            const done = packed.has(item)
+            return (
+              <li key={item} className="packing-item mb-1.5 break-inside-avoid">
+                <label className={`packing-label ${done ? 'packing-label--done' : ''}`}>
+                  <input
+                    type="checkbox"
+                    checked={done}
+                    onChange={() => togglePacked(item)}
+                  />
+                  <span>{item}</span>
+                </label>
+              </li>
+            )
+          })}
         </ul>
       </div>
 
