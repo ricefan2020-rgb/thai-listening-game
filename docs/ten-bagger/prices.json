@@ -1,76 +1,76 @@
 {
-  "asOf": "2026-05-22",
+  "asOf": "2026-05-26",
   "source": "Yahoo Finance",
   "note": "SIVE 列 SIVEF (OTC USD)；瑞典掛牌見 SIVE.ST",
   "quotes": {
     "GOOGL": {
-      "price": 382.97,
-      "chgPct": -1.21,
+      "price": 388.88,
+      "chgPct": 1.54,
       "currency": "USD"
     },
     "NVDA": {
-      "price": 215.33,
-      "chgPct": -1.9,
+      "price": 214.86,
+      "chgPct": -0.22,
       "currency": "USD"
     },
     "AMD": {
-      "price": 467.51,
-      "chgPct": 3.99,
+      "price": 503.89,
+      "chgPct": 7.78,
       "currency": "USD"
     },
     "ARM": {
-      "price": 306.51,
-      "chgPct": 2.78,
+      "price": 321.22,
+      "chgPct": 4.8,
       "currency": "USD"
     },
     "ANET": {
-      "price": 154.03,
-      "chgPct": 3.66,
+      "price": 158.01,
+      "chgPct": 2.58,
       "currency": "USD"
     },
     "VRT": {
-      "price": 327.46,
-      "chgPct": 1.26,
+      "price": 323.91,
+      "chgPct": -1.08,
       "currency": "USD"
     },
     "SMCI": {
-      "price": 35.58,
-      "chgPct": 6.34,
+      "price": 37.1,
+      "chgPct": 4.27,
       "currency": "USD"
     },
     "IREN": {
-      "price": 56.83,
-      "chgPct": -2.12,
+      "price": 59.78,
+      "chgPct": 5.19,
       "currency": "USD"
     },
     "PLTR": {
-      "price": 136.88,
-      "chgPct": -0.39,
+      "price": 136.6,
+      "chgPct": -0.2,
       "currency": "USD"
     },
     "CRCL": {
-      "price": 113.12,
-      "chgPct": -1.53,
+      "price": 104.17,
+      "chgPct": -7.91,
       "currency": "USD"
     },
     "SNOW": {
-      "price": 172.2,
-      "chgPct": 4.02,
+      "price": 177.6,
+      "chgPct": 3.14,
       "currency": "USD"
     },
     "SIVE": {
-      "price": 7.42,
-      "chgPct": 17.78,
+      "price": 9.4,
+      "chgPct": 26.68,
       "currency": "USD",
       "also": {
-        "price": 72.9,
-        "chgPct": 23.45,
+        "price": 83.5,
+        "chgPct": -3.86,
         "currency": "SEK"
       }
     },
     "POET": {
-      "price": 14.59,
-      "chgPct": -1.55,
+      "price": 13.35,
+      "chgPct": -8.5,
       "currency": "USD"
     }
   }

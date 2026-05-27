@@ -42,6 +42,28 @@ const OUTLOOK_CLASS = {
   bearish: 'down',
 };
 
+function flowReasonZh(reasons) {
+  if (reasons?.includes('vol') && reasons?.includes('vol_oi')) return '量+量/OI';
+  if (reasons?.includes('vol_oi')) return '量/OI';
+  return '放量';
+}
+
+function formatVol(n) {
+  if (n >= 10000) return `${Math.round(n / 1000)}k`;
+  if (n >= 1000) return `${(n / 1000).toFixed(1)}k`;
+  return String(n);
+}
+
+function flowRowHtml(u, { showTicker = false, ticker = '' } = {}) {
+  const t = showTicker ? `${ticker} ` : '';
+  const oi = u.oi > 0 ? ` OI${u.oi}` : '';
+  const voi = u.volOi != null ? ` · 量/OI ${u.volOi}` : '';
+  const title = `${flowReasonZh(u.reasons)} · 量 ${u.vol}${oi}${voi}`;
+  return `<span class="opt-flow-chip ${u.side === 'C' ? 'call' : 'put'}" title="${escapeHtml(title)}">
+    ${t}<b>${u.side}$${u.strike}</b> <em>${formatVol(u.vol)}</em>
+  </span>`;
+}
+
 export function renderOptionsSummary(host, data, activeTicker) {
   if (!host || !data?.tickers) return;
   const keys = Object.keys(data.tickers).filter((t) => data.tickers[t]?.available);
@@ -96,6 +118,14 @@ export function renderOptionsDetail(host, ticker, data) {
       x.topPuts?.length
         ? `<div class="opt-oi-row"><span>Put OI</span>${x.topPuts.map((c) => `<code>${c.strike}×${c.oi}</code>`).join(' ')}</div>`
         : ''
+    }
+    ${
+      x.unusualFlow?.length
+        ? `<div class="opt-flow-section">
+        <div class="opt-flow-head">異動成交 <small>量≥${x.flowVolThreshold ?? '—'} 或 量/OI≥${x.flowMinVolOi ?? 1.5}</small></div>
+        <div class="opt-flow-chips">${x.unusualFlow.map((u) => flowRowHtml(u)).join('')}</div>
+      </div>`
+        : `<p class="opt-flow-empty">本到期無達標異動（閾值 量≥${x.flowVolThreshold ?? '—'} / 量/OI≥${x.flowMinVolOi ?? 1.5}）</p>`
     }`;
 }
 
@@ -183,6 +213,11 @@ export function renderOptionsChartBar(host, ticker, data) {
     <span>P/C ${x.pcRatioOi ?? '—'}</span>
     ${mp ? `<span>${mp}</span>` : ''}
     <span>到期 ${x.expiry?.slice(5) || '—'} (${x.dte}d)</span>
+    ${
+      x.unusualFlow?.[0]
+        ? `<span class="opt-chart-flow">${x.unusualFlow[0].side}$${x.unusualFlow[0].strike} 量${formatVol(x.unusualFlow[0].vol)}</span>`
+        : ''
+    }
     <button type="button" class="opt-chart-more" data-goto-opt-tab>詳情</button>`;
   host.title = x.outlookNote || '';
 }
@@ -200,18 +235,25 @@ export function renderOptionsStrip(data, activeTicker = null) {
   }
   items.sort((a, b) => b.score - a.score);
 
+  const flowTop = data.unusualFlowTop || [];
   const opex = (data.marketExpiries || [])
     .filter((e) => e.date >= todayStr())
     .slice(0, 2);
 
-  if (!items.length && !opex.length) {
+  if (!items.length && !opex.length && !flowTop.length) {
     strip.classList.add('hidden');
     return;
   }
   strip.classList.remove('hidden');
 
   const chipHtml = [
-    ...items.slice(0, 8).map(({ t, x }) => {
+    ...flowTop.slice(0, 10).map((u) => {
+      const active = u.ticker === activeTicker ? ' active' : '';
+      const cls = u.side === 'C' ? 'flow-call' : 'flow-put';
+      const title = `${u.ticker} ${flowReasonZh(u.reasons)} · 量${u.vol}`;
+      return `<button type="button" class="opt-strip-chip flow ${cls}${active}" data-opt-strip-ticker="${u.ticker}" title="${escapeHtml(title)}">${u.ticker} ${u.side}$${u.strike} ${formatVol(u.vol)}</button>`;
+    }),
+    ...items.slice(0, 6).map(({ t, x }) => {
       const cls = OUTLOOK_CLASS[x.outlook] || 'neutral';
       const active = t === activeTicker ? ' active' : '';
       return `<button type="button" class="opt-strip-chip ${cls}${active}" data-opt-strip-ticker="${t}" title="${escapeHtml(x.outlookNote || '')}">${t} ${x.outlookLabel}</button>`;
@@ -258,6 +300,13 @@ export function applyOptionsBadges(data) {
       return;
     }
     const cls = OUTLOOK_CLASS[x.outlook] || 'neutral';
+    const flow = x.unusualFlow?.[0];
+    if (flow) {
+      el.textContent = `異動 ${flow.side}$${flow.strike}`;
+      el.className = `badge opt flow ${flow.side === 'C' ? 'positive' : 'down'}`;
+      el.title = `${x.outlookLabel} · 量${flow.vol}${flow.volOi != null ? ` 量/OI${flow.volOi}` : ''}`;
+      return;
+    }
     el.textContent = x.outlookLabel;
     el.className = `badge opt ${cls}`;
     el.title = x.outlookNote || '';

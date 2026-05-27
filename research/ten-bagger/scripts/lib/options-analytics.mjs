@@ -85,6 +85,76 @@ export function pickExpiryChain(optionChainResult) {
   return best;
 }
 
+/** 預設：量/OI ≥ 1.5，或當日量超過鏈上自適應閾值 */
+export const FLOW_DEFAULTS = {
+  minVolOi: 1.5,
+  minVolFloor: 150,
+};
+
+/**
+ * 標記異動成交：當日量 > 閾值，或 量/OI > N（分析用選定到期日）
+ * @returns {{ unusualFlow: object[], volThreshold: number, minVolOi: number }}
+ */
+export function findUnusualContracts(calls, puts, opts = {}) {
+  const minVolOi = opts.minVolOi ?? FLOW_DEFAULTS.minVolOi;
+  const minVolFloor = opts.minVolFloor ?? FLOW_DEFAULTS.minVolFloor;
+  const all = [
+    ...calls.map((c) => ({ ...c, side: 'C' })),
+    ...puts.map((c) => ({ ...c, side: 'P' })),
+  ].filter((c) => c.vol > 0);
+
+  if (!all.length) {
+    return { unusualFlow: [], volThreshold: minVolFloor, minVolOi };
+  }
+
+  const vols = all.map((c) => c.vol).sort((a, b) => a - b);
+  const median = vols[Math.floor(vols.length / 2)] || 0;
+  const p90 = vols[Math.floor(vols.length * 0.9)] || median;
+  const volThreshold = Math.max(
+    minVolFloor,
+    Math.round(Math.max(median * 2.5, p90 * 0.9)),
+  );
+
+  const hits = [];
+  for (const c of all) {
+    const volOi = c.oi > 0 ? c.vol / c.oi : null;
+    const reasons = [];
+    if (c.vol >= volThreshold) reasons.push('vol');
+    if (volOi != null && volOi >= minVolOi) reasons.push('vol_oi');
+    if (c.oi === 0 && c.vol >= volThreshold * 1.2) reasons.push('vol');
+
+    if (!reasons.length) continue;
+
+    hits.push({
+      side: c.side,
+      strike: c.strike,
+      vol: c.vol,
+      oi: c.oi,
+      volOi: volOi != null ? Math.round(volOi * 100) / 100 : null,
+      reasons: [...new Set(reasons)],
+      score: Math.round(c.vol + (volOi != null && volOi >= minVolOi ? volOi * 400 : 0)),
+    });
+  }
+
+  return {
+    unusualFlow: hits.sort((a, b) => b.score - a.score).slice(0, 10),
+    volThreshold,
+    minVolOi,
+  };
+}
+
+/** 觀察名單內異動成交 Top N（訊號列用） */
+export function buildUnusualFlowTop(tickers, limit = 14) {
+  const rows = [];
+  for (const [ticker, x] of Object.entries(tickers || {})) {
+    if (!x?.unusualFlow?.length) continue;
+    for (const u of x.unusualFlow.slice(0, 4)) {
+      rows.push({ ticker, ...u });
+    }
+  }
+  return rows.sort((a, b) => b.score - a.score).slice(0, limit);
+}
+
 function atmIv(contracts, spot) {
   if (!spot || !contracts.length) return null;
   let best = null;
@@ -124,6 +194,7 @@ export function analyzeChain(optionChainResult) {
 
   const topCalls = [...calls].sort((a, b) => b.oi - a.oi).slice(0, 3);
   const topPuts = [...puts].sort((a, b) => b.oi - a.oi).slice(0, 3);
+  const flow = findUnusualContracts(calls, puts);
 
   let score = 0;
   const reasons = [];
@@ -160,6 +231,14 @@ export function analyzeChain(optionChainResult) {
     reasons.push('Call IV 相對高（偏進攻）');
   }
 
+  if (flow.unusualFlow.length) {
+    const top = flow.unusualFlow[0];
+    const tag = `${top.side}$${top.strike} 量${top.vol}`;
+    reasons.push(`異動 ${tag}`);
+    if (top.side === 'C') score += 0.25;
+    else score -= 0.25;
+  }
+
   let outlook = 'neutral';
   let outlookLabel = '中性';
   if (score >= 1.2) {
@@ -194,6 +273,9 @@ export function analyzeChain(optionChainResult) {
     putOi,
     topCalls: topCalls.map((c) => ({ strike: c.strike, oi: c.oi })),
     topPuts: topPuts.map((c) => ({ strike: c.strike, oi: c.oi })),
+    unusualFlow: flow.unusualFlow,
+    flowVolThreshold: flow.volThreshold,
+    flowMinVolOi: flow.minVolOi,
     outlook,
     outlookLabel,
     outlookNote: reasons.join(' · '),

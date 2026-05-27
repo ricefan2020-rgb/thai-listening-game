@@ -8,7 +8,188 @@
       "SIVE": "SIVE: 無法取得現價 snapshot"
     }
   },
-  "note": "P/C·Max Pain·IV 為規則摘要 · 預設 OpenD · 非投資建議",
+  "note": "P/C·Max Pain·IV·異動成交(量/量OI) · 預設 OpenD · 非投資建議",
+  "flowRule": "當日量≥鏈上閾值 或 量/OI≥1.5",
+  "unusualFlowTop": [
+    {
+      "ticker": "SMCI",
+      "side": "C",
+      "strike": 38.5,
+      "vol": 27161,
+      "oi": 123,
+      "volOi": 220.82,
+      "reasons": [
+        "vol",
+        "vol_oi"
+      ],
+      "score": 115489
+    },
+    {
+      "ticker": "SMCI",
+      "side": "C",
+      "strike": 36.5,
+      "vol": 28769,
+      "oi": 441,
+      "volOi": 65.24,
+      "reasons": [
+        "vol",
+        "vol_oi"
+      ],
+      "score": 54863
+    },
+    {
+      "ticker": "PLTR",
+      "side": "P",
+      "strike": 109,
+      "vol": 1678,
+      "oi": 14,
+      "volOi": 119.86,
+      "reasons": [
+        "vol_oi"
+      ],
+      "score": 49621
+    },
+    {
+      "ticker": "SMCI",
+      "side": "C",
+      "strike": 35.5,
+      "vol": 20979,
+      "oi": 387,
+      "volOi": 54.21,
+      "reasons": [
+        "vol",
+        "vol_oi"
+      ],
+      "score": 42663
+    },
+    {
+      "ticker": "IREN",
+      "side": "P",
+      "strike": 45,
+      "vol": 34466,
+      "oi": 27331,
+      "volOi": 1.26,
+      "reasons": [
+        "vol"
+      ],
+      "score": 34466
+    },
+    {
+      "ticker": "PLTR",
+      "side": "P",
+      "strike": 107,
+      "vol": 999,
+      "oi": 12,
+      "volOi": 83.25,
+      "reasons": [
+        "vol_oi"
+      ],
+      "score": 34299
+    },
+    {
+      "ticker": "SMCI",
+      "side": "C",
+      "strike": 37,
+      "vol": 22991,
+      "oi": 923,
+      "volOi": 24.91,
+      "reasons": [
+        "vol",
+        "vol_oi"
+      ],
+      "score": 32955
+    },
+    {
+      "ticker": "IREN",
+      "side": "P",
+      "strike": 33,
+      "vol": 24212,
+      "oi": 2034,
+      "volOi": 11.9,
+      "reasons": [
+        "vol",
+        "vol_oi"
+      ],
+      "score": 28973
+    },
+    {
+      "ticker": "PLTR",
+      "side": "C",
+      "strike": 140,
+      "vol": 19484,
+      "oi": 11344,
+      "volOi": 1.72,
+      "reasons": [
+        "vol",
+        "vol_oi"
+      ],
+      "score": 20171
+    },
+    {
+      "ticker": "IREN",
+      "side": "P",
+      "strike": 46.5,
+      "vol": 2763,
+      "oi": 83,
+      "volOi": 33.29,
+      "reasons": [
+        "vol",
+        "vol_oi"
+      ],
+      "score": 16079
+    },
+    {
+      "ticker": "CRCL",
+      "side": "C",
+      "strike": 142,
+      "vol": 2562,
+      "oi": 79,
+      "volOi": 32.43,
+      "reasons": [
+        "vol",
+        "vol_oi"
+      ],
+      "score": 15534
+    },
+    {
+      "ticker": "POET",
+      "side": "P",
+      "strike": 10,
+      "vol": 13988,
+      "oi": 5841,
+      "volOi": 2.39,
+      "reasons": [
+        "vol",
+        "vol_oi"
+      ],
+      "score": 14946
+    },
+    {
+      "ticker": "PLTR",
+      "side": "C",
+      "strike": 145,
+      "vol": 14080,
+      "oi": 9252,
+      "volOi": 1.52,
+      "reasons": [
+        "vol",
+        "vol_oi"
+      ],
+      "score": 14689
+    },
+    {
+      "ticker": "SNOW",
+      "side": "C",
+      "strike": 265,
+      "vol": 72,
+      "oi": 2,
+      "volOi": 36,
+      "reasons": [
+        "vol_oi"
+      ],
+      "score": 14472
+    }
+  ],
   "marketExpiries": [
     {
       "date": "2026-06-17",
@@ -189,6 +370,9 @@
       "putOi": 0,
       "topCalls": [],
       "topPuts": [],
+      "unusualFlow": [],
+      "flowVolThreshold": 150,
+      "flowMinVolOi": 1.5,
       "outlook": "neutral",
       "outlookLabel": "中性",
       "outlookNote": "",
@@ -245,6 +429,9 @@
       "putOi": 0,
       "topCalls": [],
       "topPuts": [],
+      "unusualFlow": [],
+      "flowVolThreshold": 150,
+      "flowMinVolOi": 1.5,
       "outlook": "neutral",
       "outlookLabel": "中性",
       "outlookNote": "",
@@ -301,6 +488,9 @@
       "putOi": 0,
       "topCalls": [],
       "topPuts": [],
+      "unusualFlow": [],
+      "flowVolThreshold": 150,
+      "flowMinVolOi": 1.5,
       "outlook": "neutral",
       "outlookLabel": "中性",
       "outlookNote": "",
@@ -357,6 +547,9 @@
       "putOi": 0,
       "topCalls": [],
       "topPuts": [],
+      "unusualFlow": [],
+      "flowVolThreshold": 150,
+      "flowMinVolOi": 1.5,
       "outlook": "neutral",
       "outlookLabel": "中性",
       "outlookNote": "",
@@ -413,6 +606,9 @@
       "putOi": 0,
       "topCalls": [],
       "topPuts": [],
+      "unusualFlow": [],
+      "flowVolThreshold": 150,
+      "flowMinVolOi": 1.5,
       "outlook": "neutral",
       "outlookLabel": "中性",
       "outlookNote": "",
@@ -469,6 +665,9 @@
       "putOi": 0,
       "topCalls": [],
       "topPuts": [],
+      "unusualFlow": [],
+      "flowVolThreshold": 150,
+      "flowMinVolOi": 1.5,
       "outlook": "neutral",
       "outlookLabel": "中性",
       "outlookNote": "",
@@ -551,9 +750,130 @@
           "oi": 2086
         }
       ],
+      "unusualFlow": [
+        {
+          "side": "C",
+          "strike": 38.5,
+          "vol": 27161,
+          "oi": 123,
+          "volOi": 220.82,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 115489
+        },
+        {
+          "side": "C",
+          "strike": 36.5,
+          "vol": 28769,
+          "oi": 441,
+          "volOi": 65.24,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 54863
+        },
+        {
+          "side": "C",
+          "strike": 35.5,
+          "vol": 20979,
+          "oi": 387,
+          "volOi": 54.21,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 42663
+        },
+        {
+          "side": "C",
+          "strike": 37,
+          "vol": 22991,
+          "oi": 923,
+          "volOi": 24.91,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 32955
+        },
+        {
+          "side": "C",
+          "strike": 41.5,
+          "vol": 204,
+          "oi": 4,
+          "volOi": 51,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 20604
+        },
+        {
+          "side": "C",
+          "strike": 40,
+          "vol": 9599,
+          "oi": 6402,
+          "volOi": 1.5,
+          "reasons": [
+            "vol"
+          ],
+          "score": 9599
+        },
+        {
+          "side": "C",
+          "strike": 36,
+          "vol": 8649,
+          "oi": 3644,
+          "volOi": 2.37,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 9598
+        },
+        {
+          "side": "C",
+          "strike": 35,
+          "vol": 7683,
+          "oi": 4461,
+          "volOi": 1.72,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 8372
+        },
+        {
+          "side": "C",
+          "strike": 39.5,
+          "vol": 1690,
+          "oi": 109,
+          "volOi": 15.5,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 7892
+        },
+        {
+          "side": "C",
+          "strike": 20.5,
+          "vol": 147,
+          "oi": 8,
+          "volOi": 18.38,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 7497
+        }
+      ],
+      "flowVolThreshold": 1527,
+      "flowMinVolOi": 1.5,
       "outlook": "neutral",
       "outlookLabel": "中性",
-      "outlookNote": "P/C(OI) 0.81 中性 · Max Pain $31 低於現價 -12.9% · Call IV 相對高（偏進攻）",
+      "outlookNote": "P/C(OI) 0.81 中性 · Max Pain $31 低於現價 -12.9% · Call IV 相對高（偏進攻） · 異動 C$38.5 量27161",
       "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
       "expiries": [
         {
@@ -608,9 +928,130 @@
           "oi": 8301
         }
       ],
+      "unusualFlow": [
+        {
+          "side": "P",
+          "strike": 45,
+          "vol": 34466,
+          "oi": 27331,
+          "volOi": 1.26,
+          "reasons": [
+            "vol"
+          ],
+          "score": 34466
+        },
+        {
+          "side": "P",
+          "strike": 33,
+          "vol": 24212,
+          "oi": 2034,
+          "volOi": 11.9,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 28973
+        },
+        {
+          "side": "P",
+          "strike": 46.5,
+          "vol": 2763,
+          "oi": 83,
+          "volOi": 33.29,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 16079
+        },
+        {
+          "side": "P",
+          "strike": 58,
+          "vol": 4557,
+          "oi": 302,
+          "volOi": 15.09,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 10593
+        },
+        {
+          "side": "P",
+          "strike": 55,
+          "vol": 7510,
+          "oi": 3121,
+          "volOi": 2.41,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 8473
+        },
+        {
+          "side": "C",
+          "strike": 60,
+          "vol": 8280,
+          "oi": 7407,
+          "volOi": 1.12,
+          "reasons": [
+            "vol"
+          ],
+          "score": 8280
+        },
+        {
+          "side": "P",
+          "strike": 56,
+          "vol": 3230,
+          "oi": 421,
+          "volOi": 7.67,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 6299
+        },
+        {
+          "side": "C",
+          "strike": 58,
+          "vol": 3924,
+          "oi": 1097,
+          "volOi": 3.58,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 5355
+        },
+        {
+          "side": "P",
+          "strike": 48,
+          "vol": 3442,
+          "oi": 837,
+          "volOi": 4.11,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 5087
+        },
+        {
+          "side": "C",
+          "strike": 70,
+          "vol": 3924,
+          "oi": 4030,
+          "volOi": 0.97,
+          "reasons": [
+            "vol"
+          ],
+          "score": 3924
+        }
+      ],
+      "flowVolThreshold": 2372,
+      "flowMinVolOi": 1.5,
       "outlook": "bearish",
       "outlookLabel": "籌碼偏空",
-      "outlookNote": "P/C(OI) 2.35 偏高·Put 避險多 · Max Pain $52 低於現價 -8.5%",
+      "outlookNote": "P/C(OI) 2.35 偏高·Put 避險多 · Max Pain $52 低於現價 -8.5% · 異動 P$45 量34466",
       "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
       "expiries": [
         {
@@ -665,9 +1106,130 @@
           "oi": 3809
         }
       ],
+      "unusualFlow": [
+        {
+          "side": "P",
+          "strike": 109,
+          "vol": 1678,
+          "oi": 14,
+          "volOi": 119.86,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 49621
+        },
+        {
+          "side": "P",
+          "strike": 107,
+          "vol": 999,
+          "oi": 12,
+          "volOi": 83.25,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 34299
+        },
+        {
+          "side": "C",
+          "strike": 140,
+          "vol": 19484,
+          "oi": 11344,
+          "volOi": 1.72,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 20171
+        },
+        {
+          "side": "C",
+          "strike": 145,
+          "vol": 14080,
+          "oi": 9252,
+          "volOi": 1.52,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 14689
+        },
+        {
+          "side": "C",
+          "strike": 144,
+          "vol": 12921,
+          "oi": 6248,
+          "volOi": 2.07,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 13748
+        },
+        {
+          "side": "P",
+          "strike": 126,
+          "vol": 6373,
+          "oi": 705,
+          "volOi": 9.04,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 9989
+        },
+        {
+          "side": "C",
+          "strike": 138,
+          "vol": 5902,
+          "oi": 981,
+          "volOi": 6.02,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 8309
+        },
+        {
+          "side": "C",
+          "strike": 139,
+          "vol": 5922,
+          "oi": 1123,
+          "volOi": 5.27,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 8031
+        },
+        {
+          "side": "C",
+          "strike": 142,
+          "vol": 6483,
+          "oi": 1970,
+          "volOi": 3.29,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 7799
+        },
+        {
+          "side": "P",
+          "strike": 113,
+          "vol": 372,
+          "oi": 21,
+          "volOi": 17.71,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 7458
+        }
+      ],
+      "flowVolThreshold": 2591,
+      "flowMinVolOi": 1.5,
       "outlook": "lean_bull",
       "outlookLabel": "略偏多",
-      "outlookNote": "P/C(OI) 0.48 偏低·Call 籌碼多 · Max Pain $135 近現價",
+      "outlookNote": "P/C(OI) 0.48 偏低·Call 籌碼多 · Max Pain $135 近現價 · 異動 P$109 量1678",
       "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
       "expiries": [
         {
@@ -722,9 +1284,128 @@
           "oi": 1211
         }
       ],
-      "outlook": "lean_bull",
-      "outlookLabel": "略偏多",
-      "outlookNote": "P/C(OI) 0.73 偏低·Call 籌碼多 · Max Pain $112 近現價",
+      "unusualFlow": [
+        {
+          "side": "C",
+          "strike": 142,
+          "vol": 2562,
+          "oi": 79,
+          "volOi": 32.43,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 15534
+        },
+        {
+          "side": "P",
+          "strike": 121,
+          "vol": 442,
+          "oi": 23,
+          "volOi": 19.22,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 8129
+        },
+        {
+          "side": "C",
+          "strike": 139,
+          "vol": 45,
+          "oi": 4,
+          "volOi": 11.25,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 4545
+        },
+        {
+          "side": "C",
+          "strike": 117,
+          "vol": 898,
+          "oi": 109,
+          "volOi": 8.24,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 4193
+        },
+        {
+          "side": "C",
+          "strike": 120,
+          "vol": 3795,
+          "oi": 3033,
+          "volOi": 1.25,
+          "reasons": [
+            "vol"
+          ],
+          "score": 3795
+        },
+        {
+          "side": "C",
+          "strike": 122,
+          "vol": 1125,
+          "oi": 177,
+          "volOi": 6.36,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 3667
+        },
+        {
+          "side": "P",
+          "strike": 114,
+          "vol": 595,
+          "oi": 89,
+          "volOi": 6.69,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 3269
+        },
+        {
+          "side": "C",
+          "strike": 124,
+          "vol": 591,
+          "oi": 92,
+          "volOi": 6.42,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 3161
+        },
+        {
+          "side": "P",
+          "strike": 111,
+          "vol": 361,
+          "oi": 58,
+          "volOi": 6.22,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 2851
+        },
+        {
+          "side": "C",
+          "strike": 130,
+          "vol": 2555,
+          "oi": 4286,
+          "volOi": 0.6,
+          "reasons": [
+            "vol"
+          ],
+          "score": 2555
+        }
+      ],
+      "flowVolThreshold": 532,
+      "flowMinVolOi": 1.5,
+      "outlook": "bullish",
+      "outlookLabel": "籌碼偏多",
+      "outlookNote": "P/C(OI) 0.73 偏低·Call 籌碼多 · Max Pain $112 近現價 · 異動 C$142 量2562",
       "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
       "expiries": [
         {
@@ -779,9 +1460,127 @@
           "oi": 865
         }
       ],
+      "unusualFlow": [
+        {
+          "side": "C",
+          "strike": 265,
+          "vol": 72,
+          "oi": 2,
+          "volOi": 36,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 14472
+        },
+        {
+          "side": "P",
+          "strike": 129,
+          "vol": 245,
+          "oi": 11,
+          "volOi": 22.27,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 9154
+        },
+        {
+          "side": "P",
+          "strike": 114,
+          "vol": 17,
+          "oi": 1,
+          "volOi": 17,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 6817
+        },
+        {
+          "side": "C",
+          "strike": 230,
+          "vol": 65,
+          "oi": 5,
+          "volOi": 13,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 5265
+        },
+        {
+          "side": "C",
+          "strike": 182.5,
+          "vol": 1242,
+          "oi": 139,
+          "volOi": 8.94,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 4816
+        },
+        {
+          "side": "C",
+          "strike": 175,
+          "vol": 1915,
+          "oi": 981,
+          "volOi": 1.95,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 2696
+        },
+        {
+          "side": "P",
+          "strike": 150,
+          "vol": 1125,
+          "oi": 365,
+          "volOi": 3.08,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 2358
+        },
+        {
+          "side": "P",
+          "strike": 185,
+          "vol": 52,
+          "oi": 11,
+          "volOi": 4.73,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 1943
+        },
+        {
+          "side": "C",
+          "strike": 197.5,
+          "vol": 281,
+          "oi": 69,
+          "volOi": 4.07,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 1910
+        },
+        {
+          "side": "C",
+          "strike": 170,
+          "vol": 1261,
+          "oi": 797,
+          "volOi": 1.58,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 1894
+        }
+      ],
+      "flowVolThreshold": 443,
+      "flowMinVolOi": 1.5,
       "outlook": "lean_bull",
       "outlookLabel": "略偏多",
-      "outlookNote": "P/C(OI) 0.41 偏低·Call 籌碼多 · Max Pain $150 低於現價 -12.9%",
+      "outlookNote": "P/C(OI) 0.41 偏低·Call 籌碼多 · Max Pain $150 低於現價 -12.9% · 異動 C$265 量72",
       "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
       "expiries": [
         {
@@ -843,9 +1642,126 @@
           "oi": 4144
         }
       ],
+      "unusualFlow": [
+        {
+          "side": "P",
+          "strike": 10,
+          "vol": 13988,
+          "oi": 5841,
+          "volOi": 2.39,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 14946
+        },
+        {
+          "side": "C",
+          "strike": 15,
+          "vol": 5482,
+          "oi": 4423,
+          "volOi": 1.24,
+          "reasons": [
+            "vol"
+          ],
+          "score": 5482
+        },
+        {
+          "side": "C",
+          "strike": 3.5,
+          "vol": 13,
+          "oi": 1,
+          "volOi": 13,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 5213
+        },
+        {
+          "side": "P",
+          "strike": 14.5,
+          "vol": 1803,
+          "oi": 237,
+          "volOi": 7.61,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 4846
+        },
+        {
+          "side": "P",
+          "strike": 12.5,
+          "vol": 1701,
+          "oi": 596,
+          "volOi": 2.85,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 2843
+        },
+        {
+          "side": "C",
+          "strike": 20,
+          "vol": 2786,
+          "oi": 3375,
+          "volOi": 0.83,
+          "reasons": [
+            "vol"
+          ],
+          "score": 2786
+        },
+        {
+          "side": "P",
+          "strike": 20.5,
+          "vol": 60,
+          "oi": 10,
+          "volOi": 6,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 2460
+        },
+        {
+          "side": "C",
+          "strike": 17,
+          "vol": 1818,
+          "oi": 3609,
+          "volOi": 0.5,
+          "reasons": [
+            "vol"
+          ],
+          "score": 1818
+        },
+        {
+          "side": "C",
+          "strike": 14.5,
+          "vol": 1816,
+          "oi": 1775,
+          "volOi": 1.02,
+          "reasons": [
+            "vol"
+          ],
+          "score": 1816
+        },
+        {
+          "side": "C",
+          "strike": 16,
+          "vol": 1815,
+          "oi": 3506,
+          "volOi": 0.52,
+          "reasons": [
+            "vol"
+          ],
+          "score": 1815
+        }
+      ],
+      "flowVolThreshold": 972,
+      "flowMinVolOi": 1.5,
       "outlook": "lean_bear",
       "outlookLabel": "略偏空",
-      "outlookNote": "P/C(OI) 1.01 中性 · Max Pain $13 低於現價 -10.9%",
+      "outlookNote": "P/C(OI) 1.01 中性 · Max Pain $13 低於現價 -10.9% · 異動 P$10 量13988",
       "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
       "expiries": [
         {

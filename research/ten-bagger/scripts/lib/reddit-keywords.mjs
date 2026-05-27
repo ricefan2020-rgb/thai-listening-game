@@ -168,16 +168,90 @@ export async function fetchRedditListing(subreddit, sort, limit, ua) {
   return data?.data?.children || [];
 }
 
-export function childToPost(child, subreddit, subWeight) {
+export function childToPost(child, subreddit, subWeight, listingSort = 'hot') {
   const d = child.data;
   return {
     id: d.id,
     subreddit,
     subWeight,
+    listingSort,
     title: d.title || '',
     score: d.score ?? 0,
     comments: d.num_comments ?? 0,
     url: d.permalink ? `https://www.reddit.com${d.permalink}` : d.url,
     created: new Date((d.created_utc || 0) * 1000).toISOString().slice(0, 10),
   };
+}
+
+/** 熱詞榜單用：過濾太泛的主題詞 */
+export const SURGE_STOP = new Set(
+  `stock stocks share shares market money price prices today yesterday tomorrow week month year
+  people person time times day days week weeks help thanks please post posts comment comments
+  reddit upvote downvote karma bought buying sell sold trade trades trading investor investors
+  think know want need good bad best worst first last new old high low long short`.split(/\s+/),
+);
+
+function termKey(row) {
+  return `${row.type}:${String(row.term).toLowerCase()}`;
+}
+
+export function indexKeywords(keywords) {
+  const m = new Map();
+  for (const k of keywords || []) m.set(termKey(k), k);
+  return m;
+}
+
+/** 找出突然爆火關鍵字：對照上一輪分數 + rising 榜加權 */
+export function detectSurgingKeywords({ current = [], previous = [], rising = [] }) {
+  const prevMap = indexKeywords(previous);
+  const risingMap = indexKeywords(rising);
+  const maxScore = Math.max(1, ...current.map((k) => k.score));
+
+  const out = [];
+  for (const k of current) {
+    const low = String(k.term).toLowerCase();
+    if (k.type === 'theme' && SURGE_STOP.has(low)) continue;
+    if (k.score < 2 || k.posts < 2) continue;
+
+    const prev = prevMap.get(termKey(k))?.score ?? 0;
+    const risingScore = risingMap.get(termKey(k))?.score ?? 0;
+    const risingShare = k.score > 0 ? risingScore / k.score : 0;
+    const ratio = prev >= 0.5 ? k.score / prev : k.score >= 4 ? 8 : 0;
+    const delta = Math.round((k.score - prev) * 100) / 100;
+
+    let surgeReason = null;
+    let surgeScore = 0;
+
+    if (prev < 0.5 && k.score >= 4) {
+      surgeReason = 'new';
+      surgeScore = k.score * 2 + k.posts;
+    } else if (ratio >= 2.2 && delta >= 3 && k.score >= 5) {
+      surgeReason = 'spike';
+      surgeScore = delta * 2.5 + k.score;
+    } else if (risingScore >= 5 && risingShare >= 0.38 && k.posts >= 2) {
+      surgeReason = 'rising';
+      surgeScore = risingScore * (1.2 + risingShare);
+    }
+
+    if (!surgeReason) continue;
+    if (k.type === 'theme' && k.score < maxScore * 0.06 && surgeReason !== 'spike') continue;
+
+    out.push({
+      ...k,
+      prevScore: Math.round(prev * 100) / 100,
+      delta,
+      ratio: Math.round(ratio * 100) / 100,
+      risingScore: Math.round(risingScore * 100) / 100,
+      risingShare: Math.round(risingShare * 100) / 100,
+      surgeReason,
+      surgeScore: Math.round(surgeScore * 100) / 100,
+    });
+  }
+
+  return out.sort((a, b) => b.surgeScore - a.surgeScore).slice(0, 18);
+}
+
+const SURGE_REASON_ZH = { new: '新詞', spike: '暴增', rising: 'rising' };
+export function surgeReasonLabel(reason) {
+  return SURGE_REASON_ZH[reason] || reason;
 }

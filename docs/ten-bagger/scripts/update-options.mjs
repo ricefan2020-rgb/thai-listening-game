@@ -14,7 +14,11 @@ import { fileURLToPath } from 'url';
 import { WATCH_TICKERS, yahooSymbol } from './lib/tickers.mjs';
 import { fetchOptionChain } from './lib/yahoo-options.mjs';
 import { fetchOpenDChains, chainForTicker, futuCode } from './lib/opend-fetch.mjs';
-import { analyzeChain, listUpcomingExpiries } from './lib/options-analytics.mjs';
+import {
+  analyzeChain,
+  listUpcomingExpiries,
+  buildUnusualFlowTop,
+} from './lib/options-analytics.mjs';
 import { buildMarketOpexCalendar } from './lib/opex-calendar.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -104,7 +108,9 @@ const payload = {
   opend: opendPayload
     ? { host: opendPayload.host, port: opendPayload.port, errors: opendPayload.errors }
     : null,
-  note: 'P/C·Max Pain·IV 為規則摘要 · 預設 OpenD · 非投資建議',
+  note: 'P/C·Max Pain·IV·異動成交(量/量OI) · 預設 OpenD · 非投資建議',
+  flowRule: '當日量≥鏈上閾值 或 量/OI≥1.5',
+  unusualFlowTop: buildUnusualFlowTop(tickers),
   marketExpiries,
   tickers,
 };
@@ -187,6 +193,19 @@ writeFileSync(
 強制 Yahoo：\`OPTIONS_SOURCE=yahoo node scripts/update-options.mjs\`
 
 **說明**：OpenD 提供 OI / IV / 到期日；規則摘要輸出籌碼偏多/偏空/中性，**不是**價格預測。結算日併入 [calendar.json](./calendar.json)。
+
+## 異動成交（${payload.flowRule}）
+
+${
+  payload.unusualFlowTop?.length
+    ? payload.unusualFlowTop
+        .map(
+          (u) =>
+            `- **${u.ticker}** ${u.side}$${u.strike} · 量 ${u.vol}${u.oi ? ` · OI ${u.oi}` : ''}${u.volOi != null ? ` · 量/OI ${u.volOi}` : ''}`,
+        )
+        .join('\n')
+    : '_本輪無達標異動（多為鏈上成交量為 0，需 OpenD 行情權限）_'
+}
 
 ## 觀察板代號
 
