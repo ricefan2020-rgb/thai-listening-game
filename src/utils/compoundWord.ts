@@ -1,4 +1,5 @@
 import { LESSONS } from '../data/lessons'
+import { SENTENCES } from '../data/sentences'
 import { PART_MEANINGS } from '../data/part-meanings'
 import { splitThaiKaraokeUnits } from './thaiKaraoke'
 import { tokenizeThaiPhraseUnits } from './thaiToneRoman'
@@ -38,7 +39,37 @@ const MORPHEME_LEXICON: { thai: string; meaning: string }[] = [
   { thai: 'ด้วย', meaning: '與／一起（前接）' },
   { thai: 'กัน', meaning: '互相／一起（助詞）' },
   { thai: 'ด้วยกัน', meaning: '一起' },
+  { thai: 'ทำ', meaning: '做／製作' },
+  { thai: 'ทำด้วย', meaning: '用……做' },
+  { thai: 'ทำด้วยมือ', meaning: '手工（親手製作）' },
+  { thai: 'มือ', meaning: '手' },
+  { thai: 'ผลไม้', meaning: '水果' },
+  { thai: 'สด', meaning: '新鮮' },
+  { thai: 'หลากหลาย', meaning: '多樣' },
+  { thai: 'วันนี้', meaning: '今天' },
+  { thai: 'เหนื่อย', meaning: '累' },
+  { thai: 'แต่', meaning: '但是' },
+  { thai: 'เพลง', meaning: '歌／音樂' },
+  { thai: 'ฟังเพลง', meaning: '聽歌' },
+  { thai: 'ตื้นตัน', meaning: '深受感動' },
   { thai: 'กิน', meaning: '吃' },
+  { thai: 'ทะเล', meaning: '海' },
+  { thai: 'ใส', meaning: '清澈／透明' },
+  { thai: 'ทะเลใส', meaning: '海水清澈' },
+  { thai: 'พักผ่อน', meaning: '休息' },
+  { thai: 'เพียงพอ', meaning: '充足／夠' },
+  { thai: 'ทำอาหาร', meaning: '做菜／煮飯' },
+  { thai: 'เอง', meaning: '自己（反身）' },
+  { thai: 'สุด', meaning: '極／末端／盡' },
+  { thai: 'ล่าสุด', meaning: '最新' },
+  { thai: 'เรือ', meaning: '船' },
+  { thai: 'ถาม', meaning: '問' },
+  { thai: 'เจ้าหน้าที่', meaning: '工作人員／官員' },
+  { thai: 'หน้าที่', meaning: '職責／任務' },
+  { thai: 'นั่งเรือ', meaning: '搭船／坐船' },
+  { thai: 'ท่าเรือ', meaning: '碼頭' },
+  { thai: 'ซุป', meaning: '湯（soup）' },
+  { thai: 'ต้มซุป', meaning: '煮湯' },
   { thai: 'อังกฤษ', meaning: '英文' },
   { thai: 'ภาษาไทย', meaning: '泰文' },
   { thai: 'รถ', meaning: '車' },
@@ -126,8 +157,10 @@ const MORPHEME_LEXICON: { thai: string; meaning: string }[] = [
   { thai: 'ลด', meaning: '降低／減' },
   { thai: 'ราคา', meaning: '價格' },
   { thai: 'ลดราคา', meaning: '打折／降價' },
+  { thai: 'เครื่องดื่ม', meaning: '飲料' },
+  { thai: 'ครึ่ง', meaning: '半／一半' },
   { thai: 'แต่', meaning: '但是' },
-  { thai: 'สนุก', meaning: '開心／有趣' },
+  { thai: 'สนุก', meaning: '有趣／好玩' },
   { thai: 'หนึ่ง', meaning: '一（數詞）' },
   { thai: 'ครึ่งหนึ่ง', meaning: '一半' },
   { thai: 'เหลือ', meaning: '剩下' },
@@ -152,6 +185,51 @@ const PART_MEANING_IN_PHRASE: Record<string, Record<string, string>> = {
   พื้นเมือง: { พื้น: '當地／本土（合成）', เมือง: '地方' },
   อาหารพื้นเมือง: { พื้น: '當地', เมือง: '地方' },
   อาหารทะเล: { ทะเล: '海' },
+  ทะเลใส: { ทะเล: '海', ใส: '清澈' },
+  ทะเลใสมาก: {
+    ทะเลใส: '海水清澈',
+    มาก: '很／非常',
+  },
+  พักผ่อน: { พัก: '休息（宿）', ผ่อน: '放鬆' },
+  เพียงพอ: { เพียง: '足夠（前綴）', พอ: '夠' },
+  พักผ่อนให้เพียงพอ: {
+    พักผ่อน: '休息',
+    ให้: '讓／要（使動）',
+    เพียงพอ: '充足／夠',
+  },
+  ทำอาหาร: { ทำ: '做／製作', อาหาร: '食物／菜' },
+  ทำอาหารเอง: {
+    ทำอาหาร: '做菜／煮飯',
+    เอง: '自己（反身）',
+  },
+  รู้สึกต้อนรับ: {
+    รู้สึก: '感覺',
+    ต้อนรับ: '受到歡迎／接待',
+  },
+  ฉีดวัคซีนฟรี: {
+    ฉีด: '注射',
+    วัคซีน: '疫苗',
+    ฟรี: '免費',
+  },
+  ดูแลเจ็บให้ดี: {
+    ดูแล: '照顧',
+    เจ็บ: '傷處／患處',
+    ให้ดี: '妥善／好生',
+  },
+  ผู้ใช้งานเพิ่ม: {
+    ผู้ใช้งาน: '使用者',
+    เพิ่ม: '增加',
+  },
+  ผู้ใช้งานเพิ่มขึ้น: {
+    ผู้ใช้งาน: '使用者',
+    เพิ่มขึ้น: '增加',
+  },
+  ทะเลสวยมาก: { ทะเล: '海', สวย: '美', มาก: '很' },
+  สดใส: { สด: '新鮮／鮮明', ใส: '明亮' },
+  สีใส: { สี: '顏色', ใส: '透明' },
+  ข่าวล่าสุด: { ข่าว: '新聞', ล่าสุด: '最新' },
+  ล่าสุด: { ล่า: '新近', สุด: '最／極' },
+  สุดสัปดาห์: { สุด: '末', สัปดาห์: '週' },
   เรียนภาษาไทย: { ภาษา: '語言', ไทย: '泰' },
   คำศัพท์ใหม่: { คำ: '詞', ศัพท์: '彙', ใหม่: '新' },
   อ่านคำศัพท์ใหม่: { อ่าน: '讀', คำ: '詞', ศัพท์: '彙', ใหม่: '新' },
@@ -174,6 +252,16 @@ const PART_MEANING_IN_PHRASE: Record<string, Record<string, string>> = {
     ความ: '……性（抽象）',
     เคารพ: '尊敬',
   },
+  ถามเจ้าหน้าที่: { ถาม: '問', เจ้าหน้าที่: '工作人員' },
+  ของฝางทำด้วยมือ: { ของฝาง: '紀念品', ทำด้วยมือ: '手工' },
+  ทำด้วยมือ: { ทำ: '做', ด้วย: '用', มือ: '手' },
+  ทำด้วย: { ทำ: '做', ด้วย: '用／以' },
+  ผลไม้สดหลากหลาย: { ผลไม้: '水果', สด: '新鮮', หลากหลาย: '多樣' },
+  หลากหลาย: { หลากหลาย: '多樣' },
+  เจ้าหน้าที่: { เจ้าหน้าที่: '工作人員／官員' },
+  นั่งเรือ: { นั่ง: '坐', เรือ: '船' },
+  นั่งเรือไปเกาะ: { นั่งเรือ: '搭船', ไป: '去', เกาะ: '島' },
+  นั่งเรือเล็กๆ: { นั่ง: '坐', เรือ: '船', เล็กๆ: '小的' },
   นั่งเรือจากท่าเรือ: {
     นั่งเรือ: '搭船／坐船',
     จาก: '從',
@@ -288,6 +376,15 @@ const PART_MEANING_IN_PHRASE: Record<string, Record<string, string>> = {
     ภาษาไทย: '泰文',
     และ: '和',
     อังกฤษ: '英文',
+  },
+  ต้มซุป: {
+    ต้ม: '煮／燉',
+    ซุป: '湯（soup）',
+  },
+  ต้มซุปไก่: {
+    ต้ม: '煮／燉',
+    ซุป: '湯',
+    ไก่: '雞',
   },
   กุ้งมังกร: {
     กุ้ง: '蝦',
@@ -406,19 +503,45 @@ const PART_MEANING_IN_PHRASE: Record<string, Record<string, string>> = {
     ได้: '可以',
     ไหม: '嗎',
   },
+  วันนี้: {
+    วัน: '日',
+    นี้: '這（此）',
+  },
   แต่สนุก: {
     แต่: '但是',
-    สนุก: '開心／有趣',
+    สนุก: '有趣／好玩',
   },
   วันนี้เหนื่อยแต่สนุก: {
     วันนี้: '今天',
     เหนื่อย: '累',
     แต่: '但是',
-    สนุก: '開心／有趣',
+    สนุก: '有趣／好玩',
+  },
+  ฟังเพลง: {
+    ฟัง: '聽',
+    เพลง: '歌／音樂',
+  },
+  ฟังเพลงแล้วตื้นตัน: {
+    ฟังเพลง: '聽歌',
+    แล้ว: '了／之後',
+    ตื้นตัน: '深受感動',
   },
   ลดราคาครึ่งหนึ่ง: {
     ลดราคา: '打折／降價',
-    ครึ่งหนึ่ง: '一半（五折）',
+    ครึ่งหนึ่ง: '一半（口語＝五折）',
+  },
+  ครึ่งหนึ่ง: {
+    ครึ่ง: '半',
+    หนึ่ง: '一',
+  },
+  เครื่องดื่ม: {
+    เครื่อง: '器具／用品（前綴）',
+    ดื่ม: '飲（名，構成「飲料」）',
+  },
+  ขอเครื่องดื่มเย็นๆ: {
+    ขอ: '要／請',
+    เครื่องดื่ม: '飲料',
+    เย็นๆ: '冰的',
   },
   เปลี่ยนเส้นทาง: {
     เปลี่ยน: '改／換',
@@ -472,6 +595,9 @@ function buildMeaningMap(): Map<string, string> {
   const map = new Map<string, string>()
   for (const l of LESSONS) {
     if (!map.has(l.thai)) map.set(l.thai, l.meaning)
+  }
+  for (const s of SENTENCES) {
+    if (!map.has(s.thai)) map.set(s.thai, s.meaning)
   }
   for (const u of loadUserVocab()) {
     map.set(u.thai, u.meaning)
@@ -651,10 +777,31 @@ function buildInferredZh(parts: CompoundPart[], wholeMeaning?: string): string {
 }
 
 function guessMeaningFromParts(parts: CompoundPart[]): string | null {
+  const last = parts[parts.length - 1]
+  if (last?.thai === 'มาก' && parts.length >= 2) {
+    const body = parts.slice(0, -1)
+    if (body.every((p) => p.meaning !== UNKNOWN_MEANING)) {
+      if (
+        body.length === 2 &&
+        body[0]?.thai === 'ทะเล' &&
+        body[1]?.thai === 'ใส'
+      ) {
+        return '海非常清澈'
+      }
+      if (body.length === 1 && body[0]?.thai === 'ทะเลใส') {
+        return '海水非常清澈'
+      }
+      const base = body.map((p) => p.meaning).join('')
+      if (base) return `${base}很／非常`
+    }
+  }
+
   const head = parts[0]?.thai
   const tail = parts.slice(1).map((p) => p.meaning).filter((m) => m !== UNKNOWN_MEANING)
 
   if (!head || tail.length === 0) return null
+
+  if (head === 'ทะเล' && tail[0] === '清澈') return '海很清澈'
 
   if (head === 'สี' && tail[0]) return `${tail[0]}色`
   if (head === 'โรง' && tail[0]) return `${tail[0]}館／場所`

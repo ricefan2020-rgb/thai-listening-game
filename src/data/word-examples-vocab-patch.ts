@@ -118,12 +118,12 @@ export const WORD_EXAMPLES_VOCAB_PATCH: Record<string, WordExample[]> = {
     { exampleTh: 'ในการเรียนต้องตั้งใจ', exampleZh: '學習時要專心。' },
   ],
   vp23: [
-    { exampleTh: 'วันนี้เหนื่อยแต่สนุก', exampleZh: '今天累但開心。' },
+    { exampleTh: 'วันนี้เหนื่อยแต่สนุก', exampleZh: '今天很累但很好玩。' },
     { exampleTh: 'อากาศร้อนมากแต่ผู้คนเป็นมิตร', exampleZh: '天氣很熱但人很友善。' },
   ],
   vp24: [
     { exampleTh: 'วันนี้เหนื่อยแต่สนุก', exampleZh: '今天累但很有趣。' },
-    { exampleTh: 'สนุกมาก', exampleZh: '非常開心。' },
+    { exampleTh: 'สนุกมาก', exampleZh: '非常好玩。' },
   ],
   vp42: [
     { exampleTh: 'ไปไหน', exampleZh: '去哪裡？' },

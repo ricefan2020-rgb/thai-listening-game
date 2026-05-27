@@ -8,7 +8,9 @@ import {
   shouldAutoTokenize,
   tokenizeThaiForLookup,
 } from '../utils/thaiLookup'
+import { getPhraseSegmentOverride } from '../data/phrase-segment-overrides'
 import { lookupPartMeaning } from '../utils/compoundWord'
+import { isUnknownMeaning } from '../utils/userVocab'
 import { getThaiRoman } from '../utils/thaiRoman'
 import { ThaiColoredText } from './ThaiColoredText'
 import { ThaiKaraokeText } from './ThaiKaraokeText'
@@ -104,6 +106,22 @@ export function InteractiveThaiText({
   }
 
   const openWord = (query: string, lexeme?: { thai: string; kind: ThaiLookupKind; id: string }) => {
+    const q = query.trim()
+    const whole = text.trim()
+    if (hintStudyId && hintKind && whole.includes(q) && q !== whole) {
+      const gloss = lookupPartMeaning(q)
+      const shouldUseWholePhrase =
+        Boolean(getPhraseSegmentOverride(whole)) ||
+        q.length <= 3 ||
+        isUnknownMeaning(gloss)
+      if (shouldUseWholePhrase) {
+        const d = lookupByStudyId(hintStudyId, hintKind)
+        if (d?.phraseAnalysis && d.phraseAnalysis.segments.length >= 2) {
+          setActiveQuery(whole)
+          return
+        }
+      }
+    }
     if (lexeme) {
       const d = lookupLexeme(lexeme)
       if (d) {
@@ -111,7 +129,7 @@ export function InteractiveThaiText({
         return
       }
     }
-    setActiveQuery((prev) => (prev === query ? null : query))
+    setActiveQuery((prev) => (prev === q ? null : q))
   }
 
   const alignClass = align === 'start' ? 'items-start' : 'items-center'

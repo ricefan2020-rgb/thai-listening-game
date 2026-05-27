@@ -106,6 +106,44 @@ export const PHRASE_SEGMENT_OVERRIDES: Record<
     { thai: 'และ', meaning: '和' },
     { thai: 'ผ่อนคลาย', meaning: '放鬆' },
   ],
+  รู้สึกต้อนรับ: [
+    { thai: 'รู้สึก', meaning: '感覺' },
+    { thai: 'ต้อนรับ', meaning: '受到歡迎／接待' },
+  ],
+  ฉีดวัคซีนฟรี: [
+    { thai: 'ฉีด', meaning: '注射' },
+    { thai: 'วัคซีน', meaning: '疫苗' },
+    { thai: 'ฟรี', meaning: '免費' },
+  ],
+  เริ่มก่อสร้าง: [
+    { thai: 'เริ่ม', meaning: '開始' },
+    { thai: 'ก่อสร้าง', meaning: '建造／施工' },
+  ],
+  คุณภาพอากาศ: [
+    { thai: 'คุณภาพ', meaning: '品質' },
+    { thai: 'อากาศ', meaning: '空氣' },
+  ],
+  สวมหน้ากากอนามัย: [
+    { thai: 'สวม', meaning: '穿戴' },
+    { thai: 'หน้ากากอนามัย', meaning: '口罩' },
+  ],
+  ค่าแรงขั้นต่ำ: [
+    { thai: 'ค่าแรง', meaning: '工資' },
+    { thai: 'ขั้นต่ำ', meaning: '最低（門檻）' },
+  ],
+  ปัญญาประดิษฐ์: [
+    { thai: 'ปัญญา', meaning: '智慧' },
+    { thai: 'ประดิษฐ์', meaning: '人造／人工' },
+  ],
+  คัดกรองผู้ป่วย: [
+    { thai: 'คัดกรอง', meaning: '篩檢' },
+    { thai: 'ผู้ป่วย', meaning: '病患' },
+  ],
+  ดูแลเจ็บให้ดี: [
+    { thai: 'ดูแล', meaning: '照顧' },
+    { thai: 'เจ็บ', meaning: '傷處／患處' },
+    { thai: 'ให้ดี', meaning: '妥善／好生' },
+  ],
   กินอาหารเย็นด้วยกัน: [
     { thai: 'กิน', meaning: '吃' },
     { thai: 'อาหารเย็น', meaning: '晚餐' },
@@ -116,6 +154,15 @@ export const PHRASE_SEGMENT_OVERRIDES: Record<
     { thai: 'กิน', meaning: '吃' },
     { thai: 'ข้าว', meaning: '飯／用餐' },
     { thai: 'ด้วยกัน', meaning: '一起' },
+  ],
+  ต้มซุป: [
+    { thai: 'ต้ม', meaning: '煮／燉' },
+    { thai: 'ซุป', meaning: '湯（soup）' },
+  ],
+  ต้มซุปไก่: [
+    { thai: 'ต้ม', meaning: '煮／燉' },
+    { thai: 'ซุป', meaning: '湯' },
+    { thai: 'ไก่', meaning: '雞' },
   ],
   ภาษาไทยและอังกฤษ: [
     { thai: 'ภาษาไทย', meaning: '泰文' },
@@ -139,6 +186,78 @@ export const PHRASE_SEGMENT_OVERRIDES: Record<
     { thai: 'รดน้ำดำหัว', meaning: '潑水祝福（澆頭）' },
     { thai: 'ขอพร', meaning: '祈求祝福' },
   ],
+  ทำอาหารเอง: [
+    { thai: 'ทำอาหาร', meaning: '做菜／煮飯' },
+    { thai: 'เอง', meaning: '自己（反身）' },
+  ],
+  ทำอาหาร: [
+    { thai: 'ทำ', meaning: '做／製作' },
+    { thai: 'อาหาร', meaning: '食物／菜' },
+  ],
+  ทำอาหารที่บ้าน: [
+    { thai: 'ทำอาหาร', meaning: '做菜' },
+    { thai: 'ที่บ้าน', meaning: '在家' },
+  ],
+  พักผ่อนให้เพียงพอ: [
+    { thai: 'พักผ่อน', meaning: '休息' },
+    { thai: 'ให้', meaning: '讓／要（使動）' },
+    { thai: 'เพียงพอ', meaning: '充足／夠' },
+  ],
+  พักผ่อน: [
+    { thai: 'พัก', meaning: '休息（宿）' },
+    { thai: 'ผ่อน', meaning: '放鬆' },
+  ],
+  เพียงพอ: [
+    { thai: 'เพียง', meaning: '足夠（前綴）' },
+    { thai: 'พอ', meaning: '夠' },
+  ],
+  ลดราคาครึ่งหนึ่ง: [
+    { thai: 'ลดราคา', meaning: '打折／降價' },
+    { thai: 'ครึ่งหนึ่ง', meaning: '一半（口語＝五折）' },
+  ],
+  ครึ่งหนึ่ง: [
+    { thai: 'ครึ่ง', meaning: '半' },
+    { thai: 'หนึ่ง', meaning: '一' },
+  ],
+  ขอเครื่องดื่มเย็นๆ: [
+    { thai: 'ขอ', meaning: '要／請' },
+    { thai: 'เครื่องดื่ม', meaning: '飲料' },
+    { thai: 'เย็นๆ', meaning: '冰的' },
+  ],
+  เครื่องดื่ม: [
+    { thai: 'เครื่อง', meaning: '器具／用品（前綴）' },
+    { thai: 'ดื่ม', meaning: '飲（名，構成「飲料」）' },
+  ],
+  ฟังเพลงแล้วตื้นตัน: [
+    { thai: 'ฟังเพลง', meaning: '聽歌' },
+    { thai: 'แล้ว', meaning: '了／之後' },
+    { thai: 'ตื้นตัน', meaning: '深受感動' },
+  ],
+  ฟังเพลง: [
+    { thai: 'ฟัง', meaning: '聽' },
+    { thai: 'เพลง', meaning: '歌／音樂' },
+  ],
+  วันนี้เหนื่อยแต่สนุก: [
+    { thai: 'วันนี้', meaning: '今天' },
+    { thai: 'เหนื่อย', meaning: '累' },
+    { thai: 'แต่', meaning: '但是' },
+    { thai: 'สนุก', meaning: '有趣／好玩' },
+  ],
+  แต่สนุก: [
+    { thai: 'แต่', meaning: '但是' },
+    { thai: 'สนุก', meaning: '有趣／好玩' },
+  ],
+  เหนื่อยแต่มีความสุข: [
+    { thai: 'เหนื่อย', meaning: '累' },
+    { thai: 'แต่', meaning: '但是' },
+    { thai: 'มีความสุข', meaning: '很快樂' },
+  ],
+  ผลไม้สดหลากหลาย: [
+    { thai: 'ผลไม้', meaning: '水果' },
+    { thai: 'สด', meaning: '新鮮' },
+    { thai: 'หลากหลาย', meaning: '多樣' },
+  ],
+  หลากหลาย: [{ thai: 'หลากหลาย', meaning: '多樣／各式各樣' }],
   อาหารเช้ามีหลากหลายมาก: [
     { thai: 'อาหารเช้า', meaning: '早餐' },
     { thai: 'มี', meaning: '有' },
@@ -278,6 +397,14 @@ export const PHRASE_SEGMENT_OVERRIDES: Record<
     { thai: 'นักท่องเที่ยว', meaning: '遊客' },
     { thai: 'เพิ่มขึ้น', meaning: '增加' },
   ],
+  ผู้ใช้งานเพิ่ม: [
+    { thai: 'ผู้ใช้งาน', meaning: '使用者' },
+    { thai: 'เพิ่ม', meaning: '增加' },
+  ],
+  ผู้ใช้งานเพิ่มขึ้น: [
+    { thai: 'ผู้ใช้งาน', meaning: '使用者' },
+    { thai: 'เพิ่มขึ้น', meaning: '增加' },
+  ],
   เพิ่มขึ้นอย่างต่อเนื่อง: [
     { thai: 'เพิ่มขึ้น', meaning: '增加' },
     { thai: 'อย่าง', meaning: '……地' },
@@ -406,4 +533,71 @@ export const PHRASE_SEGMENT_OVERRIDES: Record<
     { thai: 'ปลา', meaning: '魚' },
     { thai: 'กัด', meaning: '咬（好鬥）' },
   ],
+  ถามเจ้าหน้าที่: [
+    { thai: 'ถาม', meaning: '問' },
+    { thai: 'เจ้าหน้าที่', meaning: '工作人員' },
+  ],
+  เจ้าหน้าที่: [{ thai: 'เจ้าหน้าที่', meaning: '工作人員／官員' }],
+  นั่งเรือ: [
+    { thai: 'นั่ง', meaning: '坐' },
+    { thai: 'เรือ', meaning: '船' },
+  ],
+  นั่งเรือไปเกาะ: [
+    { thai: 'นั่งเรือ', meaning: '搭船' },
+    { thai: 'ไป', meaning: '去' },
+    { thai: 'เกาะ', meaning: '島' },
+  ],
+  นั่งเรือเล็กๆ: [
+    { thai: 'นั่ง', meaning: '坐' },
+    { thai: 'เรือ', meaning: '船' },
+    { thai: 'เล็กๆ', meaning: '小的' },
+  ],
+  นั่งเรือจากท่าเรือ: [
+    { thai: 'นั่งเรือ', meaning: '搭船' },
+    { thai: 'จาก', meaning: '從' },
+    { thai: 'ท่าเรือ', meaning: '碼頭' },
+  ],
+  ข่าวล่าสุด: [
+    { thai: 'ข่าว', meaning: '新聞' },
+    { thai: 'ล่าสุด', meaning: '最新' },
+  ],
+  สุดสัปดาห์: [
+    { thai: 'สุด', meaning: '末（盡頭）' },
+    { thai: 'สัปดาห์', meaning: '週' },
+  ],
+  ทะเลใส: [
+    { thai: 'ทะเล', meaning: '海' },
+    { thai: 'ใส', meaning: '清澈' },
+  ],
+  ทะเลใสมาก: [
+    { thai: 'ทะเลใส', meaning: '海水清澈' },
+    { thai: 'มาก', meaning: '很／非常' },
+  ],
+  ระวังเป็นลมแดด: [
+    { thai: 'ระวัง', meaning: '注意／小心' },
+    { thai: 'เป็น', meaning: '患上（表狀態）' },
+    { thai: 'ลมแดด', meaning: '中暑' },
+  ],
+  ระวังน้ำท่วมฉับพลัน: [
+    { thai: 'ระวัง', meaning: '注意／小心' },
+    { thai: 'น้ำท่วม', meaning: '洪水' },
+    { thai: 'ฉับพลัน', meaning: '驟發／突然' },
+  ],
+  ของฝางทำด้วยมือ: [
+    { thai: 'ของฝาง', meaning: '紀念品' },
+    { thai: 'ทำด้วย', meaning: '用手／親手製作' },
+    { thai: 'มือ', meaning: '手' },
+  ],
+  ทำด้วยมือ: [
+    { thai: 'ทำ', meaning: '做' },
+    { thai: 'ด้วย', meaning: '用' },
+    { thai: 'มือ', meaning: '手' },
+  ],
+}
+
+/** 人工分詞表（去空白鍵）— 供點詞與 buildPhraseAnalysis 共用 */
+export function getPhraseSegmentOverride(thai: string) {
+  const trimmed = thai.trim()
+  const compact = trimmed.replace(/\s+/g, '')
+  return PHRASE_SEGMENT_OVERRIDES[trimmed] ?? PHRASE_SEGMENT_OVERRIDES[compact]
 }

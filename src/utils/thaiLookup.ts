@@ -1,11 +1,13 @@
 import { getAllArticleQuestions } from '../data/articles'
+import { getPhraseSegmentOverride } from '../data/phrase-segment-overrides'
 import { CATEGORY_LABELS, LESSONS, getLessonById } from '../data/lessons'
 import { SENTENCES } from '../data/sentences'
 import { TONES } from '../data/tones'
 import { VOWELS } from '../data/vowels'
 import { getWordExamples, getWordPitfalls } from '../data/word-meta'
 import { splitThaiKaraokeUnits } from './thaiKaraoke'
-import { decomposeThaiCompound, invalidateCompoundMeaningCache } from './compoundWord'
+import { decomposeThaiCompound, invalidateCompoundMeaningCache, lookupPartMeaning } from './compoundWord'
+import { isUnknownMeaning } from './userVocab'
 import { tokenizeThaiPhraseUnits } from './thaiToneRoman'
 import {
   getUserVocabItem,
@@ -89,6 +91,7 @@ const EXTRA_WORD_LEXEMES: Lexeme[] = [
   { thai: 'ด้วย', kind: 'word', id: 'vp60' },
   { thai: 'กัน', kind: 'word', id: 'vp61' },
   { thai: 'ด้วยกัน', kind: 'word', id: 'vp62' },
+  { thai: 'ซุป', kind: 'word', id: 'vp63' },
 ]
 
 function buildWordLexicon(): Lexeme[] {
@@ -367,6 +370,21 @@ function hasLexiconPrefix(lexicon: Lexeme[], prefix: string): boolean {
   return lexicon.some((l) => l.thai.startsWith(prefix) && l.thai.length > prefix.length)
 }
 
+function tokenizeFromPhraseOverride(
+  trimmed: string,
+  lexicon: Lexeme[],
+): ThaiTextSegment[] | null {
+  const override = getPhraseSegmentOverride(trimmed)
+  if (!override || override.length < 2) return null
+  return override.map((part) => {
+    const lex = lexicon.find((l) => l.thai === part.thai)
+    if (lex) {
+      return { type: 'lexeme' as const, text: part.thai, lexeme: lex }
+    }
+    return { type: 'text' as const, text: part.thai }
+  })
+}
+
 /** 依音節合併後最長匹配詞庫單字（專供句中點詞） */
 export function tokenizeThaiForLookup(
   text: string,
@@ -374,6 +392,9 @@ export function tokenizeThaiForLookup(
 ): ThaiTextSegment[] {
   const lexicon = getLexiconForTokenize(opts)
   const trimmed = text.trim()
+
+  const overrideSegs = tokenizeFromPhraseOverride(trimmed, lexicon)
+  if (overrideSegs) return overrideSegs
 
   const phraseUnits = tokenizeThaiPhraseUnits(trimmed)
   if (phraseUnits.length >= 2) {
@@ -392,7 +413,11 @@ export function tokenizeThaiForLookup(
         fromPhrase.push({ type: 'text', text: u })
       }
     }
-    if (hasLexeme) return fromPhrase
+    const contentUnits = phraseUnits.filter((u) => u !== ' ' && u !== '\n')
+    const allPartsKnown =
+      contentUnits.length >= 2 &&
+      contentUnits.every((u) => !isUnknownMeaning(lookupPartMeaning(u)))
+    if (hasLexeme || allPartsKnown) return fromPhrase
   }
 
   const units = splitThaiKaraokeUnits(text)

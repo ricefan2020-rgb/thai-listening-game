@@ -4,6 +4,7 @@ import { ARTICLES_EXT2 } from './articles-ext2'
 import { ARTICLES_EXT3 } from './articles-ext3'
 import { ARTICLES_NEWS } from './articles-news'
 import { ARTICLES_NEWS_EXT } from './articles-news-ext'
+import { ARTICLES_NEWS_EXT2 } from './articles-news-ext2'
 import { ARTICLES_HOLIDAY } from './articles-holiday'
 import { ARTICLES_EXT4 } from './articles-ext4'
 
@@ -185,12 +186,13 @@ export const ARTICLES: Article[] = [
   ...ARTICLES_EXT3,
   ...ARTICLES_NEWS,
   ...ARTICLES_NEWS_EXT,
+  ...ARTICLES_NEWS_EXT2,
   ...ARTICLES_HOLIDAY,
   ...ARTICLES_EXT4,
 ]
 
 export const ARTICLE_COUNT = ARTICLES.length
-export const ARTICLES_PER_ROUND = 10
+export const ARTICLES_PER_ROUND = 20
 
 export const ARTICLE_CATEGORIES: ArticleCategory[] = ['travel', 'daily', 'food', 'culture', 'news']
 

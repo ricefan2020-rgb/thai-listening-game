@@ -47,6 +47,36 @@ export const SENTENCE_ANALYSIS_OVERRIDES: Record<string, SentenceAnalysisOverrid
       { thai: 'ขอบคุณ', meaning: '謝謝', role: 'phrase', roleZh: '致謝' },
     ],
   },
+  sd36: {
+    structureZh: '時間 → 狀態 → 轉折 → 感受',
+    grammarNoteZh:
+      '「วันนี้」今天 +「เหนื่อย」累 +「แต่」但是 +「สนุก」有趣、好玩（≠ 開心；開心較近 มีความสุข）。整句：今天很累但（還）很好玩。≠「ฟังเพลงแล้วตื้นตัน」（聽完歌很受感動）。',
+    segments: [
+      { thai: 'วันนี้', meaning: '今天', role: 'modifier', roleZh: '時間' },
+      { thai: 'เหนื่อย', meaning: '累', role: 'phrase', roleZh: '狀態' },
+      { thai: 'แต่', meaning: '但是', role: 'connector', roleZh: '轉折' },
+      { thai: 'สนุก', meaning: '有趣／好玩', role: 'phrase', roleZh: '感受' },
+    ],
+  },
+  sd41: {
+    structureZh: '動作 → 完成 → 情緒結果',
+    grammarNoteZh:
+      '「ฟังเพลง」聽歌 +「แล้ว」了／之後 +「ตื้นตัน」深受感動。整句：聽完歌（心裡）很受感動。≠「วันนี้เหนื่อยแต่สนุก」（今天累但好玩；สนุก≠ตื้นตัน）。',
+    segments: [
+      { thai: 'ฟังเพลง', meaning: '聽歌', role: 'verb', roleZh: '動作' },
+      { thai: 'แล้ว', meaning: '了／之後', role: 'particle', roleZh: '語尾' },
+      { thai: 'ตื้นตัน', meaning: '深受感動', role: 'phrase', roleZh: '情緒' },
+    ],
+  },
+  st35: {
+    structureZh: '詞組（海很清澈）→ 程度',
+    grammarNoteZh:
+      '「ทะเลใส」海水清澈 +「มาก」很／非常。整句：海非常清澈。注意「ใส」在此＝清澈，不是動詞「穿／戴」（ใส่）。',
+    segments: [
+      { thai: 'ทะเลใส', meaning: '海水清澈', role: 'phrase', roleZh: '詞組' },
+      { thai: 'มาก', meaning: '很／非常', role: 'modifier', roleZh: '程度' },
+    ],
+  },
   ss31: {
     structureZh: '動作詞組 + 程度',
     grammarNoteZh:

@@ -131,7 +131,7 @@ export const SENTENCES_EXT3: SentenceItem[] = [
   {
     id: 'sd36',
     thai: 'วันนี้เหนื่อยแต่สนุก',
-    meaning: '今天累但開心',
+    meaning: '今天很累但很好玩',
     category: 'daily',
   },
   {

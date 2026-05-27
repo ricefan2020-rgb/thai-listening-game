@@ -28,11 +28,29 @@ export function isPlaceholderWordExample(ex: WordExample): boolean {
   return PLACEHOLDER_TH.some((re) => re.test(t))
 }
 
+/** 子串易誤配：字面上含該字，但語意屬另一詞（一詞多義／複合詞） */
+function matchesLexemeSense(text: string, lexeme: string): boolean {
+  if (!text.includes(lexeme)) return false
+
+  if (lexeme === 'เหลือ') {
+    if (/ช่วยเหลือ|ความช่วยเหลือ|ศูนย์ช่วยเหลือ/.test(text)) return false
+    if (/สีเหลือง|เหลืองทอง/.test(text)) return false
+    const units = tokenizeThaiPhraseUnits(text)
+    if (units.includes('เหลือ')) return true
+    if (units.some((u) => /ที่เหลือ$/.test(u) || u === 'ห่อที่เหลือ')) return true
+    if (units.some((u) => u.startsWith('อาหารเหลือ'))) return true
+    return false
+  }
+
+  if (lexeme.length >= 3) {
+    return tokenizeThaiPhraseUnits(text).includes(lexeme)
+  }
+  return tokenizeThaiPhraseUnits(text).includes(lexeme)
+}
+
 /** 避免短詞誤配（如 จำ → จำนวน） */
 function textContainsLexeme(text: string, lexeme: string): boolean {
-  if (!text.includes(lexeme)) return false
-  if (lexeme.length >= 3) return true
-  return tokenizeThaiPhraseUnits(text).includes(lexeme)
+  return matchesLexemeSense(text, lexeme)
 }
 
 function examplesFromCorpus(thai: string, max = 5): WordExample[] {

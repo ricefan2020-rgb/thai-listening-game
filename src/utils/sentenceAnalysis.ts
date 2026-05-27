@@ -2,7 +2,13 @@ import { SENTENCES, getSentenceById } from '../data/sentences'
 import { SENTENCE_ANALYSIS_OVERRIDES } from '../data/sentence-analysis'
 import { PART_MEANINGS } from '../data/part-meanings'
 import { LESSONS } from '../data/lessons'
-import { lookupPartMeaning, decomposeThaiCompound } from './compoundWord'
+import {
+  decomposeThaiCompound,
+  getPartMeaningInPhrase,
+  lookupPartMeaning,
+  UNKNOWN_MEANING,
+} from './compoundWord'
+import { tokenizeThaiPhraseUnits } from './thaiToneRoman'
 import { tokenizeThaiForLookup } from './thaiLookup'
 import type {
   SegmentRole,
@@ -158,9 +164,19 @@ const EXTRA_MEANINGS: Record<string, string> = {
   ราคา: '價格',
   ลดราคา: '打折／降價',
   แต่: '但是',
-  สนุก: '開心／有趣',
+  สนุก: '有趣／好玩',
+  เพลง: '歌／音樂',
+  ฟังเพลง: '聽歌',
+  ตื้นตัน: '深受感動',
+  เครื่องดื่ม: '飲料',
+  เครื่อง: '器具／用品（前綴）',
+  ครึ่ง: '半／一半',
   หนึ่ง: '一（數詞）',
   ครึ่งหนึ่ง: '一半',
+  พักผ่อน: '休息',
+  เพียงพอ: '充足／夠',
+  ทำอาหาร: '做菜／煮飯',
+  เอง: '自己（反身）',
   เหลือ: '剩下',
   ช่วยเหลือ: '幫助',
   ความช่วยเหลือ: '協助／幫忙',
@@ -195,6 +211,31 @@ function meaningForThai(thai: string): string {
 
 function attachCompound(seg: SentenceSegmentAnalysis): SentenceSegmentAnalysis {
   const compound = decomposeThaiCompound(seg.thai)
+  if (
+    compound &&
+    compound.parts.length >= 2 &&
+    !compound.parts.some((p) => p.meaning === UNKNOWN_MEANING)
+  ) {
+    return { ...seg, compound }
+  }
+
+  const units = tokenizeThaiPhraseUnits(seg.thai)
+  if (units.length >= 2) {
+    const parts = units.map((thai) => ({
+      thai,
+      meaning: getPartMeaningInPhrase(seg.thai, thai),
+    }))
+    if (parts.every((p) => p.meaning !== UNKNOWN_MEANING)) {
+      return {
+        ...seg,
+        compound: {
+          parts,
+          inferredZh: parts.map((p) => p.meaning).join('＋'),
+        },
+      }
+    }
+  }
+
   if (!compound) return seg
   return { ...seg, compound }
 }

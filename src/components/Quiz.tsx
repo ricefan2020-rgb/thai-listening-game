@@ -221,31 +221,31 @@ export function Quiz({
       {/* 頂部：返回、進度、速度 */}
       <header className="shrink-0 space-y-2">
         <div className="flex items-center justify-between gap-2">
-          <button
-            type="button"
-            onClick={onQuit}
-            className="text-sm text-slate-500 hover:text-slate-800"
-          >
-            ← 返回
-          </button>
-          <div className="flex min-w-0 items-center gap-2">
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={onQuit}
+              className="text-sm text-slate-500 hover:text-slate-800"
+            >
+              ← 返回
+            </button>
             {canGoPrev && (
               <button
                 type="button"
                 onClick={goPrev}
-                className="shrink-0 rounded-lg bg-sky-100 px-2.5 py-1 text-xs font-semibold text-sky-800 ring-1 ring-sky-200 hover:bg-sky-200 sm:text-sm"
+                className="rounded-lg bg-sky-600 px-3 py-1.5 text-xs font-bold text-white shadow-sm hover:bg-sky-700 sm:text-sm"
               >
                 ← 上一題
               </button>
             )}
-            <div className="min-w-0 text-right">
-              {topicLabel && (
-                <p className="truncate text-xs font-medium text-amber-600">{topicLabel}</p>
-              )}
-              <span className="text-sm font-medium text-slate-600">
-                {index + 1} / {total}
-              </span>
-            </div>
+          </div>
+          <div className="min-w-0 text-right">
+            {topicLabel && (
+              <p className="truncate text-xs font-medium text-amber-600">{topicLabel}</p>
+            )}
+            <span className="text-sm font-medium text-slate-600">
+              {index + 1} / {total}
+            </span>
           </div>
         </div>
         <div className="h-1.5 overflow-hidden rounded-full bg-slate-200">
@@ -308,19 +308,6 @@ export function Quiz({
         </p>
       </section>
 
-      {/* 題間導覽：第 2 題起隨時可回上一題 */}
-      {canGoPrev && !feedback && (
-        <div className="mt-2 shrink-0">
-          <button
-            type="button"
-            onClick={goPrev}
-            className="flex w-full items-center justify-center gap-1.5 rounded-xl bg-sky-50 py-2.5 text-sm font-semibold text-sky-800 ring-1 ring-sky-200 hover:bg-sky-100 active:scale-[0.98]"
-          >
-            ← 上一題
-          </button>
-        </div>
-      )}
-
       {/* 四選一：2×2 固定於畫面中下方，無需捲動 */}
       <section className="mt-3 grid min-h-0 flex-1 grid-cols-2 grid-rows-2 gap-2 content-stretch">
         {question.options.map((option, i) => (
@@ -336,36 +323,40 @@ export function Quiz({
         ))}
       </section>
 
-      {/* 答題後：底部固定條，例句可展開 */}
+      {/* 題間導覽：固定雙欄，第 2 題起一定看得到上一題 */}
+      <nav
+        className="mt-2 grid shrink-0 gap-2 border-t border-slate-200 pt-2"
+        style={{ gridTemplateColumns: canGoPrev ? '1fr 1fr' : '1fr' }}
+        aria-label="題間導覽"
+      >
+        {canGoPrev && (
+          <button
+            type="button"
+            onClick={goPrev}
+            className="rounded-xl bg-sky-600 py-3 text-sm font-bold text-white shadow-md hover:bg-sky-700 active:scale-[0.98]"
+          >
+            ← 上一題
+          </button>
+        )}
+        <button
+          type="button"
+          onClick={goNext}
+          disabled={!canGoNext}
+          className="rounded-xl bg-slate-900 py-3 text-sm font-bold text-white shadow-md hover:bg-slate-800 active:scale-[0.98] disabled:cursor-not-allowed disabled:bg-slate-300"
+        >
+          {index + 1 >= total ? '查看結果 →' : '下一題 →'}
+        </button>
+      </nav>
+
+      {/* 答題後：例句可展開 */}
       {feedback && (
-        <footer className="mt-2 shrink-0 space-y-2 border-t border-slate-200 pt-2">
-          <div className="flex items-center justify-between gap-2">
-            <p
-              className={`min-w-0 text-sm font-semibold ${feedback === 'correct' ? 'text-emerald-600' : 'text-red-600'}`}
-            >
-              {feedback === 'correct' ? '答對了！' : '答錯了'}
-              <span className="ml-2 font-normal text-slate-600">{question.item.meaning}</span>
-            </p>
-            <div className="flex w-full shrink-0 items-center gap-2 sm:w-auto">
-              {canGoPrev && (
-                <button
-                  type="button"
-                  onClick={goPrev}
-                  className="min-w-[5.5rem] flex-1 rounded-lg bg-sky-100 px-3 py-2.5 text-sm font-semibold text-sky-800 ring-1 ring-sky-200 hover:bg-sky-200 sm:flex-none"
-                >
-                  ← 上一題
-                </button>
-              )}
-              <button
-                type="button"
-                onClick={goNext}
-                disabled={!canGoNext}
-                className="min-w-[5.5rem] flex-1 rounded-lg bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white hover:bg-slate-800 disabled:opacity-50 sm:flex-none"
-              >
-                {index + 1 >= total ? '結果' : '下一題 →'}
-              </button>
-            </div>
-          </div>
+        <footer className="mt-2 shrink-0 space-y-2">
+          <p
+            className={`text-sm font-semibold ${feedback === 'correct' ? 'text-emerald-600' : 'text-red-600'}`}
+          >
+            {feedback === 'correct' ? '答對了！' : '答錯了'}
+            <span className="ml-2 font-normal text-slate-600">{question.item.meaning}</span>
+          </p>
           <button
             type="button"
             onClick={resetCurrentAnswer}

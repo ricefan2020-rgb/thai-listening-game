@@ -18,7 +18,7 @@ export const SENTENCES_EXT4: SentenceItem[] = [
   { id: 'sd33', thai: 'กระหายน้ำมาก', meaning: '非常口渴', category: 'daily' },
   { id: 'sd34', thai: 'เวียนหัวขอนั่งพัก', meaning: '頭暈，想坐一下', category: 'daily' },
   { id: 'sd35', thai: 'วันนี้รู้สึกสงบสุข', meaning: '今天覺得平靜', category: 'daily' },
-  { id: 'sd36', thai: 'ฟังเพลงแล้วตื้นตัน', meaning: '聽歌很感動', category: 'daily' },
+  { id: 'sd41', thai: 'ฟังเพลงแล้วตื้นตัน', meaning: '聽完歌很受感動', category: 'daily' },
 
   { id: 'sf37', thai: 'ขอทุเรียนหนึ่งกล่อง', meaning: '請給一盒榴槤', category: 'food' },
   { id: 'sf38', thai: 'มะม่วงสุกหวานมาก', meaning: '熟芒果很甜', category: 'food' },

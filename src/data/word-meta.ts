@@ -11,7 +11,30 @@ import { resolveWordExamples } from '../utils/wordExampleResolver'
 
 /** 易混詞對照與同音提示 */
 export const WORD_PITFALLS: Record<string, WordPitfall[]> = {
+  vp27: [
+    {
+      kind: 'polyseme',
+      thai: 'ช่วยเหลือ',
+      meaning: '幫助（複合詞）',
+      noteZh: '本課「เหลือ」＝剩下；在「ช่วยเหลือ」「ความช่วยเหลือ」裡不是「剩下」',
+      lessonId: 'vp28',
+    },
+    {
+      kind: 'confusable',
+      thai: 'สีเหลือง',
+      meaning: '黃色',
+      noteZh: '「เหลือง」與「เหลือ」字形相近，意思不同',
+      lessonId: 'c4',
+    },
+  ],
   vp28: [
+    {
+      kind: 'confusable',
+      thai: 'เหลือ',
+      meaning: '剩下',
+      noteZh: '「ช่วยเหลือ」的「เหลือ」不是「剩下」；單獨出現才表「剩」',
+      lessonId: 'vp27',
+    },
     {
       kind: 'confusable',
       thai: 'ความช่วยเหลือ',
@@ -475,6 +498,53 @@ export const WORD_PITFALLS: Record<string, WordPitfall[]> = {
       meaning: '背',
       noteZh: '「หลังเลิกงาน」＝下班後；「หลัง」單獨常指背部',
       lessonId: 'b14',
+    },
+  ],
+  f55: [
+    {
+      kind: 'confusable',
+      thai: 'เครื่องซักผ้า',
+      meaning: '洗衣機',
+      noteZh: '「เครื่องดื่ม」＝飲料；「เครื่อง」+名詞也常指機器（洗衣機、冷氣等），看後面的詞。',
+      lessonId: 'h24',
+    },
+  ],
+  g47: [
+    {
+      kind: 'confusable',
+      thai: 'ครึ่งหนึ่ง',
+      meaning: '一半',
+      noteZh: '「ครึ่ง」常要搭配名詞（ครึ่งชั่วโมง）；「ครึ่งหนึ่ง」＝一半，購物常指打五折。',
+      lessonId: 'vp26',
+    },
+  ],
+  vp26: [
+    {
+      kind: 'confusable',
+      thai: 'ครึ่ง',
+      meaning: '半／一半',
+      noteZh: '「ครึ่งหนึ่ง」是固定片語（一半）；單獨「ครึ่ง」多接時間／數量（ครึ่งชั่วโมง）。',
+      lessonId: 'g47',
+    },
+  ],
+  em23: [
+    {
+      kind: 'confusable',
+      thai: 'สนุก',
+      meaning: '有趣／好玩',
+      noteZh:
+        '「ตื้นตัน」＝深受感動（ฟังเพลงแล้วตื้นตัน）；「สนุก」＝好玩有趣（วันนี้เหนื่อยแต่สนุก）。兩句意思不同。',
+      lessonId: 'vp24',
+    },
+  ],
+  vp24: [
+    {
+      kind: 'confusable',
+      thai: 'ตื้นตัน',
+      meaning: '深受感動',
+      noteZh:
+        '「วันนี้เหนื่อยแต่สนุก」的 สนุก＝好玩；「ฟังเพลงแล้วตื้นตัน」的 ตื้นตัน＝感動。勿混為「開心」。',
+      lessonId: 'em23',
     },
   ],
 }

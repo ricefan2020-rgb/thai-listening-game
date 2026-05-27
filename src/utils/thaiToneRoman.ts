@@ -1,6 +1,7 @@
 import romanizeLib from '@dehoist/romanize-thai'
 import { LESSONS } from '../data/lessons'
 import { PHRASE_SEGMENT_OVERRIDES } from '../data/phrase-segment-overrides'
+import { PART_MEANINGS } from '../data/part-meanings'
 import { PHRASE_TONE_ROMAN } from '../data/phrase-roman-toned'
 import { THAI_ROMAN } from '../data/thai-roman'
 import { classifyThaiChar } from './thaiScript'
@@ -57,6 +58,52 @@ const SYLLABLE_ROMAN: Record<string, string> = {
   พื้น: 'phuen',
   เมือง: 'mueang',
   ทะเล: 'thale',
+  ใส: 'sài',
+  ทะเลใส: 'thale-sài',
+  ทะเลใสมาก: 'thale-sài-mák',
+  พักผ่อน: 'phák-phòn',
+  เพียงพอ: 'phîang-phɔ',
+  'พักผ่อนให้เพียงพอ': 'phák-phòn-hâi-phîang-phɔ',
+  ทำอาหาร: 'thâm-ahǎan',
+  เอง: 'eeŋ',
+  'ทำอาหารเอง': 'thâm-ahǎan-eeŋ',
+  ต้อนรับ: 'tôn-ráp',
+  'รู้สึกต้อนรับ': 'rúsuek-tôn-ráp',
+  วัคซีน: 'wák-sin',
+  ฟรี: 'frii',
+  'ฉีดวัคซีนฟรี': 'chìt-wák-sin-frii',
+  ผู้ใช้งาน: 'phû-chai-ngan',
+  เพิ่ม: 'phôem',
+  'ผู้ใช้งานเพิ่ม': 'phû-chai-ngan-phôem',
+  'ผู้ใช้งานเพิ่มขึ้น': 'phû-chai-ngan-phôem-khuen',
+  ดูแล: 'du-lae',
+  ให้ดี: 'hâi-dii',
+  'ดูแลเจ็บให้ดี': 'du-lae-chep-hâi-dii',
+  สุด: 'sùt',
+  ถาม: 'thǎm',
+  เจ้าหน้าที่: 'chêah-nâ-thî',
+  ถามเจ้าหน้าที่: 'thǎm-chêah-nâ-thî',
+  ทำ: 'thám',
+  ทำด้วย: 'thám-duai',
+  ทำด้วยมือ: 'thám-duai-mue',
+  ผลไม้: 'phonlámai',
+  หลากหลาย: 'lâak-lǎai',
+  ผลไม้สดหลากหลาย: 'phonlámai-sòt-lâak-lǎai',
+  เครื่องดื่ม: 'khrûang-dùm',
+  ลดราคาครึ่งหนึ่ง: 'lót-rá-kha-khrûeng-nùeng',
+  ครึ่งหนึ่ง: 'khrûeng-nùeng',
+  ครึ่ง: 'khrûeng',
+  วันนี้: 'wan-níi',
+  เหนื่อย: 'nùeay',
+  แต่: 'tɛ̀',
+  แต่สนุก: 'tɛ̀-sà-nùk',
+  'วันนี้เหนื่อยแต่สนุก': 'wan-níi-nùeay-tɛ̀-sà-nùk',
+  ฟังเพลง: 'fang-phleng',
+  เพลง: 'phleng',
+  ตื้นตัน: 'tûen-tan',
+  'ฟังเพลงแล้วตื้นตัน': 'fang-phleng-lɛ́ɛw-tûen-tan',
+  หน้าที่: 'nâ-thî',
+  ล่าสุด: 'là-sùt',
   น้ำ: 'nam',
   กิน: 'kin',
   เดิน: 'dern',
@@ -108,7 +155,6 @@ const SYLLABLE_ROMAN: Record<string, string> = {
   อย่าง: 'yang',
   ท้องถิ่น: 'thongthin',
   อาหารทะเล: 'aharathale',
-  ผลไม้: 'phonlamai',
   ตลาด: 'talat',
   วัด: 'wat',
   กรุงเทพ: 'krungthêp',
@@ -121,7 +167,7 @@ const SYLLABLE_ROMAN: Record<string, string> = {
   อัตรา: 'àttra',
   เข้าพัก: 'khâo-phák',
   สูง: 'sǔung',
-  เพิ่มขึ้น: 'phuem-khuen',
+  เพิ่มขึ้น: 'phôem-khuen',
   ต่างชาติ: 'tang-chat',
   การท่องเที่ยว: 'kan-thongthiao',
   นักท่องเที่ยว: 'nak-thong-thiao',
@@ -162,7 +208,6 @@ const SYLLABLE_ROMAN: Record<string, string> = {
   ช่วย: 'chuai',
   ยินดี: 'yindi',
   ที่ได้: 'thidai',
-  ถาม: 'tham',
   อาการ: 'akkan',
   ถุง: 'thung',
   พลาสติก: 'phlastik',
@@ -184,9 +229,7 @@ const SYLLABLE_ROMAN: Record<string, string> = {
   ลด: 'lot',
   ราคา: 'rakha',
   ลดราคา: 'lotrakha',
-  แต่: 'tae',
   หนึ่ง: 'nueng',
-  ครึ่งหนึ่ง: 'khrueangnueng',
   เหลือ: 'luea',
   ช่วยเหลือ: 'chuailuea',
   ความช่วยเหลือ: 'khwam-chûai-luea',
@@ -369,6 +412,8 @@ const SYLLABLE_ROMAN: Record<string, string> = {
   ภาษาไทย: 'phasa-thai',
   อังกฤษ: 'ang-krìt',
   ภาษาไทยและอังกฤษ: 'phasa-thai-lae-ang-krìt',
+  ซุป: 'súp',
+  ต้มซุป: 'tôm-súp',
   วันหยุด: 'wan-yút',
   ยาว: 'yaao',
   วันหยุดยาว: 'wan-yút-yaao',
@@ -390,6 +435,8 @@ const LEXICON_ROMAN_SKIP = new Set([
   'วันหยุดยาว',
   'ช่วงวัน',
   'นักท่องเที่ยวเพิ่มขึ้น',
+  'ฉีดวัคซีนฟรี',
+  'ผู้ใช้งานเพิ่มขึ้น',
 ])
 
 /** 整句羅馬字條目只用於發音，不用於點詞切分 */
@@ -402,6 +449,54 @@ function findPhraseLexemeHit(keys: string[], rest: string, fullText: string): st
     if (!rest.startsWith(k)) return false
     if (LEXICON_ROMAN_SKIP.has(k)) return false
     if (k.length === fullText.length && isWholePhraseRomanKey(k)) return false
+    // น้าที่ 勿切成 น้า（阿姨）+ ที่；เจ้าหน้าที่ 勿切成 เจ้า + น้า + ที่
+    if (k === 'น้า' && (rest.startsWith('น้าที่') || rest.startsWith('หน้าที่'))) return false
+    if ((k === 'น้า' || k === 'น้ำ') && rest.startsWith('เจ้าหน้าที่')) return false
+    if (k === 'หลาย' && rest.startsWith('หลาก')) return false
+    if (k === 'ลาก' && rest.startsWith('หลาก')) return false
+    if (k === 'เครื่อง' && rest.startsWith('เครื่องดื่ม')) return false
+    if (k === 'ดื่ม' && rest.startsWith('เครื่องดื่ม')) return false
+    if (k === 'ครึ่ง' && rest.startsWith('ครึ่งหนึ่ง')) return false
+    if (k === 'หนึ่ง' && rest.startsWith('ครึ่งหนึ่ง')) return false
+    if (k === 'ลด' && rest.startsWith('ลดราคา')) return false
+    if (k === 'ราคา' && rest.startsWith('ลดราคา')) return false
+    if (k === 'ใส่' && rest.startsWith('ใส') && !rest.startsWith('ใส่')) return false
+    if (k === 'ทะเล' && rest.startsWith('ทะเลใส')) return false
+    if (k === 'ใส' && rest.startsWith('ทะเลใส')) return false
+    if (k === 'ผ่อ' && rest.startsWith('ผ่อน')) return false
+    if (k === 'ต้อ' && rest.startsWith('ต้อน')) return false
+    if (k === 'น' && rest.startsWith('นรับ')) return false
+    if (k === 'รับ' && rest.startsWith('รับ') && fullText.includes('ต้อนรับ')) {
+      const before = fullText.slice(0, fullText.length - rest.length)
+      if (before.endsWith('ต้อน')) return false
+    }
+    if (k === 'วัค' && rest.startsWith('วัคซีน')) return false
+    if (k === 'ซีน' && rest.startsWith('ซีนฟรี')) return false
+    if (k === 'ฟ' && rest.startsWith('ฟรี')) return false
+    if (k === 'รี' && rest === 'รี' && fullText.endsWith('ฟรี')) return false
+    if (k === 'ผู้' && rest.startsWith('ผู้ใช้งาน')) return false
+    if (k === 'ใช้' && rest.startsWith('ใช้งาน')) return false
+    if (k === 'งาน' && rest.startsWith('งานเพิ่ม')) return false
+    if (k === 'เพิ่ม' && rest.startsWith('เพิ่มขึ้น')) return false
+    if (k === 'ดู' && rest.startsWith('ดูแล')) return false
+    if (k === 'แล' && rest.startsWith('แลเจ็')) return false
+    if (k === 'เจ็' && rest.startsWith('เจ็บ')) return false
+    if (k === 'บ' && rest.startsWith('บให้')) return false
+    if (k === 'ให้' && rest.startsWith('ให้ดี')) return false
+    if (k === 'น' && rest.startsWith('นให้')) return false
+    if (k === 'เพีย' && rest.startsWith('เพียง')) return false
+    if (k === 'ง' && rest.startsWith('งพ')) return false
+    if (k === 'พ' && rest.startsWith('พอ')) return false
+    if (k === 'อ' && rest.startsWith('องพ')) return false
+    if (k === 'ง' && (rest.startsWith('ง') || rest === '')) {
+      const before = fullText.slice(0, fullText.length - rest.length)
+      if (before.endsWith('เอ') || before.endsWith('เ') || before.endsWith('ทำอาหารเ')) {
+        return false
+      }
+    }
+    if (k === 'เอ' && rest.startsWith('อง')) return false
+    if (k === 'ทำ' && rest.startsWith('ทำอาหาร')) return false
+    if (k === 'อาหาร' && rest.startsWith('อาหาร')) return false
     return true
   })
 }
@@ -412,8 +507,13 @@ function phraseLexiconKeys(): string[] {
   const keys = new Set<string>([
     ...Object.keys(SYLLABLE_ROMAN),
     ...Object.keys(THAI_ROMAN),
+    ...Object.keys(PART_MEANINGS),
     ...LESSONS.map((l) => l.thai),
   ])
+  for (const [phrase, parts] of Object.entries(PHRASE_SEGMENT_OVERRIDES)) {
+    keys.add(phrase)
+    for (const part of parts) keys.add(part.thai)
+  }
   phraseLexiconCache = [...keys].sort((a, b) => b.length - a.length)
   return phraseLexiconCache
 }
@@ -617,6 +717,100 @@ export function toneRomanWord(text: string): string {
 function mergeLueFragments(units: string[]): string[] {
   const out: string[] = []
   for (const u of units) {
+    if (
+      u.startsWith('นให้') &&
+      out.length > 0 &&
+      out[out.length - 1] === 'ผ่อ'
+    ) {
+      out[out.length - 1] = 'ผ่อน'
+      out.push('ให้')
+      const rest = u.slice('นให้'.length)
+      if (rest.startsWith('เพียงพอ') || rest.startsWith('เพีย')) {
+        out.push('เพียงพอ')
+      }
+      continue
+    }
+    if (u === 'น' && out.length > 0 && out[out.length - 1] === 'ผ่อ') {
+      out[out.length - 1] = 'ผ่อน'
+      continue
+    }
+    if (u === 'ผ่อน' && out.length > 0 && out[out.length - 1] === 'พัก') {
+      out[out.length - 1] = 'พักผ่อน'
+      continue
+    }
+    if (u === 'น' && out.length > 0 && out[out.length - 1] === 'ต้อ') {
+      out[out.length - 1] = 'ต้อน'
+      continue
+    }
+    if (u === 'รับ' && out.length > 0 && out[out.length - 1] === 'ต้อน') {
+      out[out.length - 1] = 'ต้อนรับ'
+      continue
+    }
+    if (u === 'ซีน' && out.length > 0 && out[out.length - 1] === 'วัค') {
+      out[out.length - 1] = 'วัคซีน'
+      continue
+    }
+    if (u === 'รี' && out.length > 0 && out[out.length - 1] === 'ฟ') {
+      out[out.length - 1] = 'ฟรี'
+      continue
+    }
+    if (u.startsWith('แลเจ็') && out.length > 0 && out[out.length - 1] === 'ดู') {
+      out[out.length - 1] = 'ดูแล'
+      out.push('เจ็บ')
+      continue
+    }
+    if (u.startsWith('บให้ดี') && out.length > 0 && out[out.length - 1] === 'เจ็บ') {
+      out.push('ให้ดี')
+      continue
+    }
+    if (u === 'ให้ดี' && out.length > 0 && out[out.length - 1] === 'เจ็บ') {
+      out.push('ให้ดี')
+      continue
+    }
+    if (u === 'ง' && out.length > 0 && out[out.length - 1] === 'เพีย') {
+      out[out.length - 1] = 'เพียง'
+      continue
+    }
+    if (u === 'อ' && out.length > 0 && out[out.length - 1] === 'พ') {
+      out[out.length - 1] = 'พอ'
+      continue
+    }
+    if (u === 'พอ' && out.length > 0 && out[out.length - 1] === 'เพียง') {
+      out.push('พอ')
+      continue
+    }
+    if (u === 'ง' && out.length > 0) {
+      const prev = out[out.length - 1]!
+      if (
+        prev === 'เอ' ||
+        prev === 'เ' ||
+        prev === 'ทำอาหารเ' ||
+        prev === 'ทำอาหารเอ'
+      ) {
+        if (prev.startsWith('ทำอาหาร')) {
+          out.pop()
+          out.push('ทำอาหาร')
+        }
+        out.push('เอง')
+        continue
+      }
+    }
+    if (u === 'เอง' && out.length > 0 && out[out.length - 1] === 'ทำอาหาร') {
+      out.push('เอง')
+      continue
+    }
+    if (u === 'อาหาร' && out.length > 0 && out[out.length - 1] === 'ทำ') {
+      out[out.length - 1] = 'ทำอาหาร'
+      continue
+    }
+    if (u === 'ส' && out.length > 0 && out[out.length - 1] === 'ใ') {
+      out[out.length - 1] = 'ใส'
+      continue
+    }
+    if (u === 'ใส' && out.length > 0 && out[out.length - 1] === 'ทะเล') {
+      out[out.length - 1] = 'ทะเลใส'
+      continue
+    }
     if (u === 'ล' && out.length > 0 && out[out.length - 1] === 'ผ') {
       out[out.length - 1] = 'ผล'
       continue
@@ -749,8 +943,147 @@ function mergeLueFragments(units: string[]): string[] {
       out[out.length - 1] = 'ด้วยกัน'
       continue
     }
+    if (u === 'ด้วย' && out.length > 0 && out[out.length - 1] === 'ทำ') {
+      out.push('ด้วย')
+      continue
+    }
+    if (u === 'มือ' && out.length >= 2 && out[out.length - 1] === 'ด้วย' && out[out.length - 2] === 'ทำ') {
+      out.pop()
+      out.pop()
+      out.push('ทำด้วยมือ')
+      continue
+    }
+    if (u === 'ซุป' && out.length > 0 && out[out.length - 1] === 'ต้ม') {
+      out.push('ซุป')
+      continue
+    }
     if (u === 'น้า' && out.length > 0 && out[out.length - 1] === 'ห') {
       out[out.length - 1] = 'หน้า'
+      continue
+    }
+    if (u === 'สนุก' && out.length > 0 && out[out.length - 1] === 'แต่') {
+      out.push('สนุก')
+      continue
+    }
+    if (u === 'เพลง' && out.length > 0 && out[out.length - 1] === 'ฟัง') {
+      out[out.length - 1] = 'ฟังเพลง'
+      continue
+    }
+    if (
+      u.startsWith('นให้') &&
+      out.length > 0 &&
+      out[out.length - 1] === 'ผ่อ'
+    ) {
+      out[out.length - 1] = 'ผ่อน'
+      out.push('ให้')
+      const rest = u.slice('นให้'.length)
+      if (rest.startsWith('เพียงพอ') || rest.startsWith('เพีย')) {
+        out.push('เพียงพอ')
+      }
+      continue
+    }
+    if (u === 'น' && out.length > 0 && out[out.length - 1] === 'ผ่อ') {
+      out[out.length - 1] = 'ผ่อน'
+      continue
+    }
+    if (u === 'ผ่อน' && out.length > 0 && out[out.length - 1] === 'พัก') {
+      out[out.length - 1] = 'พักผ่อน'
+      continue
+    }
+    if (u === 'น' && out.length > 0 && out[out.length - 1] === 'ต้อ') {
+      out[out.length - 1] = 'ต้อน'
+      continue
+    }
+    if (u === 'รับ' && out.length > 0 && out[out.length - 1] === 'ต้อน') {
+      out[out.length - 1] = 'ต้อนรับ'
+      continue
+    }
+    if (u === 'ซีน' && out.length > 0 && out[out.length - 1] === 'วัค') {
+      out[out.length - 1] = 'วัคซีน'
+      continue
+    }
+    if (u === 'รี' && out.length > 0 && out[out.length - 1] === 'ฟ') {
+      out[out.length - 1] = 'ฟรี'
+      continue
+    }
+    if (u.startsWith('แลเจ็') && out.length > 0 && out[out.length - 1] === 'ดู') {
+      out[out.length - 1] = 'ดูแล'
+      out.push('เจ็บ')
+      continue
+    }
+    if (u.startsWith('บให้ดี') && out.length > 0 && out[out.length - 1] === 'เจ็บ') {
+      out.push('ให้ดี')
+      continue
+    }
+    if (u === 'ให้ดี' && out.length > 0 && out[out.length - 1] === 'เจ็บ') {
+      out.push('ให้ดี')
+      continue
+    }
+    if (u === 'ง' && out.length > 0 && out[out.length - 1] === 'เพีย') {
+      out[out.length - 1] = 'เพียง'
+      continue
+    }
+    if (u === 'อ' && out.length > 0 && out[out.length - 1] === 'พ') {
+      out[out.length - 1] = 'พอ'
+      continue
+    }
+    if (u === 'พอ' && out.length > 0 && out[out.length - 1] === 'เพียง') {
+      out.push('พอ')
+      continue
+    }
+    if (u === 'ง' && out.length > 0) {
+      const prev = out[out.length - 1]!
+      if (
+        prev === 'เอ' ||
+        prev === 'เ' ||
+        prev === 'ทำอาหารเ' ||
+        prev === 'ทำอาหารเอ'
+      ) {
+        if (prev.startsWith('ทำอาหาร')) {
+          out.pop()
+          out.push('ทำอาหาร')
+        }
+        out.push('เอง')
+        continue
+      }
+    }
+    if (u === 'เอง' && out.length > 0 && out[out.length - 1] === 'ทำอาหาร') {
+      out.push('เอง')
+      continue
+    }
+    if (u === 'อาหาร' && out.length > 0 && out[out.length - 1] === 'ทำ') {
+      out[out.length - 1] = 'ทำอาหาร'
+      continue
+    }
+    if (u === 'มาก' && out.length > 0 && out[out.length - 1] === 'ทะเลใส') {
+      out.push('มาก')
+      continue
+    }
+    if (u === 'ดื่ม' && out.length > 0 && out[out.length - 1] === 'เครื่อง') {
+      out[out.length - 1] = 'เครื่องดื่ม'
+      continue
+    }
+    if (u === 'หนึ่ง' && out.length > 0 && out[out.length - 1] === 'ครึ่ง') {
+      out[out.length - 1] = 'ครึ่งหนึ่ง'
+      continue
+    }
+    if (u === 'ครึ่งหนึ่ง' && out.length > 0 && out[out.length - 1] === 'ลดราคา') {
+      out.push('ครึ่งหนึ่ง')
+      continue
+    }
+    if (u === 'หนึ่ง' && out.length >= 2 && out[out.length - 1] === 'ครึ่ง' && out[out.length - 2] === 'ลดราคา') {
+      out.pop()
+      out.push('ครึ่งหนึ่ง')
+      continue
+    }
+    if (u === 'หลาย' && out.length > 0 && out[out.length - 1] === 'หลาก') {
+      out[out.length - 1] = 'หลากหลาย'
+      continue
+    }
+    if (u === 'ที่' && out.length >= 2 && out[out.length - 1] === 'หน้า' && out[out.length - 2] === 'เจ้า') {
+      out.pop()
+      out.pop()
+      out.push('เจ้าหน้าที่')
       continue
     }
     if (u === 'ล้าง' && out.length > 0 && out[out.length - 1] === 'อ่าง') {
