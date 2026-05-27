@@ -722,6 +722,31 @@
     .yield-bar-chg { text-align: right; font-size: 8px; color: var(--muted); }
     .yield-bar-chg.up { color: var(--up); }
     .yield-bar-chg.down { color: var(--down); }
+    .pill.forex { border-color: #6ab8c844; color: #9ee0f0; background: #6ab8c80d; }
+    .fx-card {
+      border: 1px solid #2a3a40;
+      border-radius: 6px;
+      padding: 8px 10px;
+      margin-bottom: 8px;
+      background: #0f1418;
+    }
+    .fx-card.fx-up { border-color: #4a6a50; }
+    .fx-card.fx-mixed { border-color: #6a5a40; }
+    .fx-card.fx-peg { border-color: #3a4550; }
+    .fx-card-head { display: flex; gap: 6px; align-items: baseline; font-size: 11px; flex-wrap: wrap; }
+    .fx-card-head b { color: #9ee0f0; }
+    .fx-card-head em { color: var(--muted); font-style: normal; font-size: 9px; }
+    .fx-card-head span { margin-left: auto; color: #fff; font-weight: 700; }
+    .fx-dir { font-size: 10px; margin: 4px 0 2px; color: var(--text); }
+    .fx-med { font-size: 9px; color: var(--muted); margin: 0 0 4px; }
+    .fx-lv { font-size: 8px; color: #7aa8b8; display: block; margin-bottom: 4px; }
+    .fx-drivers { margin: 0; padding-left: 14px; font-size: 9px; color: var(--muted); }
+    .fx-horizon { font-size: 9px; color: var(--muted); margin: 0 0 8px; }
+    .fx-sub { font-size: 10px; color: #9ee0f0; margin: 10px 0 6px; font-weight: 600; }
+    .fx-table { width: 100%; font-size: 9px; border-collapse: collapse; margin-bottom: 8px; }
+    .fx-table th, .fx-table td { padding: 3px 4px; border-bottom: 1px solid #222; text-align: right; }
+    .fx-table th:first-child, .fx-table td:first-child { text-align: left; }
+    .fx-notes, .fx-watch { font-size: 9px; color: var(--muted); margin: 0; padding-left: 14px; }
     .yield-table {
       width: 100%;
       font-size: 10px;
@@ -1599,6 +1624,7 @@
           <span class="pill kw-surge hidden" id="stat-kw-surge" title="Reddit 突然爆火關鍵字">爆火 —</span>
           <span class="pill stable" id="stat-stable" title="USDC / USDT 流通量">USDC —</span>
           <span class="pill yields" id="stat-yields" title="美國國債收益率">10Y —</span>
+          <span class="pill forex" id="stat-forex" title="四幣匯率 RMB/USD/JPY/HKD">匯率 —</span>
           <button type="button" class="pill meta-band-toggle" id="meta-band-toggle" aria-expanded="false" aria-controls="meta-band-panel">訊號 ▾</button>
         </div>
         <nav class="nav-links">
@@ -1609,6 +1635,7 @@
           <a href="./sentiment.md">討論</a>
           <a href="./stablecoins.md">穩定幣</a>
           <a href="./yields.md">國債</a>
+          <a href="./forex.md">匯率</a>
           <a href="./5k-entry-checklist.md">$5k</a>
           <a href="./index.md">MD</a>
           <a href="./ai-stack.md">產業鏈</a>
@@ -1706,6 +1733,7 @@
           <button type="button" data-tab="sent" role="tab">討論</button>
           <button type="button" data-tab="stable" role="tab">穩定幣</button>
           <button type="button" data-tab="yields" role="tab">國債</button>
+          <button type="button" data-tab="forex" role="tab">匯率</button>
           <button type="button" data-tab="nums" role="tab">數字</button>
           <button type="button" data-tab="watch" role="tab">偏弱</button>
           <button type="button" data-tab="cal" role="tab">數據日</button>
@@ -1753,6 +1781,12 @@
           <h3>國債收益率 · <span id="yields-as-of">—</span></h3>
           <div id="yields-panel"></div>
           <div class="panel-foot"><a href="./yields.md">→ 說明與更新</a></div>
+        </div>
+
+        <div class="side-panel" id="panel-forex" role="tabpanel">
+          <h3>四幣匯率 · <span id="forex-as-of">—</span></h3>
+          <div id="forex-panel"></div>
+          <div class="panel-foot"><a href="./forex.md">→ 說明與更新</a></div>
         </div>
 
         <div class="side-panel" id="panel-nums" role="tabpanel">
@@ -1830,6 +1864,10 @@
   <!-- STABLECOINS_START -->
   <script type="application/json" id="stablecoins-data">{"asOf":"2026-05-24","sources":["Circle API (USDC)","DeFiLlama (USDT/USDC/DAI)"],"note":"流通量為鏈上+託管口徑 · 與季報披露可能有日差 · 非投資建議","coins":{"USDC":{"issuer":"Circle (CRCL)","circulatingUsd":76419966614.79991,"circulatingFmt":"$76.4B","source":"circle","change7dPct":-0.8,"change30dPct":-2.2,"change90dPct":2.6,"vsQ1FilingPct":-0.8,"q1FilingFmt":"$77B","topChains":[{"chain":"ETH","amountFmt":"$52.7B","sharePct":68.9},{"chain":"SOL","amountFmt":"$7.2B","sharePct":9.5},{"chain":"ARB","amountFmt":"$6.2B","sharePct":8.1},{"chain":"BASE","amountFmt":"$4.2B","sharePct":5.5},{"chain":"HYPEREVM","amountFmt":"$2.4B","sharePct":3.2},{"chain":"POLY","amountFmt":"$627M","sharePct":0.8},{"chain":"AVAX","amountFmt":"$427M","sharePct":0.6},{"chain":"SUI","amountFmt":"$399M","sharePct":0.5}]},"USDT":{"issuer":"Tether","circulatingUsd":189453843533.47754,"circulatingFmt":"$189.5B","source":"defillama","change7dPct":-0.2,"change30dPct":-0.1,"change90dPct":3.2},"DAI":{"issuer":"MakerDAO","circulatingUsd":4595067499.082678,"circulatingFmt":"$4.6B","source":"defillama"}},"market":{"usdcPlusUsdtUsd":265873810148.27747,"usdcSharePct":28.7,"usdtSharePct":71.3,"usdcShareLabel":"USDC 佔 USDC+USDT 28.7%","leader":"USDT","gapFmt":"$113.0B"},"crcl":{"ticker":"CRCL","usdcCirculatingFmt":"$76.4B","usdcShareOfDuopoly":28.7,"revenueDriver":"儲備利息 ∝ USDC 流通 × SOFR"}}</script>
   <!-- STABLECOINS_END -->
+
+  <!-- FOREX_START -->
+  <script type="application/json" id="forex-data">{"asOf":"2026-05-27","source":"研究筆記 · 政策與市場綜述（2026-05）","note":"非即時外匯報價 · 僅供個人研究 · 非投資建議","horizon":"3–12 個月（相對美元）","currencies":{"USD":{"code":"USD","nameZh":"美元","pair":"DXY","spotFmt":"~99.0","shortTerm":"偏強 → 震盪偏強","mediumTerm":"高利率更久 + 避險需求支撐","direction":"strong","directionLabel":"偏強","drivers":["Core PCE 仍高於 2% 目標","中東地緣推升油價與通脹預期","市場重新定價「今年或再加息」"],"risks":["美國成長明顯放緩","降息預期快速重建"]},"RMB":{"code":"CNY","nameZh":"人民幣","pair":"USD/CNY","spotFmt":"~6.87","shortTerm":"區間波動 · 穩中略弱/雙向","mediumTerm":"有管理浮動 · 防超調","direction":"range","directionLabel":"區間","drivers":["PBOC 適度寬鬆 + 穩匯率","每日中間價引導","進口通脹風險納入關注"],"risks":["出口壓力加大時政策容忍略貶","美元急升時口頭/流動性干預"],"levels":{"support":"6.85","resistance":"6.90"}},"JPY":{"code":"JPY","nameZh":"日元","pair":"USD/JPY","spotFmt":"~159–160","shortTerm":"弱勢震盪","mediumTerm":"BOJ 正常化下或有修復","direction":"weak-then-recover","directionLabel":"短弱中修","drivers":["6 月 BOJ 加息預期約 70–78%","能源進口國受油價衝擊","干預警戒區（¥159+）"],"risks":["東京 CPI 偏弱拖慢加息路徑","全球避險推升美元"]},"HKD":{"code":"HKD","nameZh":"港元","pair":"USD/HKD","spotFmt":"~7.83","shortTerm":"聯匯區間內橫行","mediumTerm":"跟隨美元體系 · 匯率非主變量","direction":"peg","directionLabel":"橫行","drivers":["聯繫匯率 7.75–7.85","HIBOR 與美元利率差","季節性資金與南向通"],"risks":["港美利差長期偏闊引資金外流壓力","本地流動性收緊推升 HIBOR"]}},"rankings":{"mediumTermVsUsd":[{"rank":1,"code":"JPY","note":"若 BOJ 持續加息"},{"rank":2,"code":"RMB","note":"政策穩匯 · 非大貶"},{"rank":3,"code":"HKD","note":"幾乎無升值空間（聯匯）"}],"stability":["HKD","RMB","USD","JPY"]},"allocation":{"conservative":{"label":"保守","RMB":45,"USD":35,"HKD":15,"JPY":5},"balanced":{"label":"平衡（推薦起步）","RMB":30,"USD":45,"HKD":15,"JPY":10},"aggressive":{"label":"進取","RMB":20,"USD":55,"HKD":10,"JPY":15}},"execution":["分 4–6 批建倉，避免一次性換匯","每季再平衡：偏離目標 ±5% 則調回","預留 6–12 個月支出於 RMB + HKD 低波動資產","JPY 建議總倉 8–15% 區間"],"watchlist":{"usd":"FOMC（6/16–17）· PCE/CPI","rmb":"PBOC 每日中間價 · 出口與通脹數據","jpy":"BOJ 6/16 會議 · 東京 CPI","hkd":"USD/HKD 觸及 7.75/7.85 · 3M HIBOR"}}</script>
+  <!-- FOREX_END -->
 
   <!-- YIELDS_START -->
   <script type="application/json" id="yields-data">{"asOf":"2026-05-22","source":"FRED (Federal Reserve Economic Data)","note":"常數到期國債收益率 · 非即時報價 · 僅供研究","series":{"y2":{"label":"2年期","tenor":"2Y","fred":"DGS2","date":"2026-05-21","value":4.08,"valueFmt":"4.08%","change7dBps":-1,"change30dBps":30,"change90dBps":65,"change7dFmt":"-1bp","change30dFmt":"+30bp","crcl":false,"spread":false},"y5":{"label":"5年期","tenor":"5Y","fred":"DGS5","date":"2026-05-21","value":4.25,"valueFmt":"4.25%","change7dBps":-1,"change30dBps":33,"change90dBps":66,"change7dFmt":"-1bp","change30dFmt":"+33bp","crcl":false,"spread":false},"y10":{"label":"10年期","tenor":"10Y","fred":"DGS10","date":"2026-05-21","value":4.57,"valueFmt":"4.57%","change7dBps":-2,"change30dBps":26,"change90dBps":54,"change7dFmt":"-2bp","change30dFmt":"+26bp","crcl":false,"spread":false},"y30":{"label":"30年期","tenor":"30Y","fred":"DGS30","date":"2026-05-21","value":5.1,"valueFmt":"5.10%","change7dBps":-2,"change30dBps":19,"change90dBps":40,"change7dFmt":"-2bp","change30dFmt":"+19bp","crcl":false,"spread":false},"sofr":{"label":"SOFR","tenor":"O/N","fred":"SOFR","date":"2026-05-21","value":3.51,"valueFmt":"3.51%","change7dBps":-4,"change30dBps":-15,"change90dBps":-15,"change7dFmt":"-4bp","change30dFmt":"-15bp","crcl":true,"spread":false},"fedFunds":{"label":"聯邦基金","tenor":"FF","fred":"DFF","date":"2026-05-21","value":3.62,"valueFmt":"3.62%","change7dBps":-1,"change30dBps":-2,"change90dBps":-2,"change7dFmt":"-1bp","change30dFmt":"-2bp","crcl":false,"spread":false},"spread10y2y":{"label":"10Y−2Y 利差","tenor":"2s10s","fred":"T10Y2Y","date":"2026-05-22","value":0.43,"valueFmt":"+0.43%","change7dBps":-7,"change30dBps":-10,"change90dBps":-17,"change7dFmt":"-7bp","change30dFmt":"-10bp","crcl":false,"spread":true}},"curve":{"shape":"normal","shapeLabel":"正常","spread10y2y":0.43,"spreadFmt":"+0.43%","y2":4.08,"y10":4.57},"watchlist":{"crcl":"SOFR 3.51% · 儲備利息敏感","growth":"10Y 4.57% · 估值分母","macro":"10Y−2Y +0.43%"}}</script>
@@ -2065,6 +2103,7 @@
       renderYieldsHeader,
       applyYieldsBadge,
     } from "./scripts/yields-panel.js";
+    import { loadForex, renderForexPanel, renderForexHeader } from "./scripts/forex-panel.js";
     import {
       loadNewsDigest,
       renderDigestSummary,
@@ -2109,6 +2148,7 @@
     let sentSourceMode = "all";
     let stablecoinsData = null;
     let yieldsData = null;
+    let forexData = null;
     let newsDigestData = null;
     let newsFilterMode = "all";
     let digestTickerFilter = null;
@@ -2467,6 +2507,16 @@
       }
     }
 
+    async function refreshForex() {
+      try {
+        if (!forexData?.currencies) forexData = await loadForex();
+        renderForexPanel(forexData);
+        renderForexHeader(forexData);
+      } catch {
+        /* 無 forex.json */
+      }
+    }
+
     async function refreshStablecoins() {
       try {
         if (!stablecoinsData?.coins) stablecoinsData = await loadStablecoins();
@@ -2660,6 +2710,12 @@
       .then((d) => {
         yieldsData = d;
         refreshYields();
+      })
+      .catch(() => {});
+    loadForex()
+      .then((d) => {
+        forexData = d;
+        refreshForex();
       })
       .catch(() => {});
 

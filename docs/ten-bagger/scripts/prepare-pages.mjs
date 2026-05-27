@@ -31,6 +31,24 @@ const jsonFiles = [
   'metrics.json',
   'stablecoins.json',
   'yields.json',
+  'forex.json',
+];
+
+const mdFiles = [
+  'yields.md',
+  'forex.md',
+  'calendar.md',
+  'options.md',
+  'sentiment.md',
+  'stablecoins.md',
+  'news.md',
+  'news-digest.md',
+  'reddit-keywords.md',
+  '5k-entry-checklist.md',
+  'index.md',
+  'ai-stack.md',
+  'DEPLOY.md',
+  'README.md',
 ];
 
 const staticFiles = [
@@ -51,6 +69,11 @@ for (const f of staticFiles) {
 }
 
 for (const f of jsonFiles) {
+  const p = join(root, f);
+  if (existsSync(p)) cpSync(p, join(outDir, f));
+}
+
+for (const f of mdFiles) {
   const p = join(root, f);
   if (existsSync(p)) cpSync(p, join(outDir, f));
 }

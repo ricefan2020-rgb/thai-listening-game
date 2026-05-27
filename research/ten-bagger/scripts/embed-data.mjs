@@ -81,6 +81,12 @@ try {
 }
 
 try {
+  embed('<!-- FOREX_START -->', '<!-- FOREX_END -->', 'forex-data', 'forex.json');
+} catch {
+  console.warn('Skip forex.json');
+}
+
+try {
   embed(
     '<!-- NEWS_DIGEST_START -->',
     '<!-- NEWS_DIGEST_END -->',
