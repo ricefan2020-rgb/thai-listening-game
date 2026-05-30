@@ -1,0 +1,37 @@
+{
+  "asOf": "2026-05-30",
+  "note": "觀察板資料之間的邏輯關聯 · 非統計保證 · 非投資建議",
+  "datasets": [
+    { "id": "yields", "file": "yields.json", "role": "美債曲線、SOFR、聯邦基金 → 無風險利率與流動性定價" },
+    { "id": "forex", "file": "forex.json", "role": "四幣方向與避險/利差敘事" },
+    { "id": "stablecoins", "file": "stablecoins.json", "role": "鏈上美元流動性、CRCL 與 SOFR 連動" },
+    { "id": "prices", "file": "prices.json", "role": "觀察名單即時報價與日變幅" },
+    { "id": "ohlc", "file": "ohlc.json", "role": "日線 OHLC → 股間相關、價量、KDJ、回撤" },
+    { "id": "metrics", "file": "metrics.json", "role": "rateSens、營收結構 → 對利率/敘事敏感度標籤" },
+    { "id": "sentiment", "file": "sentiment.json", "role": "Reddit 情緒與討論量（滯後、噪音大）" },
+    { "id": "options", "file": "options.json", "role": "P/C、Gamma、到期 → 短期價格壓力" },
+    { "id": "calendar", "file": "calendar.json", "role": "宏觀公布、財報、OPEX 與波動窗口" },
+    { "id": "news_digest", "file": "news-digest.json", "role": "外部新聞敘事與標的映射" }
+  ],
+  "themes": {
+    "riskOff": ["美元偏強", "避險", "VIX↑（板外）", "金↑（常見）", "成長股估值壓力"],
+    "riskOn": ["美元偏弱", "信用擴張", "BTC/風險資產↑", "利差陡峭時週期股相對強"],
+    "ratesUp": ["10Y↑", "實質利率↑", "長久期成長股壓力", "SOFR↑ → CRCL 儲備利息↑"],
+    "liquidityTight": ["穩定幣流通縮", "HIBOR↑", "美元回流"]
+  },
+  "edges": [
+    { "from": "10Y 名義利率", "to": "成長股估值（PE 分母）", "sign": "-", "strength": 3, "note": "折現率上升通常壓抑久期長的現金流" },
+    { "from": "10Y−2Y 利差", "to": "衰退預期 / 金融條件", "sign": "~", "strength": 2, "note": "倒掛常為滯後指標；陡峭化可能反映再通脹或寬鬆預期" },
+    { "from": "SOFR", "to": "USDC 儲備收益 / CRCL", "sign": "+", "strength": 3, "note": "穩定幣準備金多投短久期美元資產" },
+    { "from": "美元強弱 DXY", "to": "USD/JPY", "sign": "+", "strength": 2, "note": "同向居多；日央行政策可階段性脫鉤" },
+    { "from": "美元強弱", "to": "金 / 銀（美元計價）", "sign": "-", "strength": 2, "note": "中期常見負相關；短期可同受避險或實質利率驅動" },
+    { "from": "避險需求", "to": "金", "sign": "+", "strength": 2, "note": "地緣與金融壓力時常同向" },
+    { "from": "BTC", "to": "流動性 / 風險偏好", "sign": "+", "strength": 2, "note": "高 beta；與納指階段性同向，非恆常" },
+    { "from": "BTC", "to": "IREN / 礦股毛利", "sign": "+", "strength": 2, "note": "收入與資產負債表直接曝險" },
+    { "from": "USD/CNY", "to": "出口鏈 / ADR 換算", "sign": "~", "strength": 2, "note": "貶值支撐出口競爭力；急貶引發政策與情緒" },
+    { "from": "USD/HKD", "to": "HIBOR", "sign": "~", "strength": 2, "note": "聯匯下匯率窄；利差由利率與流動性吸收" },
+    { "from": "OPEX 窗口", "to": "單日 realized vol", "sign": "+", "strength": 2, "note": "Gamma pin 或拆倉造成局部均值回歸或跳空" },
+    { "from": "Reddit netScore", "to": "股價方向", "sign": "~", "strength": 1, "note": "噪音大、因果弱；適合當反向情緒參考" }
+  ],
+  "pairwiseStockNote": "股間 Pearson 相關係數由 ohlc.json 日收盤報酬序列計算；見 correlations.md 腳本更新區塊。"
+}

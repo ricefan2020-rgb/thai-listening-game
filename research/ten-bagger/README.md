@@ -43,6 +43,8 @@ node scripts/serve-mobile.mjs
 
 **四幣匯率（RMB/USD/JPY/HKD）**：[forex.md](./forex.md) · [forex.json](./forex.json)（升跌方向 + 配置方案 D · 側欄「匯率」· `node scripts/update-forex.mjs`）
 
+**資料關聯性**：[correlations.md](./correlations.md) · [correlations.json](./correlations.json)（宏觀傳導 + 跨資產對照）· [correlations-computed.json](./correlations-computed.json)（股間 Pearson r · `node scripts/analyze-correlations.mjs`）
+
 **重要數據日**：[calendar.md](./calendar.md) · [calendar.json](./calendar.json)（休市、CPI/FOMC、觀察名單財報 · 側欄「數據日」· `node scripts/embed-data.mjs` 嵌入）
 
 **K 線 + KDJ**：觀察板下方圖表區（需本地伺服器打開 `index.html`）· 邏輯見 [scripts/chart-kdj.js](./scripts/chart-kdj.js) · 日線數據 [ohlc.json](./ohlc.json)（`node scripts/update-ohlc.mjs` 更新近一年走勢含成交量，避免瀏覽器 CORS）

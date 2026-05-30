@@ -32,11 +32,14 @@ const jsonFiles = [
   'stablecoins.json',
   'yields.json',
   'forex.json',
+  'correlations.json',
+  'correlations-computed.json',
 ];
 
 const mdFiles = [
   'yields.md',
   'forex.md',
+  'correlations.md',
   'calendar.md',
   'options.md',
   'sentiment.md',
