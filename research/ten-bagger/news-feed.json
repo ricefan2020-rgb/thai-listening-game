@@ -1,434 +1,1170 @@
 {
-  "asOf": "2026-05-24",
+  "asOf": "2026-05-30",
   "items": [
     {
-      "id": "NVDA|nvidia_s_board_just_authorized_an_additional__80_billion_bu",
-      "date": "2026-05-24",
+      "id": "SIVE|sivers_semiconductors_q1_loss_of_sek42_7m_tests_bullish_pro",
+      "date": "2026-05-30",
       "tickers": [
-        "NVDA"
-      ],
-      "source": "The Motley Fool",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMHEtVE1RUWJTSTM3ZlBnQnU2bWFQNXdFWEs4N1V0Qmp2RWdvOFRCZVZNdEZURXRueEVzSG5md19YUGpjZ0FKbVJPT2c4aF9nM19iY1RkWmpJTVJCcUdEODJYZi11MkFqWEtDWUZFYlJnbzRZN3R4X2ZKTmZhQWhIYThUQUNTWWNIMDdacGRINDRCZW1XNUtydA?oc=5",
-      "headline": "NVIDIA董事會剛剛授權額外回購$ 800億美元。這是對投資者真正的信號。",
-      "headlineEn": "Nvidia's Board Just Authorized an Additional $80 Billion Buyback. Here's What That Really Signals to Investors.",
-      "detail": "NVIDIA董事會剛剛授權額外回購$ 800億美元。這對投資者來說是真正的信號Motley Fool",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "ANET|axxcess_wealth_management_llc_increases_stock_position_in_a",
-      "date": "2026-05-24",
-      "tickers": [
-        "ANET"
-      ],
-      "source": "MarketBeat",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOY1hrTVd5X3RUUkw2aUVhZGQ5blNVVjBJQ3lkNVRFOTFIYXBpbTNMOVdySTRmZ214SUt4YVJxSlI0ZFZZV0xyOXM3OHZsU2h5TXp1VVhkdW5HSzYtNkpHUXlhc2NWRnR5TnVmMnFnV0pJNk5SVktMRkh4WWthSkU4SXlWbVNtVHFLdThPSlpTeDNGb0pqSUF5cEFubXl2MTZaaVR6T2JOMFVzMHQ2dWZHZzRZVHI4dDByc1dqUTRNcXE4VzVVVExyRkdneURMdnVwTlpKM1FBTUhGTnM?oc=5",
-      "headline": "Axxcess Wealth Management LLC增加Arista Networks, Inc.的股票持倉$ ANET",
-      "headlineEn": "Axxcess Wealth Management LLC Increases Stock Position in Arista Networks, Inc. $ANET",
-      "detail": "Axxcess Wealth Management LLC增加Arista Networks, Inc.的股票持倉$ ANET MarketBeat",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "VRT|a_look_at_vertiv_holdings_co__vrt__valuation_after_liquid_co",
-      "date": "2026-05-24",
-      "tickers": [
-        "VRT"
+        "SIVE"
       ],
       "source": "simplywall.st",
       "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNRnhydkNlZURsTHJuLVROeXBUV3piVnpBLUl0YS1ReUFEWTItai01VHZIT3ZwTGw4dnY2WThyTWlrUTR2QzNjMlhCM2psa0RUTk8yVUxJelJ4VDZnYXI2UEd2d1hIa1BJc3djQTdMZ0lBZ2Jza3d5NUFwZ1hOX3RnRVY5UjV3Q29Kc3BObmZJdm0yOTdRMWpWU19MaUxjamJDSDQ4YUYzcmlTRkJVZFhFNXpTSTFiQjZmOTY5ZnZsd2RDWl9nRElrM0p3MVJ3Y2k5N1ZYSmV30gHbAUFVX3lxTE1kcEQxcENtekdsVUIwanBZYlpzTzBrVGFiWEZRVm9mZ3hfcndpSldpQUdPWFVYWTJJNzUzczFsVkJjejRZR3BJX2YzOFI1UWt1NlRqdGpnVUFRVGFoWVF4VDlJZ1hHOU84TXhqdXZWZ01jbEl1eWllWGRKU2x1TFNid3kyUmRnMXp2alFlZnU4UXlSZVFMNVhvRXg1MnhMMXZnS0lTeC1OQ0tOVHBORTVwVE9MWHBWOUtjZFE3Z1NMd0hUaTVkcUctNDI5Rzc4UlZudWV3OUozTXNPQQ?oc=5",
-      "headline": "Vertiv Holdings Co （ VRT ）在液體冷卻收購和分析師升級後的估值",
-      "headlineEn": "A Look At Vertiv Holdings Co (VRT) Valuation After Liquid Cooling Acquisition And Analyst Upgrades",
-      "detail": "液體冷卻收購和分析師升級後的Vertiv Holdings Co （ VRT ）估值simplywall.st",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "VRT|vertiv_holdings_co___vrt_shares_sold_by_hartline_investment_",
-      "date": "2026-05-24",
-      "tickers": [
-        "VRT"
-      ],
-      "source": "MarketBeat",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZFdUc2h6MmxldnBuMVAwdDd0c1JDN25CclpCWTVJVDcxUlNRc01DcFdPQUFWdVRORVBJOWNHbHg5YnZyaXZfX2VRQkl6TEltYW5XSHFqMVlqS19VYWx5SGNKZXFYd0h1ZHA3X2M0X2JsYWxiZnZxeHFUcXlNU05UaFFlM2tzVnUxaXQzXzZJQW9ZaU1vd05XbWRQMGRRaHlMYW9wWW1ZM2hfM0dEcmNrcks4TzZ3ZU9RSF9zdWc5TFc?oc=5",
-      "headline": "Vertiv Holdings Co. $ Hartline Investment Corp出售的VRT股票",
-      "headlineEn": "Vertiv Holdings Co. $VRT Shares Sold by Hartline Investment Corp",
-      "detail": "Vertiv Holdings Co. $ Hartline Investment Corp MarketBeat出售的VRT股票",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "SMCI|smci_stock_quote_price_and_forecast",
-      "date": "2026-05-24",
-      "tickers": [
-        "SMCI"
-      ],
-      "source": "CNN",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBSOF9sd2thMzE2d1hJbEtxU1BQWDBjTzdOd1lOZ2NPSnM2YXVLY2M0YUFTNTJMUzRMalBSNzBhMnJSWm8zRlNHMTZIYkc3WlZ1?oc=5",
-      "headline": "SMCI股票報價價格及預測",
-      "headlineEn": "SMCI Stock Quote Price and Forecast",
-      "detail": "SMCI股票報價價格及預測CNN",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "PLTR|palantir_is_1_of_the_fastest_growing_ai_companies__but_does",
-      "date": "2026-05-24",
-      "tickers": [
-        "PLTR"
-      ],
-      "source": "The Motley Fool",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTlVTRVRWckdTZjQ1cFMwcllxNHh3VlpIZ085VUxIa3Atb0pQMUwxbk5Qald5UTRvN0dTaENzVVBhNkpaZnR0X0NRRkh0UHJNUEV3WHZMT0VBeTdPV2RuUjBJcGE1WWJSRTgwcUI3SFBWUGNSTEhkeWMxWU9xZHpLbEdRVXdHZGlITklSdldIbmE1VHhzbUV3?oc=5",
-      "headline": "Palantir是增長最快的人工智能公司之一，但這是否值得購買？",
-      "headlineEn": "Palantir Is 1 of the Fastest-Growing AI Companies, but Does That Make It a Buy?",
-      "detail": "Palantir是增長最快的人工智能公司之一，但這讓它成為一筆購買嗎？ Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNU005N2F3NjRHZDFtTlFTLUgzbWIyenJyNFczNExJUURLMWE1eEc2UTU2b2JpVmNTUHpKQkE0MDc3NHN2by1QNnVPb2JPRGJaNzZMejBVa1ZrWlpFSGx5N0dYSnNWR2hTRmFVbmRxU3otSjNJZmxWVGVSRURGem1qSFR2M3hkMlpfRHBPUlo0ZnJVTEVFRjJMVExlUWVUdnYxa1AtQnFybjEzTHNmVE5hRlpYcVpuTmtaVkdtd1lfcDBRRldEUnp6RG1fbmZUbklSXzRFNmlDSV9IekpNTWdIYWotLUvSAeoBQVVfeXFMT2FtTF9Ea3hNUXZUOUh1c3BfQmRXblNINFJIbkQtSXBNZ2szcEZuMWFGd1JhRVBpYVUzMWFGSENQNG1Rb0lYSGlySzB1UmkxazY2SjA0dS1zaldvcktWWmVtREw1Ujhzc1hEMnRlR3o1clYzaGpGejJjOGkzNDRzOXdrcURjOEJuNW81WlBGZGZzWWwzSjRfTnNSejRiUHFSVlkwZ3RDbV9JNFFSbEZXdHdULXJnNWt3R0FVdEtqbElSYngwV1gtQnlzSUgyaUpoT3cxNFFINERzaXlsNnJyd1BZd010eWhSSkV3?oc=5",
+      "headline": "Sivers Semiconductors第一季虧損4270萬瑞典克朗測試看漲盈利能力敘述",
+      "headlineEn": "Sivers Semiconductors Q1 Loss Of SEK42.7m Tests Bullish Profitability Narratives",
+      "detail": "Sivers Semiconductors第一季虧損42.7百萬瑞典克朗測試看漲盈利能力敘述simplewall.st",
       "translated": true,
       "sentiment": "positive",
       "impact": "medium"
     },
     {
-      "id": "PLTR|palantir_and_dell_build_an_ai_os_for_the_paranoid",
-      "date": "2026-05-24",
+      "id": "GOOGL|alphabet__googl___the_best_strong_buy_stock_to_buy_and_hol",
+      "date": "2026-05-29",
       "tickers": [
-        "PLTR"
+        "GOOGL"
+      ],
+      "source": "Yahoo Finance",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNYnBiZGpjS3lDbjM5eFJmNXNuVUhZREp1ZDJTVzZEbDRQYnBEWHJZWWdMWHFsRzRubmJTY1BRVGtzSlJRSWRjTHVBUmo1VGhrN2tFOUNjc3EycEtGZ1Yya19PTFlBdEtFajZ3UWx5YkZyYXA0c3ZxQjNYWENKZmxYNkR0UWtEV2NVZTN2VE8yOGVUbUI0MFJydmJLcw?oc=5",
+      "headline": "Alphabet （ GOOGL ） ：未來5年買入和持有的最佳強勁買入股票",
+      "headlineEn": "Alphabet (GOOGL): The Best Strong Buy Stock to Buy and Hold for the Next 5 Years",
+      "detail": "Alphabet （ GOOGL ） ：未來5年購買和持有的最佳強勢買入股票雅虎財經",
+      "translated": true,
+      "sentiment": "positive",
+      "impact": "medium"
+    },
+    {
+      "id": "GOOGL|truist_lifts_alphabet__googl__stock_price_target__what_s_d",
+      "date": "2026-05-29",
+      "tickers": [
+        "GOOGL"
+      ],
+      "source": "TipRanks",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPODFmSGdidnQ1eVlZYzhjQ0w0ajg1WFgxWVZwZU4wQ0tCRnpDR2ZlR0ZfejRhelJwY1ctc19idlcwRWFmaHFVWEtXTlJrQm1xRlp5Tm5nTjc0TmxYR1JKOFIyZHQxUHlzWS1HRENxSlpKdWFMVU1mVDJ3VUtPOENjaEZJb2RsTTZfTzh4RTd3bmw3bGxOLTJhX3BxcEp1ZlEtUnFXa2Jn?oc=5",
+      "headline": "Truist Lifts Alphabet （ GOOGL ）股價目標；是什麼推動了樂觀情緒？",
+      "headlineEn": "Truist Lifts Alphabet (GOOGL) Stock Price Target; What’s Driving the Optimism?",
+      "detail": "Truist Lifts Alphabet （ GOOGL ）股價目標；是什麼推動了樂觀情緒？ TipRanks",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "GOOGL|alphabet__googl__stock_falls_amid_market_uptick__what_inve",
+      "date": "2026-05-29",
+      "tickers": [
+        "GOOGL"
+      ],
+      "source": "Yahoo Finance",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPX3JkbGhmWWNKNUwwUlVuV20xdWtGV1UzOEZMSkZpS0tQVi1OdXlVcHdIVnVxV0l3YkNDYjVtVFItMERrbWpybHlTQ2hOazhYdTVJZktFQnlBbnRjbVRSTmZoaFNra2h2QjJ0ckQxRFZFN0pnYmFUcGtjQW5OZ3BITFlEVExINlhySDl3d1FyZzAycDNDc0xvMWVYbEU?oc=5",
+      "headline": "Alphabet (GOOGL)股價在市場上漲期間下跌：投資者須知",
+      "headlineEn": "Alphabet (GOOGL) Stock Falls Amid Market Uptick: What Investors Need to Know",
+      "detail": "Alphabet （ GOOGL ）股價在市場上漲期間下跌：投資者需要了解的雅虎財經",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "GOOGL|why_is_alphabet__googl__up_1_4__since_last_earnings_report",
+      "date": "2026-05-29",
+      "tickers": [
+        "GOOGL"
+      ],
+      "source": "Yahoo Finance",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaFFMcnJRRXJmaVdCNEd3YU90ZjhVYnNmLS1KaERyOEFsckxnaW02aUt2M0JtZG9FODhUYUdFRG84d3N5ZXd3YW9EelN1STR6Znk2UWhCX2ZCZmREVXI2eW1ESHAwWDJ0aFo0Y21SVUdfbmdEUHAtaDhtNTVMSHdyMW5LUmZhN0dOVEwycWozejQ?oc=5",
+      "headline": "為什麼Alphabet (GOOGL)自上次收入報告以來上漲了1.4% ？",
+      "headlineEn": "Why Is Alphabet (GOOGL) Up 1.4% Since Last Earnings Report?",
+      "detail": "為什麼Alphabet (GOOGL)自上次收益報告以來上漲1.4% ？雅虎財經",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "NVDA|3_brilliant_growth_stocks_to_buy_now_and_hold_for_the_long_",
+      "date": "2026-05-29",
+      "tickers": [
+        "NVDA"
+      ],
+      "source": "The Motley Fool",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOWFV6d1FHcDItWXhQV2tGVHE2ZWxweWY0dlBSSDllcmVhTVJmZzhFdWVpZjlObG5hd0EyazZlNTI1YU5sb1h0bXdfZ2czWm41ZmVLZU0tUHRPdzB3cUl3SFpwUUZORC1hME5ITXZFOHlvLWZZbVJyUTdyd3E3N09wR2lHTXJWMVduRlV6alhTa3pad1k?oc=5",
+      "headline": "立即購買並長期持有的3隻輝煌增長股票-當然包括Nvidia",
+      "headlineEn": "3 Brilliant Growth Stocks to Buy Now and Hold for the Long Term -- Including Nvidia, of Course",
+      "detail": "立即購買並長期持有的3隻輝煌增長股票-包括Nvidia ，當然還有The Motley Fool",
+      "translated": true,
+      "sentiment": "positive",
+      "impact": "medium"
+    },
+    {
+      "id": "NVDA|i_ve_never_been_more_confident_in_a_tech_stock_than_i_am_in",
+      "date": "2026-05-29",
+      "tickers": [
+        "NVDA"
+      ],
+      "source": "The Motley Fool",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQM3BHWklQT2tBcS15SWpvdi1RWndmZC1pcVFHYzkxQUtqVUVZNWtLenUwZHkzcEZ1cGRublZqT2R6WHhGa0Q0MDQxU2NITkdYQWlhSXg0UGJ2VGo0MkhrTlZKc0VCajN6VEJoV3htOXV5QTA4Y1RaWHZ6clhYY0JYeExHMG82bUZEZEVPblFlR2hUdnRzeTh1WA?oc=5",
+      "headline": "我從未像現在這樣對科技股更有信心",
+      "headlineEn": "I've Never Been More Confident in a Tech Stock Than I Am in This One Right Now",
+      "detail": "我對科技股的信心從未超過我現在對這支股票的信心",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "NVDA|nvidia__nvda__director_john_dabiri_sells_625_shares_in_plan",
+      "date": "2026-05-29",
+      "tickers": [
+        "NVDA"
+      ],
+      "source": "Stock Titan",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcWlzMUdYcGpTNmd0cDFvU0FZSWdVZVlCeml2SWJ6V1VIX19ZLTNaZUlYSmFmODFGSmhNVkxqNWYtVkVwenNpVXNPdXhEdFpwSzA3c1EtVm5Xb2RUUDZadWVxQ185X2tXeTlXeURZRzdIWEhlSUJMaEZPLVJwTmxZWkZ0SVRJNmw1bWhyNUtWd1JDVVNMazZwcUFXWncyOFpTVTJrbmFWMlQ?oc=5",
+      "headline": "NVIDIA (NVDA)董事John Dabiri在計劃交易中賣出625股",
+      "headlineEn": "NVIDIA (NVDA) director John Dabiri sells 625 shares in planned trade",
+      "detail": "NVIDIA （ NVDA ）董事John Dabiri出售625股計劃交易的股票Titan",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "AMD|palantir_at__136__amd_at__167__buy__sell_or_hold_",
+      "date": "2026-05-29",
+      "tickers": [
+        "AMD"
+      ],
+      "source": "24/7 Wall St.",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRk1URzFGMzE0eUQwMjU4UmJDMktOQTR1NzRVeXlCTTdYS3FNNWd6c3lBaGNONzBFOEZrLVE0TnJFR3l4YWxKbnBUQ1FnZDE0LTJMT0FkemlzT2F1emFTRHZ2RlZnNHRCbWlTVWZrLTZDWTNTS2FkRlVZclp2QXJVaGxEX0dmRHd5SmJDbVBRUFE?oc=5",
+      "headline": "Palantir $ 136 ， AMD $ 167 ：買入、賣出還是持有？",
+      "headlineEn": "Palantir at $136, AMD at $167: Buy, Sell or Hold?",
+      "detail": "Palantir $ 136 ， AMD $ 167 ：買入、賣出或持有？ 24/7 Wall St.",
+      "translated": true,
+      "sentiment": "mixed",
+      "impact": "medium"
+    },
+    {
+      "id": "ARM|stock_price_prediction__arm_holdings_has_limited_upside_desp",
+      "date": "2026-05-29",
+      "tickers": [
+        "ARM"
+      ],
+      "source": "24/7 Wall St.",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNVDRaMTdoMm5GVXliZG43V3FsSmlxYkdVS0U3YWYxd01LZGJmQU9qYjgxY01rUnVtR3l0ZjFxVHdCN3U2NkMyWVRCOWJCS3NLTldWRUNaNVplM0c3aUpDZXZPUjZTNmZNaTRJYlR1anFaM1ZFcDBKQk9ZTGpCYzA1akdHU1V4d2pLZ0c3b3djVEN4TXVOX3AxczBDd09tX0JhVUtweEZRV0ZzNlpfdjNYQUJvRHFMZW8?oc=5",
+      "headline": "股價預測：儘管股價反彈177% ，但Arm Holdings的上行空間有限",
+      "headlineEn": "Stock Price Prediction: Arm Holdings Has Limited Upside Despite 177% Rally",
+      "detail": "股價預測：儘管24/7華爾街上漲177% ，但Arm Holdings的上行有限",
+      "translated": true,
+      "sentiment": "positive",
+      "impact": "medium"
+    },
+    {
+      "id": "ANET|arista_networks__nyse_anet__trading_up_2_5____should_you_bu",
+      "date": "2026-05-29",
+      "tickers": [
+        "ANET"
       ],
       "source": "MarketBeat",
       "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTVd2ZUNnaU4zMEhDYzk5M1dYTnVzZzNiZVZUdWR6M3ZtWG4wWm1NR05JR09jWkJzbXI1VHE4UVVzXzdCNGlWaTZOZXlZb0p3OFp6OWtIcVplYlJwaVZieU8zSmRETF9UZ205WGQ4aTVBczhSU193ZF9rSGpxWnhLc2MyLVFNTFNRRGVySUlaSVE?oc=5",
-      "headline": "Palantir和Dell為偏執狂打造AI作業系統",
-      "headlineEn": "Palantir and Dell Build an AI OS for the Paranoid",
-      "detail": "Palantir和戴爾爲Paranoid MarketBeat構建AI操作系統",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMHhGR0hQbTVsZmlVaTA0ajgyU3J5NFJfMmtNNE1MdTN6R21LSnh2UV9KTjRqZ2xSQVJxZmJyT2FuMEFHNjJHZ0pFMXNmb2ZOTjhldEFkcURrQ2NmOUtYeVBrSS00NEVpb2VmcXBzYXVXeHQ5d3E4cmRVUFNaMnFMekhvZFB4Tk9qNDJjamlXRDJrZnV2Q2NmeDNZS3FubmI2ZXVYbDB5bHFkbTA?oc=5",
+      "headline": "Arista Networks (NYSE: ANET)交易價上漲2.5% -您應該購買嗎？",
+      "headlineEn": "Arista Networks (NYSE:ANET) Trading Up 2.5% - Should You Buy?",
+      "detail": "Arista Networks (NYSE: ANET)交易上漲2.5% -您是否應該購買？ MarketBeat",
       "translated": true,
-      "sentiment": "neutral",
+      "sentiment": "positive",
       "impact": "medium"
     },
     {
-      "id": "SNOW|earnings_week_ahead__zs__crm__snow__dell__zs__xpev__li__and",
-      "date": "2026-05-24",
+      "id": "ANET|arista_networks_inc__nyse_anet__is_a_standout_can_slim_cand",
+      "date": "2026-05-29",
       "tickers": [
-        "SNOW"
+        "ANET"
+      ],
+      "source": "ChartMill",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQWVkzcmZiR3NfN3c5bnZFMUdwTGF1ODBrblQ5RnJfZFV3ZGpabEt2MkoyaVE1Ymhka0ltbnlsYkZJMlVGMnFiYlc2TDJnM1RwSmdOUVBJTmpCRlhsYXBOLXIwY0pfbGVUUlB0UDNMdWg2d2hoR0hzb3RXLUlHMFZ2aXRUUHExeEMtMElnS2RZNXF6cG4zSllsQlo0NlIzQzdNNmd4SGpyWXVJZzR5eWg4LXVaNnpTZ2hsWklTM0VTODQtMHJfRlVzdzFBMkxQQmJzUmRfNXFObjl1QlNFLTk5V29LMXZLLTByOENJUzhpNzhzUQ?oc=5",
+      "headline": "Arista Networks Inc （ NYSE ： ANET ）是一家擁有強大基本面和技術勢頭的傑出企業",
+      "headlineEn": "Arista Networks Inc (NYSE:ANET) Is a Standout CAN SLIM Candidate With Strong Fundamental and Technical Momentum",
+      "detail": "Arista Networks Inc （ NYSE ： ANET ）是一家擁有強大基本面和技術動能ChartMill的傑出候選人",
+      "translated": true,
+      "sentiment": "positive",
+      "impact": "medium"
+    },
+    {
+      "id": "VRT|vertiv_s_ai_thesis_is_maturing__not_breaking__nyse_vrt_",
+      "date": "2026-05-29",
+      "tickers": [
+        "VRT"
       ],
       "source": "Seeking Alpha",
       "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPc3hPTkstMDVOdkowMGMwY0xlemdwWmptWndHUHUzam9PTjdfTy1LR2dPSnJBUXUyMHdyc3pSQXpaUEFKOHlYNFZCRHhKRFhELXJwMzVEajBaMWg1RWtqUU9zV2JRTmEwM3FEMmItamxydEJkY1RYMFZDNTZUU1Z3MXYwZXcwSm8teVJrVnAyaWJBY2hCN05Xa0hR?oc=5",
-      "headline": "未來一週的費用明細： ZS、CRM、SNOW、DELL、ZS、XPEV、LI等(NYSE: CRM)",
-      "headlineEn": "Earnings week ahead: ZS, CRM, SNOW, DELL, ZS, XPEV, LI, and more (NYSE:CRM)",
-      "detail": "未來一週的費用明細： ZS、CRM、SNOW、DELL、ZS、XPEV、LI等(NYSE: CRM)",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPR2dTeTBiNDdOeGhCMVYyQmhMdHJicXFSbWJDejBSWVZZNUM1UnEtU3FrX3FLWjVZcjZtRmtZcHVUYnBmOFZyUkZRSnpoSDZaTXFzYW8tWXAzX0l4TmdhMlpBMVo2Q2NyT0NpelFCOWRKVXVRd0JMblFxbjMyVEJyelZ3SnpsUTAwQXJj?oc=5",
+      "headline": "Vertiv的人工智能論文正在成熟，而不是突破（紐約證券交易所： VRT ）",
+      "headlineEn": "Vertiv’s AI Thesis Is Maturing, Not Breaking (NYSE:VRT)",
+      "detail": "Vertiv的人工智能論文正在成熟，而不是突破（紐約證券交易所股票代碼： VRT ）尋求Alpha",
       "translated": true,
       "sentiment": "neutral",
       "impact": "medium"
     },
     {
-      "id": "MACRO|us_treasury_rout_tests_washington_s_tolerance_for_higher_b",
-      "date": "2026-05-24",
+      "id": "VRT|2_large_cap_stocks_worth_your_attention_and_1_that_underwhel",
+      "date": "2026-05-29",
+      "tickers": [
+        "VRT"
+      ],
+      "source": "StockStory",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPOWtTUjBxUTEwQ3NndHNSbXM0d0pJbzJwd3R3S2JkamJBRGdiazM4ZVBJV1FHdmhtN0h1TlU0YXgyVU0tcEpieV9OSV9RbHJBdk8yc2xyb3NNellfdGZyZWVwVFJiRlQzUTEteXFvN2JKcUxMRzF3OVRhY3d4YnhnemZPTmRfWWtsQ2pQQUtnbkQzaXROZjdPUzZfTkFQTkwxWDROS0pOa3pJd3RCU0IwT3Jibld1SmJmdllrNw?oc=5",
+      "headline": "2只大型股值得您關注， 1只不堪重負",
+      "headlineEn": "2 Large-Cap Stocks Worth Your Attention and 1 That Underwhelm",
+      "detail": "2只大型股值得您關注， 1只淹沒股市",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "VRT|vertiv_holdings_co___vrt_shares_bought_by_fidelis_capital_pa",
+      "date": "2026-05-29",
+      "tickers": [
+        "VRT"
+      ],
+      "source": "MarketBeat",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPdW55N2E1WVFrUVNMWVB2bTdPc05nS1JEUTJHRHBjMDduX1FEcG9BQWt1VWlSdWMzeTdfbHpMLXF3QWFxN0NXc3Bnei1DdHl6Q1RnQ2txdkVSdTkwN05wT0Y3ZzFFanF3Y3BpN3VabW5aV3hCSDBBMDBQbUFoak1MT2tWcTFfTUVEMkg5X1F2aTJINlNHSDB3a0tZNHVaNjRac2ROelZhSnppOUNkb3lWUkUtY1Z0djdUTW9tM1YtTTVoMmRPVnRGdg?oc=5",
+      "headline": "Vertiv Holdings Co. $由Fidelis Capital Partners LLC購買的VRT股票",
+      "headlineEn": "Vertiv Holdings Co. $VRT Shares Bought by Fidelis Capital Partners LLC",
+      "detail": "Vertiv Holdings Co. $由Fidelis Capital Partners LLC MarketBeat購買的VRT股票",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "SMCI|prediction__smci_stock_will_trade_at_this_price_in_2027",
+      "date": "2026-05-29",
+      "tickers": [
+        "SMCI"
+      ],
+      "source": "24/7 Wall St.",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQV1NJSXB5c3ZySjdqckJMeXlYdktTQzRjbDd1MzZ4ME1wanpwRnZXOVV4VGFSOVVqSnlDU1UtcS1xQVBKeVZiWEdpbUJIRHZSYTBCYXdVTGpPdjJ4MnE0SmJUb2R0TldfeDFfQUZXQ1VvR3cwS2ljSnFXdWRMQkppVHlOVkhkN0ZhYXNxel81bFk0Sm9VWUNUeHdZVUZCbU0?oc=5",
+      "headline": "預測： 2027年SMCI股票將以這個價格交易",
+      "headlineEn": "Prediction: SMCI Stock Will Trade At This Price In 2027",
+      "detail": "預測： SMCI股票將在2027年以這個價格交易24/7 Wall St. Super Micro Stock Rally Misses Point from Dell Earnings Barron 'sWhy Super Micro Computer Stock Popped Tod",
+      "translated": true,
+      "sentiment": "positive",
+      "impact": "medium"
+    },
+    {
+      "id": "SMCI|why_super_micro_computer_stock_popped_today",
+      "date": "2026-05-29",
+      "tickers": [
+        "SMCI"
+      ],
+      "source": "The Motley Fool",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNa3hEUzJrYXVPTU1Lc0ZDalpuckVYMGI4dnV6UEk0WFB0MURkVHpzUE5nZHVDRUJyUFBrc0JQQk1jV2k0VWxtUldXSkxraS1uWmJyYTc3aVlXVHpXZHZEVEFGWlZJYmtjVnVjemFrV3NzZzNNRDhWQW42T3ZLRDJybVZaYkw3eW15MEI1TERnNA?oc=5",
+      "headline": "為什麼今天超級微電腦股票彈出",
+      "headlineEn": "Why Super Micro Computer Stock Popped Today",
+      "detail": "為什麼超級微電腦股票今天彈出Motley Fool",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "SMCI|super_micro_just_sent_a_blunt_message_to_the_ai_server_mark",
+      "date": "2026-05-29",
+      "tickers": [
+        "SMCI"
+      ],
+      "source": "Barchart.com",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdTl2MXdlZFpDTWIzc0lqRnlFSjRpc0Z1Ykd2VnE3ZGZXVmR6LThBUWtpX2h4WXpHSWVLTEV6ZHdDU3Vwc0ZCMldiNWsyRG5QNmhVM3AtRl9ZRy1ZQkw2MnRJZ01PVUtxdkNXdUFCVkFwNXhlalBqTXNid05VTlo0U3dYTEJZVldodUQ4LXBiMURoVlE2dlI3dF9UZFVtWFBtM0NDYVozSmU?oc=5",
+      "headline": "Super Micro剛剛向AI伺服器市場發送了直言不諱的訊息",
+      "headlineEn": "Super Micro Just Sent a Blunt Message to the AI Server Market",
+      "detail": "Super Micro剛剛向AI伺服器市場Barchart.com發送了直言不諱的訊息",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "PLTR|why_is_palantir_technologies__pltr__stock_soaring_today",
+      "date": "2026-05-29",
+      "tickers": [
+        "PLTR"
+      ],
+      "source": "Yahoo Finance",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZWhES0dfb2JNY3VIaFpXQmx2RmFOZ0o3amZxSGRiS1IwZHZXMEVHNVhpWnQ0ZGlyRnFmaVlRUXJHSTl5azBBQ2k4MGhEdm0yczVvX2lscXV1cWV6VllGdEpMVE1oNDFvWFVkR1duMG5jbG8yV0VjR0xCMGh0MllXWTBtVklVdkdBdmN3ajc0bkMyQjlFZ0RBWkZFcTNoUmpKaVlN?oc=5",
+      "headline": "爲什麼Palantir Technologies (PLTR)股票今天飆升",
+      "headlineEn": "Why Is Palantir Technologies (PLTR) Stock Soaring Today",
+      "detail": "為什麼Palantir Technologies (PLTR)股票今天飆升雅虎財經PLTR股票警報：為什麼Palantir從戴爾收益Barchart.com獲得提振：以93倍的價格購買下跌",
+      "translated": true,
+      "sentiment": "positive",
+      "impact": "medium"
+    },
+    {
+      "id": "PLTR|palantir_stock_is_having_its_best_day_in_a_year__software_l",
+      "date": "2026-05-29",
+      "tickers": [
+        "PLTR"
+      ],
+      "source": "Barron's",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQb3FLc3Q5RElFUzhwcWZpUXU4Q0hWZkstdElySWVsNElpTDFGUUVOTUxNbnMtdnhySFZURmJtMDAwdG5YcENZRFh4RnVSMndaTzU0aXVCQXY0X0Y2bXJSX1AtZlV5aF92LXU0U25vN1BNeS1uRGVyNFNtMTRQRld4UlUwaw?oc=5",
+      "headline": "Palantir股票正迎來一年中最好的一天。軟體看起來像是再次購買。",
+      "headlineEn": "Palantir Stock Is Having Its Best Day in a Year. Software Looks Like a Buy Again.",
+      "detail": "Palantir股票正迎來一年中最好的一天。軟體看起來像是再次購買。Barron's",
+      "translated": true,
+      "sentiment": "positive",
+      "impact": "medium"
+    },
+    {
+      "id": "PLTR|palantir_soars_10__as_dell_earnings_beat_validates_their_ai",
+      "date": "2026-05-29",
+      "tickers": [
+        "PLTR"
+      ],
+      "source": "24/7 Wall St.",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNcW5yWGpGZFdiWDNjZFFfMEd3cjYwZmhCaEx3T0FuMEIwZHRjNkpha0hwcmxTbE1vT1JPNXhxTzVsUXJUZXdINC1BbEVNTFRSUFdkRWxiWVBOT0JxS1lPcE1XWndDSlZHMHdIYlpxcDhINVpuN3k3N1Z2N3ZWeVVKSWNna3lsUm5nM2JPSjNSUlNpZzVBQ25FM0NMdExUNnNvR281VXB4ZXdIck9hWFFyZ0FVU0VjLWh5aU9nRGp6SnJjSlAxdHVqZ2ZPQjdLSldKX3ZEanF6RzRJMUFVYU10TjdqVEdoLVk?oc=5",
+      "headline": "Palantir飆升10 ％ ，因為戴爾盈利超越驗證了他們的AI工廠合作夥伴關係， Snowflake Lifts軟件拉力賽",
+      "headlineEn": "Palantir Soars 10% as Dell Earnings Beat Validates Their AI Factory Partnership, Snowflake Lifts Software Rally",
+      "detail": "Palantir飆升10 ％ ，因為Dell Earnings Beat驗證了他們的AI工廠合作夥伴關係， Snowflake Lifts Software Rally 24/7 Wall St.",
+      "translated": true,
+      "sentiment": "positive",
+      "impact": "medium"
+    },
+    {
+      "id": "PLTR|why_is_palantir_technologies_stock_surging_today_",
+      "date": "2026-05-29",
+      "tickers": [
+        "PLTR"
+      ],
+      "source": "Investing.com",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdmdrM0hPbmwtbjV2RE1SQmRQeWZhNU1hYzlWZ2RoclY0S2FOamlYSDQ4dHRzRU5TcE5xSVZ2akdMZDlvQk1lSWJ1VHQ4OWI0bU5KZVNwRXFyeUFUdVFfU3FmdWhBQUUzWnp0RHo0NmNTSTdZeDA4Y2xyR00xRzBGQmExUWF0VzhmT011eDNXNldCQi1JMm9sajJRRHhyNjlrYjYwSG83Q2h6QnZ1SDNZ?oc=5",
+      "headline": "爲什麼Palantir Technologies的股票今天飆升？",
+      "headlineEn": "Why is Palantir Technologies stock surging today?",
+      "detail": "爲什麼Palantir Technologies的股票今天飆升？ Investing.com",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "CRCL|why_circle_could_fall_51___nyse_crcl_",
+      "date": "2026-05-29",
+      "tickers": [
+        "CRCL"
+      ],
+      "source": "Seeking Alpha",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9JMVgyZjg5SERaZFNPYW9zbXRVQVB0X1VRZy10Z0Q0M3VMbGFyVWVEYkh3NkczRUZUMGtDT2hnSzlaTGlGQ1RGdklBNFdhWnA1czUxMWpzUzIyX2FNVWk1MkNobWVWYkxjd0YyNWgxRENQdnQ0MEdOMmhOUXQ4Zw?oc=5",
+      "headline": "爲什麼Circle可能會下跌51% (NYSE: CRCL)",
+      "headlineEn": "Why Circle Could Fall 51% (NYSE:CRCL)",
+      "detail": "為什麼Circle可能下跌51% (NYSE: CRCL)尋求Alpha",
+      "translated": true,
+      "sentiment": "down",
+      "impact": "medium"
+    },
+    {
+      "id": "CRCL|crypto_trades_stocks__banks_issue_stablecoins__why_crcl_fel",
+      "date": "2026-05-29",
+      "tickers": [
+        "CRCL"
+      ],
+      "source": "Investing.com",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNLWdkWjFlZGhJcHlGb2dTdmtZbERnWjhpY01rYV9qaEExQ0lIMUZWMDNRUVlKckNjLUJFRDJPYlh5cV93OHdkWUVUOElRNE54NWNqNDdBR2d0X3dYLTltQnQxbXZfTVZNWGVBazVjclZ2U21PQUJ5SFJGTk9MMTdLQXJ4OVZMN0lSUmNiM0V2TTRuRHE3OGNHdjZTb29hY1puTmthdDBuMmJwUQ?oc=5",
+      "headline": "加密貨幣交易股票，銀行發行穩定幣：為什麼CRCL下跌30 ％",
+      "headlineEn": "Crypto Trades Stocks, Banks Issue Stablecoins: Why CRCL Fell 30%",
+      "detail": "加密貨幣交易股票，銀行發行穩定幣：為什麼CRCL下跌30 ％ Investing.com",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "CRCL|circle_internet_group__the_crystallization_of_the_instituti",
+      "date": "2026-05-29",
+      "tickers": [
+        "CRCL"
+      ],
+      "source": "TradingKey",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxONllxdC1mQWdMbk1tMHFYM2lkajB6TGd1ZW1QOTZ2Rlc0R3kzeFh0ZnNVSXVFdFcyZ05BZzFOT0pIdGVXTEJOb0wyT1Q5b3N5Q1hMYUE4UVl4VXNyX0hteXZHQ0RtUlN2Qlp5b0ZielljY3RkZTFtR3psTVUwZTBJeUNmODNSSlhDYXBqaHN0TlBqQlJTeVJaYVhBMDEtVUhzd0d6Q1ZIVThCUG4zanZWS1ZvdnhXZVQ2Nl8tNXNTRG53by1z?oc=5",
+      "headline": "Circle Internet Group ：機構樞紐和萬億美元穩定幣地平線的結晶",
+      "headlineEn": "Circle Internet Group: The Crystallization of the Institutional Pivot and the Trillion-Dollar Stablecoin Horizon",
+      "detail": "Circle Internet Group ：機構樞紐和萬億美元穩定幣地平線交易關鍵的結晶",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "SNOW|snowflake_stock_soars_on_growing_enterprise_ai_demand__aws_",
+      "date": "2026-05-29",
+      "tickers": [
+        "SNOW"
+      ],
+      "source": "Yahoo Finance",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMHA4X012QnJ1eG5HQUYwSWsyT0NuN01lSkFiaENYWDV5VXJ2UW5KLTRuS2Z2NV9rdGU4M2RHdm1jRmxpa0hzZ01mb2JXOUZfM0JOTTdwQzJfVVh2MXRaYUIzZVU0M29Ga3NzMmxSYkdLSE1tLXg3MUFUU1NGRV9WbjZmU09EMGY0OGlZMUxvSVQyYlM5cW5rWjlkR1Y0XzNic2FyLUdtTVFyYkI4eC1VTEpfS3UyV1FfUkd6THMwMVQ3ajVO?oc=5",
+      "headline": "隨著企業AI需求不斷增長， Snowflake的庫存飆升， AWS合作夥伴關係",
+      "headlineEn": "Snowflake stock soars on growing enterprise AI demand, AWS partnership",
+      "detail": "隨著企業AI需求不斷增長， Snowflake股票飆升， AWS合作夥伴Yahoo Finance",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "SIVE|sivers_semiconductors__ai_technology_heading_to_nasdaq_with",
+      "date": "2026-05-29",
+      "tickers": [
+        "SIVE"
+      ],
+      "source": "Seeking Alpha",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPblo5R1JUMjhtMHFFQUZPOUtPUVZZREpPZDdacEhJYmpKZkZHSDB1am5fcTd1VWxILWhxOVNYb05VVUlWNEVOekxOd21fS0c4OTZLbTJGNXN6UG5fMlhVRm9uZjhhUTVVay11Z3h0cERLZDFzalEwbllOeFdhdF8zdU8teHB6VmJObnZqSGh4OXBTdloyTzhtNEZjNVJRQUE4czlFeFZ4SUNYdFdQcXlQWTFjdElqdnQyVUE?oc=5",
+      "headline": "Sivers Semiconductors ： AI技術邁向納斯達克，潛力倍增(SIVEF)",
+      "headlineEn": "Sivers Semiconductors: AI Technology Heading To NASDAQ With Doubling Potential (SIVEF)",
+      "detail": "Sivers Semiconductors ： AI技術邁向納斯達克，潛力倍增（ SIVEF ）尋求Alpha",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "SIVE|sive__revenue_fell_22__in_q1_2026__but_a_77__pipeline_incre",
+      "date": "2026-05-29",
+      "tickers": [
+        "SIVE"
+      ],
+      "source": "TradingView",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQV3FGWXgtdElodldKQ2pFZEpZdklWNk5ZeEE3YmFFZUhPX1llZGoxbjdwS1VmSl9ESHBjZl8xNGU1TDdqdFZQLXdySFpTWHFoeC1HbGZRbFpvMFBwUEo0TnpmWlhkQ3VablZFQ1NqV1lJSHFpREdlY3M4OUY1bzZZZENMMF9PNGNlUGNMTFNUQjJwOUV0VlgxSmhzNDQ5N1ZVOEw4TGZBUkozNXcxOHJDdDBBOFJQR0NkX3pabnluOWJaZ3NwNFVBVHhjbGJfVUNwTVVFZlZNNzFoYnYwb3FlSVM3ZlF0SmxnMW52SzZTQkRNd0I0R0tmWW94bmJxeGc?oc=5",
+      "headline": "SIVE ： 2026年第一季度收入下降22% ，但77%的增長預示著強勁的未來增長",
+      "headlineEn": "SIVE: Revenue fell 22% in Q1 2026, but a 77% pipeline increase signals strong future growth",
+      "detail": "SIVE ： 2026年第一季度收入下降22% ，但77%的增長預示著未來的強勁增長TradingView",
+      "translated": true,
+      "sentiment": "positive",
+      "impact": "medium"
+    },
+    {
+      "id": "SIVE|sivers_semiconductors_surges_1_700__as_short_bets_rapidly_r",
+      "date": "2026-05-29",
+      "tickers": [
+        "SIVE"
+      ],
+      "source": "GuruFocus",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcV9YQU5EelZIWDZTV0c0VnN3VVZBaVNuZWlKcTdYZmw3SDdkeTJlUkNBbC1GdkpzSkNHYndQZXVOU3Z1d0ViZGN6MzRKN0Exa3FDVGtNVWtEVmx3WFIxR3p3VEJUaGFkcnBVdlEyTFQ0MXdqSWtVbTJQcURJbXFSS01qY051ZDBQanl2YXlocDFVemRhWnUybk5vMGdDM2ZPa0RHODE5LUozSnRIQ2s2dA?oc=5",
+      "headline": "隨著空頭押注快速上升， Sivers Semiconductors飆升1,700%",
+      "headlineEn": "Sivers Semiconductors Surges 1,700% As Short Bets Rapidly Rise",
+      "detail": "隨著空頭押注迅速崛起， Sivers Semiconductors飆升1,700% GuruFocus",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "SIVE|sivers_semiconductors_ab__sivef__q1_2026_earnings_call_high",
+      "date": "2026-05-29",
+      "tickers": [
+        "SIVE"
+      ],
+      "source": "Investing.com Canada",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSGhpLTY5NHRfZUZhblgxTHpfYzZEQ3Q1MVcxN25XcFMyc01OMVJ0UkI2YlNBSE5TdFk0dXpoeWZQaVl6bml2aTBUT2MzX2prdnNINldaNG41cHI1WFJ2X0wyS3VrWUhGbTNZdG90d05VM05YOGp0V0hHdFlkRVlxMmszUmZ0TWlLRmNkWGdFZ1ZidlZmbXZyZzFpRFJuZFc4Z1NDNWFSX2p2dm82OXFJVFBKc1hxYW03TFlCVDRkSEZzVzhJTXJIblg5R3ZoMWRpWGxJ?oc=5",
+      "headline": "Sivers Semiconductors AB （ SIVEF ） 2026年第一季度盈利電話會議亮點： GuruFocus的戰略增長...",
+      "headlineEn": "Sivers Semiconductors AB (SIVEF) Q1 2026 Earnings Call Highlights: Strategic Growth Amid ... By GuruFocus",
+      "detail": "Sivers Semiconductors AB (SIVEF) 2026年第一季度業績電話會議亮點：戰略增長... By GuruFocus Investing.com Canada",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "POET|why_poet_technologies_stock_keeps_falling",
+      "date": "2026-05-29",
+      "tickers": [
+        "POET"
+      ],
+      "source": "The Motley Fool",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNcGd2WkJad3IzVUFWS0hyUWpOeEN6UGVpejRqaFdQZTNiNlZlSlcyMEhTRVFLbTNLbVhvTXdoaTBjUGRrc0VOc185N2pNSE9icnhrWE9PRE5NMjR2dzVjWTBRNFhlaF9YMnp6ZGUtOHd4OFdBZzR4YTBQUG92dm9EczBpWUJKSEVFMFd6Ug?oc=5",
+      "headline": "為什麼POET科技股持續下跌",
+      "headlineEn": "Why POET Technologies Stock Keeps Falling",
+      "detail": "為什麼POET Technologies股票不斷下跌Motley Fool",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "POET|poet_technologies__replacing_marvell_with_a_pre_revenue_sta",
+      "date": "2026-05-29",
+      "tickers": [
+        "POET"
+      ],
+      "source": "Seeking Alpha",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZTMxRXZDR2VJSmE1Q0lWdDdkNmR4SV95czdFUGNvOXctZktOanBqeXBZby0zYWdKbC10aGRhd01LbXR6ODhYWGgtMFJ3ZlJhbGxwRG16TEFORUdZSFdpM0tjRFY2a3JPUmx5RjJrVXk0d2xocmpvRzlzSWVFYk83SlJwZVNwdkFlWHpMWVY0UmtoMk1aZXJXbmVIMGwtemZIX0hFakI1UEh1enVXaDZvU3NSamY?oc=5",
+      "headline": "POET Technologies ：以營收前初創公司取代Marvell無法解決估值問題",
+      "headlineEn": "POET Technologies: Replacing Marvell With A Pre-Revenue Startup Doesn't Fix The Valuation Problem",
+      "detail": "POET Technologies ：以營收前初創公司取代Marvell無法解決尋求Alpha的估值問題",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "POET|one_of_may_s_hottest_ai_stocks_is_seeing_a_surge_in_bearish",
+      "date": "2026-05-29",
+      "tickers": [
+        "POET"
+      ],
+      "source": "Stocktwits",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQVEtaTHNjQi10ZU1QVFlFUGh2Smc0MGRBS2Y3NzhwYzZadk9jMmVGdXVJOWZ6Mk91UDVpX1RiZHBJZzZERU85aXZQUy15QkZBV181NW96T1BtMFpYZW15ZDRPZ01ZekY1d0ppT3lLWEdPUWg4aGZuWVFkT0I5Snk0MWFOT0M3V0ZTVko1TkQ0MHE1Yk9zM0VpN2t3VDFvM0tPNnVQcWlVNlNnV0VGWkVGNkxlMnRFZw?oc=5",
+      "headline": "5月份最熱門的人工智能股票之一是看跌賭注激增–炒作還是警告標誌？",
+      "headlineEn": "One Of May’s Hottest AI Stocks Is Seeing A Surge In Bearish Bets – Hype Or Warning Sign?",
+      "detail": "5月份最熱門的人工智能股票之一是看跌賭注激增–炒作還是警告標誌？ Stocktwits",
+      "translated": true,
+      "sentiment": "mixed",
+      "impact": "medium"
+    },
+    {
+      "id": "MACRO|after_three_years_of_tracking_the_ai_capex_cycle_these_3_s",
+      "date": "2026-05-29",
+      "tickers": [
+        "MACRO"
+      ],
+      "source": "24/7 Wall St.",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNbmVkT0pZd2RMZDFQNTZub1pSd21fdXU4LWVtOTRpVG4tZGxNbkcwM1RjZjlXQk9ZOXptLVJYcWhRVjBrdFBweUdibUxvZlIxdXQ4Q3pWMjNNdUppQzBhcktORFhOemVEVmNVYWhSeElCckJOYjE5Ml9sVXNTWFBNLVNiTE1LRVhFNnpNMXY1anlzYWdLYmZqbW9CQVl0eFU5Ym41Qmc2YnptVkV3emozVlppNFVub3ZRbVBJVnBqNGl2ZkdfTGVhejRuMFp5Sk1BTlkwOTJMUlVheTA?oc=5",
+      "headline": "在追蹤AI資本支出週期三年後，這3個半導體ETF位居交易之首",
+      "headlineEn": "After Three Years of Tracking the AI Capex Cycle These 3 Semiconductor ETFs Sit on Top of the Trade",
+      "detail": "Google News · AI stocks",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "MACRO|what_is_ai_capex_and_why_should_investors_care_",
+      "date": "2026-05-29",
+      "tickers": [
+        "MACRO"
+      ],
+      "source": "investingLive",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbDh1NnpkMTNyTm8wVVNBN3p5SHkzM0dVcGJTRG1WX2p0UGp3VW45SjBOcUUxWVU4M1hUcjI4OEpXVkw1MEpzXzBkVjh4bG5wNWgyXzVoSC0yT1BfNzdjOTl1TGlJeWgzMktndk5QeU9ha3ZZQjNuRmFhS2dUWjJfa2ZSSGcwNWkzZlZZWTNHLUlMTXNtaC04?oc=5",
+      "headline": "什麼是AI資本支出，為什麼投資者應該關心？",
+      "headlineEn": "What is AI CapEx and why should investors care?",
+      "detail": "Google News · AI stocks",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "MACRO|more_fed_policymakers_eye_possible_rate_hike_as_inflation_",
+      "date": "2026-05-29",
       "tickers": [
         "MACRO"
       ],
       "source": "Reuters",
       "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbUlHRkl5U0tyN1c0dTU3Rmw5NlRIWTFDcWtSaXRCVkpSLWVsWjlRNmVyYl9OOG9jVFRQUU45UVpVNVU1VVdsVGV4SnozTlVDdjlVcktDRnFaakNrQ1d0REc2TkQzYXRxU0dIbWI5Nm1PcVhid1hxbjdodWhFa0dSQW9ZS2JJRTVYUF95RlA2QTZfeGxJSXYyY0E5Mk1rdTRtUE92WDR2SHNSeWVRUlV3RkdSOUZGZ0QyZm5pWQ?oc=5",
-      "headline": "美國財政部的崩潰考驗華盛頓對更高借貸成本的容忍度",
-      "headlineEn": "US Treasury rout tests Washington's tolerance for higher borrowing costs",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxONHZGRC1lZE9FMWRpVnlkVVFaZWFLWkowZWZjaW8teHlXenZhdVJ3OWw3WW1pejA2YUhHNTRpTExYSGE1bDFKQ1JWdVo5YnNSeDEwMGFsanJreTc2SDR6MlFIRnl5UEMwV3VDXzNGcERrX3ZlRS16c2xscjlNeXZoM2pGM25oNjNCcGJiN2tFbjAydWdyOUZYal9fallKcUo3VWZjd1htTnI?oc=5",
+      "headline": "隨著通脹風險上升，更多聯儲局決策者關注可能的加息",
+      "headlineEn": "More Fed policymakers eye possible rate hike as inflation risks rise",
       "detail": "Google News · Fed rates",
       "translated": true,
       "sentiment": "neutral",
       "impact": "medium"
     },
     {
-      "id": "GOOGL|sun_financial_inc_acquires_new_shares_in_alphabet_inc___go",
-      "date": "2026-05-23",
+      "id": "MACRO|deutsche_bank_raises_10_year_treasury_yield_forecast_on_fe",
+      "date": "2026-05-29",
+      "tickers": [
+        "MACRO"
+      ],
+      "source": "Bloomberg.com",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZEdJYnpyT3FKeDQ2eFJhNnJEMF9yM3RnUU9IQTVaN0NNUjl5MFNlRDFkVGlRN3M0WjE1YW9lV1lqanF5cmFKVVU4N2U3QUtPbHIwZ0ttaVRHNzdyMDlZN0Q3M2RtdmRTQUhocjdmUUxveTk3NmRXSlJ6ZElXQWwxdzNPYzFEaV9zODBnTVY0V0F4RkhFODJyeG1fdFRUdkwzVkkxb0J1NjlLUi1Ka0ZWcHc1WTZRUQ?oc=5",
+      "headline": "德意志銀行上調聯儲局10年期國庫券殖利率預測",
+      "headlineEn": "Deutsche Bank Raises 10-Year Treasury Yield Forecast on Fed View",
+      "detail": "Google News · Fed rates",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "MACRO|fed_governor_michelle_bowman_warns_against_hiking_interest",
+      "date": "2026-05-29",
+      "tickers": [
+        "MACRO"
+      ],
+      "source": "CNBC",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSU1FUWtLRzNfdWhmdVJvYVBMeFpYaVowRGhjUFN4NXZmbzdVNUx1OFAzdE42YktoU2tfOHNfeE5uNzdFNDdreXBZX0lBMDM3a0otZkhJbFgxaGlPSm9Kam44SW92bmkwX0lBeTZidmlDdEVVaGdxOFNmQUY3Q0d1UFJ4RmRMT0JGVUFLWlJad3VRVHk2YTRYRmRxVzZjUk9SWHdnRUw5MTNCemvSAbABQVVfeXFMTVVRMVlKLXIzTUdra0lSZm44VWxLWWozUF9vY0RTRHZPbExxcDRQQmVhb1pZU01rZGVLUEtyTDcyT2k4LUMwNU9PX2t5dFhPci1YTTJtbXU5blQzQnFkMEM4cy1BVjJTTE43NWtBZWpGTXJRSlZQWnI3YnJQS2ROOXdXVVFPX0MtVjdkck1GbUhNU0tFaUlaVU8yVUFMcDVTR05ScktyLXk1YkFvNDExd1o?oc=5",
+      "headline": "聯儲局總裁Michelle Bowman警告不要因通脹飆升而加息",
+      "headlineEn": "Fed Governor Michelle Bowman warns against hiking interest rates because of inflation spike",
+      "detail": "Google News · Fed rates",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "GOOGL|jim_cramer_says_alphabet__googl__is_a__crucial_position_",
+      "date": "2026-05-28",
       "tickers": [
         "GOOGL"
-      ],
-      "source": "MarketBeat",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOMjU3cnFpYU9BeVpJaE9pNldjSlpwS2hSZ0hWb09zWnFaQjRaX2g1NndqZk9OQkQtcU84aXF1Tm5KWmw3Ql9yNEFxc3RfbDB3U1dHWXVUUHhQeFB2b216RW53YTVxTFhXSm84ZC1IZjZodW5ybHdPYXRPQ1pRczdlZHFEdDlxa2hyanRseDlRdTcxMEVKS0JQbC1tUEdXc1dmMzlMTGh2V2JDVzdWempwaUxqYTFPTVBtVVFEYw?oc=5",
-      "headline": "Sun Financial Inc收購Alphabet Inc.新股$ GOOGL",
-      "headlineEn": "Sun Financial Inc Acquires New Shares in Alphabet Inc. $GOOGL",
-      "detail": "Sun Financial Inc收購Alphabet Inc.新股$ GOOGL MarketBeat",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "AMD|cathie_wood_s_ark_buys_cerebras_stock__sells_amd",
-      "date": "2026-05-23",
-      "tickers": [
-        "AMD"
-      ],
-      "source": "Investing.com",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeFBlcmRpaE1fY0hPd0NfNFZoZ1YyU1h3UWNHSGM1TjRFemltWk14cHVMZElKQ3BqQ3lTa3lBVldKQ3czVVZZOWhsc0NFd3dVeHJkLTFjbG52WS04TjlvNzF6Uk9oRU82cDVZLS1QbmRrdDF1LTBjdXpwTzA3UERkd1VwVFJjQkR0WjRscEZQUVRZdVZYZXY1QXNoemxlUzNsbEJ0V193?oc=5",
-      "headline": "Cathie Wood's ARK收購Cerebras股票，出售AMD",
-      "headlineEn": "Cathie Wood’s ARK buys Cerebras stock, sells AMD",
-      "detail": "Cathie Wood's ARK收購Cerebras股票，出售AMD Investing.com",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "ARM|amc_entertainment__nvidia__arm_holdings_and_more__5_stocks_i",
-      "date": "2026-05-23",
-      "tickers": [
-        "ARM"
-      ],
-      "source": "Benzinga",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPam9famFRXzI2TWdmSEJYSjV5Tl9GMzR5ZWgwbmppbEN0SkhtdXloV3NhX2ZxcHJlXy1mWm1NWjg3eDNmRDZLeGhyN052ZDFTdjg5M09ZcS1ZZTEweGs1LTlKWTBYajdsMEtOTFVrc3diWVYxU3RtckVSZDJMQW8xSFllMndXejJENktJYmlSRkZ1QTdubnpxU0JicFBGcjF0aEs3R2M4LVNXek44a2R0V3A2M01qU1NCZzF4QXRKczVKQnVBVzdQTmt2OHBMMktVT1RsbmJjMWp1bFVuQXV0Ykl3OUdBVUhDaHpucFNESVg?oc=5",
-      "headline": "AMC Entertainment、Nvidia、Arm Holdings等： 5隻股票投資者無法停止本週的嗡嗡聲",
-      "headlineEn": "AMC Entertainment, Nvidia, Arm Holdings And More: 5 Stocks Investors Couldn't Stop Buzzing About This Week",
-      "detail": "AMC Entertainment、Nvidia、Arm Holdings等： 5隻股票投資者無法停止關於本週Benzinga的嗡嗡聲",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "VRT|_vrt_stock_fell_12__this_week__here_s_what_we_see_in_our_dat",
-      "date": "2026-05-23",
-      "tickers": [
-        "VRT"
-      ],
-      "source": "Quiver Quantitative",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOY0NZVnlocjRCYVBrcG9vMlFudTBtbTdvd2JoYWtPLVJzdTRvbzg3d3pDeWZMaTljQW16QkNUWVpmZDR2dkVVMXBxemY1MlZaU3lKa3JObFFqQ3M5M0hUVTFsazNCTWNLQ2x5UVJsR3NQb090QTJpcG9KLWpJcUE5UDBvRzNTZTEyQXBaTGpQajhJeWdnbTc5UWUtSzBPYmFjU0E?oc=5",
-      "headline": "$ VRT股價本週下跌12%。以下是我們在數據中看到的內容。",
-      "headlineEn": "$VRT stock fell 12% this week. Here's what we see in our data.",
-      "detail": "$ VRT股價本週下跌12%。這是我們在數據中看到的。箭袋定量",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "PLTR|trump_praises_palantir__pltr__on_truth_social_after_buying_",
-      "date": "2026-05-23",
-      "tickers": [
-        "PLTR"
       ],
       "source": "Yahoo Finance",
       "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNeVVEdm5JOXJjdDEwb1M2RVFfTHRwcHNkd2phMGxUVzBFWVFsdy1qSExDbmxxNFpMOWliaVZWbU01RFowekdVbmRvLUEyWUJMN29udzFNUEpnV01qakdhX3RST3c2cUlYbVlwb1pvRmxIeVoyT0xub1JmbV9sdF96NDZjbmVwVWFoeXFNYUVUMUpNM0pZY1JTZDAtelZfeGs?oc=5",
-      "headline": "記錄顯示，特朗普在購買公司股票後，在Truth Social上讚揚Palantir （ PLTR ）",
-      "headlineEn": "Trump Praises Palantir (PLTR) on Truth Social after Buying the Company’s Stock, Records Show",
-      "detail": "特朗普在購買公司股票後在Truth Social上讚揚Palantir （ PLTR ） ，記錄顯示雅虎財經",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYTdBb0trc3Y2aGVjQWZieW9COGZyQkswS3JNYzhVUVpmMS1DRXdQVE1xQXdaQmJ1M0lNS2gya2RLV2NPSEVpRmNoZDBJb2stQ3BSaGtIemV3YUhVMFhndjE3bXhjVDhzR0xvS1d1SHE3cXcwcU9CdUUwVWwzaFBDUm5CVkVuVnJLR2VJQkNKWWtWMFVXakdpNzVJTQ?oc=5",
+      "headline": "Jim Cramer說Alphabet (GOOGL)是「關鍵職位」",
+      "headlineEn": "Jim Cramer Says Alphabet (GOOGL) Is A “Crucial Position”",
+      "detail": "Jim Cramer表示Alphabet （ GOOGL ）是雅虎財經的「關鍵職位」",
       "translated": true,
       "sentiment": "neutral",
       "impact": "medium"
     },
     {
-      "id": "SNOW|snowflake__snow__stock_trades_up__here_is_why",
-      "date": "2026-05-23",
-      "tickers": [
-        "SNOW"
-      ],
-      "source": "Yahoo Finance",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMVAwQUNiT3V4REhya1RzNlZiVERhd3ZlbGNQTkpHVGpQT1kzelBpZm9lUllkd0ZxYUZLa3ltZHpkX0daRDU0ZjRHdDBjU2Y3dWl3SUpGcjltZzdLNk9tU0ZrYmM0XzB3SG85VUUtZGhZeVVEbFBPeFR2a0pWa0lMQXBKNTNJSDFUMDhCUVotYjBzTWRMVVBOekdJc0c?oc=5",
-      "headline": "雪花（ SNOW ）股票交易，原因如下",
-      "headlineEn": "Snowflake (SNOW) Stock Trades Up, Here Is Why",
-      "detail": "Snowflake （ SNOW ）股票成交，這就是Yahoo Finance的原因",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "SNOW|snowflake_stock__snow__opinions_on_federal_onegov_contract_",
-      "date": "2026-05-23",
-      "tickers": [
-        "SNOW"
-      ],
-      "source": "Quiver Quantitative",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdGtudzZkaDVoTHVIanB0WjFBRmZjX0oxM3RodnZlaG9lZWpHUU5vVjhqQW9jZ1NJRkZTN3hnRERfcDVmTk9rZ3ZGNVJEQTRsbHdDMllJZi1jZTFEZWQtM0k3dlB6SWVWVmdEOU5sV1Z5elZrNEdyQm9sZWp0MFhUT0pJM3hadmloRm9ZaTlzaV9NZGtnTG82Y1lBeE85b2J5YWN2RFNNbE9xdTh1dy0xVk9wRVRqdTg?oc=5",
-      "headline": "Snowflake Stock （ SNOW ）對聯邦OneGov合同和盈利展望的意見",
-      "headlineEn": "Snowflake Stock (SNOW) Opinions on Federal OneGov Contract and Earnings Outlook",
-      "detail": "Snowflake Stock (SNOW)對聯邦OneGov合約和盈利前景的看法Quantitative",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "SNOW|how_will_snowflake_stock_react_to_its_upcoming_earnings_",
-      "date": "2026-05-23",
-      "tickers": [
-        "SNOW"
-      ],
-      "source": "Trefis",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQWVJLMjlnZnpKdlpISXJLNE1rcXliaVY2UXZGM3hmal9HU0E0VW56ODNhVTMzaGZQLUw5T0tUa2x1dlZIR0FsdzdxX09VSTZTcEZTYTE1YnlPMF9kQVZoZ2xMMEtuVDEzbFpuWVVZTlowVWFXX3YtTmZSMW10MlNtbnVJeG9kMDAtRzBWZGR5dXJJWWU5NEhDSnpYQ3RMbkhzS2dGd0Z4S1hhZWJkbk90VEhXY0dtczJpV1E?oc=5",
-      "headline": "Snowflake股票將如何應對其即將到來的盈利？",
-      "headlineEn": "How Will Snowflake Stock React To Its Upcoming Earnings?",
-      "detail": "Snowflake股票將如何應對其即將到來的盈利？ Trefis",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "GOOGL|how_to_own_spacex_through_alphabet_shares__the_pre_ipo_str",
-      "date": "2026-05-22",
-      "tickers": [
-        "GOOGL"
-      ],
-      "source": "Seeking Alpha",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRmxIR3k2alYzRnZGRWJJcjF4SXFUWGs3Rkp6TjRIdGtraWZTX0NMZDV2bmc4QXQwZXBxTUp6NzZVS0tTeGpKV182eko2MlkycjF6MmFwSHBJY05iemRZS1MwMFVNb0NnTEZadjBLcExuQ3RtSWUzODF6MEtzcmV2SnR3c1VDZEVHU2ZCWWtqVmJpTGdoYm1yQThHekpEN25LRWVSbFNB?oc=5",
-      "headline": "如何通過Alphabet股票擁有SpaceX ： IPO前戰略（納斯達克股票代碼： GOOGL ）",
-      "headlineEn": "How To Own SpaceX Through Alphabet Shares: The Pre-IPO Strategy (NASDAQ:GOOGL)",
-      "detail": "如何通過Alphabet股票擁有SpaceX ：尋求Alpha的首次公開募股前策略（納斯達克股票代碼： GOOGL ）",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "GOOGL|google_just_triggered_a__1_billion_ai_price_war__does_it_m",
-      "date": "2026-05-22",
-      "tickers": [
-        "GOOGL"
-      ],
-      "source": "The Motley Fool",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOSVo1ZzRvSV9pTXBCNEdDRHNNOFBJd2xTQ3ZrSC1QY09BRU1TYnFyQzN4QWo4dGtnRzZqTWRNd1hFZGFPQVlLOEVFYzJxclZGazF3ZzdWai1QSE9VUng1Q2l6ZGExWm0zNWpzaHl6VDgzLVFWLXpsQlRuYU0xaVRmZnhvbllFTTNUdWd2S0Nyb29xZXI1QUl4TA?oc=5",
-      "headline": "Google剛剛觸發了10億$的人工智能價格戰：它現在是否讓Alphabet股票成為買家？",
-      "headlineEn": "Google Just Triggered a $1 Billion AI Price War: Does It Make Alphabet Stock a Buy Right Now?",
-      "detail": "Google剛剛觸發了10億$的人工智能價格戰：它現在是否讓Alphabet股票成為買家？ Motley Fool",
-      "translated": true,
-      "sentiment": "positive",
-      "impact": "medium"
-    },
-    {
-      "id": "NVDA|nvidia_stock_misses_out_on_friday_s_rally__here_s_how_much_",
-      "date": "2026-05-22",
+      "id": "NVDA|nvidia_corporation__nvda__stock_price__news__quote___histor",
+      "date": "2026-05-28",
       "tickers": [
         "NVDA"
       ],
-      "source": "Investopedia",
+      "source": "Yahoo Finance",
       "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNVW1QdzI5WVlXNHBNZE12dVg1R1hPcEw1RmhVUVJwWnNlenZvMGpTYV9jYVJVZXMyRFY4eDJGZHduZHZGelFSMS10Q3FWMWM1bXF0NW9wbjlwSzA1eHROYnc5ZW1HTGRmZVB4SVg4akJWZkdFMUlESHVsOFNKMHl2VDlNcVlZUzRzVjdnQ0VsQ1lLczVJTXVXUFd1cWdMZzljYVNQTGlXNVRuOTBHSVVtU2N0SG5TTXFXNUVpelE1eXFfRU9Lb29NaDVwYw?oc=5",
-      "headline": "NVIDIA股票錯過了週五的拉力賽。以下是多少交易員認為它下週會移動",
-      "headlineEn": "Nvidia Stock Misses Out on Friday's Rally. Here's How Much Traders See It Moving Next Week",
-      "detail": "NVIDIA股票錯過了週五的拉力賽。以下是多少交易者認為它將在下週移動Investopedia",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBpVTJIYnhWcW1kNFFKTHNoajhPeE9zSW9lTElhZkZvcEo3MExtQnpIZjBRek95cWJ0XzRKMzBtMHh0Ty1SYVRESUxfRTJ4Zw?oc=5",
+      "headline": "NVIDIA Corporation (NVDA)股價、新聞、報價和歷史",
+      "headlineEn": "NVIDIA Corporation (NVDA) Stock Price, News, Quote & History",
+      "detail": "NVIDIA Corporation (NVDA)股價、新聞、報價和歷史Yahoo Finance",
       "translated": true,
-      "sentiment": "positive",
+      "sentiment": "neutral",
       "impact": "medium"
     },
     {
-      "id": "NVDA|nvidia_has_a_plan_to_get_the_stock_moving_again",
-      "date": "2026-05-22",
+      "id": "NVDA|nvidia_stock_is_now_a_chip_laggard",
+      "date": "2026-05-28",
       "tickers": [
         "NVDA"
       ],
       "source": "Barron's",
       "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBLOTNvVmlnemFwMi1YVEdwVnpZNTFkc0NNdEs3TGJBTkdwT0dNTjRjSWZIRFFFcDBZVXBwY3UyNFg3Q3pBTlZRNnEwakRzVnF4OG1KQUxFbEJwSVFLUkktOXI2dEM3TnRleE9IM2k3d3VfbFlTa1hVd3cwNnVHMnc?oc=5",
-      "headline": "Nvidia有計劃讓股票再次上漲",
-      "headlineEn": "Nvidia Has a Plan to Get the Stock Moving Again",
-      "detail": "NVIDIA有計劃讓股票再次上漲Barron's",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE93UTltSnM3QzM4MUxESzh0WWlDMFl2SlUwaDNOUlFPVUZrSElGQUxXeWVnMENsQjVOTjBhT0FVUmRwMjg2NTU0a2VTdlhzaWVwTnhZVnpVcG9OTDk5d2N3ek1hQ2ZkWUd2NHRMUzV0WGRVajBrQWRPOA?oc=5",
+      "headline": "NVIDIA股票現在是芯片落後者",
+      "headlineEn": "Nvidia Stock Is Now a Chip Laggard",
+      "detail": "NVIDIA股票現在是Chip Laggard Barron's",
       "translated": true,
       "sentiment": "neutral",
       "impact": "medium"
     },
     {
-      "id": "AMD|nvidia_vs__amd_vs__intel__which_is_the_best_chip_stock_to_ow",
-      "date": "2026-05-22",
+      "id": "AMD|is_amd_about_to_pop_like_micron__here_s_why_you_shouldn_t_un",
+      "date": "2026-05-28",
       "tickers": [
         "AMD"
       ],
       "source": "Yahoo Finance",
       "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZkM1N0R6eW9saGhNN1k0Zk16UmdtZld5clg0bUQ5cDljUGVnZGdqN01QNXlSdHN0bG5CS2s1MnVvd2NIUmVuYmtMeXJsNWhBOFZSTjctTER1N0dabmtyMjVfdHFPSFNTOC1lcjc5TGZ4ck9qUDQyZTI1VXVjZzdNSDlJcjlDVUVibkQ0dHItcXFYdFpReEpLSmk5bzF4ZEtEazktTXotdEE?oc=5",
-      "headline": "Nvidia vs. AMD vs.英特爾：哪種芯片股最好？",
-      "headlineEn": "Nvidia vs. AMD vs. Intel: Which is the best chip stock to own?",
-      "detail": "Nvidia vs. AMD vs. Intel ：哪種晶片股最好？雅虎財經",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPbUdYODZQQmUzN25EanFjdnM1dTlCYXlzbjYtX25XeF9xY0QxLW56WkhwaXBYeUhpdGRBa3RqVGNTS1NEekVmekhRcUk2dXl0dm1pMVd2WnAzbEFEbTFWNi0zdWR4ZHpEQUNmMHZzeVctRlk3cG5tMElNOU5XWWtNOXFGM2xyNnpWZmxIZ1Fta3ZEY0lDLVE?oc=5",
+      "headline": "AMD即將像美光一樣蓬勃發展嗎？以下是你不應該低估它的原因",
+      "headlineEn": "Is AMD About to Pop Like Micron? Here’s Why You Shouldn’t Underestimate It",
+      "detail": "AMD即將像美光一樣蓬勃發展嗎？以下是您不應該低估它的原因雅虎財經AMD股票為500 $ ： AI Upside ，有一個很大的警告Trefis 2 AMD股票保證的原因",
       "translated": true,
       "sentiment": "neutral",
       "impact": "medium"
     },
     {
-      "id": "AMD|stock_market_today__s_p_500__nasdaq_score_weekly_wins_as_dow",
-      "date": "2026-05-22",
+      "id": "AMD|inside_rocket_one_s_bid_to_design_cooler_ai_chips_for_space_",
+      "date": "2026-05-28",
       "tickers": [
         "AMD"
       ],
-      "source": "Investor's Business Daily",
+      "source": "Stock Titan",
       "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZ2p1RDFJM1ozVFpIYldieUFtZklOSG9tTV9YYVVWRGNGSVB6QUNybDUwUGd5dXVDQTVoYzkxc0VxT0RHODAyOVhZNVh1R2RtY0ZWYUxiTmtJTU1qZV9OWl9CSGU3d3RTTkRxWklYTEctWVlZTGd5Q19uMkM4cllxSkx6Qk9VMDE3WkswRjd5VjIwWEpJUTRyVW45UkNtMEZ3ekMxQTRjTWQydHct?oc=5",
-      "headline": "今日股市：標準普爾500指數、納斯達克指數每週獲勝，道瓊指數創下歷史新高（即時報導）",
-      "headlineEn": "Stock Market Today: S&P 500, Nasdaq Score Weekly Wins As Dow Logs Record High (Live Coverage)",
-      "detail": "今日股市：標準普爾500指數、納斯達克指數每週獲勝，道瓊指數創下新高（即時報導）投資者商業日報",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQLUZjS1dONjlrM2g0aTJNWGFPQWVCMTNOb1paamVyaUUxbkNHQ2cyaDhxdFNTR0Q1aGVVNzBFdTROUjd0SGxJcExrcm9IU1JQei05NURWeHJ6dGQtaW1UV1g5ZkpScG5Rb0MyX1BJTVhxM1FjYzhuX3lQSmdKUmtfdjRtaGFmbldYUnBWVXNJbHZsUWZBb2RFYXhyeGtVZFlpLTQ2MTlZXy1ZeFRRNGhGeDNqcXVLdw?oc=5",
+      "headline": "在Rocket One的競標中，為太空和防禦設計更酷的人工智能芯片",
+      "headlineEn": "Inside Rocket One's bid to design cooler AI chips for space and defense",
+      "detail": "在Rocket One的競標中，為太空和防禦設計更酷的人工智能芯片庫存泰坦",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "AMD|u_s__stocks_move_|_some_semiconductor_stocks_rally__advanced",
+      "date": "2026-05-28",
+      "tickers": [
+        "AMD"
+      ],
+      "source": "Moomoo",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTGNZUDgwWVo5bWlRMldQOFJTZkxaRHhjNjhCRHRzX2lkRVdDZnlBSTRxNUp2LUQ4Vk53SXRHNHVSSmFKR2F1aHN4Z29kM29icl9YWGNYQnU3bXpVVmJsTVU3RjlzN3BkczI0WS1Ndm55aW9LbUJPWlNpekFSRjFDcFdKdWY4SjlLaEpoaTduWDlEbHZCUUxkTlpRNi1xQVBWcTY3V1R6TDZMRUtwUUd5Sg?oc=5",
+      "headline": "美股走勢|部分半導體股上漲； Advanced Micro Devices (AMD.US)上漲超過6%",
+      "headlineEn": "U.S. Stocks Move | Some Semiconductor Stocks Rally; Advanced Micro Devices (AMD.US) Up Over 6%",
+      "detail": "美股走勢|部分半導體股上漲； Advanced Micro Devices (AMD.US)上漲超過6% Moomoo",
       "translated": true,
       "sentiment": "positive",
       "impact": "medium"
     },
     {
-      "id": "ARM|is_arm_holdings__arm__the_best_european_growth_stock_to_buy_",
-      "date": "2026-05-22",
+      "id": "ARM|why_arm_holdings_stock_jumped_higher_today",
+      "date": "2026-05-28",
       "tickers": [
         "ARM"
       ],
       "source": "Yahoo Finance",
       "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNNjdSckVsZFVNV283RDZjNlNpbGxRRklWMEc3dlpwaDJJWWlZSkFzeFRzMEh1RmpSSU5uWC1DbTZEbklZRUc3N0RXcjl5cXgySVhQcGJxRUlKR1l2NXk0bVlxOExObHpvTlVEYUJNY0FSbmRaeDRYZVliRlRyX0oteVd3SHF1VmhBbDBlMlI4a2gteTR6U2dNeE5KUQ?oc=5",
-      "headline": "Arm Holdings (ARM)是最佳的歐洲成長股嗎？",
-      "headlineEn": "Is Arm Holdings (ARM) the Best European Growth Stock to Buy?",
-      "detail": "Arm Holdings (ARM)是最佳歐洲成長股嗎？雅虎財經",
-      "translated": true,
-      "sentiment": "positive",
-      "impact": "medium"
-    },
-    {
-      "id": "ARM|why_arm_stock_was_gaining_again_today",
-      "date": "2026-05-22",
-      "tickers": [
-        "ARM"
-      ],
-      "source": "The Motley Fool",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZWVQeTlwb0JseUREaWxXaE9FYnhYTlZkRWpEV3hqZjc4LS04WlBFVW9pNS1wTDF5NVRSOVRhSzdNMmxsUVY3ZVVkU1MtWERFZkNEOWx0eUlZaHJ2cTRXRUdkUkFHOFJzZjl3V3JWT0FEbm1vczVoaTlCY1BLX3N6X0gzVmd5cTA?oc=5",
-      "headline": "為什麼Arm股票今天再次上漲",
-      "headlineEn": "Why Arm Stock Was Gaining Again Today",
-      "detail": "爲什麼Arm股票今天再次上漲Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOc0c0ek1aUjdlNzItcVNCRHFJQ0kyeVlHOHFOVmpULTU4TVB3a2Q3U0k1cG1yQllSZGVPQmxRWXBiUmtyVTR1ak5hWk1mNGYxOHRRNnc0ejI0MFB6cS1jMFlnZHJGcl90QXNfUWdyeVVpMXhIT2JGZmR0ZWxfSjNZZk1rQVlEU2hQTzNZX2hReHFFdUQtU1ZQalh3?oc=5",
+      "headline": "為何Arm Holdings股票今日上漲",
+      "headlineEn": "Why Arm Holdings Stock Jumped Higher Today",
+      "detail": "為何Arm Holdings股票今日上漲雅虎財經",
       "translated": true,
       "sentiment": "neutral",
       "impact": "medium"
     },
     {
-      "id": "VRT|is_most_watched_stock_vertiv_holdings_co___vrt__worth_bettin",
-      "date": "2026-05-22",
+      "id": "ARM|what_is_going_on_with_arm_stock_on_thursday_",
+      "date": "2026-05-28",
+      "tickers": [
+        "ARM"
+      ],
+      "source": "Benzinga",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZC1JdXdVVUJ3blJXdko4UHlhVzcwcFdTYXhOaHVxdzRCMTd6Zmcwd0VkYTA2ck5idkFscGZCNG9qZW9oSkpZbVpzTi1zNzVhZGtXSUtpaTBWczJmODNlZlVHX29leUJHVTh3eEJCMkd2Tk1scVoxeGxBT2NiNEIwNlJrbFhUMnI4RnhwZ2t5aVl3TGtXamtWX05EbTc?oc=5",
+      "headline": "ARM週四的庫存情況如何？",
+      "headlineEn": "What Is Going On With ARM Stock On Thursday?",
+      "detail": "ARM週四的庫存情況如何？ Benzinga",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "VRT|vertiv__vrt__gets_another_target_hike_as_ai_infrastructure_d",
+      "date": "2026-05-28",
       "tickers": [
         "VRT"
       ],
-      "source": "Yahoo Finance Singapore",
+      "source": "Yahoo Finance",
       "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxObEliVDFRYVpOYlY4cUZCVjk0eTVWdHpEdFprM3NMeVYtWUhIbFBzbWdvM3ItbzlpQ3ljMmxSMHRWMHVUZTVXNlA0Tm8tRDVqT1dSOU1xdjFQZE1hTUxib3E4cEhIVHRocmxpdDdXc09EY21kelZBOHBTRXlIeTV0bnd4ODBndWRDQWI0?oc=5",
-      "headline": "最受關注的股票Vertiv Holdings Co. (VRT)現在是否值得押注？",
-      "headlineEn": "Is Most-Watched Stock Vertiv Holdings Co. (VRT) Worth Betting on Now?",
-      "detail": "最受矚目的股票Vertiv Holdings Co. (VRT)現在是否值得押注？雅虎財經新加坡",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQelVodkllNTJkUGt4dGwtNGtwT0RDbGMtaGtkX1A2QXI2S1otNG1KWHRLdTFpOVJ1ZkhtSXhSR3VjWmhoMS1yM3lBeFFEWEh4S2hGQ0lOZmo0amJLVUp0VEQ4WXdoM3I4OFQ1eG92dDFmVmREdDdxcDVqQXAyMmdYNklUbE5IYVhMM1dsYW14ZDZXVDU2dnZLTDJLMA?oc=5",
+      "headline": "隨著人工智慧基礎設施需求不斷增長， Vertiv (VRT)再次獲得目標加息",
+      "headlineEn": "Vertiv (VRT) Gets Another Target Hike As AI Infrastructure Demand Keeps Building",
+      "detail": "隨著人工智能基礎設施需求不斷增長， Vertiv (VRT)再次獲得目標加息",
       "translated": true,
       "sentiment": "neutral",
       "impact": "medium"
     },
     {
-      "id": "SMCI|super_micro_computer__inc___smci__is_a_trending_stock__fact",
-      "date": "2026-05-22",
+      "id": "VRT|2_brilliant_growth_stocks_to_buy_now_and_hold_for_the_long_t",
+      "date": "2026-05-28",
+      "tickers": [
+        "VRT"
+      ],
+      "source": "The Motley Fool",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNS0c5Q0FwUEZGTEg0UUdnSzFfVGVYYTFuQkZRT2lFYkViN0Eyc2VfTlhlNERJQVBmSGF2M3I1dGV2RXMtZDlMV3lLYkdjeDBfcDR2eThDQ2dGdFFBYnFjTTZEUjdyUnZ2ZG9UZGFjLUpSaHRBeEhPSFZlRnNRTFhlRE1vQUZXcFYwckRnb3hDS2pIUHk4bFpV?oc=5",
+      "headline": "立即購買並長期持有的2隻輝煌成長股",
+      "headlineEn": "2 Brilliant Growth Stocks to Buy Now and Hold for the Long Term",
+      "detail": "立即購買並長期持有2隻輝煌成長股Motley Fool",
+      "translated": true,
+      "sentiment": "positive",
+      "impact": "medium"
+    },
+    {
+      "id": "SMCI|why_super_micro__smci__stock_is_up_today",
+      "date": "2026-05-28",
       "tickers": [
         "SMCI"
       ],
-      "source": "Yahoo Finance Singapore",
+      "source": "StockStory",
       "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZVpuQ0U1U3V2RUV1LVFZaElvRlV5and2a1NTTy1XdjRHdTBLWm1TN29lZ1czd2UxQk1tREIzSmRrWFZsS3kxRXJPV3A3VExLSzZoREY2UnB6enNERWkyNC00QXBRdlJpbWhDZUpmT1JocjlQa0JEOWNkTGhwMnlyZzV4eUU?oc=5",
-      "headline": "Super Micro Computer, Inc. (SMCI)是趨勢股票：投注前須知事實",
-      "headlineEn": "Super Micro Computer, Inc. (SMCI) Is a Trending Stock: Facts to Know Before Betting on It",
-      "detail": "Super Micro Computer, Inc. (SMCI)是趨勢股票：投注前須知事實Yahoo Finance Singapore",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNYzd6Y0dhQWJrU2xDMDk0YzhZdU5xdi1PODNiTUx5TzlGLWdzcmxuemp5c3RBX1E0bUVuRFBsZkE5a1JMeml1elVuS0FiTHNZcE9FNjBKRnh1eEh5X1IzbHE4Z2RsRGo1Zjd5N2gxRjZLSUNDVU43WFNyanF5RmRvZnh6ZWtLdGVmSUNZd25tSWdCN3Y3RUQyVFZzZjJ1eUVycEU4TQ?oc=5",
+      "headline": "為什麼Super Micro （ SMCI ）股票今天上漲",
+      "headlineEn": "Why Super Micro (SMCI) Stock Is Up Today",
+      "detail": "為什麼Super Micro （ SMCI ）股票今天上漲StockStory",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "IREN|iris_energy_stock__iren__opinions_on_nvidia_partnership_and",
+      "date": "2026-05-28",
+      "tickers": [
+        "IREN"
+      ],
+      "source": "Quiver Quantitative",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTVV2MjhRaExJd21zZ2x2Z0V6NERYekpnaGYzaGI0MEdWbmVIdFRjVEQ5YTBuUWJwZVRreWtpWHlER3hIWDlMX3l5YUZCd3JXTE9GV0RpdkVwNm4ySlM0RURJWjkzSGFsY3hBb21ndy1vOXhVVC1XTnNXWE1PSkZaVHctWEQ3bUZSX0JDcnJzN3pYNkFHYmh6dm1FTkJOMlFwSWxkRFFVQnBaNlU2Q01fOExn?oc=5",
+      "headline": "IRIS Energy Stock (IREN)對NVIDIA合作夥伴關係和擴張計劃的意見",
+      "headlineEn": "Iris Energy Stock (IREN) Opinions on Nvidia Partnership and Expansion Plans",
+      "detail": "IRIS Energy Stock （ IREN ）對NVIDIA合作夥伴關係和擴張計劃的看法Quiver Quantitative",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "IREN|cantor_fitzgerald_raises_iren_stock_price_target_on_capacit",
+      "date": "2026-05-28",
+      "tickers": [
+        "IREN"
+      ],
+      "source": "Investing.com",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQ0lmT21FTDV1cXNuTmZtb3MtanVxX3c5Q241a19nR0piMFczVFpuaUFfVTV4X0RzTXRzVGxQdmVwZFBTb0k2NFllX3Y5SjhKQWVTRUEtSE56d2hjQ0xTUkk1NFpHQ1JjR0hWSjN0VUdVNXd2RVNWd0dvNS1YYzhtLXFsRUdjMzlqa2xGd3ZXUkhEV3ZhNnVtNjIyZFA4UmQ0NG5FOGoxN0tlZnYwU3lkaDMtazM0SEx4dWJTRHJ4LWVteHhoVGc?oc=5",
+      "headline": "Cantor Fitzgerald提高IREN產能增長的股價目標",
+      "headlineEn": "Cantor Fitzgerald raises IREN stock price target on capacity growth",
+      "detail": "Cantor Fitzgerald提高IREN股價目標對產能增長Investing.com",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "IREN|why_iren_stock_popped_today",
+      "date": "2026-05-28",
+      "tickers": [
+        "IREN"
+      ],
+      "source": "The Motley Fool",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE03dktzVTNVT3d4YWhoc3BWQVlJaFJfTVI5Y2dNUFUxUjRrakxMNzVlTGNYS2xWNWJ0YmNZY2g1RGlKRHZxVzdXMGoxZVo3NFc2WmtHQzltTUV3R3dhVndtanNZalFSNTdSWnk2Y0xReWdUZXlvMnNqdQ?oc=5",
+      "headline": "為什麼IREN股票今天彈出",
+      "headlineEn": "Why IREN Stock Popped Today",
+      "detail": "為什麼IREN Stock今天被彈出Motley Fool",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "SNOW|snowflake_surges_on_earnings__ai_product_growth__new_amazon",
+      "date": "2026-05-28",
+      "tickers": [
+        "SNOW"
+      ],
+      "source": "Investor's Business Daily",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQ3lxZXlwZmE3eEdCWHhGQTh1NjMzV0xnN3ctTW9MNFNnWkl4aUFwT1NmYzhKaFkyWlVoZnRhVHp3Ukp2UERsSWNYbi1TNHdzNFRodTFzZnRGU1dWS3k5aXp0cnNmRWF0dWliLUJDbTItOGlkTWJtQk8zYkZoRmo0d3NRX3RxdVNzYnhveG1aOGZ3WFU?oc=5",
+      "headline": "Snowflake的收入激增、人工智能產品增長、新的亞馬遜交易",
+      "headlineEn": "Snowflake Surges On Earnings, AI Product Growth, New Amazon Deal",
+      "detail": "Snowflake在盈利、人工智能產品增長、新亞馬遜交易投資者的商業日報上飆升",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "SNOW|snow__snowflake_stock_rallies_nearly_40__on__6_billion_amaz",
+      "date": "2026-05-28",
+      "tickers": [
+        "SNOW"
+      ],
+      "source": "TradingView",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNcl9jT0stNFVWQ1YzN3dGZG8yNGZOVU11Q0tIaEJrblZWVWpJSXBYLWRkdjFTVm5HRnRKRlRCWDc1X2htbkV3XzFkNU9RWGJReG9lTDhId0hMZXBZcEVJbW4yQVB3c0wybHhOd3RJQ0tzdDhWMlBTang2dHVDU3NXQjNJSTltejBOYThkejJWYXdyOUNFMFRrMHQ1a3hfNjV0cGNNbDRCZHIzeHZaVl9JQlcyVkpHODVlTzdsMy1RTjgwYTl4T3BFbVBJYzcwalg0c2dnMkdkMA?oc=5",
+      "headline": "SNOW ：在60億$的亞馬遜交易中， Snowflake股票上漲近40 ％ ，盈利穩健",
+      "headlineEn": "SNOW: Snowflake Stock Rallies Nearly 40% on $6 Billion Amazon Deal, Solid Earnings",
+      "detail": "SNOW ： Snowflake股票在60億$亞馬遜交易中上漲近40 ％ ，盈利穩健TradingView",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "SNOW|snowflake_s_stock_price_just_soared_to_a_2026_high_thanks_t",
+      "date": "2026-05-28",
+      "tickers": [
+        "SNOW"
+      ],
+      "source": "Fast Company",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNXE4U2k2Mm11NS1EaUE3OG5WcTVzcURZazBQdldXMlYtb3hjR2d5R1VjWHhya211QTdWVG5rU0lySDZrQWVhV2ZNZ1ozWXpuUVUzLU9zWDBuWnN0STMzWTNqUTNCd1ZnZThuVWlXUkRQN1hDZ1RNY25rX2tOMHQwSmxKVTN0cUxLb25ZVFhsbjdhbUVzTm01UQ?oc=5",
+      "headline": "得益於人工智能， Snowflake的股價剛剛飆升至2026年的高點。那麼SaaSpocalypse發生了甚麼事？",
+      "headlineEn": "Snowflake's stock price just soared to a 2026 high thanks to AI. So what happened to the SaaSpocalypse?",
+      "detail": "得益於人工智能， Snowflake的股價剛剛飆升至2026年的高點。那麼SaaSpocalypse發生了甚麼事？快公司",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "SNOW|snowflake_stock__snow__secures_analyst_praise_after_earning",
+      "date": "2026-05-28",
+      "tickers": [
+        "SNOW"
+      ],
+      "source": "TipRanks",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOSS1VRzZFbm1ZN1lDdWlRTHIxTXZZWXI1V2pCLVhDQjFlS0IwcFdYTXhray1TRHl4WVVNN2dILUNNUVZ3UlFYb1ZOVVRUTXdfNWE4VlBkek50UURHRmxVcDJaeTZvSTJINzV3eVduVjBLU09QZVQzSnBucjR0QmRuc3NmOURVZ3RyNldSdERnSUpIeHdy?oc=5",
+      "headline": "Snowflake Stock (SNOW)獲利後獲得分析師好評",
+      "headlineEn": "Snowflake Stock (SNOW) Secures Analyst Praise After Earnings",
+      "detail": "Snowflake Stock (SNOW)在獲利後獲得分析師的讚揚TipRanks",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "SIVE|a_1_700__jump_turns_retail_trader_favorite_sivers_into_shor",
+      "date": "2026-05-28",
+      "tickers": [
+        "SIVE"
+      ],
+      "source": "Bloomberg.com",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQZEtYTDQ4N2xtMzBIV3h3YkMxejBHMUpDRGJlOGtUUzNpM2VoUUhUMll0cmpjZ1RtdWhZakZhRDlsMUF2a0lBbFdCUTY4Q3JETXN6OGFkdERMYVpFUzBCemwxVU83WWxhVnBWUjhLellCR0hUMEYybnk3ZTE3SFVCSnNsTkNxSThFdGZ4ZkRTTFUtZ3JsN25oN0Y2b3J6cGptd0xYMk90REZ0X05UUVJIa05zU0w?oc=5",
+      "headline": "1,700%的跳躍將零售商最喜愛的Sivers轉變為短賭",
+      "headlineEn": "A 1,700% Jump Turns Retail Trader Favorite Sivers Into Short Bet",
+      "detail": "1,700%的跳躍將零售商最喜愛的Sivers轉變為短賭Bloomberg.com",
+      "translated": true,
+      "sentiment": "positive",
+      "impact": "medium"
+    },
+    {
+      "id": "POET|jim_cramer_won_t_touch_poet__the_reddit_crowd_thinks_he_s_w",
+      "date": "2026-05-28",
+      "tickers": [
+        "POET"
+      ],
+      "source": "24/7 Wall St.",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNcWdVM3JGZTZhbXY4X3otWFZ3OTNUOHNyUlRnSFFkR0JkS3phNkwtYVZGMlp3ZmpQQlI3X2c1UzB4NDZCWG9uWWpOLS04WmgtMVBZUXM5cGc3eVVvcGRsclN6OVpEQnlPdkxmS0xQejRLNG5pckdLVjV4eTl3UDJVZ1pka0hLcXMxc0g2elcxWDBsNXFXOVpsS0Y1dXphb0ZzV1FZS1hjeUozY255RmdVYXBBUjVqQWlKeFNmM1QyZ3Y3c2pMWGFGaVlvNnZiUWhUaFpoWGRZWXhTeG8?oc=5",
+      "headline": "吉姆克萊默不會碰詩人Reddit人羣認為他錯了。有人即將損失一大筆錢",
+      "headlineEn": "Jim Cramer Won't Touch POET. The Reddit Crowd Thinks He's Wrong. Somebody's About to Lose a Lot of Money",
+      "detail": "吉姆克萊默不會碰詩人Reddit人羣認為他錯了。24小時全年無休的華爾街有人即將損失一大筆錢",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "GOOGL|alphabet__the_outperformance_opportunity_has_moved_to_a_ne",
+      "date": "2026-05-27",
+      "tickers": [
+        "GOOGL"
+      ],
+      "source": "Seeking Alpha",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbXk3VzJFclA3VVNmSy1vVWxMcXpZbVFHVFJyUlBQNnM1WXByOGt4VHNnMTh0WHpuWG05aDdiWFBjX0NQNm5RMkswWkszSFI3U29DVnViOVpIR2xpYzRWM1U5aW1rZ3laSU93cmtsM2VraTVJbFJYTnp1eWJxTUtJeklKTktxaWRNLTZ1N3JGWTJtdzV0blllTmh4Nlp3dnk4OWtFMHpkMlpJS05sMFFLWVQySQ?oc=5",
+      "headline": "Alphabet ：表現優異的機會已轉移到一家新的Mag 7公司（納斯達克股票代碼： GOOGL ）",
+      "headlineEn": "Alphabet: The Outperformance Opportunity Has Moved To A New Mag 7 Company (NASDAQ:GOOGL)",
+      "detail": "Alphabet ：表現優異的機會已轉移到一家尋求Alpha的新Mag 7公司（納斯達克股票代碼： GOOGL ）",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "NVDA|nvidia__the_party_is_coming_to_an_end__nasdaq_nvda_",
+      "date": "2026-05-27",
+      "tickers": [
+        "NVDA"
+      ],
+      "source": "Seeking Alpha",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZnBicm0wNUVpVWVaS3B1M2sxa2RnWEdzbDFtYWxKN1pkZTFtQkZkX2pVaWIxNVVVUU1FMFBPYzh3SEhjZDRHeU84OTl6Z0prQjM1b0ZBYVZPYUZxcGJSekZLbXVhTGt6a3p6clB0TURWR2JHVkl5TWo2NkJJSFJvdDhQNA?oc=5",
+      "headline": "NVIDIA ：派對即將結束(NASDAQ: NVDA)",
+      "headlineEn": "Nvidia: The Party Is Coming To An End (NASDAQ:NVDA)",
+      "detail": "Nvidia ：尋求AlphaNvidia股票的派對即將結束（納斯達克股票代碼： NVDA ）上週陷入困境。這是我認為正在發生的事情。Motley FoolNvidia股票交易",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "AMD|cathie_wood_sells__16m_of_surging_semiconductor_stock_|_amd",
+      "date": "2026-05-27",
+      "tickers": [
+        "AMD"
+      ],
+      "source": "thestreet.com",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNT1NLS29JYTc2YVF5QTNRTWlqMThDNmRLaWhFTlo3V1Nlam1BX2VvdlZDU2VkRHA2c3NZSTdRYUpVckV6Z3hBR1h4ZUxUaTVDLTlUZXpQb1NXSDJXcnYyT1NXSW1lRmQ2bG1zUmMxSDZld09JVWNWQjRkTDdON0s4YlpVQU02T3owQUxWSkswSUlkUUlHWUNKOHhLMzNfSDlx?oc=5",
+      "headline": "Cathie Wood出售$ 1600萬美元的激增半導體股票| AMD",
+      "headlineEn": "Cathie Wood sells $16M of surging semiconductor stock | AMD",
+      "detail": "Cathie Wood出售$ 1600萬美元的激增半導體股票| AMD thestreet.com",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "ARM|mizuho_raises_arm_holdings_stock_price_target_on_ai_cpu_grow",
+      "date": "2026-05-27",
+      "tickers": [
+        "ARM"
+      ],
+      "source": "Investing.com",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQMlJXc0hQWm41UDFJdF9URFhNcU1XTzRZdDRYaS1zeElkSkpXNWZpb3EwcDF0SVlOTW1JQ3dqX3pFamlXWk1DZm14VXdGWGNpamk2bXFtWEI4clZ2OXA1dHNudEpfb1NIcWxtWWZCYjN2SFR2MXlNVXBvT1R0VjBLbmhrTFBrRmh1WGlvcmVLZERNSVNPTmE4MThQYkZtUktQX0Z2eXk5NjBRVDlQN3lRaXBQUzdkbkpldVo1Q0Zia09palBpX05zQWpn?oc=5",
+      "headline": "瑞穗上調Arm Holdings對AI CPU增長前景的股價目標",
+      "headlineEn": "Mizuho raises Arm Holdings stock price target on AI CPU growth outlook",
+      "detail": "瑞穗提高Arm Holdings對AI CPU增長展望的股價目標Investing.com",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "ARM|arm_holdings_stock_stumbles_after_red_hot_rally",
+      "date": "2026-05-27",
+      "tickers": [
+        "ARM"
+      ],
+      "source": "TipRanks",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSFBNZG54cDN6LTlHMnQzYmtJSm1VLTRaT1RHTWdZSXlHUnc0dlp4QkNUZEpzLW5NcFRvTkt0SzNwRU9RbXpKOU84QjFqc21qMjMzeEpGQ0VRRExxOFdUcXZ2N3g5OTdHbkJRUGZYM2FpQ1lXMGg2aTZDU1FnZEFYRnlmaDZ1Ni1NNmd2d2JaYmNjZw?oc=5",
+      "headline": "ARM Holdings股票在紅熱反彈後跌跌撞撞",
+      "headlineEn": "Arm Holdings Stock Stumbles After Red-Hot Rally",
+      "detail": "ARM Holdings股票在Red-Hot Rally TipRanks之後跌跌撞撞",
+      "translated": true,
+      "sentiment": "positive",
+      "impact": "medium"
+    },
+    {
+      "id": "ANET|arista_networks_stock__anet__opinions_on_ai_infrastructure_",
+      "date": "2026-05-27",
+      "tickers": [
+        "ANET"
+      ],
+      "source": "Moomoo",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNVRkOXB2ZFJBLUZvLW9KUW1qOURLeVN0Qi1id09NbV9ZSXFZSmdRMVFJbEo5M1FxYWh2c0ZsNHp0VW5paFppcEZXdkUzWUxWbnVwSUgwekFoWF8xVEpIV2FSMlNKeHp4Q3c4M0VvNzhPbmxlNTVDRG1RR1BLdlRPa0dWQkx4SWdEWnVmUHZTa1VzWmJEbXd5VU9kTkQ3bGZicGFmb0RlNXA?oc=5",
+      "headline": "Arista Networks股票（ ANET ）對AI基礎設施增長的看法",
+      "headlineEn": "Arista Networks Stock (ANET) Opinions on AI Infrastructure Growth",
+      "detail": "Arista Networks股票（ ANET ）對AI基礎設施增長的看法Moomoo",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "PLTR|nvidia_and_palantir_have_a__120_billion_warning_for_wall_st",
+      "date": "2026-05-27",
+      "tickers": [
+        "PLTR"
+      ],
+      "source": "The Motley Fool",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNU1pcEI2UEJGZDNna2xRWW5XN3p6MXZHT0NnYmRQTHprZ1lLV0JUX3lhVFdGeTB1Q2JiUFZ5SU9MejlWbEtXMWo1cGt5QmZIUlpubXhFMmp2YXhwMGx3ckVCWjV5NTdPYlMyMXVva1RVaG11TDhBY1NKaGpWb252NEU2ZWE3TmVUVWcxUl9STldiUzRB?oc=5",
+      "headline": "Nvidia和Palantir對華爾街發出1200億$的警告，投資者無法忽視",
+      "headlineEn": "Nvidia and Palantir Have a $120 Billion Warning for Wall Street That Investors Simply Can't Ignore",
+      "detail": "Nvidia和Palantir向華爾街發出1200億$的警告，投資者無法忽視Motley Fool",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "SNOW|snowflake__nyse_snow__exceeds_q1_cy2026_expectations__stock",
+      "date": "2026-05-27",
+      "tickers": [
+        "SNOW"
+      ],
+      "source": "Yahoo Finance",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUlFJbTdKNU04VXphMmU0TElVcFVZM2FuZkN4QXJZVlp2R2xqbVJkS0l2OXJOT1RNU1FiZDU1aFgteHF5YnFoZDhEOEhtdUFCanE3SlV0VXc3SUMxekxLSFV5S0JJTUtYY2EtRWdVQ2pXS1NSRHIzbXByd3hfR2VtUlJoQUpMNnpVUzFVMGRzcDJsQnE2S1p0ZzUyUQ?oc=5",
+      "headline": "Snowflake (NYSE: SNOW)超出2026年第一季度預期，股價上漲29.1%",
+      "headlineEn": "Snowflake (NYSE:SNOW) Exceeds Q1 CY2026 Expectations, Stock Jumps 29.1%",
+      "detail": "Snowflake (NYSE: SNOW)超越2026年第一季預期，股價上漲29.1%雅虎財經",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "MACRO|investors_stay_calm_as_ai_capex_boom_eclipses_dotcom_mania",
+      "date": "2026-05-27",
+      "tickers": [
+        "MACRO"
+      ],
+      "source": "Reuters",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRHduSXhpVDRyZk1KaktVUHFlX3JqWmhPTUI1dldCVmpNMEU3dGhTVVpucmRHN3JCemdXazJPR3ZXVWNFRTN5SjFCT1VQTUZFNzN0WTF0S0ctMk9Wbjd0bW1HLVNKWVNieTd2WnVxaDF5WlZ1XzYtMHFZaWNmRlhxSXMtY3g3VHRkYzFIWDdpLXNtOVJ5dGd2YzNDT1ZpQzZUenUxX0hTSzVBNlNGMUFBQVZZN2gxbDZaQjNtMFBTaG1YUQ?oc=5",
+      "headline": "隨著AI資本支出熱潮超越網路狂熱，投資者保持冷靜",
+      "headlineEn": "Investors stay calm as AI capex boom eclipses dotcom mania",
+      "detail": "Google News · AI stocks",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "AMD|intel__amd__and_other_momentum_stocks_look_unstoppable__look",
+      "date": "2026-05-26",
+      "tickers": [
+        "AMD"
+      ],
+      "source": "Barron's",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5wUEtrS1A2eDAxMnF6TkpVWE1pTGdqa3FCYU56X0todkh0a1RXWHdkUUdIb0dxR3ZKMjhMcEpMRURyRHJOZXNrYjBoVi1ocEFHZUtMWGlmVWFCbzNkaDNYaF9acERLZU15STdRd2RWWkdCSnMzVFhBQWEwZS1taVk?oc=5",
+      "headline": "英特爾、AMD和其他勢頭股票看起來勢不可擋。再看看。",
+      "headlineEn": "Intel, AMD, and Other Momentum Stocks Look Unstoppable. Look Again.",
+      "detail": "英特爾、AMD和其他勢頭股票看起來勢不可擋。再看一遍，巴倫的",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "IREN|iren_stock_is_already_up_58__in_2026__nvidia_could_keep_tak",
+      "date": "2026-05-26",
+      "tickers": [
+        "IREN"
+      ],
+      "source": "Barchart.com",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVlJ4RF9NV2puLU9NMjBKWFJRTXJBSkNfdUpxRVFWV20tRG42SzB3cDY5LWtLMm55UDJpRG0yaDBLZFZvZm5Pa3VsWFBhOVBNb1ZzY3Y4a3JfNW1Ha0VaRDZRUlJSeHBkeWlUMzdxZjJHUUxwLUFneXpxY3hrMlhQNUVvXzBNZC1leW9LWFNRMWpNeEV0MU1sQ2I5Skc2MFlnM25PZGU5eFY3ZFNFX1BEVDhsUEgwMDBxVXc?oc=5",
+      "headline": "2026年， IREN股價已經上漲了58%。Nvidia可以繼續提高股價。",
+      "headlineEn": "IREN Stock Is Already Up 58% in 2026. Nvidia Could Keep Taking Shares Higher.",
+      "detail": "2026年， IREN股價已經上漲了58%。Nvidia可以繼續提高股價。Barchart.com",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "IREN|paul_tudor_jones_just_bought_57__more_iren_shares__betting_",
+      "date": "2026-05-26",
+      "tickers": [
+        "IREN"
+      ],
+      "source": "Yahoo Finance",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUVRKX1A4c2doQXFMaEFXbnJqT3F6aTlWZ2xVRm9wTERkenBEemFvTmJ1SFU1SGhwaHlTYTZnbFNrRUVzTWc2WUZ4aFp6TkNjeGtMSjdGRVpOVTFsUDNzZVNKVTQ5Z1BxbkctNlpjcUpUYjl2cXlPUUdUdm5rbUZnZGw2bEcxczVGMEtPZFYwNjdIOTVDNDI4Vg?oc=5",
+      "headline": "保羅·都鐸·瓊斯（ Paul Tudor Jones ）剛剛購買了57 ％的IREN股票，在“AI基礎設施建設”上投入了大量資金，因為它“感覺像'99'",
+      "headlineEn": "Paul Tudor Jones Just Bought 57% More IREN Shares, Betting Big On The 'AI Infrastructure Buildout' As It 'Feels Like '99'",
+      "detail": "保羅·都鐸·瓊斯（ Paul Tudor Jones ）剛剛購買了57 ％的IREN股票，押注於“AI基礎設施建設” ，因為它“感覺像'99'雅虎財經",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "PLTR|palantir_mystery_deepens_as_many_software_stocks_claw_back_",
+      "date": "2026-05-26",
+      "tickers": [
+        "PLTR"
+      ],
+      "source": "Investor's Business Daily",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPXzg3ZDFFMjktbEJOMldST2NodTZFUngzNUtPeUZIaTd4M2VieWNjSzJROVdzdTBfZXNueUd4OHo5WUZjNk5fUHhhYXRuME5sY2dXQ0tjRWZEd1E1enVhOW9pZXdVdnE4djdsQXhVbnc0MGtQYXFxV0dCM0M0VThnMm9jWlM1bVV3WE5MZDcxUl9NZjdfTVE?oc=5",
+      "headline": "Palantir之謎加深，因為許多軟件股在人工智能恐懼中回升",
+      "headlineEn": "Palantir Mystery Deepens As Many Software Stocks Claw Back Amid AI Fears",
+      "detail": "Palantir之謎加深，因為許多軟件股在AI恐懼投資者的商業日報中反彈",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "MACRO|what_to_expect_from_kevin_warsh_s_fed_in_the_first_100_day",
+      "date": "2026-05-26",
+      "tickers": [
+        "MACRO"
+      ],
+      "source": "Council on Foreign Relations",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQcjJ2ZXd6MzJPNHBWU3g5TW9MUlBnYnBRVldreHFjczBpOU00cE1ldHJDQWtZMUFNNjNHTm54bzQxVkRGWUhLWWFoU0tUbmpDdXpGRHZDQXBuUnZZZ3hPWXlJZldUOXQtdXgxMU5paURrVDNzU2JNNUFqd2J3RmExVDBUcnphdkhhYzNPTG5WX04?oc=5",
+      "headline": "凱文·沃什（ Kevin Warsh ）的聯儲局在前100天可以期待什麼",
+      "headlineEn": "What to Expect From Kevin Warsh’s Fed in the First 100 Days",
+      "detail": "Google News · Fed rates",
+      "translated": true,
+      "sentiment": "neutral",
+      "impact": "medium"
+    },
+    {
+      "id": "VRT|vertiv_fell_12__this_week__here_s_where_the_stock_is_headed_",
+      "date": "2026-05-25",
+      "tickers": [
+        "VRT"
+      ],
+      "source": "TIKR.com",
+      "sourceType": "external",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNbnVYLWFVeGcyelRYeEE1ajRDQnRiQUs4U3p0X1NpaDdNcXJHX0w4Y1BudjdKZWxtYTEzWUptOEZVdnVXZktpVVRyVFFnZ1lSMnhPUEtSZTNnOENoQmFSYlQxVEExV05HZHd3OHhuUlBNVExMcHJRZ1E3WEVNUlIwbC1jSTd3ZTVXeXNVZFRtNlFqQlFD?oc=5",
+      "headline": "Vertiv本周下跌12%。以下是2026年股票的走向",
+      "headlineEn": "Vertiv Fell 12% This Week. Here’s Where the Stock is Headed in 2026",
+      "detail": "Vertiv本周下跌12%。以下是2026年TIKR.com的股票走向",
       "translated": true,
       "sentiment": "neutral",
       "impact": "medium"
@@ -439,140 +1175,12 @@
       "tickers": [
         "IREN"
       ],
-      "source": "Quiver Quantitative",
+      "source": "Moomoo",
       "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNOVVJWHp1NzREZlVhdVRRZTUzaEwyS21scGJsUENQc0F3b1RqZjFlcE9qRVpHSDJoUzdLWHZkb1h3MlpLdlJ2R1FSZ0FzbF9DTVJ6WlotY3cyb2lmcTJCSkhSb0FjWnB3cWZaeWRLSFJBZ25fTk51ZUc0dXVUOU1pM3NQVHAxOHVOSHlPSGUxM3VGaUMzUldR?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOHRoREhaTzluR09sNTVMRnpmOFh2Qm5YS0JReUt1blJ4MnVYbEFCSVpuR2RqazExcldfTDhmNzBoYzFhNExBZzdrTTlNc2FIb0pBZ2JIbEt3TmN2S3FTYmN2ZXB3RXRzdGM5eGVxNDl4SmdzbDBHLTFFTG1JOVM2RzJaX3NLaUZHeEVoOUhGVW1nemhsUmtnME9iYw?oc=5",
       "headline": "IRIS Energy Stock (IREN)對NVIDIA AI合約的意見",
       "headlineEn": "Iris Energy Stock (IREN) Opinions on NVIDIA AI Contract",
-      "detail": "IRIS Energy Stock (IREN)對NVIDIA AI Contract Quiver Quantitative的意見",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "IREN|this_ai_stock_just_secured_a_deal_that_could_change_its_tra",
-      "date": "2026-05-22",
-      "tickers": [
-        "IREN"
-      ],
-      "source": "Yahoo Finance",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNY1ZIck9QRmZELUwxaGtVaGZ0MUJNU1JpVTJQX2FpSktpZVlQM1BZYk1Xa0I3cHF1MjZDSGtGaHUxVS1JcVJmam9FQUM2Q01zS0JJWklzQ1pibjE4QXBMT0EwOFUyR2Zpd1N4dkNNdVAxQ3RSLUU2YW1reFpQcWNJQWFSYjBjM1I2WnMtZTYxaEthWks2S0E?oc=5",
-      "headline": "這支AI股票剛剛獲得了一筆可能永遠改變其軌跡的交易",
-      "headlineEn": "This AI Stock Just Secured a Deal That Could Change Its Trajectory Forever",
-      "detail": "這支AI股票剛剛獲得了一筆可能永遠改變其軌跡的交易雅虎財經",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "MACRO|the_ai_capex_cycle_is_heating_up__but_will_ai_stock_revenu",
-      "date": "2026-05-22",
-      "tickers": [
-        "MACRO"
-      ],
-      "source": "Yahoo Finance",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9Ob0pLTmg4bVkxTzZkR2VDeV9IOWl4bUFUdzR4ZTBvajJJUDNRT19oYlMyLURBRWZ6Mi1VY2dGZUx0Sk01SHptaTNNQlNlX2dUVGZULXJTV1N4QldXRjNIYXlMZVFJX3V1ZWxlbW4teV9kNEVVM0x0TkdsLTY?oc=5",
-      "headline": "AI資本支出週期正在升溫，但AI股票收入會跟上嗎？",
-      "headlineEn": "The AI CAPEX Cycle is Heating Up, But Will AI Stock Revenue Keep Up?",
-      "detail": "Google News · AI stocks",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "MACRO|trump_finally_gets_his_fed_chair__bond_investors_are_alrea",
-      "date": "2026-05-22",
-      "tickers": [
-        "MACRO"
-      ],
-      "source": "Politico",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOM1YtWGo2S3dhSFY3aHktOEFDWndPZDhMbEtqc2NVVlhqRFU1Q0JhS0JvNnpzaENNRHpnY01IZjVfMm5NMkxEdlBSXzE4b0xDMUZRZW81dGtaWTRYWVNKREpTQ05TajctQjMwNmc2R28xNnJuM0tPWTFFbkVVbFh3WDRCcw?oc=5",
-      "headline": "特朗普終於得到了他的聯準會主席。債券投資者已經在考驗他了。",
-      "headlineEn": "Trump finally gets his Fed chair. Bond investors are already testing him.",
-      "detail": "Google News · Fed rates",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "GOOGL|alphabet_inc___googl__expands_gemini_enterprise_agent_mark",
-      "date": "2026-05-21",
-      "tickers": [
-        "GOOGL"
-      ],
-      "source": "Yahoo Finance",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPeFJpWDcyc2pYWl9oZFBGRkxyZGZBandhVEl0d2Y1RXFndEYwUHhKNDl2QkZhVjhaZldxNkpHWnBXOVV0Y2pOdlBpY0xtWkxpbHJfUEpMQU1VcXBwQzZneEVHNmFWWWN0M3dlcTkzOUFwSVBPQjMwWU9UZWs2dFpORUFFZFBoUWtsUDdmUDZqVEM5QURxSkVhLXZIS2thZWppem51UQ?oc=5",
-      "headline": "Alphabet Inc. (GOOGL)與Amdocs合作擴展Gemini企業代理商市場",
-      "headlineEn": "Alphabet Inc. (GOOGL) Expands Gemini Enterprise Agent Marketplace with Amdocs Partnership",
-      "detail": "Alphabet Inc. (GOOGL)與Amdocs合作夥伴Yahoo Finance擴展Gemini企業代理商市場",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "NVDA|nvidia_s_impressive_earnings_fall_flat_with_investors__has_",
-      "date": "2026-05-21",
-      "tickers": [
-        "NVDA"
-      ],
-      "source": "Investopedia",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPTUtubGc2dGJjYXg3LVNNNWJqTXRXS2dMQW5hd1k0N2ItbzJMRGhPRkxKMGFqWnhkTWV1S25GZmVHT19OeDlqMkxqdjBJZE15RkF4elN1RVJuWEVIalFuakRqZEVOTXlCOGxOSkFPS0Zwc0c0MjZjZkw3OU5Rem96NTRaYVFGSUV1MDdUVVBKTm5remNRa0JMQkcyLWpPeFZIZUZ0Q3Q5VUV2QnMzbUVRbnhPemVheW5lYTBVbFNUUGtqWWc1aUxEeXdkVTlDUQ?oc=5",
-      "headline": "Nvidia令人印象深刻的收益與投資者持平。股票是否失去了優勢？",
-      "headlineEn": "Nvidia's Impressive Earnings Fall Flat with Investors. Has The Stock Lost Its Edge?",
-      "detail": "Nvidia令人印象深刻的收益與投資者持平。股票是否失去了優勢？ InvestopediaMarket對Nvidia （ NVDA ）收益的微弱反應：您是否應該立即購買股票？ Y",
-      "translated": true,
-      "sentiment": "mixed",
-      "impact": "medium"
-    },
-    {
-      "id": "AMD|intel_has_doubled_amd_s_2026_gains__is_it_time_to_rebalance_",
-      "date": "2026-05-21",
-      "tickers": [
-        "AMD"
-      ],
-      "source": "24/7 Wall St.",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQ1otYUgyNDBrX01KU1NZR1BtSElyRHlha3NScUg2UHRiNndhYkVfVGVBekZlazlQd3hxY2w2TUUwUWZ6NjFYWUN1ODhkWjZJYjg3NXZvbFlfRkhlckZXODhpem56RGY0Z1J3ZlJoWDZ3SWRlTEpORUVkX1VoVlltMzJacjB6TVoxblRlTm5YUWNhMU13UlRlT2Zia1dHdFJTZTA3U1FaZmp1YnZ1b2ZoQTNERDJ2WDJQUGc?oc=5",
-      "headline": "英特爾使AMD的2026年收益翻了一番。是時候重新平衡您的籌碼庫存了嗎？",
-      "headlineEn": "Intel Has Doubled AMD’s 2026 Gains. Is It Time to Rebalance Your Chip Stocks?",
-      "detail": "英特爾使AMD的2026年收益翻了一番。是時候重新平衡您的籌碼庫存了嗎？ 24/7 Wall St.",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "ARM|why_is_arm_stock_surging_to_an_all_time_high_today_",
-      "date": "2026-05-21",
-      "tickers": [
-        "ARM"
-      ],
-      "source": "Investing.com",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxON29HTDNvTzdaZ0FSV2Iyc3QzYV92UWZZSF8xV3lfbWVqbFN3VkxjTnY0Zzh1Q0cyeXYtdVFUb2tPTUtRQU1LbmMtb2Z0MWU1d1lWNlhLZVpTTU5iLTZMbjRlLXk1Q2lOZy12OU9WRXg5RnJ0aGFnRFZDcUw0bXF1NG5RVW9GN2RJT0txYWMwZXltTWtiNzkwTmVpUl9XUy1QRGFWeC1ndC0waEo5aEJxaA?oc=5",
-      "headline": "為何Arm股價今日飆升至歷史新高？",
-      "headlineEn": "Why is Arm stock surging to an all-time high today?",
-      "detail": "為何Arm股價今日飆升至歷史新高？ Investing.com",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "SMCI|super_micro_computer_stock_pulls_back_to_support___smart_en",
-      "date": "2026-05-21",
-      "tickers": [
-        "SMCI"
-      ],
-      "source": "Trefis",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPc1M3bEVHNURYS1VFbHY2cXNlOXlwM0tSd0NGVWZtTGdLNGhYcjNYV2VSS29IaHBwRmhpelZiQmJsTndVc0N5RUxGNFBMbmF2Ti1oanNjWUw1dngxT2ItcUZJZkJIc0pjQXFFVTFST3hOSVEtRlpSY2dud2NRWkg5eGctbkZFYXlPeDR6bUhPSGdBZHJTUk1MZE4yUHA2LVRuM2RWaWpRVjFzQ1VLZmlDR1RkWExPekpFdS05enNnUFU?oc=5",
-      "headline": "超級微電腦庫存回歸支援–智慧入口？",
-      "headlineEn": "Super Micro Computer Stock Pulls Back to Support – Smart Entry?",
-      "detail": "超級微電腦庫存回歸支撐– Smart Entry? Trefis",
+      "detail": "IRIS Energy Stock (IREN)對NVIDIA AI合約Moomoo的意見",
       "translated": true,
       "sentiment": "neutral",
       "impact": "medium"
@@ -594,163 +1202,35 @@
       "impact": "medium"
     },
     {
-      "id": "MACRO|nvidia_price_prediction__after_record_earnings__here_is_ho",
-      "date": "2026-05-21",
+      "id": "ANET|arista_networks_stock_testing_price_floor___buy_now_",
+      "date": "2026-05-13",
       "tickers": [
-        "MACRO"
+        "ANET"
       ],
-      "source": "24/7 Wall St.",
+      "source": "Trefis",
       "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNM0hKRWt2MzBROE50aDFQSkZ4OVhHVTA4bnYyempNVmNsZWppc3lZY3dCaEV5V1JuYjhva1FfckUxUFBCaUVHN01MSXJlN29ULTE2aW81ZnpzZVluSkl0YlI4ZkR6eENSWU9vTXR1b0VaQkdvR0RORmJnUmpVMTRzNUdUWGZyN1c4cE9QazdHR1V2MTBzd2NlZU8xVFJFdlNZWnFUTnBLVGtVaGYxT3UzcEtaQ3Q0dzB1NldSaUdzQUpCUkJGQXc?oc=5",
-      "headline": "Nvidia價格預測：在創紀錄的盈利之後，以下是股市將反彈的高度",
-      "headlineEn": "Nvidia Price Prediction: After Record Earnings, Here Is How High The Stock Will Rally",
-      "detail": "Google News · AI stocks",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZ2hYNXFfZWhTWEhqdDJqSm1JZWRmaUlTQ0NKSWswZEFIb2s1c1FjVl9pSXdHNk81b29XTFdQeS0yWHdWTl9hVjJZeTRMX1NFVXZDVXQzRlR3VzVWRlExOXVrY3FYaV9xOEk5eEcxa1F2RERHN2JHTU9OdzFLbEt5X08wUXRfcWRZUWt4cFg0dGlnVjJseWpVZGMwdkpTMWUwSHEtbHdfcEU4LTJJQUY0UjVfb1lYelJuci14OA?oc=5",
+      "headline": "Arista Networks股票測試價格下限-立即購買？",
+      "headlineEn": "Arista Networks Stock Testing Price Floor - Buy Now?",
+      "detail": "Arista Networks股票測試價格下限-立即購買？ Trefis",
       "translated": true,
       "sentiment": "positive",
       "impact": "medium"
     },
     {
-      "id": "MACRO|rising_interest_rates_are_exploding_the_debt_2026_05_21",
-      "date": "2026-05-21",
+      "id": "CRCL|circle_stock_climbs_16__as_stablecoin_use_cases_grow",
+      "date": "2026-05-11",
       "tickers": [
-        "MACRO"
-      ],
-      "source": "Committee for a Responsible Federal Budget",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9xUmxORm9ZMW96bVpIdGI2MVExNmlTRE5lR25CbTctRWVlSGJSNldNQVJ4YjlZNFhxdXJ5SVpRVnFicGZfYmZkb0w5QVprbGVxS21HdkFsaFNMNFR3bURqRHNuSDlWckRYbWdmSWZUaXdMdHZWV1E?oc=5",
-      "headline": "利率上升正在引爆債務2026-05-21",
-      "headlineEn": "Rising Interest Rates are Exploding the Debt-2026-05-21",
-      "detail": "Google News · Fed rates",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "MACRO|how_the_federal_reserve_s_rate_decision_impacts_student_lo",
-      "date": "2026-05-21",
-      "tickers": [
-        "MACRO"
+        "CRCL"
       ],
       "source": "Yahoo Finance",
       "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbkRBdEZLNFl4aUQxazVta3BLeG82djdWVjhUMFBsbGU1dkxnQmx6WV9fdFVGRmZSYjNvdnhNVWFjSVpMb1dROGJDZzZJOGhPQzd0YXNVb3JETENxWE96djU2WVhocHRjcE9qcGlCRTRDTE91UEtVdG9XSFB3ZTljc01MV2FSSmxjTlk2V2dBOERfVXJvS2NDanN3TTBDRnhhTFFzVlNocmxEeHdoQmxOLWRfTGo?oc=5",
-      "headline": "美聯儲的利率決策如何影響學生貸款利率",
-      "headlineEn": "How the Federal Reserve's rate decision impacts student loan interest rates",
-      "detail": "Google News · Fed rates",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOemRIZEFhcHpzb0tMQXBqM29EWkRnZERQUVQ0ZmJvaENFTVRadFlqRVE4UnRPQ3oyaEo2Rk92NEFWUzlIbGYyZ3huaEVTWV9zci1FTl9DaGZUR0ViSXJYMkRfOC0yMGNpN3hOY1FzYU1KbS1TdHl5cTh0MWYxWjRlZEo2UFdUd29HWFdWaTBhcElPOF9xNy1ZVjltX0g5RTJxYjF6aVdxTTdKTm1WQXhFYVdMZTlkUQ?oc=5",
+      "headline": "隨著穩定幣用例的增長，圓形股票攀升16%",
+      "headlineEn": "Circle stock climbs 16% as stablecoin use cases grow",
+      "detail": "隨著穩定幣使用案例的增長，圓形股票攀升16%雅虎財經",
       "translated": true,
       "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "SMCI|what_s_going_on_with_super_micro_stock_on_wednesday_",
-      "date": "2026-05-20",
-      "tickers": [
-        "SMCI"
-      ],
-      "source": "Benzinga",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQV296QXN5ZWJiaEFmT1V2WjJkeEF1M1BWUmJIa29wVzBPMXhqZHBFOGo2NVlGS0FJM0V5eDNmUC1aZktUMDNoUFFKejYwUDNlVzY4bDRxc2sxOXVhcm9FbDUxeFhWOW9mbkM3T0taNUpPdDliYnVfdHktXzYwb0treDVaRk5WWU90Vi1HSEpnblhYbUhkdTFyd1FiemxoYks4cjNmaEhB?oc=5",
-      "headline": "周三的Super Micro股票怎麼樣了？",
-      "headlineEn": "What's Going On With Super Micro Stock On Wednesday?",
-      "detail": "周三Super Micro股票怎麼樣了？ Benzinga",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "SIVE|sivers_semiconductors_welcomes_the_nomination_of_new_board_",
-      "date": "2026-05-20",
-      "tickers": [
-        "SIVE"
-      ],
-      "source": "Yahoo Finance",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVmM4NXhBcVBDeXU2cGlwbU94VWRlNkZfbW5RSHJwbktNeFJhand5Q3M5a2lpVG1QeTRXZHNRY25kMUUyN2FTa0ZhSHVUdElKWGpQTmdqUXBaZGYtVnNtVnVqdmNZOTJNa1pNUG5ONGNDNkVwMmgybTRCRUYwNU56cm5HMjNKSjRpWnhpYkxhbWh1T3ZqOGEwTXY1MWhNRDY2QWVsVEUyTFZ5amZadjJVeUNn?oc=5",
-      "headline": "Sivers Semiconductors歡迎提名新董事Joakim Nideborn和Helena Svancar",
-      "headlineEn": "Sivers Semiconductors Welcomes the Nomination of New Board Members Joakim Nideborn and Helena Svancar",
-      "detail": "Sivers Semiconductors歡迎提名新董事Joakim Nideborn和Helena Svancar Yahoo Finance",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "MACRO|nvidia_earnings__3_things_to_watch_as_ai_capex_tested",
-      "date": "2026-05-20",
-      "tickers": [
-        "MACRO"
-      ],
-      "source": "Gotrade",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdlNDbjlfdlhBWDRiUUhiQm9ybnE2enc0cTBtQWZseks5S1p1NUU4bEdIQjRSSnJaYnVVS2Z6TU5vMW5DV1NJclJQZ3dwcVhQSjVTZ05RVlMyd2lMMFFrSXRPLUlwWlFTRmtPTnRzLWtDel82ZVV0VXYza0tzNGw0amU2ZjFyTUJwNDItNQ?oc=5",
-      "headline": "Nvidia收益： AI資本支出測試需要注意的3件事",
-      "headlineEn": "Nvidia Earnings: 3 Things to Watch as AI Capex Tested",
-      "detail": "Google News · AI stocks",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "IREN|why_iris_energy_stock_is_sinking_despite_ai_push",
-      "date": "2026-05-19",
-      "tickers": [
-        "IREN"
-      ],
-      "source": "TipRanks",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQT0RPVkxFcXFaSWIyZXVyVGZGV2xSWmxjWGJLYkl0QTZDeUdFVnBKa3F3M0NISzFocFJDWUpkdHoteUJNWFhZRE51NjZxTWV5ZUl4Z0pFTjZKa1pZUGxDeXZoV1BQaW5fTUlOUnl0VzRXejdxWEFRY2lpelBRb1U3UnR3NVZkR1BQN0tQX1NuOWM?oc=5",
-      "headline": "儘管AI推動，為什麼Iris Energy股票正在下跌",
-      "headlineEn": "Why Iris Energy Stock Is Sinking Despite AI Push",
-      "detail": "儘管AI推送TipRanks ，為什麼Iris Energy股票正在下跌",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "SIVE|sivers_awarded__6_6m_ew_star_extension",
-      "date": "2026-05-19",
-      "tickers": [
-        "SIVE"
-      ],
-      "source": "Compound Semiconductor",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNekJQZnllQThCcUlWaDVnYWF1ODBwRHNzY05KS3ZlY1hscUN6RnRHNEZVSmZGMnV1NmU3Q24wdjlRcnBJU0JRMFlmWFhhZDQ2UDYzTG9nc0lKZWJ4aUYydUNTaC0wRkRRWEVYMHVWWUE3c0cyTFR0a2RwT3pKQU55RnJzSEhoVjZrWDNxRVd3?oc=5",
-      "headline": "Sivers獲得$ 660萬EW-STAR延期",
-      "headlineEn": "Sivers awarded $6.6m EW-STAR extension",
-      "detail": "Sivers獲得$ 660萬EW-STAR EXTENSION Compound Semiconductor",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "SIVE|assessing_sivers_semiconductors__om_sive__valuation_after_n",
-      "date": "2026-05-14",
-      "tickers": [
-        "SIVE"
-      ],
-      "source": "simplywall.st",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPN2NHQVQ0TFV4OEtKd1VKQVI0TlkzTmlpcWdKbzNlVjhseGJYaVByei1BQVBRRWtqUUExbGo2LUhDb3hwWmxybXVTeHA0aGhXQVhJbndndVJqRjVWOGFvRU5tVXRUQ3p1VXZvLXI3YUZwM29XbXp6blBVeUxwcXVERnRqMlVMYy1TLVZaTjVTUGFyeS1xN2U2VndmY3hNVVlMSFMtN1lXaW5nVU9QODB5bWtENGxkMW1USExORGpCeXBKalpZdXhVbUV6YlF2M2lBaGh1cmcyVGYyMlI5c0JleDlPUlPSAeoBQVVfeXFMUEdLWkN6SlpucmM3a2JhTnhmWjl6U3U4VlJzTW5oVEFyZXVFemltYVExb0o3cmlzR3ZKUUZocV9jNUYxMVNFS1ZQWGhRTmJaWVB0cmwwOXpRVW1zODh5Z0N5LTZScDdTekprVVg1d1lSRVJad1NNQ2JkZTJ5OG10dXctY0JQMjg2cDllWF9BU3lPelRzMldFelRaQWctOUhHZThQa3dNZGJhUXdRenBwYkJjdjUxX0kzUVlhdmFHOEt2Q3pCczdTV1IxRHVpZmNaZ3ZDYlNtZlpxYjhFQTdqdUdLZ1VUOHJEd0l3?oc=5",
-      "headline": "評估納斯達克上市計劃和固定無線接入合作夥伴關係後的Sivers Semiconductors (OM: SIVE)估值",
-      "headlineEn": "Assessing Sivers Semiconductors (OM:SIVE) Valuation After Nasdaq Listing Plan And Fixed Wireless Access Partnership",
-      "detail": "在納斯達克上市計劃和固定無線接入合作夥伴關係之後評估Sivers Semiconductors （ OM ： SIVE ）估值simplywall.st",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "ANET|after_earnings__is_arista_networks_stock_a_buy__a_sell__or_",
-      "date": "2026-05-13",
-      "tickers": [
-        "ANET"
-      ],
-      "source": "Morningstar",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNaVg5U3dZQUJRVmhZNE5fem81X0ttbXkwR3FmXzJTa3Y2SUd1eWVpbWhPZXh4dHhIX2puSDVLTTVUalVFUXhrbkxRT0Y3NzVCUWxMcEZkMFpLd3M0bUVzanprZ25JclM5bFNhbk9SYXRuSXZvTllCN29XSTd0X3RRb0lLLTNpaGVqTUZ4bVNKeWVhbVNOMjJPVElOYUN5dnNwWnc?oc=5",
-      "headline": "盈利後， Arista Networks股票是買入、賣出還是估值合理？",
-      "headlineEn": "After Earnings, Is Arista Networks Stock a Buy, a Sell, or Fairly Valued?",
-      "detail": "盈利後， Arista Networks股票是買入、賣出還是相當有價值？ Morningstar",
-      "translated": true,
-      "sentiment": "mixed",
       "impact": "medium"
     },
     {
@@ -767,54 +1247,6 @@
       "detail": "Circle互聯網發布的收入勝過但收入下降。它押注於人工智能。Barron's",
       "translated": true,
       "sentiment": "mixed",
-      "impact": "medium"
-    },
-    {
-      "id": "CRCL|circle_breaks_out__crypto_stocks_surge_ahead_of_clarity_act",
-      "date": "2026-05-11",
-      "tickers": [
-        "CRCL"
-      ],
-      "source": "Investor's Business Daily",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQWU41OHFrWGZwX19qLUNiOUF4S2RoQi11cWVxSWlxNHQyYkdkQUNQLTQyNzVXVnEwTExlZFNKRG9XMHA5d0dGRnBRSnQ0NkRNVm5SbDlzb0tSb1hZLV9aUzE2XzQ0M3RYX1c5a3h4SDBsSzdiYVFiaWdnVDBrY0xrZ0drZE9xSVUxMFNPUkNVRUVLN29PcmhsYXlJZFp2MzBMVlVsVEpUR0pSY2Nybk94RndZMWtoMzEzQ054MDc4OA?oc=5",
-      "headline": "圈子爆發，加密股在CLARITY ACT聽證會之前飆升",
-      "headlineEn": "Circle Breaks Out, Crypto Stocks Surge Ahead Of Clarity Act Hearing",
-      "detail": "圓圈爆發，加密貨幣股票在清晰度法案聽證會之前飆升投資者的商業日報",
-      "translated": true,
-      "sentiment": "positive",
-      "impact": "medium"
-    },
-    {
-      "id": "CRCL|circle_reports_first_quarter_2026_results",
-      "date": "2026-05-11",
-      "tickers": [
-        "CRCL"
-      ],
-      "source": "Circle Internet Financial",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE91LXNJZ1A0Y0JrQloyWUFHVDdRTHpPR0ZQWUxzNTVQODlVV1NpQ1NoQ25kVHh6bk9ZSmIxZE1Eem5QMGpuUDhUWnMyX0RGMXp3QnNRa2ZJVGtKR3N5dTBOZmpJMVpvZWR5eWF0UjBqNXhxcWZoTlQ0bFdlZzhQcTA?oc=5",
-      "headline": "CIRCLE 2026年第一季報告結果",
-      "headlineEn": "Circle Reports First Quarter 2026 Results",
-      "detail": "Circle Reports 2026年第一季度業績Circle Internet Financial",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "SIVE|sivers_semiconductors__a_small_cap_bet_on_ai_s_next_bottlen",
-      "date": "2026-05-09",
-      "tickers": [
-        "SIVE"
-      ],
-      "source": "Seeking Alpha",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOOWF4Y3lzRmRXUno1R2JDNmVDaEVmYUJyUjZwNGJES1diTmdHQUh5aVRXa2lORFVvZVJBUEUwTnRfVnlzc1RhVmJhRmN2eFBBZW93czl0RUNnQ0xKZHdTczBWZWFLRjVJanpveE11RE1MUkNzS0NwQ3BibHpRWnhIbVE4WC1pLVB1N0Qyd2NTdDJaYy03R0tkZzN5dWwzRENCVV9j?oc=5",
-      "headline": "Sivers Semiconductors ：對AI下一個瓶頸的小額押注（ OTCMKTS ： SIVEF ）",
-      "headlineEn": "Sivers Semiconductors: A Small Cap Bet On AI’s Next Bottleneck (OTCMKTS:SIVEF)",
-      "detail": "Sivers Semiconductors ：對AI尋求Alpha的下一個瓶頸（ OTCMKTS ： SIVEF ）的小額押注",
-      "translated": true,
-      "sentiment": "neutral",
       "impact": "medium"
     },
     {
@@ -850,35 +1282,19 @@
       "impact": "medium"
     },
     {
-      "id": "IREN|nvidia_and_iren_announce_strategic_partnership_to_accelerat",
-      "date": "2026-05-07",
-      "tickers": [
-        "IREN"
-      ],
-      "source": "NVIDIA Newsroom",
-      "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOWUlUT1F5eFJRbjBvYVA2bzhUV3NUSExnMTNFVDVHZWlISzR2SV9mcXQzN2ZmRzJPcE84Z2xXVjVRTzhzd21ubkFuX0UxdHhPeG96dE5McTJJcklMR2VWWnNYV0FlZHRsUkZwNlg2NERiaTRGbFQ3WWs4V1dPbjdzdVNBcmlXWVVyczNuS2hwcTRSZEJnS0hVYXp5amZ3R0habHc3bktzeW9aMC1hY3RKUnBibVZlS2JaZTNnQmVjT3lkbnNjUlB0SnE4SGtaRm9Bd1I3REY1SnRMRGNmLTV4bWtn?oc=5",
-      "headline": "NVIDIA與IREN宣佈結成戰略合作夥伴關係，加速部署高達5 Gigawatts的AI基礎設施",
-      "headlineEn": "NVIDIA and IREN Announce Strategic Partnership to Accelerate Deployment of up to 5 Gigawatts of AI Infrastructure",
-      "detail": "NVIDIA與IREN宣佈結成戰略合作夥伴關係，加速部署高達5 Gigawatts的AI基礎架構NVIDIA新聞中心",
-      "translated": true,
-      "sentiment": "neutral",
-      "impact": "medium"
-    },
-    {
-      "id": "CRCL|circle_stock_rebounds_after_biggest_1_day_drop_ever",
-      "date": "2026-03-25",
+      "id": "CRCL|circle_internet_s_quarterly_profit_surges_on_stablecoin_dem",
+      "date": "2026-02-25",
       "tickers": [
         "CRCL"
       ],
-      "source": "Yahoo Finance",
+      "source": "WSJ",
       "sourceType": "external",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNSUx2dlpYMkNpeE4wNTE0c1plV1hmNlFycU1BSWpNaWs1WjVrVlNEMnU1MXhhdUhnc2k0S19LMUtCOHYzenN3dHNZMUQyQWdEODVabEE3d0NlMzdScWFvTVgwVHJ1Rm11aExiOEV4czNqT2djS2M3WFNlTnlXUzJJMHoxZnBIMUZ4N2UtNmNpcmZvVGliUGE2YXF1eHMtZw?oc=5",
-      "headline": "經歷有史以來最大單日跌幅後，圓形股票反彈",
-      "headlineEn": "Circle stock rebounds after biggest 1-day drop ever",
-      "detail": "雅虎財經有史以來最大單日跌幅之後，圓形股票反彈",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZ3RxZkJad1J2VGlObEh5NGdzelJJSG5OTmR4Qmk3ZjhIblRTeWhXaS0xSGVpSHR3eG54OENUU2cwTjM0M1lJUVhNcHJiS1pwTDVXQ2NNaUNUYXpkR2J5aVdCVFV3NU1JZEEwS3U4LUlzVTV0WHltMHg5WE1GYXM3UGFmM0xNaE10UHQtVEFQdUIxYXZaRHgyNkthV25DUE9xakI5X01B?oc=5",
+      "headline": "Circle Internet的穩定幣需求季度利潤激增",
+      "headlineEn": "Circle Internet’s Quarterly Profit Surges on Stablecoin Demand",
+      "detail": "Circle Internet在穩定幣需求方面的季度利潤激增《華爾街日報》",
       "translated": true,
-      "sentiment": "down",
+      "sentiment": "neutral",
       "impact": "medium"
     }
   ]

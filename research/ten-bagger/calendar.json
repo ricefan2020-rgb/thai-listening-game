@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-25",
+  "asOf": "2026-05-30",
   "timezone": "America/New_York",
   "note": "宏觀公布日為慣例時段 · 財報窗口為估計 · 以官方/IR 為準",
   "items": [
@@ -1091,6 +1091,146 @@
       ]
     },
     {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "GOOGL 期權到期",
+      "detail": "DTE 1 · 中性 · P/C — · OpenD",
+      "impact": "medium",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "NVDA 期權到期",
+      "detail": "DTE 1 · 中性 · P/C — · OpenD",
+      "impact": "medium",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "AMD 期權到期",
+      "detail": "DTE 1 · 中性 · P/C — · OpenD",
+      "impact": "medium",
+      "tickers": [
+        "AMD"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "ARM 期權到期",
+      "detail": "DTE 1 · 中性 · P/C — · OpenD",
+      "impact": "medium",
+      "tickers": [
+        "ARM"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "ANET 期權到期",
+      "detail": "DTE 1 · 中性 · P/C — · OpenD",
+      "impact": "medium",
+      "tickers": [
+        "ANET"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "VRT 期權到期",
+      "detail": "DTE 1 · 中性 · P/C — · OpenD",
+      "impact": "medium",
+      "tickers": [
+        "VRT"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "SMCI 期權到期",
+      "detail": "DTE 1 · 略偏多 · P/C 0.3 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "SMCI"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "IREN 期權到期",
+      "detail": "DTE 1 · 籌碼偏空 · P/C 4.15 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "IREN"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "PLTR 期權到期",
+      "detail": "DTE 1 · 籌碼偏多 · P/C 0.17 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "PLTR"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "CRCL 期權到期",
+      "detail": "DTE 1 · 籌碼偏多 · P/C 0.7 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "CRCL"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "SNOW 期權到期",
+      "detail": "DTE 1 · 中性 · P/C 0.79 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "SNOW"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "opex",
+      "title": "POET 期權到期",
+      "detail": "DTE 1 · 略偏空 · P/C 1.44 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "POET"
+      ]
+    },
+    {
+      "date": "2026-06-01",
+      "kind": "opex",
+      "title": "GOOGL 期權到期",
+      "detail": "DTE 3 · 中性 · P/C — · OpenD",
+      "impact": "medium",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "date": "2026-06-01",
+      "kind": "opex",
+      "title": "NVDA 期權到期",
+      "detail": "DTE 3 · 中性 · P/C — · OpenD",
+      "impact": "medium",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
       "date": "2026-06-05",
       "time": "08:30",
       "kind": "macro",
@@ -1102,6 +1242,106 @@
         "NVDA",
         "CRCL",
         "PLTR"
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "kind": "opex",
+      "title": "AMD 期權到期",
+      "detail": "DTE 7 · 中性 · P/C — · OpenD",
+      "impact": "medium",
+      "tickers": [
+        "AMD"
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "kind": "opex",
+      "title": "ARM 期權到期",
+      "detail": "DTE 7 · 中性 · P/C — · OpenD",
+      "impact": "medium",
+      "tickers": [
+        "ARM"
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "kind": "opex",
+      "title": "ANET 期權到期",
+      "detail": "DTE 7 · 中性 · P/C — · OpenD",
+      "impact": "medium",
+      "tickers": [
+        "ANET"
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "kind": "opex",
+      "title": "VRT 期權到期",
+      "detail": "DTE 7 · 中性 · P/C — · OpenD",
+      "impact": "medium",
+      "tickers": [
+        "VRT"
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "kind": "opex",
+      "title": "SMCI 期權到期",
+      "detail": "DTE 6 · 中性 · P/C 0.22 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "SMCI"
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "kind": "opex",
+      "title": "IREN 期權到期",
+      "detail": "DTE 6 · 籌碼偏空 · P/C 2.62 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "IREN"
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "kind": "opex",
+      "title": "PLTR 期權到期",
+      "detail": "DTE 6 · 略偏多 · P/C 0.45 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "PLTR"
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "kind": "opex",
+      "title": "CRCL 期權到期",
+      "detail": "DTE 6 · 中性 · P/C 0.69 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "CRCL"
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "kind": "opex",
+      "title": "SNOW 期權到期",
+      "detail": "DTE 6 · 中性 · P/C 0.54 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "SNOW"
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "kind": "opex",
+      "title": "POET 期權到期",
+      "detail": "DTE 6 · 略偏空 · P/C 1 · Yahoo",
+      "impact": "medium",
+      "tickers": [
+        "POET"
       ]
     },
     {

@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-24",
+  "asOf": "2026-05-30",
   "sources": [
     "Circle API (USDC)",
     "DeFiLlama (USDT/USDC/DAI)"
@@ -8,19 +8,19 @@
   "coins": {
     "USDC": {
       "issuer": "Circle (CRCL)",
-      "circulatingUsd": 76419966614.79991,
-      "circulatingFmt": "$76.4B",
+      "circulatingUsd": 76021847401.89882,
+      "circulatingFmt": "$76.0B",
       "source": "circle",
       "change7dPct": -0.8,
-      "change30dPct": -2.2,
-      "change90dPct": 2.6,
-      "vsQ1FilingPct": -0.8,
+      "change30dPct": -1.7,
+      "change90dPct": 1.1,
+      "vsQ1FilingPct": -1.3,
       "q1FilingFmt": "$77B",
       "topChains": [
         {
           "chain": "ETH",
-          "amountFmt": "$52.7B",
-          "sharePct": 68.9
+          "amountFmt": "$52.5B",
+          "sharePct": 69
         },
         {
           "chain": "SOL",
@@ -29,8 +29,8 @@
         },
         {
           "chain": "ARB",
-          "amountFmt": "$6.2B",
-          "sharePct": 8.1
+          "amountFmt": "$6.0B",
+          "sharePct": 7.9
         },
         {
           "chain": "BASE",
@@ -39,54 +39,54 @@
         },
         {
           "chain": "HYPEREVM",
-          "amountFmt": "$2.4B",
-          "sharePct": 3.2
+          "amountFmt": "$2.7B",
+          "sharePct": 3.5
         },
         {
           "chain": "POLY",
-          "amountFmt": "$627M",
-          "sharePct": 0.8
+          "amountFmt": "$974M",
+          "sharePct": 1.3
         },
         {
           "chain": "AVAX",
-          "amountFmt": "$427M",
-          "sharePct": 0.6
+          "amountFmt": "$409M",
+          "sharePct": 0.5
         },
         {
           "chain": "SUI",
-          "amountFmt": "$399M",
-          "sharePct": 0.5
+          "amountFmt": "$270M",
+          "sharePct": 0.4
         }
       ]
     },
     "USDT": {
       "issuer": "Tether",
-      "circulatingUsd": 189453843533.47754,
-      "circulatingFmt": "$189.5B",
+      "circulatingUsd": 188320056916.28955,
+      "circulatingFmt": "$188.3B",
       "source": "defillama",
-      "change7dPct": -0.2,
-      "change30dPct": -0.1,
-      "change90dPct": 3.2
+      "change7dPct": -0.7,
+      "change30dPct": -0.7,
+      "change90dPct": 2.6
     },
     "DAI": {
       "issuer": "MakerDAO",
-      "circulatingUsd": 4595067499.082678,
+      "circulatingUsd": 4602789123.856631,
       "circulatingFmt": "$4.6B",
       "source": "defillama"
     }
   },
   "market": {
-    "usdcPlusUsdtUsd": 265873810148.27747,
-    "usdcSharePct": 28.7,
-    "usdtSharePct": 71.3,
-    "usdcShareLabel": "USDC 佔 USDC+USDT 28.7%",
+    "usdcPlusUsdtUsd": 264341904318.18835,
+    "usdcSharePct": 28.8,
+    "usdtSharePct": 71.2,
+    "usdcShareLabel": "USDC 佔 USDC+USDT 28.8%",
     "leader": "USDT",
-    "gapFmt": "$113.0B"
+    "gapFmt": "$112.3B"
   },
   "crcl": {
     "ticker": "CRCL",
-    "usdcCirculatingFmt": "$76.4B",
-    "usdcShareOfDuopoly": 28.7,
+    "usdcCirculatingFmt": "$76.0B",
+    "usdcShareOfDuopoly": 28.8,
     "revenueDriver": "儲備利息 ∝ USDC 流通 × SOFR"
   }
 }
