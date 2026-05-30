@@ -13,8 +13,15 @@
       "mediumTerm": "高利率更久 + 避險需求支撐",
       "direction": "strong",
       "directionLabel": "偏強",
-      "drivers": ["Core PCE 仍高於 2% 目標", "中東地緣推升油價與通脹預期", "市場重新定價「今年或再加息」"],
-      "risks": ["美國成長明顯放緩", "降息預期快速重建"]
+      "drivers": [
+        "Core PCE 仍高於 2% 目標",
+        "中東地緣推升油價與通脹預期",
+        "市場重新定價「今年或再加息」"
+      ],
+      "risks": [
+        "美國成長明顯放緩",
+        "降息預期快速重建"
+      ]
     },
     "RMB": {
       "code": "CNY",
@@ -25,9 +32,19 @@
       "mediumTerm": "有管理浮動 · 防超調",
       "direction": "range",
       "directionLabel": "區間",
-      "drivers": ["PBOC 適度寬鬆 + 穩匯率", "每日中間價引導", "進口通脹風險納入關注"],
-      "risks": ["出口壓力加大時政策容忍略貶", "美元急升時口頭/流動性干預"],
-      "levels": { "support": "6.85", "resistance": "6.90" }
+      "drivers": [
+        "PBOC 適度寬鬆 + 穩匯率",
+        "每日中間價引導",
+        "進口通脹風險納入關注"
+      ],
+      "risks": [
+        "出口壓力加大時政策容忍略貶",
+        "美元急升時口頭/流動性干預"
+      ],
+      "levels": {
+        "support": "6.85",
+        "resistance": "6.90"
+      }
     },
     "JPY": {
       "code": "JPY",
@@ -38,8 +55,15 @@
       "mediumTerm": "BOJ 正常化下或有修復",
       "direction": "weak-then-recover",
       "directionLabel": "短弱中修",
-      "drivers": ["6 月 BOJ 加息預期約 70–78%", "能源進口國受油價衝擊", "干預警戒區（¥159+）"],
-      "risks": ["東京 CPI 偏弱拖慢加息路徑", "全球避險推升美元"]
+      "drivers": [
+        "6 月 BOJ 加息預期約 70–78%",
+        "能源進口國受油價衝擊",
+        "干預警戒區（¥159+）"
+      ],
+      "risks": [
+        "東京 CPI 偏弱拖慢加息路徑",
+        "全球避險推升美元"
+      ]
     },
     "HKD": {
       "code": "HKD",
@@ -50,22 +74,64 @@
       "mediumTerm": "跟隨美元體系 · 匯率非主變量",
       "direction": "peg",
       "directionLabel": "橫行",
-      "drivers": ["聯繫匯率 7.75–7.85", "HIBOR 與美元利率差", "季節性資金與南向通"],
-      "risks": ["港美利差長期偏闊引資金外流壓力", "本地流動性收緊推升 HIBOR"]
+      "drivers": [
+        "聯繫匯率 7.75–7.85",
+        "HIBOR 與美元利率差",
+        "季節性資金與南向通"
+      ],
+      "risks": [
+        "港美利差長期偏闊引資金外流壓力",
+        "本地流動性收緊推升 HIBOR"
+      ]
     }
   },
   "rankings": {
     "mediumTermVsUsd": [
-      { "rank": 1, "code": "JPY", "note": "若 BOJ 持續加息" },
-      { "rank": 2, "code": "RMB", "note": "政策穩匯 · 非大貶" },
-      { "rank": 3, "code": "HKD", "note": "幾乎無升值空間（聯匯）" }
+      {
+        "rank": 1,
+        "code": "JPY",
+        "note": "若 BOJ 持續加息"
+      },
+      {
+        "rank": 2,
+        "code": "RMB",
+        "note": "政策穩匯 · 非大貶"
+      },
+      {
+        "rank": 3,
+        "code": "HKD",
+        "note": "幾乎無升值空間（聯匯）"
+      }
     ],
-    "stability": ["HKD", "RMB", "USD", "JPY"]
+    "stability": [
+      "HKD",
+      "RMB",
+      "USD",
+      "JPY"
+    ]
   },
   "allocation": {
-    "conservative": { "label": "保守", "RMB": 45, "USD": 35, "HKD": 15, "JPY": 5 },
-    "balanced": { "label": "平衡（推薦起步）", "RMB": 30, "USD": 45, "HKD": 15, "JPY": 10 },
-    "aggressive": { "label": "進取", "RMB": 20, "USD": 55, "HKD": 10, "JPY": 15 }
+    "conservative": {
+      "label": "保守",
+      "RMB": 45,
+      "USD": 35,
+      "HKD": 15,
+      "JPY": 5
+    },
+    "balanced": {
+      "label": "平衡（推薦起步）",
+      "RMB": 30,
+      "USD": 45,
+      "HKD": 15,
+      "JPY": 10
+    },
+    "aggressive": {
+      "label": "進取",
+      "RMB": 20,
+      "USD": 55,
+      "HKD": 10,
+      "JPY": 15
+    }
   },
   "execution": [
     "分 4–6 批建倉，避免一次性換匯",
@@ -78,5 +144,33 @@
     "rmb": "PBOC 每日中間價 · 出口與通脹數據",
     "jpy": "BOJ 6/16 會議 · 東京 CPI",
     "hkd": "USD/HKD 觸及 7.75/7.85 · 3M HIBOR"
+  },
+  "commodities": {
+    "delayNote": "金銀為 COMEX 期貨延遲牌價（Yahoo）；BTC 為 Binance 現貨",
+    "fetchedAt": "2026-05-30T08:00:52.084Z",
+    "gold": {
+      "nameZh": "金",
+      "symbol": "GC=F",
+      "unit": "USD/oz",
+      "price": 4593,
+      "priceFmt": "$4,593/oz",
+      "source": "Yahoo · Gold Jun 26"
+    },
+    "silver": {
+      "nameZh": "銀",
+      "symbol": "SI=F",
+      "unit": "USD/oz",
+      "price": 75.875,
+      "priceFmt": "$75.88/oz",
+      "source": "Yahoo · Silver Jul 26"
+    },
+    "btc": {
+      "nameZh": "比特幣",
+      "symbol": "BTCUSDT",
+      "unit": "USD",
+      "price": 73548.59,
+      "priceFmt": "$73,549",
+      "source": "Binance"
+    }
   }
 }

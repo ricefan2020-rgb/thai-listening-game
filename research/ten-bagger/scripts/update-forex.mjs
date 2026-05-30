@@ -17,6 +17,26 @@ const tableRows = ORDER.map((k) => {
   return `| **${c.nameZh}** | ${c.shortTerm} | ${c.mediumTerm} | ${(c.drivers || []).slice(0, 2).join('；')} |`;
 }).join('\n');
 
+const com = data.commodities;
+let commMd = '';
+if (com?.gold || com?.silver || com?.btc) {
+  const rows = [com.gold, com.silver, com.btc]
+    .filter(Boolean)
+    .map((x) => `| **${x.nameZh}** | ${x.priceFmt || '—'} | ${x.symbol || '—'} | ${x.source || '—'} |`)
+    .join('\n');
+  commMd = `
+## 金 · 銀 · 比特幣（腳本更新）
+
+> 抓取：**${com.fetchedAt?.slice(0, 19) || '—'}**（UTC）· ${com.delayNote || ''}
+
+| 品項 | 牌價 | 代號 | 來源 |
+|------|------|------|------|
+${rows}
+
+\`node scripts/update-commodities.mjs\` · 再 \`update-forex.mjs\` / \`prepare-pages.mjs\`
+`;
+}
+
 const md = `# 四幣匯率 · RMB / USD / JPY / HKD
 
 > 更新：**${data.asOf}** · [forex.json](./forex.json) · ${data.source || '研究筆記'}
@@ -28,7 +48,7 @@ const md = `# 四幣匯率 · RMB / USD / JPY / HKD
 | 幣種 | 短線 | 中期方向 | 關鍵驅動 |
 |------|------|----------|----------|
 ${tableRows}
-
+${commMd}
 ## 資產配置（方案 D）
 
 | 類型 | RMB | USD | HKD | JPY |
@@ -46,6 +66,7 @@ ${tableRows}
 \`\`\`bash
 cd research/ten-bagger
 # 編輯 forex.json 後：
+node scripts/update-commodities.mjs   # 金銀 BTC 牌價 → forex.json（需網路）
 node scripts/update-forex.mjs
 node scripts/embed-data.mjs
 node scripts/prepare-pages.mjs

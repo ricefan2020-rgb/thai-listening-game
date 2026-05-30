@@ -3,7 +3,7 @@
   "note": "觀察板資料之間的邏輯關聯 · 非統計保證 · 非投資建議",
   "datasets": [
     { "id": "yields", "file": "yields.json", "role": "美債曲線、SOFR、聯邦基金 → 無風險利率與流動性定價" },
-    { "id": "forex", "file": "forex.json", "role": "四幣方向與避險/利差敘事" },
+    { "id": "forex", "file": "forex.json", "role": "四幣方向；commodities 欄位含金/銀/BTC 牌價（update-commodities）" },
     { "id": "stablecoins", "file": "stablecoins.json", "role": "鏈上美元流動性、CRCL 與 SOFR 連動" },
     { "id": "prices", "file": "prices.json", "role": "觀察名單即時報價與日變幅" },
     { "id": "ohlc", "file": "ohlc.json", "role": "日線 OHLC → 股間相關、價量、KDJ、回撤" },

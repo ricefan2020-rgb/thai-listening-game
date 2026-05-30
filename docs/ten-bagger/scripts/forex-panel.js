@@ -28,13 +28,28 @@ export async function loadForex() {
   return data;
 }
 
+function shortUsd(n) {
+  if (n == null || Number.isNaN(n)) return '—';
+  if (n >= 1e6) return `${(n / 1e6).toFixed(2)}M`;
+  if (n >= 1e3) return `${(n / 1e3).toFixed(n >= 1e5 ? 0 : 1)}k`;
+  return String(Math.round(n));
+}
+
 export function renderForexHeader(data) {
   const el = document.getElementById('stat-forex');
   if (!el || !data?.currencies) return;
   const usd = data.currencies.USD;
   const jpy = data.currencies.JPY;
-  el.textContent = `USD ${usd?.directionLabel || '—'} · JPY ${jpy?.directionLabel || '—'}`;
-  el.title = `${data.horizon || ''} · ${data.asOf || ''}`;
+  const com = data.commodities;
+  let line = `USD ${usd?.directionLabel || '—'} · JPY ${jpy?.directionLabel || '—'}`;
+  let tip = `${data.horizon || ''} · ${data.asOf || ''}`;
+  if (com?.gold?.price != null && com?.btc?.price != null) {
+    const sg = com.silver?.price != null ? ` · 銀 $${shortUsd(com.silver.price)}` : '';
+    line = `金 $${shortUsd(com.gold.price)}${sg} · BTC $${shortUsd(com.btc.price)}`;
+    tip = [tip, com.delayNote, com.fetchedAt ? `抓取 ${com.fetchedAt.slice(0, 16)}` : ''].filter(Boolean).join(' · ');
+  }
+  el.textContent = line;
+  el.title = tip;
 }
 
 export function renderForexPanel(data) {
@@ -74,8 +89,24 @@ export function renderForexPanel(data) {
     .join('');
 
   const watch = data.watchlist || {};
+  const com = data.commodities;
+  let commHtml = '';
+  if (com?.gold || com?.silver || com?.btc) {
+    const chips = [com.gold, com.silver, com.btc]
+      .filter(Boolean)
+      .map(
+        (x) =>
+          `<span class="fx-comm-chip" title="${x.source || ''}"><b>${x.nameZh}</b> ${x.priceFmt || '—'}</span>`,
+      )
+      .join('');
+    commHtml = `<h4 class="fx-sub">金 · 銀 · BTC</h4>
+    <p class="fx-comm-note">${com.delayNote || ''}</p>
+    <div class="fx-comm-row">${chips}</div>`;
+  }
+
   host.innerHTML = `
     <p class="fx-horizon">${data.horizon || ''}</p>
+    ${commHtml}
     <div class="fx-cards">${rows}</div>
     <h4 class="fx-sub">配置方案 D</h4>
     <table class="fx-table">

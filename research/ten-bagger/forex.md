@@ -13,6 +13,18 @@
 | **日元** | 弱勢震盪 | BOJ 正常化下或有修復 | 6 月 BOJ 加息預期約 70–78%；能源進口國受油價衝擊 |
 | **港元** | 聯匯區間內橫行 | 跟隨美元體系 · 匯率非主變量 | 聯繫匯率 7.75–7.85；HIBOR 與美元利率差 |
 
+## 金 · 銀 · 比特幣（腳本更新）
+
+> 抓取：**2026-05-30T08:00:52**（UTC）· 金銀為 COMEX 期貨延遲牌價（Yahoo）；BTC 為 Binance 現貨
+
+| 品項 | 牌價 | 代號 | 來源 |
+|------|------|------|------|
+| **金** | $4,593/oz | GC=F | Yahoo · Gold Jun 26 |
+| **銀** | $75.88/oz | SI=F | Yahoo · Silver Jul 26 |
+| **比特幣** | $73,549 | BTCUSDT | Binance |
+
+`node scripts/update-commodities.mjs` · 再 `update-forex.mjs` / `prepare-pages.mjs`
+
 ## 資產配置（方案 D）
 
 | 類型 | RMB | USD | HKD | JPY |
@@ -30,6 +42,7 @@
 ```bash
 cd research/ten-bagger
 # 編輯 forex.json 後：
+node scripts/update-commodities.mjs   # 金銀 BTC 牌價 → forex.json（需網路）
 node scripts/update-forex.mjs
 node scripts/embed-data.mjs
 node scripts/prepare-pages.mjs

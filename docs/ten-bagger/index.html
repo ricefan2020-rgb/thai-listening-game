@@ -742,6 +742,17 @@
     .fx-lv { font-size: 8px; color: #7aa8b8; display: block; margin-bottom: 4px; }
     .fx-drivers { margin: 0; padding-left: 14px; font-size: 9px; color: var(--muted); }
     .fx-horizon { font-size: 9px; color: var(--muted); margin: 0 0 8px; }
+    .fx-comm-note { font-size: 8px; color: var(--muted); margin: -4px 0 8px; line-height: 1.35; }
+    .fx-comm-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+    .fx-comm-chip {
+      font-size: 9px;
+      padding: 4px 8px;
+      border: 1px solid #3d5a50;
+      border-radius: 6px;
+      background: #0f1a14;
+      color: #b8e0c8;
+    }
+    .fx-comm-chip b { color: #9ee0f0; margin-right: 4px; }
     .fx-sub { font-size: 10px; color: #9ee0f0; margin: 10px 0 6px; font-weight: 600; }
     .fx-table { width: 100%; font-size: 9px; border-collapse: collapse; margin-bottom: 8px; }
     .fx-table th, .fx-table td { padding: 3px 4px; border-bottom: 1px solid #222; text-align: right; }
@@ -1624,7 +1635,7 @@
           <span class="pill kw-surge hidden" id="stat-kw-surge" title="Reddit 突然爆火關鍵字">爆火 —</span>
           <span class="pill stable" id="stat-stable" title="USDC / USDT 流通量">USDC —</span>
           <span class="pill yields" id="stat-yields" title="美國國債收益率">10Y —</span>
-          <span class="pill forex" id="stat-forex" title="四幣匯率 RMB/USD/JPY/HKD">匯率 —</span>
+          <span class="pill forex" id="stat-forex" title="四幣 + 金銀BTC">匯率 —</span>
           <button type="button" class="pill meta-band-toggle" id="meta-band-toggle" aria-expanded="false" aria-controls="meta-band-panel">訊號 ▾</button>
         </div>
         <nav class="nav-links">
@@ -1785,7 +1796,7 @@
         </div>
 
         <div class="side-panel" id="panel-forex" role="tabpanel">
-          <h3>四幣匯率 · <span id="forex-as-of">—</span></h3>
+          <h3>匯率 · 金銀 BTC · <span id="forex-as-of">—</span></h3>
           <div id="forex-panel"></div>
           <div class="panel-foot"><a href="./forex.md">→ 說明與更新</a> · <a href="./correlations.md">資料關聯</a></div>
         </div>
@@ -1867,7 +1878,7 @@
   <!-- STABLECOINS_END -->
 
   <!-- FOREX_START -->
-  <script type="application/json" id="forex-data">{"asOf":"2026-05-27","source":"研究筆記 · 政策與市場綜述（2026-05）","note":"非即時外匯報價 · 僅供個人研究 · 非投資建議","horizon":"3–12 個月（相對美元）","currencies":{"USD":{"code":"USD","nameZh":"美元","pair":"DXY","spotFmt":"~99.0","shortTerm":"偏強 → 震盪偏強","mediumTerm":"高利率更久 + 避險需求支撐","direction":"strong","directionLabel":"偏強","drivers":["Core PCE 仍高於 2% 目標","中東地緣推升油價與通脹預期","市場重新定價「今年或再加息」"],"risks":["美國成長明顯放緩","降息預期快速重建"]},"RMB":{"code":"CNY","nameZh":"人民幣","pair":"USD/CNY","spotFmt":"~6.87","shortTerm":"區間波動 · 穩中略弱/雙向","mediumTerm":"有管理浮動 · 防超調","direction":"range","directionLabel":"區間","drivers":["PBOC 適度寬鬆 + 穩匯率","每日中間價引導","進口通脹風險納入關注"],"risks":["出口壓力加大時政策容忍略貶","美元急升時口頭/流動性干預"],"levels":{"support":"6.85","resistance":"6.90"}},"JPY":{"code":"JPY","nameZh":"日元","pair":"USD/JPY","spotFmt":"~159–160","shortTerm":"弱勢震盪","mediumTerm":"BOJ 正常化下或有修復","direction":"weak-then-recover","directionLabel":"短弱中修","drivers":["6 月 BOJ 加息預期約 70–78%","能源進口國受油價衝擊","干預警戒區（¥159+）"],"risks":["東京 CPI 偏弱拖慢加息路徑","全球避險推升美元"]},"HKD":{"code":"HKD","nameZh":"港元","pair":"USD/HKD","spotFmt":"~7.83","shortTerm":"聯匯區間內橫行","mediumTerm":"跟隨美元體系 · 匯率非主變量","direction":"peg","directionLabel":"橫行","drivers":["聯繫匯率 7.75–7.85","HIBOR 與美元利率差","季節性資金與南向通"],"risks":["港美利差長期偏闊引資金外流壓力","本地流動性收緊推升 HIBOR"]}},"rankings":{"mediumTermVsUsd":[{"rank":1,"code":"JPY","note":"若 BOJ 持續加息"},{"rank":2,"code":"RMB","note":"政策穩匯 · 非大貶"},{"rank":3,"code":"HKD","note":"幾乎無升值空間（聯匯）"}],"stability":["HKD","RMB","USD","JPY"]},"allocation":{"conservative":{"label":"保守","RMB":45,"USD":35,"HKD":15,"JPY":5},"balanced":{"label":"平衡（推薦起步）","RMB":30,"USD":45,"HKD":15,"JPY":10},"aggressive":{"label":"進取","RMB":20,"USD":55,"HKD":10,"JPY":15}},"execution":["分 4–6 批建倉，避免一次性換匯","每季再平衡：偏離目標 ±5% 則調回","預留 6–12 個月支出於 RMB + HKD 低波動資產","JPY 建議總倉 8–15% 區間"],"watchlist":{"usd":"FOMC（6/16–17）· PCE/CPI","rmb":"PBOC 每日中間價 · 出口與通脹數據","jpy":"BOJ 6/16 會議 · 東京 CPI","hkd":"USD/HKD 觸及 7.75/7.85 · 3M HIBOR"}}</script>
+  <script type="application/json" id="forex-data">{"asOf":"2026-05-27","source":"研究筆記 · 政策與市場綜述（2026-05）","note":"非即時外匯報價 · 僅供個人研究 · 非投資建議","horizon":"3–12 個月（相對美元）","currencies":{"USD":{"code":"USD","nameZh":"美元","pair":"DXY","spotFmt":"~99.0","shortTerm":"偏強 → 震盪偏強","mediumTerm":"高利率更久 + 避險需求支撐","direction":"strong","directionLabel":"偏強","drivers":["Core PCE 仍高於 2% 目標","中東地緣推升油價與通脹預期","市場重新定價「今年或再加息」"],"risks":["美國成長明顯放緩","降息預期快速重建"]},"RMB":{"code":"CNY","nameZh":"人民幣","pair":"USD/CNY","spotFmt":"~6.87","shortTerm":"區間波動 · 穩中略弱/雙向","mediumTerm":"有管理浮動 · 防超調","direction":"range","directionLabel":"區間","drivers":["PBOC 適度寬鬆 + 穩匯率","每日中間價引導","進口通脹風險納入關注"],"risks":["出口壓力加大時政策容忍略貶","美元急升時口頭/流動性干預"],"levels":{"support":"6.85","resistance":"6.90"}},"JPY":{"code":"JPY","nameZh":"日元","pair":"USD/JPY","spotFmt":"~159–160","shortTerm":"弱勢震盪","mediumTerm":"BOJ 正常化下或有修復","direction":"weak-then-recover","directionLabel":"短弱中修","drivers":["6 月 BOJ 加息預期約 70–78%","能源進口國受油價衝擊","干預警戒區（¥159+）"],"risks":["東京 CPI 偏弱拖慢加息路徑","全球避險推升美元"]},"HKD":{"code":"HKD","nameZh":"港元","pair":"USD/HKD","spotFmt":"~7.83","shortTerm":"聯匯區間內橫行","mediumTerm":"跟隨美元體系 · 匯率非主變量","direction":"peg","directionLabel":"橫行","drivers":["聯繫匯率 7.75–7.85","HIBOR 與美元利率差","季節性資金與南向通"],"risks":["港美利差長期偏闊引資金外流壓力","本地流動性收緊推升 HIBOR"]}},"rankings":{"mediumTermVsUsd":[{"rank":1,"code":"JPY","note":"若 BOJ 持續加息"},{"rank":2,"code":"RMB","note":"政策穩匯 · 非大貶"},{"rank":3,"code":"HKD","note":"幾乎無升值空間（聯匯）"}],"stability":["HKD","RMB","USD","JPY"]},"allocation":{"conservative":{"label":"保守","RMB":45,"USD":35,"HKD":15,"JPY":5},"balanced":{"label":"平衡（推薦起步）","RMB":30,"USD":45,"HKD":15,"JPY":10},"aggressive":{"label":"進取","RMB":20,"USD":55,"HKD":10,"JPY":15}},"execution":["分 4–6 批建倉，避免一次性換匯","每季再平衡：偏離目標 ±5% 則調回","預留 6–12 個月支出於 RMB + HKD 低波動資產","JPY 建議總倉 8–15% 區間"],"watchlist":{"usd":"FOMC（6/16–17）· PCE/CPI","rmb":"PBOC 每日中間價 · 出口與通脹數據","jpy":"BOJ 6/16 會議 · 東京 CPI","hkd":"USD/HKD 觸及 7.75/7.85 · 3M HIBOR"},"commodities":{"delayNote":"金銀為 COMEX 期貨延遲牌價（Yahoo）；BTC 為 Binance 現貨","fetchedAt":"2026-05-30T08:00:52.084Z","gold":{"nameZh":"金","symbol":"GC=F","unit":"USD/oz","price":4593,"priceFmt":"$4,593/oz","source":"Yahoo · Gold Jun 26"},"silver":{"nameZh":"銀","symbol":"SI=F","unit":"USD/oz","price":75.875,"priceFmt":"$75.88/oz","source":"Yahoo · Silver Jul 26"},"btc":{"nameZh":"比特幣","symbol":"BTCUSDT","unit":"USD","price":73548.59,"priceFmt":"$73,549","source":"Binance"}}}</script>
   <!-- FOREX_END -->
 
   <!-- YIELDS_START -->
