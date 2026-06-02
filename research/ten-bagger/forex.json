@@ -146,31 +146,34 @@
     "hkd": "USD/HKD 觸及 7.75/7.85 · 3M HIBOR"
   },
   "commodities": {
-    "delayNote": "金銀為 COMEX 期貨延遲牌價（Yahoo）；BTC 為 Binance 現貨",
-    "fetchedAt": "2026-05-30T08:00:52.084Z",
+    "delayNote": "金銀 COMEX 期貨延遲（Yahoo）；BTC 為 Yahoo BTC-USD",
+    "fetchedAt": "2026-06-02T01:18:44.940Z",
     "gold": {
       "nameZh": "金",
       "symbol": "GC=F",
       "unit": "USD/oz",
-      "price": 4593,
-      "priceFmt": "$4,593/oz",
-      "source": "Yahoo · Gold Jun 26"
+      "price": 4511.5,
+      "priceFmt": "$4,512/oz",
+      "changePct": 6.4,
+      "source": "Yahoo · Gold Aug 26"
     },
     "silver": {
       "nameZh": "銀",
       "symbol": "SI=F",
       "unit": "USD/oz",
-      "price": 75.875,
-      "priceFmt": "$75.88/oz",
+      "price": 75.32,
+      "priceFmt": "$75.32/oz",
+      "changePct": 28.9,
       "source": "Yahoo · Silver Jul 26"
     },
     "btc": {
       "nameZh": "比特幣",
-      "symbol": "BTCUSDT",
+      "symbol": "BTC-USD",
       "unit": "USD",
-      "price": 73548.59,
-      "priceFmt": "$73,549",
-      "source": "Binance"
+      "price": 71214.38,
+      "priceFmt": "$71,214",
+      "changePct": -22,
+      "source": "Yahoo · Bitcoin USD"
     }
   }
 }

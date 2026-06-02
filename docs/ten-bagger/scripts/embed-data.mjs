@@ -88,6 +88,17 @@ try {
 
 try {
   embed(
+    '<!-- FOREX_CHARTS_START -->',
+    '<!-- FOREX_CHARTS_END -->',
+    'forex-charts-data',
+    'forex-charts.json',
+  );
+} catch {
+  console.warn('Skip forex-charts.json (run update-forex-charts.mjs first)');
+}
+
+try {
+  embed(
     '<!-- NEWS_DIGEST_START -->',
     '<!-- NEWS_DIGEST_END -->',
     'news-digest-data',

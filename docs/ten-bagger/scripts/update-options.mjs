@@ -68,7 +68,16 @@ for (const ticker of WATCH_TICKERS) {
       console.warn(ticker, 'OpenD:', opendPayload.errors[ticker]);
     }
 
-    if (!chain?.options?.length) {
+    const opendOi =
+      chain?.options?.reduce(
+        (n, o) => n + (o.openInterest || 0),
+        0,
+      ) ?? 0;
+
+    if (!chain?.options?.length || (via === 'opend' && opendOi === 0)) {
+      if (via === 'opend' && opendOi === 0) {
+        console.warn(ticker, 'OpenD 期權 OI 為空，改用 Yahoo');
+      }
       chain = await fetchOptionChain(sym);
       via = 'yahoo';
       await sleep(DELAY_MS);

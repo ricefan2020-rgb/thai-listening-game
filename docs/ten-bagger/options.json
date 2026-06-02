@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-30",
+  "asOf": "2026-06-02",
   "source": "Futu OpenD (127.0.0.1:11111)",
   "opend": {
     "host": "127.0.0.1",
@@ -12,185 +12,183 @@
   "flowRule": "當日量≥鏈上閾值 或 量/OI≥1.5",
   "unusualFlowTop": [
     {
+      "ticker": "MU",
+      "side": "P",
+      "strike": 1025,
+      "vol": 7386,
+      "oi": 2,
+      "volOi": 3693,
+      "reasons": [
+        "vol",
+        "vol_oi"
+      ],
+      "score": 1484586
+    },
+    {
+      "ticker": "SNOW",
+      "side": "C",
+      "strike": 315,
+      "vol": 1557,
+      "oi": 1,
+      "volOi": 1557,
+      "reasons": [
+        "vol",
+        "vol_oi"
+      ],
+      "score": 624357
+    },
+    {
+      "ticker": "MU",
+      "side": "P",
+      "strike": 1035,
+      "vol": 3096,
+      "oi": 2,
+      "volOi": 1548,
+      "reasons": [
+        "vol",
+        "vol_oi"
+      ],
+      "score": 622296
+    },
+    {
+      "ticker": "ARM",
+      "side": "P",
+      "strike": 380,
+      "vol": 2113,
+      "oi": 3,
+      "volOi": 704.33,
+      "reasons": [
+        "vol",
+        "vol_oi"
+      ],
+      "score": 283846
+    },
+    {
+      "ticker": "NVDA",
+      "side": "P",
+      "strike": 237.5,
+      "vol": 523,
+      "oi": 1,
+      "volOi": 523,
+      "reasons": [
+        "vol_oi"
+      ],
+      "score": 209723
+    },
+    {
+      "ticker": "SNOW",
+      "side": "P",
+      "strike": 275,
+      "vol": 507,
+      "oi": 1,
+      "volOi": 507,
+      "reasons": [
+        "vol_oi"
+      ],
+      "score": 203307
+    },
+    {
+      "ticker": "MU",
+      "side": "P",
+      "strike": 1030,
+      "vol": 4792,
+      "oi": 11,
+      "volOi": 435.64,
+      "reasons": [
+        "vol",
+        "vol_oi"
+      ],
+      "score": 179047
+    },
+    {
+      "ticker": "NVDA",
+      "side": "P",
+      "strike": 222.5,
+      "vol": 18200,
+      "oi": 47,
+      "volOi": 387.23,
+      "reasons": [
+        "vol",
+        "vol_oi"
+      ],
+      "score": 173094
+    },
+    {
       "ticker": "PLTR",
       "side": "C",
-      "strike": 160,
-      "vol": 58560,
-      "oi": 7998,
-      "volOi": 7.32,
+      "strike": 260,
+      "vol": 5648,
+      "oi": 19,
+      "volOi": 297.26,
+      "reasons": [
+        "vol_oi"
+      ],
+      "score": 124553
+    },
+    {
+      "ticker": "SNOW",
+      "side": "P",
+      "strike": 272.5,
+      "vol": 900,
+      "oi": 3,
+      "volOi": 300,
       "reasons": [
         "vol",
         "vol_oi"
       ],
-      "score": 61489
+      "score": 120900
     },
     {
-      "ticker": "PLTR",
+      "ticker": "SNOW",
       "side": "C",
-      "strike": 165,
-      "vol": 39222,
-      "oi": 1923,
-      "volOi": 20.4,
+      "strike": 330,
+      "vol": 919,
+      "oi": 4,
+      "volOi": 229.75,
       "reasons": [
         "vol",
         "vol_oi"
       ],
-      "score": 47381
+      "score": 92819
     },
     {
-      "ticker": "SMCI",
+      "ticker": "ARM",
       "side": "P",
-      "strike": 26,
-      "vol": 13968,
-      "oi": 208,
-      "volOi": 67.15,
+      "strike": 385,
+      "vol": 1573,
+      "oi": 7,
+      "volOi": 224.71,
       "reasons": [
         "vol",
         "vol_oi"
       ],
-      "score": 40830
+      "score": 91459
     },
     {
-      "ticker": "IREN",
-      "side": "P",
-      "strike": 38,
-      "vol": 26845,
-      "oi": 866,
-      "volOi": 31,
-      "reasons": [
-        "vol",
-        "vol_oi"
-      ],
-      "score": 39245
-    },
-    {
-      "ticker": "SMCI",
-      "side": "P",
-      "strike": 47,
-      "vol": 2018,
-      "oi": 24,
-      "volOi": 84.08,
-      "reasons": [
-        "vol_oi"
-      ],
-      "score": 35651
-    },
-    {
-      "ticker": "PLTR",
-      "side": "P",
-      "strike": 155,
-      "vol": 5463,
-      "oi": 80,
-      "volOi": 68.29,
-      "reasons": [
-        "vol",
-        "vol_oi"
-      ],
-      "score": 32778
-    },
-    {
-      "ticker": "CRCL",
-      "side": "P",
-      "strike": 75,
-      "vol": 9106,
-      "oi": 173,
-      "volOi": 52.64,
-      "reasons": [
-        "vol",
-        "vol_oi"
-      ],
-      "score": 30160
-    },
-    {
-      "ticker": "PLTR",
+      "ticker": "NVDA",
       "side": "C",
-      "strike": 155,
-      "vol": 26675,
-      "oi": 7650,
-      "volOi": 3.49,
+      "strike": 225,
+      "vol": 87228,
+      "oi": 11009,
+      "volOi": 7.92,
       "reasons": [
         "vol",
         "vol_oi"
       ],
-      "score": 28070
+      "score": 90397
     },
     {
-      "ticker": "SMCI",
-      "side": "C",
-      "strike": 50,
-      "vol": 20544,
-      "oi": 2780,
-      "volOi": 7.39,
-      "reasons": [
-        "vol",
-        "vol_oi"
-      ],
-      "score": 23500
-    },
-    {
-      "ticker": "SMCI",
-      "side": "C",
-      "strike": 49,
-      "vol": 7411,
-      "oi": 188,
-      "volOi": 39.42,
-      "reasons": [
-        "vol",
-        "vol_oi"
-      ],
-      "score": 23179
-    },
-    {
-      "ticker": "IREN",
+      "ticker": "MU",
       "side": "P",
-      "strike": 45,
-      "vol": 15977,
-      "oi": 2767,
-      "volOi": 5.77,
+      "strike": 1020,
+      "vol": 3359,
+      "oi": 17,
+      "volOi": 197.59,
       "reasons": [
         "vol",
         "vol_oi"
       ],
-      "score": 18287
-    },
-    {
-      "ticker": "CRCL",
-      "side": "C",
-      "strike": 111,
-      "vol": 2330,
-      "oi": 61,
-      "volOi": 38.2,
-      "reasons": [
-        "vol",
-        "vol_oi"
-      ],
-      "score": 17609
-    },
-    {
-      "ticker": "POET",
-      "side": "P",
-      "strike": 7,
-      "vol": 12511,
-      "oi": 1227,
-      "volOi": 10.2,
-      "reasons": [
-        "vol",
-        "vol_oi"
-      ],
-      "score": 16590
-    },
-    {
-      "ticker": "IREN",
-      "side": "P",
-      "strike": 50,
-      "vol": 11960,
-      "oi": 2794,
-      "volOi": 4.28,
-      "reasons": [
-        "vol",
-        "vol_oi"
-      ],
-      "score": 13672
+      "score": 82394
     }
   ],
   "marketExpiries": [
@@ -351,360 +349,1258 @@
       "detail": "多數美股月選合約到期 · 第三個週五",
       "impact": "high",
       "opexType": "monthly"
+    },
+    {
+      "date": "2027-04-21",
+      "kind": "vix",
+      "title": "VIX 期權到期（近似）",
+      "detail": "通常早於 05-21 月選 · 波動率產品",
+      "impact": "medium"
+    },
+    {
+      "date": "2027-05-21",
+      "kind": "opex",
+      "title": "美股月選到期",
+      "detail": "多數美股月選合約到期 · 第三個週五",
+      "impact": "high",
+      "opexType": "monthly"
     }
   ],
   "tickers": {
     "GOOGL": {
       "futuCode": "US.GOOGL",
       "yahooSymbol": "GOOGL",
-      "dataVia": "opend",
+      "dataVia": "yahoo",
       "available": true,
-      "spot": 380.34,
-      "expiry": "2026-06-01",
-      "dte": 3,
-      "pcRatioOi": null,
-      "pcRatioVol": null,
-      "maxPain": null,
-      "maxPainVsSpotPct": null,
-      "ivCallAtm": null,
-      "ivPutAtm": null,
-      "ivSkew": null,
-      "callOi": 0,
-      "putOi": 0,
-      "topCalls": [],
-      "topPuts": [],
-      "unusualFlow": [],
-      "flowVolThreshold": 150,
+      "spot": 376.37,
+      "expiry": "2026-06-03",
+      "dte": 1,
+      "pcRatioOi": 0.87,
+      "pcRatioVol": 0.47,
+      "maxPain": 385,
+      "maxPainVsSpotPct": 2.3,
+      "ivCallAtm": 0.349,
+      "ivPutAtm": 0.347,
+      "ivSkew": -0.003,
+      "callOi": 9314,
+      "putOi": 8102,
+      "topCalls": [
+        {
+          "strike": 400,
+          "oi": 1544
+        },
+        {
+          "strike": 390,
+          "oi": 1479
+        },
+        {
+          "strike": 395,
+          "oi": 935
+        }
+      ],
+      "topPuts": [
+        {
+          "strike": 375,
+          "oi": 1874
+        },
+        {
+          "strike": 370,
+          "oi": 1097
+        },
+        {
+          "strike": 385,
+          "oi": 802
+        }
+      ],
+      "unusualFlow": [
+        {
+          "side": "C",
+          "strike": 377.5,
+          "vol": 2187,
+          "oi": 23,
+          "volOi": 95.09,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 40222
+        },
+        {
+          "side": "P",
+          "strike": 352.5,
+          "vol": 363,
+          "oi": 4,
+          "volOi": 90.75,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 36663
+        },
+        {
+          "side": "C",
+          "strike": 375,
+          "vol": 2063,
+          "oi": 26,
+          "volOi": 79.35,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 33801
+        },
+        {
+          "side": "C",
+          "strike": 380,
+          "vol": 7709,
+          "oi": 429,
+          "volOi": 17.97,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 14897
+        },
+        {
+          "side": "P",
+          "strike": 362.5,
+          "vol": 584,
+          "oi": 23,
+          "volOi": 25.39,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 10741
+        },
+        {
+          "side": "C",
+          "strike": 387.5,
+          "vol": 2104,
+          "oi": 234,
+          "volOi": 8.99,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 5701
+        },
+        {
+          "side": "C",
+          "strike": 367.5,
+          "vol": 12,
+          "oi": 1,
+          "volOi": 12,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 4812
+        },
+        {
+          "side": "P",
+          "strike": 372.5,
+          "vol": 1299,
+          "oi": 155,
+          "volOi": 8.38,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 4651
+        },
+        {
+          "side": "C",
+          "strike": 370,
+          "vol": 195,
+          "oi": 22,
+          "volOi": 8.86,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 3740
+        },
+        {
+          "side": "P",
+          "strike": 375,
+          "vol": 2853,
+          "oi": 1874,
+          "volOi": 1.52,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 3462
+        }
+      ],
+      "flowVolThreshold": 1857,
       "flowMinVolOi": 1.5,
-      "outlook": "neutral",
-      "outlookLabel": "中性",
-      "outlookNote": "",
+      "outlook": "lean_bull",
+      "outlookLabel": "略偏多",
+      "outlookNote": "P/C(OI) 0.87 中性 · Max Pain $385 高於現價 2.3% · 異動 C$377.5 量2187",
       "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
       "expiries": [
         {
-          "date": "2026-06-01",
-          "dte": 3,
-          "oi": 0
-        },
-        {
           "date": "2026-06-03",
-          "dte": 5,
-          "oi": 0
-        },
-        {
-          "date": "2026-06-05",
-          "dte": 7,
-          "oi": 0
-        },
-        {
-          "date": "2026-06-08",
-          "dte": 10,
-          "oi": 0
-        },
-        {
-          "date": "2026-06-10",
-          "dte": 12,
-          "oi": 0
-        },
-        {
-          "date": "2026-06-12",
-          "dte": 14,
-          "oi": 0
+          "dte": 1,
+          "oi": 17416
         }
       ]
     },
     "NVDA": {
       "futuCode": "US.NVDA",
       "yahooSymbol": "NVDA",
-      "dataVia": "opend",
+      "dataVia": "yahoo",
       "available": true,
-      "spot": 211.14,
-      "expiry": "2026-06-01",
-      "dte": 3,
-      "pcRatioOi": null,
-      "pcRatioVol": null,
-      "maxPain": null,
-      "maxPainVsSpotPct": null,
-      "ivCallAtm": null,
-      "ivPutAtm": null,
-      "ivSkew": null,
-      "callOi": 0,
-      "putOi": 0,
-      "topCalls": [],
-      "topPuts": [],
-      "unusualFlow": [],
-      "flowVolThreshold": 150,
+      "spot": 224.36,
+      "expiry": "2026-06-03",
+      "dte": 1,
+      "pcRatioOi": 0.66,
+      "pcRatioVol": 0.36,
+      "maxPain": 215,
+      "maxPainVsSpotPct": -4.2,
+      "ivCallAtm": 0.506,
+      "ivPutAtm": 0.5,
+      "ivSkew": -0.006,
+      "callOi": 70183,
+      "putOi": 46087,
+      "topCalls": [
+        {
+          "strike": 230,
+          "oi": 11987
+        },
+        {
+          "strike": 220,
+          "oi": 11834
+        },
+        {
+          "strike": 225,
+          "oi": 11009
+        }
+      ],
+      "topPuts": [
+        {
+          "strike": 210,
+          "oi": 7660
+        },
+        {
+          "strike": 167.5,
+          "oi": 3769
+        },
+        {
+          "strike": 215,
+          "oi": 3687
+        }
+      ],
+      "unusualFlow": [
+        {
+          "side": "P",
+          "strike": 237.5,
+          "vol": 523,
+          "oi": 1,
+          "volOi": 523,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 209723
+        },
+        {
+          "side": "P",
+          "strike": 222.5,
+          "vol": 18200,
+          "oi": 47,
+          "volOi": 387.23,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 173094
+        },
+        {
+          "side": "C",
+          "strike": 225,
+          "vol": 87228,
+          "oi": 11009,
+          "volOi": 7.92,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 90397
+        },
+        {
+          "side": "C",
+          "strike": 230,
+          "vol": 70340,
+          "oi": 11987,
+          "volOi": 5.87,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 72687
+        },
+        {
+          "side": "C",
+          "strike": 252.5,
+          "vol": 1534,
+          "oi": 9,
+          "volOi": 170.44,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 69712
+        },
+        {
+          "side": "C",
+          "strike": 220,
+          "vol": 57197,
+          "oi": 11834,
+          "volOi": 4.83,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 59130
+        },
+        {
+          "side": "C",
+          "strike": 222.5,
+          "vol": 43487,
+          "oi": 1536,
+          "volOi": 28.31,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 54812
+        },
+        {
+          "side": "P",
+          "strike": 220,
+          "vol": 25176,
+          "oi": 1045,
+          "volOi": 24.09,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 34813
+        },
+        {
+          "side": "C",
+          "strike": 227.5,
+          "vol": 30840,
+          "oi": 3685,
+          "volOi": 8.37,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 34188
+        },
+        {
+          "side": "C",
+          "strike": 235,
+          "vol": 29156,
+          "oi": 2683,
+          "volOi": 10.87,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 33503
+        }
+      ],
+      "flowVolThreshold": 16772,
       "flowMinVolOi": 1.5,
       "outlook": "neutral",
       "outlookLabel": "中性",
-      "outlookNote": "",
+      "outlookNote": "P/C(OI) 0.66 偏低·Call 籌碼多 · Max Pain $215 低於現價 -4.2% · 異動 P$237.5 量523",
       "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
       "expiries": [
         {
-          "date": "2026-06-01",
-          "dte": 3,
-          "oi": 0
+          "date": "2026-06-03",
+          "dte": 1,
+          "oi": 116270
+        }
+      ]
+    },
+    "MU": {
+      "futuCode": "US.MU",
+      "yahooSymbol": "MU",
+      "dataVia": "yahoo",
+      "available": true,
+      "spot": 1035.5,
+      "expiry": "2026-06-05",
+      "dte": 3,
+      "pcRatioOi": 3.33,
+      "pcRatioVol": 1.3,
+      "maxPain": 855,
+      "maxPainVsSpotPct": -17.4,
+      "ivCallAtm": 1.059,
+      "ivPutAtm": 1.044,
+      "ivSkew": -0.014,
+      "callOi": 106833,
+      "putOi": 355332,
+      "topCalls": [
+        {
+          "strike": 1000,
+          "oi": 9674
         },
         {
-          "date": "2026-06-03",
-          "dte": 5,
-          "oi": 0
+          "strike": 1100,
+          "oi": 5811
         },
+        {
+          "strike": 1200,
+          "oi": 4327
+        }
+      ],
+      "topPuts": [
+        {
+          "strike": 45,
+          "oi": 38332
+        },
+        {
+          "strike": 40,
+          "oi": 36671
+        },
+        {
+          "strike": 485,
+          "oi": 26358
+        }
+      ],
+      "unusualFlow": [
+        {
+          "side": "P",
+          "strike": 1025,
+          "vol": 7386,
+          "oi": 2,
+          "volOi": 3693,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 1484586
+        },
+        {
+          "side": "P",
+          "strike": 1035,
+          "vol": 3096,
+          "oi": 2,
+          "volOi": 1548,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 622296
+        },
+        {
+          "side": "P",
+          "strike": 1030,
+          "vol": 4792,
+          "oi": 11,
+          "volOi": 435.64,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 179047
+        },
+        {
+          "side": "P",
+          "strike": 1020,
+          "vol": 3359,
+          "oi": 17,
+          "volOi": 197.59,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 82394
+        },
+        {
+          "side": "P",
+          "strike": 1015,
+          "vol": 995,
+          "oi": 5,
+          "volOi": 199,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 80595
+        },
+        {
+          "side": "P",
+          "strike": 1040,
+          "vol": 2229,
+          "oi": 15,
+          "volOi": 148.6,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 61669
+        },
+        {
+          "side": "P",
+          "strike": 1010,
+          "vol": 1471,
+          "oi": 14,
+          "volOi": 105.07,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 43500
+        },
+        {
+          "side": "P",
+          "strike": 1005,
+          "vol": 1055,
+          "oi": 10,
+          "volOi": 105.5,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 43255
+        },
+        {
+          "side": "P",
+          "strike": 610,
+          "vol": 28454,
+          "oi": 1163,
+          "volOi": 24.47,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 38240
+        },
+        {
+          "side": "P",
+          "strike": 40,
+          "vol": 36676,
+          "oi": 36671,
+          "volOi": 1,
+          "reasons": [
+            "vol"
+          ],
+          "score": 36676
+        }
+      ],
+      "flowVolThreshold": 1268,
+      "flowMinVolOi": 1.5,
+      "outlook": "bearish",
+      "outlookLabel": "籌碼偏空",
+      "outlookNote": "P/C(OI) 3.33 偏高·Put 避險多 · Max Pain $855 低於現價 -17.4% · 異動 P$1025 量7386",
+      "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
+      "expiries": [
         {
           "date": "2026-06-05",
-          "dte": 7,
-          "oi": 0
-        },
-        {
-          "date": "2026-06-08",
-          "dte": 10,
-          "oi": 0
-        },
-        {
-          "date": "2026-06-10",
-          "dte": 12,
-          "oi": 0
-        },
-        {
-          "date": "2026-06-12",
-          "dte": 14,
-          "oi": 0
+          "dte": 3,
+          "oi": 462165
         }
       ]
     },
     "AMD": {
       "futuCode": "US.AMD",
       "yahooSymbol": "AMD",
-      "dataVia": "opend",
+      "dataVia": "yahoo",
       "available": true,
-      "spot": 516.1,
+      "spot": 510.13,
       "expiry": "2026-06-05",
-      "dte": 7,
-      "pcRatioOi": null,
-      "pcRatioVol": null,
-      "maxPain": null,
-      "maxPainVsSpotPct": null,
-      "ivCallAtm": null,
-      "ivPutAtm": null,
-      "ivSkew": null,
-      "callOi": 0,
-      "putOi": 0,
-      "topCalls": [],
-      "topPuts": [],
-      "unusualFlow": [],
-      "flowVolThreshold": 150,
+      "dte": 3,
+      "pcRatioOi": 1.39,
+      "pcRatioVol": 0.94,
+      "maxPain": 485,
+      "maxPainVsSpotPct": -4.9,
+      "ivCallAtm": 0.813,
+      "ivPutAtm": 0.8,
+      "ivSkew": -0.013,
+      "callOi": 83645,
+      "putOi": 115935,
+      "topCalls": [
+        {
+          "strike": 520,
+          "oi": 4326
+        },
+        {
+          "strike": 550,
+          "oi": 4182
+        },
+        {
+          "strike": 530,
+          "oi": 3340
+        }
+      ],
+      "topPuts": [
+        {
+          "strike": 300,
+          "oi": 10191
+        },
+        {
+          "strike": 290,
+          "oi": 9895
+        },
+        {
+          "strike": 500,
+          "oi": 7931
+        }
+      ],
+      "unusualFlow": [
+        {
+          "side": "P",
+          "strike": 387.5,
+          "vol": 2405,
+          "oi": 15,
+          "volOi": 160.33,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 66538
+        },
+        {
+          "side": "C",
+          "strike": 492.5,
+          "vol": 955,
+          "oi": 41,
+          "volOi": 23.29,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 10272
+        },
+        {
+          "side": "C",
+          "strike": 550,
+          "vol": 7183,
+          "oi": 4182,
+          "volOi": 1.72,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 7870
+        },
+        {
+          "side": "P",
+          "strike": 490,
+          "vol": 6231,
+          "oi": 2745,
+          "volOi": 2.27,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 7139
+        },
+        {
+          "side": "C",
+          "strike": 487.5,
+          "vol": 467,
+          "oi": 28,
+          "volOi": 16.68,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 7138
+        },
+        {
+          "side": "C",
+          "strike": 520,
+          "vol": 6461,
+          "oi": 4326,
+          "volOi": 1.49,
+          "reasons": [
+            "vol"
+          ],
+          "score": 6461
+        },
+        {
+          "side": "C",
+          "strike": 500,
+          "vol": 5715,
+          "oi": 3188,
+          "volOi": 1.79,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 6432
+        },
+        {
+          "side": "P",
+          "strike": 382.5,
+          "vol": 90,
+          "oi": 6,
+          "volOi": 15,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 6090
+        },
+        {
+          "side": "C",
+          "strike": 510,
+          "vol": 4659,
+          "oi": 1347,
+          "volOi": 3.46,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 6043
+        },
+        {
+          "side": "C",
+          "strike": 582.5,
+          "vol": 615,
+          "oi": 47,
+          "volOi": 13.09,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 5849
+        }
+      ],
+      "flowVolThreshold": 1162,
       "flowMinVolOi": 1.5,
-      "outlook": "neutral",
-      "outlookLabel": "中性",
-      "outlookNote": "",
+      "outlook": "bearish",
+      "outlookLabel": "籌碼偏空",
+      "outlookNote": "P/C(OI) 1.39 偏高·Put 避險多 · Max Pain $485 低於現價 -4.9% · 異動 P$387.5 量2405",
       "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
       "expiries": [
         {
           "date": "2026-06-05",
-          "dte": 7,
-          "oi": 0
-        },
-        {
-          "date": "2026-06-12",
-          "dte": 14,
-          "oi": 0
-        },
-        {
-          "date": "2026-06-18",
-          "dte": 20,
-          "oi": 0
-        },
-        {
-          "date": "2026-06-26",
-          "dte": 28,
-          "oi": 0
-        },
-        {
-          "date": "2026-07-02",
-          "dte": 34,
-          "oi": 0
-        },
-        {
-          "date": "2026-07-10",
-          "dte": 42,
-          "oi": 0
+          "dte": 3,
+          "oi": 199580
         }
       ]
     },
     "ARM": {
       "futuCode": "US.ARM",
       "yahooSymbol": "ARM",
-      "dataVia": "opend",
+      "dataVia": "yahoo",
       "available": true,
-      "spot": 353.29,
+      "spot": 408.85,
       "expiry": "2026-06-05",
-      "dte": 7,
-      "pcRatioOi": null,
-      "pcRatioVol": null,
-      "maxPain": null,
-      "maxPainVsSpotPct": null,
-      "ivCallAtm": null,
-      "ivPutAtm": null,
-      "ivSkew": null,
-      "callOi": 0,
-      "putOi": 0,
-      "topCalls": [],
-      "topPuts": [],
-      "unusualFlow": [],
-      "flowVolThreshold": 150,
+      "dte": 3,
+      "pcRatioOi": 0.99,
+      "pcRatioVol": 0.7,
+      "maxPain": 312.5,
+      "maxPainVsSpotPct": -23.6,
+      "ivCallAtm": 1.331,
+      "ivPutAtm": 1.318,
+      "ivSkew": -0.013,
+      "callOi": 30478,
+      "putOi": 30047,
+      "topCalls": [
+        {
+          "strike": 400,
+          "oi": 3336
+        },
+        {
+          "strike": 315,
+          "oi": 2220
+        },
+        {
+          "strike": 325,
+          "oi": 2181
+        }
+      ],
+      "topPuts": [
+        {
+          "strike": 312.5,
+          "oi": 3019
+        },
+        {
+          "strike": 295,
+          "oi": 2274
+        },
+        {
+          "strike": 310,
+          "oi": 1500
+        }
+      ],
+      "unusualFlow": [
+        {
+          "side": "P",
+          "strike": 380,
+          "vol": 2113,
+          "oi": 3,
+          "volOi": 704.33,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 283846
+        },
+        {
+          "side": "P",
+          "strike": 385,
+          "vol": 1573,
+          "oi": 7,
+          "volOi": 224.71,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 91459
+        },
+        {
+          "side": "C",
+          "strike": 402.5,
+          "vol": 2176,
+          "oi": 23,
+          "volOi": 94.61,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 40019
+        },
+        {
+          "side": "C",
+          "strike": 510,
+          "vol": 289,
+          "oi": 4,
+          "volOi": 72.25,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 29189
+        },
+        {
+          "side": "P",
+          "strike": 410,
+          "vol": 451,
+          "oi": 7,
+          "volOi": 64.43,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 26222
+        },
+        {
+          "side": "C",
+          "strike": 432.5,
+          "vol": 62,
+          "oi": 1,
+          "volOi": 62,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 24862
+        },
+        {
+          "side": "P",
+          "strike": 390,
+          "vol": 628,
+          "oi": 11,
+          "volOi": 57.09,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 23464
+        },
+        {
+          "side": "P",
+          "strike": 400,
+          "vol": 1748,
+          "oi": 35,
+          "volOi": 49.94,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 21725
+        },
+        {
+          "side": "C",
+          "strike": 427.5,
+          "vol": 161,
+          "oi": 3,
+          "volOi": 53.67,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 21628
+        },
+        {
+          "side": "C",
+          "strike": 395,
+          "vol": 2354,
+          "oi": 50,
+          "volOi": 47.08,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 21186
+        }
+      ],
+      "flowVolThreshold": 644,
       "flowMinVolOi": 1.5,
-      "outlook": "neutral",
-      "outlookLabel": "中性",
-      "outlookNote": "",
+      "outlook": "lean_bear",
+      "outlookLabel": "略偏空",
+      "outlookNote": "P/C(OI) 0.99 中性 · Max Pain $312.5 低於現價 -23.6% · 異動 P$380 量2113",
       "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
       "expiries": [
         {
           "date": "2026-06-05",
-          "dte": 7,
-          "oi": 0
-        },
-        {
-          "date": "2026-06-12",
-          "dte": 14,
-          "oi": 0
-        },
-        {
-          "date": "2026-06-18",
-          "dte": 20,
-          "oi": 0
-        },
-        {
-          "date": "2026-06-26",
-          "dte": 28,
-          "oi": 0
-        },
-        {
-          "date": "2026-07-02",
-          "dte": 34,
-          "oi": 0
-        },
-        {
-          "date": "2026-07-10",
-          "dte": 42,
-          "oi": 0
+          "dte": 3,
+          "oi": 60525
         }
       ]
     },
     "ANET": {
       "futuCode": "US.ANET",
       "yahooSymbol": "ANET",
-      "dataVia": "opend",
+      "dataVia": "yahoo",
       "available": true,
-      "spot": 159.47,
+      "spot": 170.68,
       "expiry": "2026-06-05",
-      "dte": 7,
-      "pcRatioOi": null,
-      "pcRatioVol": null,
-      "maxPain": null,
-      "maxPainVsSpotPct": null,
-      "ivCallAtm": null,
-      "ivPutAtm": null,
-      "ivSkew": null,
-      "callOi": 0,
-      "putOi": 0,
-      "topCalls": [],
-      "topPuts": [],
-      "unusualFlow": [],
-      "flowVolThreshold": 150,
+      "dte": 3,
+      "pcRatioOi": 0.72,
+      "pcRatioVol": 0.19,
+      "maxPain": 150,
+      "maxPainVsSpotPct": -12.1,
+      "ivCallAtm": 0.816,
+      "ivPutAtm": 0.757,
+      "ivSkew": -0.059,
+      "callOi": 14271,
+      "putOi": 10343,
+      "topCalls": [
+        {
+          "strike": 165,
+          "oi": 2357
+        },
+        {
+          "strike": 180,
+          "oi": 2253
+        },
+        {
+          "strike": 190,
+          "oi": 1002
+        }
+      ],
+      "topPuts": [
+        {
+          "strike": 138,
+          "oi": 918
+        },
+        {
+          "strike": 133,
+          "oi": 768
+        },
+        {
+          "strike": 140,
+          "oi": 711
+        }
+      ],
+      "unusualFlow": [
+        {
+          "side": "P",
+          "strike": 167.5,
+          "vol": 81,
+          "oi": 2,
+          "volOi": 40.5,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 16281
+        },
+        {
+          "side": "C",
+          "strike": 197.5,
+          "vol": 1010,
+          "oi": 32,
+          "volOi": 31.56,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 13635
+        },
+        {
+          "side": "C",
+          "strike": 192.5,
+          "vol": 115,
+          "oi": 4,
+          "volOi": 28.75,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 11615
+        },
+        {
+          "side": "C",
+          "strike": 180,
+          "vol": 8232,
+          "oi": 2253,
+          "volOi": 3.65,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 9694
+        },
+        {
+          "side": "C",
+          "strike": 177.5,
+          "vol": 2820,
+          "oi": 179,
+          "volOi": 15.75,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 9122
+        },
+        {
+          "side": "C",
+          "strike": 195,
+          "vol": 50,
+          "oi": 3,
+          "volOi": 16.67,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 6717
+        },
+        {
+          "side": "C",
+          "strike": 185,
+          "vol": 691,
+          "oi": 56,
+          "volOi": 12.34,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 5627
+        },
+        {
+          "side": "P",
+          "strike": 165,
+          "vol": 338,
+          "oi": 43,
+          "volOi": 7.86,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 3482
+        },
+        {
+          "side": "C",
+          "strike": 165,
+          "vol": 2293,
+          "oi": 2357,
+          "volOi": 0.97,
+          "reasons": [
+            "vol"
+          ],
+          "score": 2293
+        },
+        {
+          "side": "C",
+          "strike": 200,
+          "vol": 1622,
+          "oi": 1001,
+          "volOi": 1.62,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 2270
+        }
+      ],
+      "flowVolThreshold": 507,
       "flowMinVolOi": 1.5,
-      "outlook": "neutral",
-      "outlookLabel": "中性",
-      "outlookNote": "",
+      "outlook": "lean_bull",
+      "outlookLabel": "略偏多",
+      "outlookNote": "P/C(OI) 0.72 偏低·Call 籌碼多 · Max Pain $150 低於現價 -12.1% · Call IV 相對高（偏進攻） · 異動 P$167.5 量81",
       "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
       "expiries": [
         {
           "date": "2026-06-05",
-          "dte": 7,
-          "oi": 0
-        },
-        {
-          "date": "2026-06-12",
-          "dte": 14,
-          "oi": 0
-        },
-        {
-          "date": "2026-06-18",
-          "dte": 20,
-          "oi": 0
-        },
-        {
-          "date": "2026-06-26",
-          "dte": 28,
-          "oi": 0
-        },
-        {
-          "date": "2026-07-02",
-          "dte": 34,
-          "oi": 0
-        },
-        {
-          "date": "2026-07-10",
-          "dte": 42,
-          "oi": 0
+          "dte": 3,
+          "oi": 24614
         }
       ]
     },
     "VRT": {
       "futuCode": "US.VRT",
       "yahooSymbol": "VRT",
-      "dataVia": "opend",
+      "dataVia": "yahoo",
       "available": true,
-      "spot": 315.71,
+      "spot": 323.39,
       "expiry": "2026-06-05",
-      "dte": 7,
-      "pcRatioOi": null,
-      "pcRatioVol": null,
-      "maxPain": null,
-      "maxPainVsSpotPct": null,
-      "ivCallAtm": null,
-      "ivPutAtm": null,
-      "ivSkew": null,
-      "callOi": 0,
-      "putOi": 0,
-      "topCalls": [],
-      "topPuts": [],
-      "unusualFlow": [],
-      "flowVolThreshold": 150,
+      "dte": 3,
+      "pcRatioOi": 2.41,
+      "pcRatioVol": 0.71,
+      "maxPain": 325,
+      "maxPainVsSpotPct": 0.5,
+      "ivCallAtm": 0.795,
+      "ivPutAtm": 0.8,
+      "ivSkew": 0.005,
+      "callOi": 8774,
+      "putOi": 21182,
+      "topCalls": [
+        {
+          "strike": 330,
+          "oi": 1400
+        },
+        {
+          "strike": 350,
+          "oi": 838
+        },
+        {
+          "strike": 430,
+          "oi": 692
+        }
+      ],
+      "topPuts": [
+        {
+          "strike": 220,
+          "oi": 4483
+        },
+        {
+          "strike": 230,
+          "oi": 4150
+        },
+        {
+          "strike": 300,
+          "oi": 1632
+        }
+      ],
+      "unusualFlow": [
+        {
+          "side": "C",
+          "strike": 377.5,
+          "vol": 27,
+          "oi": 1,
+          "volOi": 27,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 10827
+        },
+        {
+          "side": "C",
+          "strike": 367.5,
+          "vol": 251,
+          "oi": 19,
+          "volOi": 13.21,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 5535
+        },
+        {
+          "side": "C",
+          "strike": 332.5,
+          "vol": 446,
+          "oi": 36,
+          "volOi": 12.39,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 5402
+        },
+        {
+          "side": "P",
+          "strike": 287.5,
+          "vol": 406,
+          "oi": 51,
+          "volOi": 7.96,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 3590
+        },
+        {
+          "side": "P",
+          "strike": 267.5,
+          "vol": 21,
+          "oi": 4,
+          "volOi": 5.25,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 2121
+        },
+        {
+          "side": "C",
+          "strike": 350,
+          "vol": 1369,
+          "oi": 838,
+          "volOi": 1.63,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 2022
+        },
+        {
+          "side": "C",
+          "strike": 352.5,
+          "vol": 265,
+          "oi": 81,
+          "volOi": 3.27,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 1574
+        },
+        {
+          "side": "P",
+          "strike": 290,
+          "vol": 1175,
+          "oi": 974,
+          "volOi": 1.21,
+          "reasons": [
+            "vol"
+          ],
+          "score": 1175
+        },
+        {
+          "side": "C",
+          "strike": 330,
+          "vol": 1137,
+          "oi": 1400,
+          "volOi": 0.81,
+          "reasons": [
+            "vol"
+          ],
+          "score": 1137
+        },
+        {
+          "side": "P",
+          "strike": 307.5,
+          "vol": 105,
+          "oi": 47,
+          "volOi": 2.23,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 999
+        }
+      ],
+      "flowVolThreshold": 247,
       "flowMinVolOi": 1.5,
-      "outlook": "neutral",
-      "outlookLabel": "中性",
-      "outlookNote": "",
+      "outlook": "lean_bear",
+      "outlookLabel": "略偏空",
+      "outlookNote": "P/C(OI) 2.41 偏高·Put 避險多 · Max Pain $325 近現價 · 異動 C$377.5 量27",
       "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
       "expiries": [
         {
           "date": "2026-06-05",
-          "dte": 7,
-          "oi": 0
-        },
-        {
-          "date": "2026-06-12",
-          "dte": 14,
-          "oi": 0
-        },
-        {
-          "date": "2026-06-18",
-          "dte": 20,
-          "oi": 0
-        },
-        {
-          "date": "2026-06-26",
-          "dte": 28,
-          "oi": 0
-        },
-        {
-          "date": "2026-07-02",
-          "dte": 34,
-          "oi": 0
-        },
-        {
-          "date": "2026-07-10",
-          "dte": 42,
-          "oi": 0
+          "dte": 3,
+          "oi": 29956
         }
       ]
     },
@@ -713,175 +1609,172 @@
       "yahooSymbol": "SMCI",
       "dataVia": "yahoo",
       "available": true,
-      "spot": 46.09,
+      "spot": 46.88,
       "expiry": "2026-06-05",
-      "dte": 6,
-      "pcRatioOi": 0.22,
-      "pcRatioVol": 0.3,
-      "maxPain": 33.5,
-      "maxPainVsSpotPct": -27.3,
-      "ivCallAtm": 0.952,
-      "ivPutAtm": 0.965,
-      "ivSkew": 0.013,
-      "callOi": 108243,
-      "putOi": 23770,
+      "dte": 3,
+      "pcRatioOi": 0.28,
+      "pcRatioVol": 0.33,
+      "maxPain": 37,
+      "maxPainVsSpotPct": -21.1,
+      "ivCallAtm": 1.115,
+      "ivPutAtm": 1.092,
+      "ivSkew": -0.023,
+      "callOi": 195731,
+      "putOi": 54287,
       "topCalls": [
         {
           "strike": 41,
-          "oi": 18347
+          "oi": 18136
         },
         {
           "strike": 43,
-          "oi": 11849
+          "oi": 11834
         },
         {
-          "strike": 40,
-          "oi": 11159
+          "strike": 48,
+          "oi": 11009
         }
       ],
       "topPuts": [
+        {
+          "strike": 26,
+          "oi": 13909
+        },
         {
           "strike": 23,
           "oi": 3332
         },
         {
-          "strike": 40,
-          "oi": 2930
-        },
-        {
-          "strike": 30,
-          "oi": 1511
+          "strike": 25,
+          "oi": 3287
         }
       ],
       "unusualFlow": [
         {
-          "side": "P",
-          "strike": 26,
-          "vol": 13968,
-          "oi": 208,
-          "volOi": 67.15,
+          "side": "C",
+          "strike": 49.5,
+          "vol": 9444,
+          "oi": 215,
+          "volOi": 43.93,
           "reasons": [
             "vol",
             "vol_oi"
           ],
-          "score": 40830
-        },
-        {
-          "side": "P",
-          "strike": 47,
-          "vol": 2018,
-          "oi": 24,
-          "volOi": 84.08,
-          "reasons": [
-            "vol_oi"
-          ],
-          "score": 35651
+          "score": 27014
         },
         {
           "side": "C",
           "strike": 50,
-          "vol": 20544,
-          "oi": 2780,
-          "volOi": 7.39,
+          "vol": 14093,
+          "oi": 10662,
+          "volOi": 1.32,
           "reasons": [
-            "vol",
-            "vol_oi"
+            "vol"
           ],
-          "score": 23500
+          "score": 14093
+        },
+        {
+          "side": "P",
+          "strike": 26,
+          "vol": 13968,
+          "oi": 13909,
+          "volOi": 1,
+          "reasons": [
+            "vol"
+          ],
+          "score": 13968
         },
         {
           "side": "C",
-          "strike": 49,
-          "vol": 7411,
-          "oi": 188,
-          "volOi": 39.42,
+          "strike": 60,
+          "vol": 12149,
+          "oi": 4606,
+          "volOi": 2.64,
           "reasons": [
             "vol",
             "vol_oi"
           ],
-          "score": 23179
+          "score": 13204
+        },
+        {
+          "side": "C",
+          "strike": 52,
+          "vol": 12010,
+          "oi": 9086,
+          "volOi": 1.32,
+          "reasons": [
+            "vol"
+          ],
+          "score": 12010
+        },
+        {
+          "side": "P",
+          "strike": 48.5,
+          "vol": 118,
+          "oi": 4,
+          "volOi": 29.5,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 11918
+        },
+        {
+          "side": "P",
+          "strike": 60,
+          "vol": 24,
+          "oi": 1,
+          "volOi": 24,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 9624
+        },
+        {
+          "side": "C",
+          "strike": 55,
+          "vol": 8773,
+          "oi": 4978,
+          "volOi": 1.76,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 9478
+        },
+        {
+          "side": "C",
+          "strike": 45,
+          "vol": 6799,
+          "oi": 10028,
+          "volOi": 0.68,
+          "reasons": [
+            "vol"
+          ],
+          "score": 6799
         },
         {
           "side": "C",
           "strike": 47,
-          "vol": 19894,
-          "oi": 10796,
-          "volOi": 1.84,
+          "vol": 6478,
+          "oi": 8171,
+          "volOi": 0.79,
           "reasons": [
-            "vol",
-            "vol_oi"
+            "vol"
           ],
-          "score": 20631
-        },
-        {
-          "side": "C",
-          "strike": 51,
-          "vol": 8563,
-          "oi": 302,
-          "volOi": 28.35,
-          "reasons": [
-            "vol",
-            "vol_oi"
-          ],
-          "score": 19905
-        },
-        {
-          "side": "P",
-          "strike": 45,
-          "vol": 1953,
-          "oi": 46,
-          "volOi": 42.46,
-          "reasons": [
-            "vol_oi"
-          ],
-          "score": 18936
-        },
-        {
-          "side": "C",
-          "strike": 48,
-          "vol": 13305,
-          "oi": 2197,
-          "volOi": 6.06,
-          "reasons": [
-            "vol",
-            "vol_oi"
-          ],
-          "score": 15727
-        },
-        {
-          "side": "C",
-          "strike": 5,
-          "vol": 76,
-          "oi": 2,
-          "volOi": 38,
-          "reasons": [
-            "vol_oi"
-          ],
-          "score": 15276
-        },
-        {
-          "side": "C",
-          "strike": 10,
-          "vol": 76,
-          "oi": 2,
-          "volOi": 38,
-          "reasons": [
-            "vol_oi"
-          ],
-          "score": 15276
+          "score": 6478
         }
       ],
-      "flowVolThreshold": 3290,
+      "flowVolThreshold": 1715,
       "flowMinVolOi": 1.5,
-      "outlook": "neutral",
-      "outlookLabel": "中性",
-      "outlookNote": "P/C(OI) 0.22 偏低·Call 籌碼多 · Max Pain $33.5 低於現價 -27.3% · 異動 P$26 量13968",
+      "outlook": "lean_bull",
+      "outlookLabel": "略偏多",
+      "outlookNote": "P/C(OI) 0.28 偏低·Call 籌碼多 · Max Pain $37 低於現價 -21.1% · 異動 C$49.5 量9444",
       "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
       "expiries": [
         {
           "date": "2026-06-05",
-          "dte": 6,
-          "oi": 132013
+          "dte": 3,
+          "oi": 250018
         }
       ]
     },
@@ -890,174 +1783,174 @@
       "yahooSymbol": "IREN",
       "dataVia": "yahoo",
       "available": true,
-      "spot": 63.54,
+      "spot": 65.33,
       "expiry": "2026-06-05",
-      "dte": 6,
-      "pcRatioOi": 2.62,
-      "pcRatioVol": 2.1,
-      "maxPain": 61,
-      "maxPainVsSpotPct": -4,
-      "ivCallAtm": 1.08,
-      "ivPutAtm": 1.042,
-      "ivSkew": -0.038,
-      "callOi": 51245,
-      "putOi": 134047,
+      "dte": 3,
+      "pcRatioOi": 3.01,
+      "pcRatioVol": 0.31,
+      "maxPain": 62,
+      "maxPainVsSpotPct": -5.1,
+      "ivCallAtm": 1.29,
+      "ivPutAtm": 1.282,
+      "ivSkew": -0.008,
+      "callOi": 67542,
+      "putOi": 203394,
       "topCalls": [
         {
           "strike": 70,
-          "oi": 11501
+          "oi": 11762
         },
         {
           "strike": 75,
-          "oi": 5199
+          "oi": 5972
         },
         {
-          "strike": 71,
-          "oi": 3874
+          "strike": 65,
+          "oi": 4288
         }
       ],
       "topPuts": [
         {
           "strike": 52,
-          "oi": 30511
+          "oi": 30482
         },
         {
           "strike": 54,
-          "oi": 30175
+          "oi": 30171
         },
         {
-          "strike": 59,
-          "oi": 7572
+          "strike": 38,
+          "oi": 27488
         }
       ],
       "unusualFlow": [
         {
-          "side": "P",
-          "strike": 38,
-          "vol": 26845,
-          "oi": 866,
-          "volOi": 31,
-          "reasons": [
-            "vol",
-            "vol_oi"
-          ],
-          "score": 39245
-        },
-        {
-          "side": "P",
-          "strike": 45,
-          "vol": 15977,
-          "oi": 2767,
-          "volOi": 5.77,
-          "reasons": [
-            "vol",
-            "vol_oi"
-          ],
-          "score": 18287
-        },
-        {
-          "side": "P",
-          "strike": 50,
-          "vol": 11960,
-          "oi": 2794,
-          "volOi": 4.28,
-          "reasons": [
-            "vol",
-            "vol_oi"
-          ],
-          "score": 13672
-        },
-        {
           "side": "C",
-          "strike": 65,
-          "vol": 9282,
-          "oi": 3555,
-          "volOi": 2.61,
+          "strike": 82,
+          "vol": 1143,
+          "oi": 11,
+          "volOi": 103.91,
           "reasons": [
-            "vol",
             "vol_oi"
           ],
-          "score": 10326
+          "score": 42707
         },
         {
           "side": "C",
           "strike": 70,
-          "vol": 8969,
-          "oi": 11501,
-          "volOi": 0.78,
-          "reasons": [
-            "vol"
-          ],
-          "score": 8969
-        },
-        {
-          "side": "P",
-          "strike": 58,
-          "vol": 2362,
-          "oi": 687,
-          "volOi": 3.44,
+          "vol": 21518,
+          "oi": 11762,
+          "volOi": 1.83,
           "reasons": [
             "vol",
             "vol_oi"
           ],
-          "score": 3737
+          "score": 22250
         },
         {
           "side": "C",
-          "strike": 69,
-          "vol": 1584,
-          "oi": 362,
-          "volOi": 4.38,
+          "strike": 80,
+          "vol": 14627,
+          "oi": 3992,
+          "volOi": 3.66,
           "reasons": [
+            "vol",
             "vol_oi"
           ],
-          "score": 3334
+          "score": 16093
+        },
+        {
+          "side": "C",
+          "strike": 85,
+          "vol": 9032,
+          "oi": 567,
+          "volOi": 15.93,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 15404
         },
         {
           "side": "P",
-          "strike": 61,
-          "vol": 1433,
-          "oi": 334,
-          "volOi": 4.29,
+          "strike": 71,
+          "vol": 109,
+          "oi": 3,
+          "volOi": 36.33,
           "reasons": [
             "vol_oi"
           ],
-          "score": 3149
-        },
-        {
-          "side": "P",
-          "strike": 37,
-          "vol": 1249,
-          "oi": 277,
-          "volOi": 4.51,
-          "reasons": [
-            "vol_oi"
-          ],
-          "score": 3053
+          "score": 14642
         },
         {
           "side": "C",
           "strike": 67,
-          "vol": 2855,
-          "oi": 2903,
-          "volOi": 0.98,
+          "vol": 13013,
+          "oi": 3347,
+          "volOi": 3.89,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 14568
+        },
+        {
+          "side": "P",
+          "strike": 69,
+          "vol": 241,
+          "oi": 8,
+          "volOi": 30.13,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 12291
+        },
+        {
+          "side": "C",
+          "strike": 65,
+          "vol": 9516,
+          "oi": 4288,
+          "volOi": 2.22,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 10404
+        },
+        {
+          "side": "C",
+          "strike": 75,
+          "vol": 8543,
+          "oi": 5972,
+          "volOi": 1.43,
           "reasons": [
             "vol"
           ],
-          "score": 2855
+          "score": 8543
+        },
+        {
+          "side": "C",
+          "strike": 34,
+          "vol": 14,
+          "oi": 1,
+          "volOi": 14,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 5614
         }
       ],
-      "flowVolThreshold": 1679,
+      "flowVolThreshold": 2626,
       "flowMinVolOi": 1.5,
       "outlook": "bearish",
       "outlookLabel": "籌碼偏空",
-      "outlookNote": "P/C(OI) 2.62 偏高·Put 避險多 · Max Pain $61 低於現價 -4% · Call IV 相對高（偏進攻） · 異動 P$38 量26845",
+      "outlookNote": "P/C(OI) 3.01 偏高·Put 避險多 · Max Pain $62 低於現價 -5.1% · 異動 C$82 量1143",
       "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
       "expiries": [
         {
           "date": "2026-06-05",
-          "dte": 6,
-          "oi": 185292
+          "dte": 3,
+          "oi": 270936
         }
       ]
     },
@@ -1066,178 +1959,177 @@
       "yahooSymbol": "PLTR",
       "dataVia": "yahoo",
       "available": true,
-      "spot": 156.54,
+      "spot": 160.65,
       "expiry": "2026-06-05",
-      "dte": 6,
-      "pcRatioOi": 0.45,
-      "pcRatioVol": 0.38,
-      "maxPain": 136,
-      "maxPainVsSpotPct": -13.1,
-      "ivCallAtm": 0.549,
-      "ivPutAtm": 0.528,
-      "ivSkew": -0.021,
-      "callOi": 137041,
-      "putOi": 62153,
+      "dte": 3,
+      "pcRatioOi": 0.52,
+      "pcRatioVol": 0.36,
+      "maxPain": 138,
+      "maxPainVsSpotPct": -14.1,
+      "ivCallAtm": 0.664,
+      "ivPutAtm": 0.652,
+      "ivSkew": -0.011,
+      "callOi": 205611,
+      "putOi": 106862,
       "topCalls": [
         {
+          "strike": 160,
+          "oi": 28720
+        },
+        {
+          "strike": 165,
+          "oi": 25595
+        },
+        {
           "strike": 140,
-          "oi": 16096
-        },
-        {
-          "strike": 136,
-          "oi": 14492
-        },
-        {
-          "strike": 150,
-          "oi": 12307
+          "oi": 14426
         }
       ],
       "topPuts": [
         {
+          "strike": 90,
+          "oi": 9739
+        },
+        {
+          "strike": 85,
+          "oi": 8648
+        },
+        {
           "strike": 126,
-          "oi": 7155
-        },
-        {
-          "strike": 135,
-          "oi": 5116
-        },
-        {
-          "strike": 120,
-          "oi": 4917
+          "oi": 7040
         }
       ],
       "unusualFlow": [
         {
           "side": "C",
-          "strike": 160,
-          "vol": 58560,
-          "oi": 7998,
-          "volOi": 7.32,
-          "reasons": [
-            "vol",
-            "vol_oi"
-          ],
-          "score": 61489
-        },
-        {
-          "side": "C",
-          "strike": 165,
-          "vol": 39222,
-          "oi": 1923,
-          "volOi": 20.4,
-          "reasons": [
-            "vol",
-            "vol_oi"
-          ],
-          "score": 47381
-        },
-        {
-          "side": "P",
-          "strike": 155,
-          "vol": 5463,
-          "oi": 80,
-          "volOi": 68.29,
-          "reasons": [
-            "vol",
-            "vol_oi"
-          ],
-          "score": 32778
-        },
-        {
-          "side": "C",
-          "strike": 155,
-          "vol": 26675,
-          "oi": 7650,
-          "volOi": 3.49,
-          "reasons": [
-            "vol",
-            "vol_oi"
-          ],
-          "score": 28070
-        },
-        {
-          "side": "C",
-          "strike": 270,
-          "vol": 179,
-          "oi": 3,
-          "volOi": 59.67,
+          "strike": 260,
+          "vol": 5648,
+          "oi": 19,
+          "volOi": 297.26,
           "reasons": [
             "vol_oi"
           ],
-          "score": 24046
+          "score": 124553
         },
         {
           "side": "C",
           "strike": 170,
-          "vol": 18431,
-          "oi": 1987,
-          "volOi": 9.28,
+          "vol": 45955,
+          "oi": 7967,
+          "volOi": 5.77,
           "reasons": [
             "vol",
             "vol_oi"
           ],
-          "score": 22141
+          "score": 48262
         },
         {
           "side": "C",
-          "strike": 157.5,
-          "vol": 15290,
-          "oi": 1092,
-          "volOi": 14,
+          "strike": 165,
+          "vol": 46029,
+          "oi": 25595,
+          "volOi": 1.8,
           "reasons": [
             "vol",
             "vol_oi"
           ],
-          "score": 20891
+          "score": 46748
         },
         {
-          "side": "P",
-          "strike": 150,
-          "vol": 7472,
-          "oi": 226,
-          "volOi": 33.06,
+          "side": "C",
+          "strike": 160,
+          "vol": 40126,
+          "oi": 28720,
+          "volOi": 1.4,
           "reasons": [
-            "vol",
-            "vol_oi"
+            "vol"
           ],
-          "score": 20697
+          "score": 40126
         },
         {
-          "side": "P",
-          "strike": 90,
-          "vol": 10464,
-          "oi": 439,
-          "volOi": 23.84,
+          "side": "C",
+          "strike": 162.5,
+          "vol": 22974,
+          "oi": 2261,
+          "volOi": 10.16,
           "reasons": [
             "vol",
             "vol_oi"
           ],
-          "score": 19998
+          "score": 27038
+        },
+        {
+          "side": "C",
+          "strike": 180,
+          "vol": 19029,
+          "oi": 2396,
+          "volOi": 7.94,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 22206
+        },
+        {
+          "side": "C",
+          "strike": 175,
+          "vol": 12173,
+          "oi": 2053,
+          "volOi": 5.93,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 14545
+        },
+        {
+          "side": "C",
+          "strike": 185,
+          "vol": 12245,
+          "oi": 2627,
+          "volOi": 4.66,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 14109
         },
         {
           "side": "C",
           "strike": 167.5,
-          "vol": 8012,
-          "oi": 285,
-          "volOi": 28.11,
+          "vol": 12778,
+          "oi": 5327,
+          "volOi": 2.4,
           "reasons": [
             "vol",
             "vol_oi"
           ],
-          "score": 19257
+          "score": 13737
+        },
+        {
+          "side": "P",
+          "strike": 150,
+          "vol": 11963,
+          "oi": 3692,
+          "volOi": 3.24,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 13259
         }
       ],
-      "flowVolThreshold": 5018,
+      "flowVolThreshold": 6874,
       "flowMinVolOi": 1.5,
       "outlook": "lean_bull",
       "outlookLabel": "略偏多",
-      "outlookNote": "P/C(OI) 0.45 偏低·Call 籌碼多 · Max Pain $136 低於現價 -13.1% · 異動 C$160 量58560",
+      "outlookNote": "P/C(OI) 0.52 偏低·Call 籌碼多 · Max Pain $138 低於現價 -14.1% · 異動 C$260 量5648",
       "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
       "expiries": [
         {
           "date": "2026-06-05",
-          "dte": 6,
-          "oi": 199194
+          "dte": 3,
+          "oi": 312473
         }
       ]
     },
@@ -1246,177 +2138,175 @@
       "yahooSymbol": "CRCL",
       "dataVia": "yahoo",
       "available": true,
-      "spot": 113,
+      "spot": 104.97,
       "expiry": "2026-06-05",
-      "dte": 6,
-      "pcRatioOi": 0.69,
-      "pcRatioVol": 0.75,
+      "dte": 3,
+      "pcRatioOi": 0.92,
+      "pcRatioVol": 0.67,
       "maxPain": 105,
-      "maxPainVsSpotPct": -7.1,
-      "ivCallAtm": 0.874,
-      "ivPutAtm": 0.845,
-      "ivSkew": -0.028,
-      "callOi": 22848,
-      "putOi": 15833,
+      "maxPainVsSpotPct": 0,
+      "ivCallAtm": 1.024,
+      "ivPutAtm": 0.995,
+      "ivSkew": -0.03,
+      "callOi": 31980,
+      "putOi": 29522,
       "topCalls": [
         {
           "strike": 120,
-          "oi": 1430
+          "oi": 2609
         },
         {
-          "strike": 130,
-          "oi": 1311
+          "strike": 111,
+          "oi": 2159
         },
         {
-          "strike": 110,
-          "oi": 1274
+          "strike": 140,
+          "oi": 1954
         }
       ],
       "topPuts": [
         {
+          "strike": 75,
+          "oi": 9267
+        },
+        {
           "strike": 100,
-          "oi": 1721
+          "oi": 2357
         },
         {
           "strike": 105,
-          "oi": 1479
-        },
-        {
-          "strike": 70,
-          "oi": 772
+          "oi": 1571
         }
       ],
       "unusualFlow": [
         {
           "side": "P",
-          "strike": 75,
-          "vol": 9106,
-          "oi": 173,
-          "volOi": 52.64,
+          "strike": 96,
+          "vol": 1644,
+          "oi": 202,
+          "volOi": 8.14,
           "reasons": [
             "vol",
             "vol_oi"
           ],
-          "score": 30160
+          "score": 4899
         },
         {
           "side": "C",
-          "strike": 111,
-          "vol": 2330,
-          "oi": 61,
-          "volOi": 38.2,
+          "strike": 108,
+          "vol": 673,
+          "oi": 99,
+          "volOi": 6.8,
           "reasons": [
             "vol",
             "vol_oi"
           ],
-          "score": 17609
+          "score": 3392
         },
         {
           "side": "C",
-          "strike": 117,
-          "vol": 1809,
-          "oi": 78,
-          "volOi": 23.19,
+          "strike": 105,
+          "vol": 1841,
+          "oi": 666,
+          "volOi": 2.76,
           "reasons": [
             "vol",
             "vol_oi"
           ],
-          "score": 11086
+          "score": 2947
         },
         {
           "side": "C",
-          "strike": 137,
-          "vol": 85,
-          "oi": 6,
-          "volOi": 14.17,
+          "strike": 107,
+          "vol": 956,
+          "oi": 215,
+          "volOi": 4.45,
           "reasons": [
+            "vol",
             "vol_oi"
           ],
-          "score": 5752
+          "score": 2735
         },
         {
           "side": "C",
           "strike": 120,
-          "vol": 3133,
-          "oi": 1430,
-          "volOi": 2.19,
+          "vol": 2264,
+          "oi": 2609,
+          "volOi": 0.87,
+          "reasons": [
+            "vol"
+          ],
+          "score": 2264
+        },
+        {
+          "side": "C",
+          "strike": 110,
+          "vol": 1431,
+          "oi": 934,
+          "volOi": 1.53,
           "reasons": [
             "vol",
             "vol_oi"
           ],
-          "score": 4009
+          "score": 2044
         },
         {
-          "side": "C",
-          "strike": 140,
-          "vol": 1921,
-          "oi": 475,
-          "volOi": 4.04,
+          "side": "P",
+          "strike": 95,
+          "vol": 1126,
+          "oi": 747,
+          "volOi": 1.51,
           "reasons": [
             "vol",
             "vol_oi"
           ],
-          "score": 3539
+          "score": 1729
         },
         {
           "side": "C",
-          "strike": 144,
-          "vol": 34,
-          "oi": 6,
-          "volOi": 5.67,
+          "strike": 115,
+          "vol": 1467,
+          "oi": 1154,
+          "volOi": 1.27,
           "reasons": [
-            "vol_oi"
+            "vol"
           ],
-          "score": 2301
+          "score": 1467
         },
         {
-          "side": "C",
-          "strike": 113,
-          "vol": 619,
-          "oi": 155,
-          "volOi": 3.99,
+          "side": "P",
+          "strike": 75,
+          "vol": 1416,
+          "oi": 9267,
+          "volOi": 0.15,
           "reasons": [
-            "vol",
-            "vol_oi"
+            "vol"
           ],
-          "score": 2216
+          "score": 1416
         },
         {
-          "side": "C",
-          "strike": 116,
-          "vol": 772,
-          "oi": 228,
-          "volOi": 3.39,
+          "side": "P",
+          "strike": 100,
+          "vol": 1369,
+          "oi": 2357,
+          "volOi": 0.58,
           "reasons": [
-            "vol",
-            "vol_oi"
+            "vol"
           ],
-          "score": 2126
-        },
-        {
-          "side": "C",
-          "strike": 122,
-          "vol": 621,
-          "oi": 178,
-          "volOi": 3.49,
-          "reasons": [
-            "vol",
-            "vol_oi"
-          ],
-          "score": 2017
+          "score": 1369
         }
       ],
-      "flowVolThreshold": 507,
+      "flowVolThreshold": 567,
       "flowMinVolOi": 1.5,
       "outlook": "neutral",
       "outlookLabel": "中性",
-      "outlookNote": "P/C(OI) 0.69 偏低·Call 籌碼多 · Max Pain $105 低於現價 -7.1% · 異動 P$75 量9106",
+      "outlookNote": "P/C(OI) 0.92 中性 · Max Pain $105 近現價 · 異動 P$96 量1644",
       "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
       "expiries": [
         {
           "date": "2026-06-05",
-          "dte": 6,
-          "oi": 38681
+          "dte": 3,
+          "oi": 61502
         }
       ]
     },
@@ -1425,159 +2315,176 @@
       "yahooSymbol": "SNOW",
       "dataVia": "yahoo",
       "available": true,
-      "spot": 255.55,
+      "spot": 280.16,
       "expiry": "2026-06-05",
-      "dte": 6,
-      "pcRatioOi": 0.54,
-      "pcRatioVol": 0.31,
-      "maxPain": 175,
-      "maxPainVsSpotPct": -31.5,
-      "ivCallAtm": 0.706,
-      "ivPutAtm": 0.812,
-      "ivSkew": 0.106,
-      "callOi": 18405,
-      "putOi": 10009,
+      "dte": 3,
+      "pcRatioOi": 0.62,
+      "pcRatioVol": 0.45,
+      "maxPain": 210,
+      "maxPainVsSpotPct": -25,
+      "ivCallAtm": 0.985,
+      "ivPutAtm": 0.946,
+      "ivSkew": -0.039,
+      "callOi": 31861,
+      "putOi": 19763,
       "topCalls": [
         {
+          "strike": 350,
+          "oi": 3174
+        },
+        {
           "strike": 200,
-          "oi": 3875
+          "oi": 2935
         },
         {
           "strike": 220,
-          "oi": 2719
-        },
-        {
-          "strike": 240,
-          "oi": 2431
+          "oi": 2525
         }
       ],
       "topPuts": [
         {
-          "strike": 130,
+          "strike": 155,
           "oi": 1385
         },
         {
-          "strike": 155,
-          "oi": 1383
+          "strike": 130,
+          "oi": 1384
         },
         {
-          "strike": 160,
-          "oi": 647
+          "strike": 235,
+          "oi": 1133
         }
       ],
       "unusualFlow": [
         {
           "side": "C",
-          "strike": 250,
-          "vol": 2419,
-          "oi": 1275,
-          "volOi": 1.9,
+          "strike": 315,
+          "vol": 1557,
+          "oi": 1,
+          "volOi": 1557,
           "reasons": [
             "vol",
             "vol_oi"
           ],
-          "score": 3178
+          "score": 624357
         },
         {
           "side": "P",
-          "strike": 157.5,
-          "vol": 150,
-          "oi": 24,
-          "volOi": 6.25,
+          "strike": 275,
+          "vol": 507,
+          "oi": 1,
+          "volOi": 507,
           "reasons": [
             "vol_oi"
           ],
-          "score": 2650
-        },
-        {
-          "side": "C",
-          "strike": 240,
-          "vol": 2059,
-          "oi": 2431,
-          "volOi": 0.85,
-          "reasons": [
-            "vol"
-          ],
-          "score": 2059
-        },
-        {
-          "side": "C",
-          "strike": 200,
-          "vol": 1714,
-          "oi": 3875,
-          "volOi": 0.44,
-          "reasons": [
-            "vol"
-          ],
-          "score": 1714
-        },
-        {
-          "side": "C",
-          "strike": 220,
-          "vol": 1654,
-          "oi": 2719,
-          "volOi": 0.61,
-          "reasons": [
-            "vol"
-          ],
-          "score": 1654
-        },
-        {
-          "side": "C",
-          "strike": 185,
-          "vol": 1246,
-          "oi": 1382,
-          "volOi": 0.9,
-          "reasons": [
-            "vol"
-          ],
-          "score": 1246
+          "score": 203307
         },
         {
           "side": "P",
-          "strike": 200,
-          "vol": 556,
-          "oi": 632,
-          "volOi": 0.88,
+          "strike": 272.5,
+          "vol": 900,
+          "oi": 3,
+          "volOi": 300,
           "reasons": [
-            "vol"
+            "vol",
+            "vol_oi"
           ],
-          "score": 556
+          "score": 120900
+        },
+        {
+          "side": "C",
+          "strike": 330,
+          "vol": 919,
+          "oi": 4,
+          "volOi": 229.75,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 92819
+        },
+        {
+          "side": "C",
+          "strike": 282.5,
+          "vol": 443,
+          "oi": 11,
+          "volOi": 40.27,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 16552
         },
         {
           "side": "P",
-          "strike": 135,
-          "vol": 550,
-          "oi": 556,
-          "volOi": 0.99,
+          "strike": 260,
+          "vol": 1596,
+          "oi": 49,
+          "volOi": 32.57,
           "reasons": [
-            "vol"
+            "vol",
+            "vol_oi"
           ],
-          "score": 550
+          "score": 14625
         },
         {
-          "side": "P",
-          "strike": 210,
-          "vol": 445,
-          "oi": 297,
-          "volOi": 1.5,
+          "side": "C",
+          "strike": 302.5,
+          "vol": 236,
+          "oi": 8,
+          "volOi": 29.5,
           "reasons": [
-            "vol"
+            "vol_oi"
           ],
-          "score": 445
+          "score": 12036
+        },
+        {
+          "side": "C",
+          "strike": 295,
+          "vol": 1670,
+          "oi": 70,
+          "volOi": 23.86,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 11213
+        },
+        {
+          "side": "C",
+          "strike": 310,
+          "vol": 1167,
+          "oi": 48,
+          "volOi": 24.31,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 10892
+        },
+        {
+          "side": "C",
+          "strike": 300,
+          "vol": 4088,
+          "oi": 416,
+          "volOi": 9.83,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 8019
         }
       ],
-      "flowVolThreshold": 401,
+      "flowVolThreshold": 792,
       "flowMinVolOi": 1.5,
-      "outlook": "neutral",
-      "outlookLabel": "中性",
-      "outlookNote": "P/C(OI) 0.54 偏低·Call 籌碼多 · Max Pain $175 低於現價 -31.5% · Put IV 高於 Call（偏防守） · 異動 C$250 量2419",
+      "outlook": "lean_bull",
+      "outlookLabel": "略偏多",
+      "outlookNote": "P/C(OI) 0.62 偏低·Call 籌碼多 · Max Pain $210 低於現價 -25% · Call IV 相對高（偏進攻） · 異動 C$315 量1557",
       "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
       "expiries": [
         {
           "date": "2026-06-05",
-          "dte": 6,
-          "oi": 28414
+          "dte": 3,
+          "oi": 51624
         }
       ]
     },
@@ -1593,176 +2500,176 @@
       "yahooSymbol": "POET",
       "dataVia": "yahoo",
       "available": true,
-      "spot": 12.29,
+      "spot": 13.89,
       "expiry": "2026-06-05",
-      "dte": 6,
-      "pcRatioOi": 1,
-      "pcRatioVol": 1.43,
+      "dte": 3,
+      "pcRatioOi": 1.42,
+      "pcRatioVol": 0.23,
       "maxPain": 12,
-      "maxPainVsSpotPct": -2.4,
-      "ivCallAtm": 1.383,
-      "ivPutAtm": 1.422,
-      "ivSkew": 0.039,
-      "callOi": 27234,
-      "putOi": 27153,
+      "maxPainVsSpotPct": -13.6,
+      "ivCallAtm": 1.77,
+      "ivPutAtm": 1.898,
+      "ivSkew": 0.129,
+      "callOi": 35116,
+      "putOi": 49690,
       "topCalls": [
         {
           "strike": 8,
-          "oi": 4497
+          "oi": 4498
         },
         {
           "strike": 15,
-          "oi": 3846
+          "oi": 4142
         },
         {
-          "strike": 18,
-          "oi": 2352
+          "strike": 14,
+          "oi": 3590
         }
       ],
       "topPuts": [
         {
+          "strike": 7,
+          "oi": 13736
+        },
+        {
           "strike": 9,
-          "oi": 2644
+          "oi": 6688
         },
         {
-          "strike": 8,
-          "oi": 2062
-        },
-        {
-          "strike": 8.5,
-          "oi": 1938
+          "strike": 10,
+          "oi": 3961
         }
       ],
       "unusualFlow": [
         {
-          "side": "P",
-          "strike": 7,
-          "vol": 12511,
-          "oi": 1227,
-          "volOi": 10.2,
+          "side": "C",
+          "strike": 22,
+          "vol": 7960,
+          "oi": 160,
+          "volOi": 49.75,
           "reasons": [
             "vol",
             "vol_oi"
           ],
-          "score": 16590
+          "score": 27860
         },
         {
           "side": "C",
-          "strike": 12,
-          "vol": 4961,
-          "oi": 244,
-          "volOi": 20.33,
-          "reasons": [
-            "vol",
-            "vol_oi"
-          ],
-          "score": 13094
-        },
-        {
-          "side": "P",
-          "strike": 9,
-          "vol": 5278,
-          "oi": 2644,
-          "volOi": 2,
-          "reasons": [
-            "vol",
-            "vol_oi"
-          ],
-          "score": 6076
-        },
-        {
-          "side": "C",
-          "strike": 22.5,
-          "vol": 34,
+          "strike": 1,
+          "vol": 79,
           "oi": 3,
-          "volOi": 11.33,
+          "volOi": 26.33,
           "reasons": [
             "vol_oi"
           ],
-          "score": 4567
-        },
-        {
-          "side": "C",
-          "strike": 12.5,
-          "vol": 1533,
-          "oi": 203,
-          "volOi": 7.55,
-          "reasons": [
-            "vol",
-            "vol_oi"
-          ],
-          "score": 4554
-        },
-        {
-          "side": "P",
-          "strike": 10,
-          "vol": 2800,
-          "oi": 1841,
-          "volOi": 1.52,
-          "reasons": [
-            "vol",
-            "vol_oi"
-          ],
-          "score": 3408
-        },
-        {
-          "side": "P",
-          "strike": 12,
-          "vol": 2592,
-          "oi": 1276,
-          "volOi": 2.03,
-          "reasons": [
-            "vol",
-            "vol_oi"
-          ],
-          "score": 3405
-        },
-        {
-          "side": "C",
-          "strike": 14.5,
-          "vol": 1348,
-          "oi": 413,
-          "volOi": 3.26,
-          "reasons": [
-            "vol_oi"
-          ],
-          "score": 2654
-        },
-        {
-          "side": "C",
-          "strike": 13,
-          "vol": 1683,
-          "oi": 771,
-          "volOi": 2.18,
-          "reasons": [
-            "vol",
-            "vol_oi"
-          ],
-          "score": 2556
+          "score": 10612
         },
         {
           "side": "C",
           "strike": 14,
-          "vol": 2492,
-          "oi": 1886,
-          "volOi": 1.32,
+          "vol": 9224,
+          "oi": 3590,
+          "volOi": 2.57,
           "reasons": [
-            "vol"
+            "vol",
+            "vol_oi"
           ],
-          "score": 2492
+          "score": 10252
+        },
+        {
+          "side": "C",
+          "strike": 15,
+          "vol": 8041,
+          "oi": 4142,
+          "volOi": 1.94,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 8818
+        },
+        {
+          "side": "C",
+          "strike": 17,
+          "vol": 6212,
+          "oi": 2002,
+          "volOi": 3.1,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 7453
+        },
+        {
+          "side": "C",
+          "strike": 14.5,
+          "vol": 5757,
+          "oi": 1440,
+          "volOi": 4,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 7356
+        },
+        {
+          "side": "C",
+          "strike": 32,
+          "vol": 17,
+          "oi": 1,
+          "volOi": 17,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 6817
+        },
+        {
+          "side": "C",
+          "strike": 16,
+          "vol": 3004,
+          "oi": 943,
+          "volOi": 3.19,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 4278
+        },
+        {
+          "side": "C",
+          "strike": 1.5,
+          "vol": 21,
+          "oi": 2,
+          "volOi": 10.5,
+          "reasons": [
+            "vol_oi"
+          ],
+          "score": 4221
+        },
+        {
+          "side": "C",
+          "strike": 13,
+          "vol": 3051,
+          "oi": 1333,
+          "volOi": 2.29,
+          "reasons": [
+            "vol",
+            "vol_oi"
+          ],
+          "score": 3967
         }
       ],
-      "flowVolThreshold": 1380,
+      "flowVolThreshold": 1647,
       "flowMinVolOi": 1.5,
-      "outlook": "lean_bear",
-      "outlookLabel": "略偏空",
-      "outlookNote": "P/C(OI) 1 中性 · Max Pain $12 低於現價 -2.4% · 異動 P$7 量12511",
+      "outlook": "bearish",
+      "outlookLabel": "籌碼偏空",
+      "outlookNote": "P/C(OI) 1.42 偏高·Put 避險多 · Max Pain $12 低於現價 -13.6% · Put IV 高於 Call（偏防守） · 異動 C$22 量7960",
       "disclaimer": "僅反映未平倉結構·非價格預測·小盤期權可能失真",
       "expiries": [
         {
           "date": "2026-06-05",
-          "dte": 6,
-          "oi": 54387
+          "dte": 3,
+          "oi": 84806
         }
       ]
     }

@@ -32,6 +32,7 @@ const jsonFiles = [
   'stablecoins.json',
   'yields.json',
   'forex.json',
+  'forex-charts.json',
   'correlations.json',
   'correlations-computed.json',
 ];
@@ -56,6 +57,7 @@ const mdFiles = [
 
 const staticFiles = [
   'index.html',
+  'forex-charts.html',
   'phone.html',
   'manifest.webmanifest',
   'icon-192.svg',

@@ -30,6 +30,12 @@
                     │  NVDA, AMD, ARM │
                     │  (待補: AVGO,   │
                     │   MRVL, ALAB…)  │
+                    └────────┬────────┘
+                             │
+                    ┌────────▼────────┐
+                    │  HBM / DRAM     │
+                    │  MU ✓           │
+                    │  (SK·Samsung 未建檔) │
                     └─────────────────┘
 ```
 
@@ -56,6 +62,7 @@
 
 | 層級 | 候選 Ticker | 備註 |
 |------|-------------|------|
+| HBM / DRAM | MU（已建檔）, SK、Samsung（未建檔） | AI 記憶體瓶頸；與 NVDA 同 beta |
 | 定制矽 / 網路晶片 | AVGO, MRVL | 與 AI 集群連接、ASIC |
 | 光模組 | COHR, LITE, CIEN | 800G 升級週期 |
 | 小型 GPU/加速 | ALAB, CRDO | 高波動、高 10x 敘事、高風險 |

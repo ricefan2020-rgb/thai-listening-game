@@ -15,13 +15,13 @@
 
 ## 金 · 銀 · 比特幣（腳本更新）
 
-> 抓取：**2026-05-30T08:00:52**（UTC）· 金銀為 COMEX 期貨延遲牌價（Yahoo）；BTC 為 Binance 現貨
+> 抓取：**2026-06-02T01:18:44**（UTC）· 金銀 COMEX 期貨延遲（Yahoo）；BTC 為 Yahoo BTC-USD
 
 | 品項 | 牌價 | 代號 | 來源 |
 |------|------|------|------|
-| **金** | $4,593/oz | GC=F | Yahoo · Gold Jun 26 |
-| **銀** | $75.88/oz | SI=F | Yahoo · Silver Jul 26 |
-| **比特幣** | $73,549 | BTCUSDT | Binance |
+| **金** | $4,512/oz | GC=F | Yahoo · Gold Aug 26 |
+| **銀** | $75.32/oz | SI=F | Yahoo · Silver Jul 26 |
+| **比特幣** | $71,214 | BTC-USD | Yahoo · Bitcoin USD |
 
 `node scripts/update-commodities.mjs` · 再 `update-forex.mjs` / `prepare-pages.mjs`
 

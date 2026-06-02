@@ -44,6 +44,7 @@ node scripts/update-stocktwits.mjs # Stocktwits（需 STOCKTWITS_ACCESS_TOKEN）
 node scripts/update-options.mjs    # 期權（預設本機 OpenD · 見 options.md）
 node scripts/update-news-feed.mjs # 可選
 node scripts/update-commodities.mjs # 金銀 BTC（需網路）
+node scripts/update-forex-charts.mjs # 走勢圖 + 同步 commodities
 node scripts/embed-data.mjs
 node scripts/prepare-pages.mjs
 

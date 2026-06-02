@@ -41,7 +41,7 @@ node scripts/serve-mobile.mjs
 
 **國債收益率**：[yields.md](./yields.md) · [yields.json](./yields.json)（FRED：2Y/5Y/10Y/30Y、SOFR、10Y−2Y 利差 · 側欄「國債」· `node scripts/update-yields.mjs`）
 
-**四幣匯率（RMB/USD/JPY/HKD）**：[forex.md](./forex.md) · [forex.json](./forex.json)（升跌方向 + 配置方案 D · 側欄「匯率」· `node scripts/update-forex.mjs` · **金銀 BTC** `node scripts/update-commodities.mjs`）
+**四幣匯率（RMB/USD/JPY/HKD）**：[forex.md](./forex.md) · [forex.json](./forex.json) · **[forex-charts.html](./forex-charts.html)** 大圖表（`node scripts/update-forex-charts.mjs` · 金銀 BTC + DXY + 四幣 · 側欄「匯率」含迷你圖）
 
 **資料關聯性**：[correlations.md](./correlations.md) · [correlations.json](./correlations.json)（宏觀傳導 + 跨資產對照）· [correlations-computed.json](./correlations-computed.json)（股間 Pearson r · `node scripts/analyze-correlations.mjs`）
 

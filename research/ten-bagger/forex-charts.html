@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>匯率 · 金銀 BTC 圖表 · 10x 觀察板</title>
+  <style>
+    :root {
+      --bg: #0b0f12;
+      --surface: #121a20;
+      --text: #e8ecef;
+      --muted: #7a8a90;
+      --accent: #9ee0f0;
+      --border: #243038;
+      --up: #6ac898;
+      --down: #e87878;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+    header {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      background: var(--surface);
+    }
+    header h1 { margin: 0; font-size: 18px; color: var(--accent); }
+    header p { margin: 0; font-size: 12px; color: var(--muted); flex: 1; }
+    header a { color: var(--accent); font-size: 12px; }
+    main { padding: 16px 20px 40px; max-width: 1200px; margin: 0 auto; }
+    h2 { font-size: 14px; color: var(--accent); margin: 24px 0 12px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .card-head {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+    }
+    .card-head b { color: var(--accent); }
+    .card-head .spot { margin-left: auto; font-weight: 700; font-size: 15px; }
+    .card-head .chg { font-size: 11px; }
+    .card-head .chg.up { color: var(--up); }
+    .card-head .chg.down { color: var(--down); }
+    .chart-pane { height: 220px; width: 100%; }
+    .alloc-wrap { padding: 14px; }
+    .alloc-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; font-size: 12px; }
+    .alloc-label { width: 72px; color: var(--muted); }
+    .alloc-bar { flex: 1; display: flex; height: 16px; border-radius: 4px; overflow: hidden; background: #1a2228; }
+    .alloc-seg { height: 100%; min-width: 3px; }
+    .corr-list { padding: 14px; }
+    .corr-row {
+      display: grid;
+      grid-template-columns: 90px 1fr 48px;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 12px;
+    }
+    .corr-track { height: 12px; background: #1a2228; border-radius: 3px; overflow: hidden; }
+    .corr-fill { height: 100%; }
+    .corr-fill.pos { background: linear-gradient(90deg, #2a5040, var(--up)); }
+    .corr-fill.neg { background: linear-gradient(90deg, #503030, var(--down)); }
+    .corr-val.pos { color: var(--up); text-align: right; }
+    .corr-val.neg { color: var(--down); text-align: right; }
+    .legend { display: flex; flex-wrap: wrap; gap: 12px; font-size: 11px; color: var(--muted); margin-bottom: 8px; }
+    .legend span::before { content: ''; display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 4px; vertical-align: middle; }
+  </style>
+  <script src="https://unpkg.com/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>
+</head>
+<body>
+  <header>
+    <h1>匯率 · 金銀 BTC 圖表</h1>
+    <p id="meta">載入中…</p>
+    <a href="./index.html">← 觀察板</a>
+    <a href="./forex.md">說明</a>
+    <a href="./correlations.md">關聯</a>
+  </header>
+  <main>
+    <h2>商品 · 金 / 銀 / 比特幣</h2>
+    <div class="grid" id="grid-commodities"></div>
+    <h2>美元指數 · 四幣</h2>
+    <div class="grid" id="grid-fx"></div>
+    <h2>配置方案 D</h2>
+    <div class="card alloc-wrap" id="alloc-card"></div>
+    <h2>觀察名單股間相關（Pearson r）</h2>
+    <div class="card corr-list" id="corr-card"></div>
+  </main>
+  <script type="application/json" id="forex-charts-data">{}</script>
+  <script type="module">
+    const COLORS = {
+      gold: '#e8c547', silver: '#b8c8d8', btc: '#f7931a',
+      dxy: '#9ee0f0', usdjpy: '#c8a0e8', usdcny: '#e8a090', usdhkd: '#90c8b0',
+    };
+
+    async function loadJson(url, embedId) {
+      const el = document.getElementById(embedId);
+      if (el?.textContent?.trim() && el.textContent.trim() !== '{}') {
+        try { return JSON.parse(el.textContent); } catch { /* */ }
+      }
+      const r = await fetch(url);
+      if (!r.ok) throw new Error(url);
+      const d = await r.json();
+      if (el) el.textContent = JSON.stringify(d);
+      return d;
+    }
+
+    function fmtChg(p) {
+      if (p == null) return '—';
+      return `${p > 0 ? '+' : ''}${p}%`;
+    }
+
+    function makeCard(key, x, grid) {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `
+        <div class="card-head">
+          <b>${x.nameZh}</b>
+          <span class="spot">${x.spot?.toLocaleString?.() ?? x.spot}</span>
+          <span class="chg ${x.changePct > 0 ? 'up' : x.changePct < 0 ? 'down' : ''}">${fmtChg(x.changePct)}</span>
+        </div>
+        <div class="chart-pane" id="chart-${key}"></div>`;
+      grid.appendChild(card);
+      const pane = card.querySelector('.chart-pane');
+      const chart = LightweightCharts.createChart(pane, {
+        width: pane.clientWidth,
+        height: 220,
+        layout: { background: { color: '#121a20' }, textColor: '#7a8a90' },
+        grid: { vertLines: { color: '#1a2228' }, horzLines: { color: '#1a2228' } },
+        rightPriceScale: { borderColor: '#243038' },
+        timeScale: { borderColor: '#243038' },
+      });
+      const s = chart.addAreaSeries({
+        lineColor: COLORS[key] || '#9ee0f0',
+        topColor: `${COLORS[key] || '#9ee0f0'}55`,
+        bottomColor: `${COLORS[key] || '#9ee0f0'}08`,
+        lineWidth: 2,
+      });
+      s.setData((x.points || []).map((p) => ({ time: p.t, value: p.c })));
+      chart.timeScale().fitContent();
+      new ResizeObserver(() => chart.applyOptions({ width: pane.clientWidth })).observe(pane);
+    }
+
+    function renderAlloc(allocation, host) {
+      const keys = [
+        { k: 'RMB', c: '#e8a090' }, { k: 'USD', c: '#9ee0f0' },
+        { k: 'HKD', c: '#90c8b0' }, { k: 'JPY', c: '#c8a0e8' },
+      ];
+      host.innerHTML = ['conservative', 'balanced', 'aggressive'].map((p) => {
+        const prof = allocation[p];
+        if (!prof) return '';
+        const segs = keys.map(({ k, c }) =>
+          `<span class="alloc-seg" style="width:${prof[k]}%;background:${c}" title="${k} ${prof[k]}%"></span>`).join('');
+        return `<div class="alloc-row"><span class="alloc-label">${prof.label || p}</span><div class="alloc-bar">${segs}</div></div>`;
+      }).join('');
+    }
+
+    function renderCorr(corr, host) {
+      const pairs = corr?.topAbs?.slice(0, 12) || [];
+      host.innerHTML = pairs.map((p) => {
+        const w = Math.round(Math.abs(p.r) * 100);
+        const cls = p.r >= 0 ? 'pos' : 'neg';
+        return `<div class="corr-row">
+          <span>${p.a}/${p.b}</span>
+          <div class="corr-track"><div class="corr-fill ${cls}" style="width:${w}%"></div></div>
+          <span class="corr-val ${cls}">${p.r >= 0 ? '+' : ''}${p.r.toFixed(2)}</span>
+        </div>`;
+      }).join('') || '<p style="color:var(--muted)">無數據</p>';
+    }
+
+    try {
+      const [charts, forex, corr] = await Promise.all([
+        loadJson('./forex-charts.json', 'forex-charts-data'),
+        fetch('./forex.json').then((r) => r.json()),
+        fetch('./correlations-computed.json').then((r) => r.json()).catch(() => null),
+      ]);
+      document.getElementById('meta').textContent =
+        `資料 ${charts.asOf || '—'} · ${charts.range || ''} · 抓取 ${charts.fetchedAt?.slice(0, 19) || '—'} UTC · 非投資建議`;
+
+      const s = charts.series || {};
+      const gComm = document.getElementById('grid-commodities');
+      const gFx = document.getElementById('grid-fx');
+      for (const k of ['gold', 'silver', 'btc']) if (s[k]) makeCard(k, s[k], gComm);
+      for (const k of ['dxy', 'usdjpy', 'usdcny', 'usdhkd']) if (s[k]) makeCard(k, s[k], gFx);
+      renderAlloc(forex.allocation, document.getElementById('alloc-card'));
+      renderCorr(corr, document.getElementById('corr-card'));
+    } catch (e) {
+      document.getElementById('meta').textContent = e.message || '載入失敗 · 請先跑 update-forex-charts.mjs';
+    }
+  </script>
+</body>
+</html>

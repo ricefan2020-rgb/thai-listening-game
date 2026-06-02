@@ -2,6 +2,7 @@
 export const WATCH_TICKERS = [
   'GOOGL',
   'NVDA',
+  'MU',
   'AMD',
   'ARM',
   'ANET',
@@ -26,6 +27,7 @@ export function yahooSymbol(ticker) {
 export const REDDIT_QUERY = {
   GOOGL: 'GOOGL OR Alphabet',
   NVDA: 'NVDA OR NVIDIA',
+  MU: 'MU OR Micron OR "Micron Technology"',
   AMD: 'AMD',
   ARM: 'ARM OR "Arm Holdings"',
   ANET: 'ANET OR Arista',

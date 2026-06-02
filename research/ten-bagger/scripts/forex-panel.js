@@ -101,19 +101,25 @@ export function renderForexPanel(data) {
       .join('');
     commHtml = `<h4 class="fx-sub">金 · 銀 · BTC</h4>
     <p class="fx-comm-note">${com.delayNote || ''}</p>
-    <div class="fx-comm-row">${chips}</div>`;
+    <div class="fx-comm-row">${chips}</div>
+    <div id="fx-chart-commodities" class="fx-chart-block"></div>`;
   }
 
   host.innerHTML = `
     <p class="fx-horizon">${data.horizon || ''}</p>
     ${commHtml}
+    <h4 class="fx-sub">四幣 / 美元指數 · ${data.chartRange || '6mo'}</h4>
+    <div id="fx-chart-fx" class="fx-chart-block"></div>
     <div class="fx-cards">${rows}</div>
     <h4 class="fx-sub">配置方案 D</h4>
+    <div id="fx-chart-alloc" class="fx-alloc-block"></div>
     <table class="fx-table">
       <thead><tr><th>類型</th><th>RMB</th><th>USD</th><th>HKD</th><th>JPY</th></tr></thead>
       <tbody>${allocRows}</tbody>
     </table>
     <ul class="fx-notes">${(data.execution || []).map((x) => `<li>${x}</li>`).join('')}</ul>
+    <h4 class="fx-sub">股間相關（觀察名單）</h4>
+    <div id="fx-chart-corr" class="fx-corr-block"></div>
     <h4 class="fx-sub">觀察</h4>
     <ul class="fx-watch">
       <li><b>USD</b> ${watch.usd || '—'}</li>
