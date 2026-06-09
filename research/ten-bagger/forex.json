@@ -147,32 +147,32 @@
   },
   "commodities": {
     "delayNote": "金銀 COMEX 期貨延遲（Yahoo）；BTC 為 Yahoo BTC-USD",
-    "fetchedAt": "2026-06-03T01:17:11.468Z",
+    "fetchedAt": "2026-06-09T11:05:43.046Z",
     "gold": {
       "nameZh": "金",
       "symbol": "GC=F",
       "unit": "USD/oz",
-      "price": 4498.8,
-      "priceFmt": "$4,499/oz",
-      "changePct": 7.5,
+      "price": 4359,
+      "priceFmt": "$4,359/oz",
+      "changePct": 3.6,
       "source": "Yahoo · Gold Aug 26"
     },
     "silver": {
       "nameZh": "銀",
       "symbol": "SI=F",
       "unit": "USD/oz",
-      "price": 74.715,
-      "priceFmt": "$74.72/oz",
-      "changePct": 28.9,
+      "price": 68.545,
+      "priceFmt": "$68.55/oz",
+      "changePct": 13.9,
       "source": "Yahoo · Silver Jul 26"
     },
     "btc": {
       "nameZh": "比特幣",
       "symbol": "BTC-USD",
       "unit": "USD",
-      "price": 66808,
-      "priceFmt": "$66,808",
-      "changePct": -28.6,
+      "price": 62550.28,
+      "priceFmt": "$62,550",
+      "changePct": -32.5,
       "source": "Yahoo · Bitcoin USD"
     }
   }
